@@ -776,7 +776,7 @@
          |                                                       Menus                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightMenuStyle" TargetType="{x:Type Menu}">
+    <Style x:Key="LightThemeMenuStyle" TargetType="{x:Type Menu}">
         <Setter Property="Background" Value="{StaticResource Menu.Background}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.MenuFontFamilyKey}}"/>
         <Setter Property="FontSize" Value="{DynamicResource {x:Static SystemFonts.MenuFontSizeKey}}"/>
@@ -997,7 +997,7 @@
          |                                                     Buttons                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightButtonStyle" TargetType="{x:Type Button}">
+    <Style x:Key="LightThemeButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource Button.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource Button.Border}"/>
@@ -1217,7 +1217,7 @@
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightFrameStyle" TargetType="{x:Type Frame}">
+    <Style x:Key="LightThemeFrameStyle" TargetType="{x:Type Frame}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Frame}">
@@ -1515,7 +1515,7 @@
          |                                                     Calendars                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightCalendarStyle" TargetType="{x:Type Calendar}">
+    <Style x:Key="LightThemeCalendarStyle" TargetType="{x:Type Calendar}">
         <Setter Property="Foreground" Value="{StaticResource Calendar.Foreground}"/>
         <Setter Property="Background">
             <Setter.Value>
@@ -1564,7 +1564,7 @@
          |                                                     CheckBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightCheckBoxStyle" TargetType="{x:Type CheckBox}">
+    <Style x:Key="LightThemeCheckBoxStyle" TargetType="{x:Type CheckBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource OptionMark.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource OptionMark.Border}"/>
@@ -2281,7 +2281,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightComboBoxStyle" TargetType="{x:Type ComboBox}">
+    <Style x:Key="LightThemeComboBoxStyle" TargetType="{x:Type ComboBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource ComboBox.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ComboBox.Border}"/>
@@ -2317,7 +2317,7 @@
          |                                                  ContentControls                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightContentControlStyle" TargetType="{x:Type ContentControl}">
+    <Style x:Key="LightThemeContentControlStyle" TargetType="{x:Type ContentControl}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContentControl}">
@@ -2341,7 +2341,7 @@
          |                                                     DataGrids                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightDataGridStyle" TargetType="{x:Type DataGrid}">
+    <Style x:Key="LightThemeDataGridStyle" TargetType="{x:Type DataGrid}">
         <Setter Property="Background" Value="{StaticResource DataGrid.Background}"/>
         <Setter Property="Foreground" Value="{StaticResource DataGrid.Foreground}"/>
         <Setter Property="BorderBrush" Value="{StaticResource DataGrid.Border}"/>
@@ -2423,7 +2423,7 @@
          |                                                   DatePickers                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightDatePickerStyle" TargetType="{x:Type DatePicker}">
+    <Style x:Key="LightThemeDatePickerStyle" TargetType="{x:Type DatePicker}">
         <Setter Property="Foreground" Value="{StaticResource DatePicker.Foreground}"/>
         <Setter Property="IsTodayHighlighted" Value="True"/>
         <Setter Property="SelectedDateFormat" Value="Short"/>
@@ -2621,7 +2621,7 @@
          |                                                 DocumentViewers                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightDocumentViewerStyle" BasedOn="{x:Null}" TargetType="{x:Type DocumentViewer}">
+    <Style x:Key="LightThemeDocumentViewerStyle" BasedOn="{x:Null}" TargetType="{x:Type DocumentViewer}">
         <Setter Property="Foreground" Value="{StaticResource DocumentViewer.Foreground}"/>
         <Setter Property="Background" Value="{StaticResource DocumentViewer.Background}"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -2682,7 +2682,7 @@
          |                                                    Expanders                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightExpanderStyle" TargetType="{x:Type Expander}">
+    <Style x:Key="LightThemeExpanderStyle" TargetType="{x:Type Expander}">
         <Setter Property="Foreground" Value="{StaticResource Expander.Foreground}"/>
         <Setter Property="Background" Value="{StaticResource Expander.Background}"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -2759,7 +2759,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightGridSplitterStyle" TargetType="{x:Type GridSplitter}">
+    <Style x:Key="LightThemeGridSplitterStyle" TargetType="{x:Type GridSplitter}">
         <Setter Property="Background" Value="{StaticResource GridSplitter.Background}"/>
         <Setter Property="PreviewStyle" Value="{StaticResource GridSplitterPreviewStyle}"/>
         <Setter Property="Template">
@@ -2785,7 +2785,7 @@
          |                                                   GroupBoxes                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightGroupBoxStyle" TargetType="{x:Type GroupBox}">
+    <Style x:Key="LightThemeGroupBoxStyle" TargetType="{x:Type GroupBox}">
         <Setter Property="BorderBrush" Value="{StaticResource GroupBox.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Template">
@@ -2844,7 +2844,7 @@
          |                                                     Labels                                                                  |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightLabelStyle" TargetType="{x:Type Label}">
+    <Style x:Key="LightThemeLabelStyle" TargetType="{x:Type Label}">
         <Setter Property="Foreground" Value="{StaticResource Label.Foreground}"/>
         <Setter Property="Background" Value="{StaticResource Label.Background}"/>
         <Setter Property="Padding" Value="5"/>
@@ -2884,7 +2884,7 @@
          |                                                   ListBoxes                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightListBoxStyle" TargetType="{x:Type ListBox}">
+    <Style x:Key="LightThemeListBoxStyle" TargetType="{x:Type ListBox}">
         <Setter Property="Background" Value="{StaticResource ListBox.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ListBox.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -2936,7 +2936,7 @@
          |                                                 PasswordBoxes                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightPasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+    <Style x:Key="LightThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
         <Setter Property="PasswordChar" Value="●"/>
         <Setter Property="Background" Value="{StaticResource TextBoxBase.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TextBox.Border}"/>
@@ -2994,7 +2994,7 @@
          |                                                 ProgressBars                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightProgressBarStyle" TargetType="{x:Type ProgressBar}">
+    <Style x:Key="LightThemeProgressBarStyle" TargetType="{x:Type ProgressBar}">
         <Setter Property="Foreground" Value="{StaticResource ProgressBar.Progress}"/>
         <Setter Property="Background" Value="{StaticResource ProgressBar.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ProgressBar.Border}"/>
@@ -3070,7 +3070,7 @@
          |                                                 RadioButtons                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightRadioButtonStyle" TargetType="{x:Type RadioButton}">
+    <Style x:Key="LightThemeRadioButtonStyle" TargetType="{x:Type RadioButton}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Background" Value="{StaticResource RadioButton.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource RadioButton.Border}"/>
@@ -3220,7 +3220,7 @@
          |                                                  RichTextBox                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
+    <Style x:Key="LightThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
         <Style.Resources>
             <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
                 <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -3256,7 +3256,7 @@
          |                                                  ScrollBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightScrollBarStyle" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="LightThemeScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
         <Setter Property="Background" Value="{StaticResource ScrollBar.Background}"/>
@@ -3492,7 +3492,7 @@
          |                                                  Separators                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightSeparatorStyle" TargetType="{x:Type Separator}">
+    <Style x:Key="LightThemeSeparatorStyle" TargetType="{x:Type Separator}">
         <Setter Property="Background" Value="{StaticResource Separator.Background}"/>
         <Setter Property="Margin" Value="0,2,0,2"/>
         <Setter Property="Focusable" Value="false"/>
@@ -3574,7 +3574,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightSliderStyle" TargetType="{x:Type Slider}">
+    <Style x:Key="LightThemeSliderStyle" TargetType="{x:Type Slider}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Background" Value="{StaticResource Slider.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource Slider.Border}"/>
@@ -3601,7 +3601,7 @@
          |                                                  StatusBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightStatusBarStyle" TargetType="{x:Type StatusBar}">
+    <Style x:Key="LightThemeStatusBarStyle" TargetType="{x:Type StatusBar}">
         <Setter Property="Background" Value="{StaticResource StatusBar.Background}"/>
         <Setter Property="Foreground" Value="{StaticResource StatusBar.Foreground}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}"/>
@@ -3635,7 +3635,7 @@
          |                                                  TabControls                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightTabControlStyle" TargetType="{x:Type TabControl}">
+    <Style x:Key="LightThemeTabControlStyle" TargetType="{x:Type TabControl}">
         <Setter Property="Padding" Value="2"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -3717,7 +3717,7 @@
          |                                                    ToolBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightToolBarStyle" TargetType="{x:Type ToolBar}">
+    <Style x:Key="LightThemeToolBarStyle" TargetType="{x:Type ToolBar}">
         <Setter Property="Background" Value="{StaticResource ToolBarHorizontalBackground}"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -3821,7 +3821,7 @@
          |                                                    TreeViews                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightTreeViewStyle" TargetType="{x:Type TreeView}">
+    <Style x:Key="LightThemeTreeViewStyle" TargetType="{x:Type TreeView}">
         <Setter Property="Background" Value="{StaticResource TreeView.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TreeView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
