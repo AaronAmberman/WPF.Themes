@@ -56,5 +56,54 @@
         </TabControl>
         <ToolBar Style="{DynamicResource LightThemeToolBarStyle}" x:Name="toolBar" HorizontalAlignment="Left" Height="100" Margin="938,48,0,0" VerticalAlignment="Top" Width="100"/>
         <TreeView Style="{DynamicResource LightThemeTreeViewStyle}" x:Name="treeView" Width="100" Height="100" Margin="965,153,10,181"/>
+        <!--<Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Calendar x:Name="calendar" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="229,5,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="313,5,0,0" VerticalAlignment="Top" Width="120"/>
+        <ContentControl Content="ContentControl" HorizontalAlignment="Left" Margin="447,5,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Width="370" Height="150" Margin="553,9,152,275" />
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="936,10,0,0" VerticalAlignment="Top"/>
+        <DocumentViewer x:Name="documentViewer" Width="200" Height="200" Margin="10,173,865,61"/>
+        <Expander x:Name="expander" HorizontalAlignment="Left" Height="100" Header="Expander" Margin="229,34,0,0" VerticalAlignment="Top" Width="100">
+            <Grid Background="#FFE5E5E5"/>
+        </Expander>
+        <Frame x:Name="frame" Content="Frame" Background="Black" Width="100" Height="100" Margin="229,139,746,195"/>
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="100" Margin="342,34,0,0" VerticalAlignment="Top" Width="5"/>
+        <GroupBox x:Name="groupBox" Header="GroupBox" Width="100" Height="100" Margin="363,37,612,297"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="488,48,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="344,151,631,183"/>
+        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="457,167,518,167">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Menu x:Name="menu" Width="100" Height="100" Margin="229,256,746,78"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="344,273,0,0" VerticalAlignment="Top" Width="120"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="344,306,0,0" VerticalAlignment="Top" Width="100"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="342,321,0,0" VerticalAlignment="Top"/>
+        <RichTextBox x:Name="richTextBox" Width="100" Height="30" Margin="457,298,518,106">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ScrollBar x:Name="scrollBar" HorizontalAlignment="Left" Margin="570,173,0,0" VerticalAlignment="Top"/>
+        <ScrollViewer Width="100" Height="100" Margin="603,167,372,167"/>
+        <Separator HorizontalAlignment="Left" Margin="717,173,0,0" VerticalAlignment="Top" Width="100" Height="3"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="833,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <StatusBar Height="40" VerticalAlignment="Bottom"/>
+        <TabControl x:Name="tabControl" Width="200" Height="100" Margin="570,282,305,52">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <ToolBar x:Name="toolBar" HorizontalAlignment="Left" Height="100" Margin="938,48,0,0" VerticalAlignment="Top" Width="100"/>
+        <TreeView x:Name="treeView" Width="100" Height="100" Margin="965,153,10,181"/>-->
     </Grid>
 </Window>

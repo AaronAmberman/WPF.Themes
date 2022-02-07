@@ -34,7 +34,7 @@
     <Color x:Key="ComboBox.Background.GradientStop2.Color">#FFE5E5E5</Color>
     <Color x:Key="ComboBox.Border.Color">#FFACACAC</Color>
     <Color x:Key="ComboBox.DropDown.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ComboBox.DropDown.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="ComboBox.DropDown.Border.Color">#99000000</Color>
     <Color x:Key="ComboBox.DropShadow.Color">#00000000</Color>
     <Color x:Key="ComboBox.DropShadow.MouseOver.Color">#71000000</Color>
     <Color x:Key="ComboBox.Foreground.Color">#FF000000</Color>
@@ -69,7 +69,7 @@
     <Color x:Key="ComboBox.Disabled.Editable.Button.Background.Color">#00000000</Color>
     <Color x:Key="ComboBox.Disabled.Editable.Button.Border.Color">#00000000</Color>
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
-    <Color x:Key="DataGrid.Background.Color">#FFFFFAF0</Color>
+    <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
     <Color x:Key="DataGrid.Foreground.Color">#FF000000</Color>
     <Color x:Key="DataGrid.SelectAllButton.Arrow.Color">#FF000000</Color>
@@ -282,7 +282,7 @@
     <Color x:Key="StatusBar.Foreground.Color">#FF000000</Color>
     <Color x:Key="TabControl.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TabControl.Foreground.Color">#FF000000</Color>
-    <Color x:Key="TabControl.TabPanel.Background.Color">#FF000000</Color>
+    <Color x:Key="TabControl.TabPanel.Background.Color">#00000000</Color>
     <Color x:Key="TabItem.Selected.Background.Color">#FFFFFF</Color>
     <Color x:Key="TabItem.Selected.Border.Color">#ACACAC</Color>
     <Color x:Key="TextBoxBase.Background.Color">#FFFFFFFF</Color>
@@ -321,6 +321,7 @@
     
     
     
+
     
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
@@ -890,26 +891,12 @@
                         <Popup x:Name="PART_Popup" AllowsTransparency="true" Focusable="false" Placement="Bottom" VerticalOffset="2"
                                IsOpen="{Binding (MenuItem.IsSubmenuOpen), RelativeSource={RelativeSource TemplatedParent}}"
                                PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
-                            <!--<theme:SystemDropShadowChrome x:Name="Shdw" Color="Transparent">
-                                <Border x:Name="SubMenuBorder" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" 
-                                        BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1">
-                                    <ScrollViewer x:Name="SubMenuScrollViewer" 
-                                                  Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
-                                        <Grid RenderOptions.ClearTypeHint="Enabled">
-                                            <Canvas HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                                <Rectangle x:Name="OpaqueRect" Fill="{Binding Background, ElementName=SubMenuBorder}" 
-                                                           Height="{Binding ActualHeight, ElementName=SubMenuBorder}" Width="{Binding ActualWidth, ElementName=SubMenuBorder}"/>
-                                            </Canvas>
-                                            <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Cycle" Margin="2" KeyboardNavigation.TabNavigation="Cycle"/>
-                                        </Grid>
-                                    </ScrollViewer>
-                                </Border>
-                            </theme:SystemDropShadowChrome>-->
                             <Border x:Name="SubMenuBorder" BorderThickness="1"
                                     Background="{DynamicResource NavigationWindowMenuItem.SubMenu.Background}" 
-                                    BorderBrush="{DynamicResource NavigationWindowMenuItem.SubMenu.Border}">
+                                    BorderBrush="{DynamicResource NavigationWindowMenuItem.SubMenu.Border}" Margin="0,0,10,10">
                                 <Border.Effect>
-                                    <DropShadowEffect x:Name="Shdw" BlurRadius="3" Color="{DynamicResource NavigationWindowDownArrowFill.DropShadow.Color}" ShadowDepth="5" />
+                                    <DropShadowEffect x:Name="Shdw" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
+                                                      Color="{DynamicResource NavigationWindowDownArrowFill.DropShadow.Color}"/>
                                 </Border.Effect>
                                 <ScrollViewer x:Name="SubMenuScrollViewer" 
                                                 Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
@@ -946,11 +933,11 @@
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource NavigationWindowDownArrowFill.Enabled}"/>
                         </Trigger>
-                        <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
-                            <!--<Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>-->
-                            <!--<Setter Property="SnapsToDevicePixels" TargetName="Shdw" Value="true"/>-->
-                            <!--<Setter Property="Color" TargetName="Shdw" Value="{DynamicResource NavigationWindowDownArrowFill.DropShadow.Color}"/>-->
-                        </Trigger>
+                        <!--<Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+                            <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+                            <Setter Property="SnapsToDevicePixels" TargetName="Shdw" Value="true"/>
+                            <Setter Property="Color" TargetName="Shdw" Value="{DynamicResource NavigationWindowDownArrowFill.DropShadow.Color}"/>
+                        </Trigger>-->
                         <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
                             <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
                             <Setter Property="Canvas.Left" TargetName="OpaqueRect" Value="{Binding HorizontalOffset, ElementName=SubMenuScrollViewer}"/>
@@ -2130,42 +2117,26 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
             </Grid.ColumnDefinitions>
-            <Popup x:Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" Placement="Bottom"
+            <Popup x:Name="PART_Popup" AllowsTransparency="True" Grid.ColumnSpan="2" Placement="Bottom"
                    IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}" 
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
-                <!--<theme:SystemDropShadowChrome x:Name="shadow" Color="Transparent" 
-                                              MinWidth="{Binding ActualWidth, ElementName=templateRoot}" 
-                                              MaxHeight="{TemplateBinding MaxDropDownHeight}">
-                    <Border x:Name="dropDownBorder" BorderThickness="1" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" 
-                            BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
-                        <ScrollViewer x:Name="DropDownScrollViewer">
-                            <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
-                                <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                    <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
-                                               Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
-                                               Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
-                                </Canvas>
-                                <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
-                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                            </Grid>
-                        </ScrollViewer>
-                    </Border>
-                </theme:SystemDropShadowChrome>-->
                 <Border x:Name="dropDownBorder" BorderThickness="1" Background="{DynamicResource ComboBox.DropDown.Background}" 
                         BorderBrush="{DynamicResource ComboBox.DropDown.Border}"
-                        MinWidth="{Binding ActualWidth, ElementName=templateRoot}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                        MinWidth="{Binding ActualWidth, ElementName=templateRoot}" MaxHeight="{TemplateBinding MaxDropDownHeight}"
+                        Margin="0,0,10,10">
                     <Border.Effect>
-                        <DropShadowEffect x:Name="shadow" BlurRadius="3" Color="{DynamicResource ComboBox.DropShadow.Color}" ShadowDepth="5" />
+                        <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
+                                            Color="{DynamicResource ComboBox.DropShadow.Color}" />
                     </Border.Effect>
                     <ScrollViewer x:Name="DropDownScrollViewer">
                         <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
                             <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
                                 <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
-                                            Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
-                                            Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
+                                                Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
+                                                Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
                             </Canvas>
                             <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
-                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </Grid>
                     </ScrollViewer>
                 </Border>
@@ -2186,9 +2157,6 @@
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="true">
                 <Setter Property="Foreground" Value="{DynamicResource ComboBox.Foreground}"/>
-            </Trigger>
-            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
-                <!--<Setter Property="Color" TargetName="shadow" Value="{DynamicResource ComboBox.DropShadow.MouseOver.Color}"/>-->
             </Trigger>
             <Trigger Property="HasItems" Value="false">
                 <Setter Property="Height" TargetName="dropDownBorder" Value="95"/>
@@ -2215,30 +2183,13 @@
             <Popup x:Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" Margin="1" Placement="Bottom"
                    IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
-                <!--<theme:SystemDropShadowChrome x:Name="shadow" Color="Transparent" 
-                                              MinWidth="{Binding ActualWidth, ElementName=templateRoot}" 
-                                              MaxHeight="{TemplateBinding MaxDropDownHeight}">
-                    <Border x:Name="dropDownBorder" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" 
-                            BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" BorderThickness="1">
-                        <ScrollViewer x:Name="DropDownScrollViewer">
-                            <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
-                                <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                    <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
-                                               Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
-                                               Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
-                                </Canvas>
-                                <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
-                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                            </Grid>
-                        </ScrollViewer>
-                    </Border>
-                </theme:SystemDropShadowChrome>-->
                 <Border x:Name="dropDownBorder" Background="{DynamicResource ComboBox.DropDown.Background}" 
                         BorderBrush="{DynamicResource ComboBox.DropDown.Border}" BorderThickness="1"
                         MinWidth="{Binding ActualWidth, ElementName=templateRoot}" 
-                        MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                        MaxHeight="{TemplateBinding MaxDropDownHeight}" Margin="0,0,10,10">
                     <Border.Effect>
-                        <DropShadowEffect x:Name="shadow" BlurRadius="3" Color="{DynamicResource ComboBox.DropShadow.Color}" ShadowDepth="5" />
+                        <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
+                                            Color="{DynamicResource ComboBox.DropShadow.Color}" />
                     </Border.Effect>
                     <ScrollViewer x:Name="DropDownScrollViewer">
                         <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
@@ -2264,9 +2215,9 @@
                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
         </Grid>
         <ControlTemplate.Triggers>
-            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
-                <!--<Setter Property="Color" TargetName="shadow" Value="{DynamicResource ComboBox.DropShadow.MouseOver.Color}"/>-->
-            </Trigger>
+            <!--<Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
+                <Setter Property="Color" TargetName="shadow" Value="{DynamicResource ComboBox.DropShadow.MouseOver.Color}"/>
+            </Trigger>-->
             <Trigger Property="HasItems" Value="false">
                 <Setter Property="Height" TargetName="dropDownBorder" Value="95"/>
             </Trigger>
@@ -3732,19 +3683,12 @@
                             <Popup x:Name="OverflowPopup" AllowsTransparency="true" Focusable="false" Placement="Bottom" StaysOpen="false" 
                                    IsOpen="{Binding IsOverflowOpen, RelativeSource={RelativeSource TemplatedParent}}"  
                                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
-                                <!--<theme:SystemDropShadowChrome x:Name="Shdw" Color="Transparent">
-                                    <Border x:Name="ToolBarSubMenuBorder" Background="{DynamicResource ToolBarSubMenuBackground}" 
-                                            BorderBrush="{DynamicResource ToolBarMenuBorder}" BorderThickness="1" RenderOptions.ClearTypeHint="Enabled">
-                                        <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel" KeyboardNavigation.DirectionalNavigation="Cycle" 
-                                                              FocusVisualStyle="{x:Null}" Focusable="true" Margin="2" 
-                                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.TabNavigation="Cycle" 
-                                                              WrapWidth="200"/>
-                                    </Border>
-                                </theme:SystemDropShadowChrome>-->
                                 <Border x:Name="ToolBarSubMenuBorder" Background="{DynamicResource ToolBarSubMenuBackground}" 
-                                        BorderBrush="{DynamicResource ToolBarMenuBorder}" BorderThickness="1" RenderOptions.ClearTypeHint="Enabled">
+                                        BorderBrush="{DynamicResource ToolBarMenuBorder}" BorderThickness="1" RenderOptions.ClearTypeHint="Enabled"
+                                        Margin="0,0,10,10">
                                     <Border.Effect>
-                                        <DropShadowEffect x:Name="Shdw" BlurRadius="3" Color="{DynamicResource ToolBar.DropShadow.Color}" ShadowDepth="5" />
+                                        <DropShadowEffect x:Name="Shdw" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
+                                                          Color="{DynamicResource ToolBar.DropShadow.Color}"/>
                                     </Border.Effect>
                                     <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel" KeyboardNavigation.DirectionalNavigation="Cycle" 
                                                             FocusVisualStyle="{x:Null}" Focusable="true" Margin="2" 
@@ -3773,11 +3717,11 @@
                         <Trigger Property="ToolBarTray.IsLocked" Value="true">
                             <Setter Property="Visibility" TargetName="ToolBarThumb" Value="Collapsed"/>
                         </Trigger>
-                        <Trigger Property="HasDropShadow" SourceName="OverflowPopup" Value="true">
-                            <!--<Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>-->
-                            <!--<Setter Property="SnapsToDevicePixels" TargetName="Shdw" Value="true"/>-->
-                            <!--<Setter Property="Color" TargetName="Shdw" Value="{DynamicResource ToolBar.DropShadow}"/>-->
-                        </Trigger>
+                        <!--<Trigger Property="HasDropShadow" SourceName="OverflowPopup" Value="true">
+                            <Setter Property="Margin" TargetName="Shdw" Value="0,0,5,5"/>
+                            <Setter Property="SnapsToDevicePixels" TargetName="Shdw" Value="true"/>
+                            <Setter Property="Color" TargetName="Shdw" Value="{DynamicResource ToolBar.DropShadow}"/>
+                        </Trigger>-->
                         <Trigger Property="Orientation" Value="Vertical">
                             <Setter Property="Margin" TargetName="Grid" Value="1,3,1,1"/>
                             <Setter Property="Style" TargetName="OverflowButton" Value="{DynamicResource ToolBarVerticalOverflowButtonStyle}"/>
