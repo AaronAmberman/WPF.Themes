@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.Themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="1075">
+        Title="MainWindow" Height="475" Width="1091">
     <Grid>
         <Button Style="{DynamicResource LightThemeButtonStyle}" x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Calendar Style="{DynamicResource LightThemeCalendarStyle}" x:Name="calendar" HorizontalAlignment="Left" Margin="45,0,0,0" VerticalAlignment="Top"/>
