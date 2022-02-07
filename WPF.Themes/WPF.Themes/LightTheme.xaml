@@ -16,7 +16,7 @@
     <Color x:Key="Button.IsDefault.Border.Color">#FF1E90FF</Color>
     <Color x:Key="Button.MouseOver.Background.Color">#FFBEE6FD</Color>
     <Color x:Key="Button.MouseOver.Border.Color">#FF3C7FB1</Color>
-    <Color x:Key="Button.Pressed.Background.Color">#FFC4E5F6</Color>
+    <Color x:Key="Button.Pressed.Background.Color">#FFB6D4E3</Color>
     <Color x:Key="Button.Pressed.Border.Color">#FF2C628B</Color>
     <Color x:Key="Button.Disabled.Background.Color">#FFF4F4F4</Color>
     <Color x:Key="Button.Disabled.Border.Color">#FFADB2B5</Color>
