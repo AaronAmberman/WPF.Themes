@@ -2878,7 +2878,7 @@
          |                                                 ListBoxItems                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListBoxItemContainerStyle" TargetType="{x:Type ListBoxItem}">
+    <Style x:Key="LightThemeListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -3862,4 +3862,70 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                Appy Styles to Controls                                                      |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <!--<Style BasedOn="{StaticResource LightThemeBorderStyle}" TargetType="Border" />-->
+    <Style BasedOn="{StaticResource LightThemeButtonStyle}" TargetType="Button" />
+    <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
+    <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource LightThemeComboBoxStyle}" TargetType="ComboBox" />
+    <!--<Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />-->
+    <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
+    <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
+    <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
+    <!--<Style BasedOn="{StaticResource LightThemeDockPanelStyle}" TargetType="DockPanel" />-->
+    <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
+    <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
+    <Style BasedOn="{StaticResource LightThemeFrameStyle}" TargetType="Frame" />
+    <Style BasedOn="{StaticResource LightThemeGridSplitterStyle}" TargetType="GridSplitter" />
+    <!--<Style BasedOn="{StaticResource LightThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />-->
+    <Style BasedOn="{StaticResource LightThemeGroupBoxStyle}" TargetType="GroupBox" />
+    <!--<Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />-->
+    <Style BasedOn="{StaticResource LightThemeLabelStyle}" TargetType="Label" />
+    <Style BasedOn="{StaticResource LightThemeListBoxStyle}" TargetType="ListBox" />
+    <Style BasedOn="{StaticResource LightThemeListBoxItemStyle}" TargetType="ListBoxItem" />
+    <!--<Style BasedOn="{StaticResource LightThemeListViewStyle}" TargetType="ListView" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeListViewItemStyle}" TargetType="ListViewItem" />-->
+    <Style BasedOn="{StaticResource LightThemeMenuStyle}" TargetType="Menu" />
+    <!--<Style BasedOn="{StaticResource LightThemeMenuItemStyle}" TargetType="MenuItem" />-->
+    <Style BasedOn="{StaticResource LightThemePasswordBoxStyle}" TargetType="PasswordBox" />
+    <Style BasedOn="{StaticResource LightThemeProgressBarStyle}" TargetType="ProgressBar" />
+    <Style BasedOn="{StaticResource LightThemeRadioButtonStyle}" TargetType="RadioButton" />
+    <!--<Style BasedOn="{StaticResource LightThemeRectangleStyle}" TargetType="Rectangle" />-->
+    <Style BasedOn="{StaticResource LightThemeRichTextBoxStyle}" TargetType="RichTextBox" />
+    <Style BasedOn="{StaticResource LightThemeScrollBarStyle}" TargetType="ScrollBar" />
+    <!--<Style BasedOn="{StaticResource LightThemeScrollViewerStyle}" TargetType="ScrollViewer" />-->
+    <Style BasedOn="{StaticResource LightThemeSeparatorStyle}" TargetType="Separator" />
+    <Style BasedOn="{StaticResource LightThemeSliderStyle}" TargetType="Slider" />
+    <!--<Style BasedOn="{StaticResource LightThemeStackPanelStyle}" TargetType="StackPanel" />-->
+    <Style BasedOn="{StaticResource LightThemeStatusBarStyle}" TargetType="StatusBar" />
+    <!--<Style BasedOn="{StaticResource LightThemeStatusBarItemStyle}" TargetType="StatusBarItem" />-->
+    <Style BasedOn="{StaticResource LightThemeTabControlStyle}" TargetType="TabControl" />
+    <!--<Style BasedOn="{StaticResource LightThemeTabItemStyle}" TargetType="TabItem" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeTextBlockStyle}" TargetType="TextBlock" />-->
+    <Style BasedOn="{StaticResource LightThemeToolBarStyle}" TargetType="ToolBar" />
+    <!--<Style BasedOn="{StaticResource LightThemeToolBarPanelStyle}" TargetType="ToolBarPanel" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeToolBarTrayStyle}" TargetType="ToolBarTray" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />-->
+    <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
+    <!--<Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeViewboxStyle}" TargetType="Viewbox" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeWindowStyle}" TargetType="Window" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />-->
+    
 </ResourceDictionary>
