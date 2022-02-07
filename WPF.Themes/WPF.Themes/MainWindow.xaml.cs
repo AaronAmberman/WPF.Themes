@@ -24,6 +24,10 @@ namespace WPF.Themes
      * 
      * Also Xceed toolkit...
      * https://github.com/xceedsoftware/wpftoolkit/tree/master/ExtendedWPFToolkitSolution/Src/Xceed.Wpf.Toolkit
+     * 
+     * MaterialDesign Toolkit...
+     * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit
+     * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/MaterialDesignThemes.Wpf/Themes/MaterialDesignTheme.ListView.xaml
      */
 
     /// <summary>

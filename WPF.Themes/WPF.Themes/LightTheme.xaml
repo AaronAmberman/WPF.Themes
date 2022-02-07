@@ -148,6 +148,13 @@
     <Color x:Key="ListBox.Disabled.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListBox.Disabled.Border.Color">#FFD9D9D9</Color>
     <Color x:Key="ListBox.Foreground.Color">#FF000000</Color>
+    <Color x:Key="ListBoxItem.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="ListBoxItem.MouseOver.Background.Color">#1F26A0DA</Color>
+    <Color x:Key="ListBoxItem.MouseOver.Border.Color">#A826A0DA</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Background.Color">#3D26A0DA</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#FF26A0DA</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#3DDADADA</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#FFDADADA</Color>
     <Color x:Key="Menu.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="Menu.Foreground.Color">#FF212121</Color>
     <Color x:Key="MenuScrollButton.Background.Color">#00000000</Color>
@@ -475,6 +482,13 @@
     <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="{DynamicResource ListBox.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="{DynamicResource ListBox.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Foreground" Color="{DynamicResource ListBox.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.Disabled.Foreground" Color="{DynamicResource ListBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.MouseOver.Background" Color="{DynamicResource ListBoxItem.MouseOver.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.MouseOver.Border" Color="{DynamicResource ListBoxItem.MouseOver.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Background" Color="{DynamicResource ListBoxItem.SelectedActive.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Border" Color="{DynamicResource ListBoxItem.SelectedActive.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Background" Color="{DynamicResource ListBoxItem.SelectedInactive.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Border" Color="{DynamicResource ListBoxItem.SelectedInactive.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Background" Color="{DynamicResource Menu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Foreground" Color="{DynamicResource Menu.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuScrollButton.Background" Color="{DynamicResource MenuScrollButton.Background.Color}" options:Freeze="True"/>
@@ -2858,7 +2872,73 @@
 
 
 
-    
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                 ListBoxItems                                                                |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeListBoxItemContainerStyle" TargetType="{x:Type ListBoxItem}">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Padding" Value="4,1"/>
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" 
+                                    SnapsToDevicePixels="true">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListBoxItem.MouseOver.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListBoxItem.MouseOver.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Selector.IsSelectionActive" Value="False"/>
+                                <Condition Property="IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedInactive.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedInactive.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Selector.IsSelectionActive" Value="True"/>
+                                <Condition Property="IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedActive.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedActive.Border}"/>
+                        </MultiTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ListBoxItem.Disabled.Foreground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                 PasswordBoxes                                                               |

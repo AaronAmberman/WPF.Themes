@@ -22,14 +22,8 @@
         <GridSplitter Style="{DynamicResource LightThemeGridSplitterStyle}" x:Name="gridSplitter" HorizontalAlignment="Left" Height="100" Margin="342,34,0,0" VerticalAlignment="Top" Width="5"/>
         <GroupBox Style="{DynamicResource LightThemeGroupBoxStyle}" x:Name="groupBox" Header="GroupBox" Width="100" Height="100" Margin="363,37,612,297"/>
         <Label Style="{DynamicResource LightThemeLabelStyle}" x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="488,48,0,0" VerticalAlignment="Top"/>
-        <ListBox Style="{DynamicResource LightThemeListBoxStyle}" x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="344,151,631,183"/>
-        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="457,167,518,167">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <ListBox ItemContainerStyle="{DynamicResource LightThemeListBoxItemContainerStyle}" Style="{DynamicResource LightThemeListBoxStyle}" x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="344,151,631,183"/>
+        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Width="100" Height="100" Margin="457,167,518,167" />
         <Menu Style="{DynamicResource LightThemeMenuStyle}" x:Name="menu" Width="100" Height="100" Margin="229,256,746,78"/>
         <PasswordBox Style="{DynamicResource LightThemePasswordBoxStyle}" x:Name="passwordBox" HorizontalAlignment="Left" Margin="344,273,0,0" VerticalAlignment="Top" Width="120"/>
         <ProgressBar Style="{DynamicResource LightThemeProgressBarStyle}" HorizontalAlignment="Left" Height="10" Margin="344,306,0,0" VerticalAlignment="Top" Width="100"/>
