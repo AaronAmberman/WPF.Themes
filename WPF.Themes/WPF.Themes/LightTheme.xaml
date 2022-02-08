@@ -57,8 +57,6 @@
     <Color x:Key="ComboBox.Border.Color">#FFACACAC</Color>
     <Color x:Key="ComboBox.DropDown.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ComboBox.DropDown.Border.Color">#99000000</Color>
-    <Color x:Key="ComboBox.DropShadow.Color">#00000000</Color>
-    <Color x:Key="ComboBox.DropShadow.MouseOver.Color">#71000000</Color>
     <Color x:Key="ComboBox.Foreground.Color">#FF000000</Color>
     <Color x:Key="ComboBox.Glyph.Color">#FF606060</Color>
     <Color x:Key="ComboBox.Editable.Background.Color">#FFFFFFFF</Color>
@@ -106,7 +104,6 @@
     <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color">#FFDADADA</Color>
     <Color x:Key="ContextMenu.Background.Color">#FFDCDCDC</Color>
     <Color x:Key="ContextMenu.Border.Color">#FF888888</Color>
-    <Color x:Key="ContextMenu.DropShadow.Color">#71000000</Color>
     <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
     <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
@@ -151,6 +148,7 @@
     <Color x:Key="DocumentViewer.Foreground.Color">#FF000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop1.Color">#66000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop2.Color">#00000000</Color>
+    <Color x:Key="DropShadow.Color">#71000000</Color>
     <Color x:Key="Expander.Background.Color">#00000000</Color>
     <Color x:Key="Expander.Border.Color">#00000000</Color>
     <Color x:Key="Expander.Disabled.Foreground.Color">#FF808080</Color>
@@ -247,7 +245,6 @@
     <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop2.Color">#EEEEEE</Color>
     <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop3.Color">#B0B0B0</Color>
     <Color x:Key="NavigationWindowDownArrowFill.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowDownArrowFill.DropShadow.Color">#71000000</Color>
     <Color x:Key="NavigationWindowDownArrowFill.Enabled.Color">#FFA5AABE</Color>
     <Color x:Key="NavigationWindowDownArrowFill.GradientStop1.Color">#33B5DA</Color>
     <Color x:Key="NavigationWindowDownArrowFill.GradientStop2.Color">#335799</Color>
@@ -354,7 +351,6 @@
     <Color x:Key="ToolBar.Thumb.Background.Color">#00000000</Color>
     <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="ToolBar.DropShadow.Color">#71000000</Color>
     <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TreeView.Border.Color">#FF828790</Color>
     <Color x:Key="TreeView.Foreground.Color">#FF828790</Color>
@@ -406,8 +402,6 @@
     <SolidColorBrush x:Key="ComboBox.Border" Color="{DynamicResource ComboBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.DropDown.Background" Color="{DynamicResource ComboBox.DropDown.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.DropDown.Border" Color="{DynamicResource ComboBox.DropDown.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBox.DropShadow" Color="{DynamicResource ComboBox.DropShadow.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBox.DropShadow.MouseOver" Color="{DynamicResource ComboBox.DropShadow.MouseOver.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Foreground" Color="{DynamicResource ComboBox.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Glyph" Color="{DynamicResource ComboBox.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Editable.Background" Color="{DynamicResource ComboBox.Editable.Background.Color}" options:Freeze="True"/>
@@ -431,10 +425,10 @@
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Background.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Background" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Border" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="{DynamicResource ComboBox.Pressed.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="{DynamicResource ComboBox.Pressed.Glyph.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Background" Color="{DynamicResource ComboBox.Pressed.Editable.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Border" Color="{DynamicResource ComboBox.Pressed.Editable.Border.Color}" options:Freeze="True"/>
     <LinearGradientBrush x:Key="ComboBox.Pressed.Editable.Button.Background" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Editable.Button.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Editable.Button.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -463,7 +457,6 @@
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Background" Color="{DynamicResource ContextMenu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Border" Color="{DynamicResource ContextMenu.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ContextMenu.DropShadow" Color="{DynamicResource ContextMenu.DropShadow.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Foreground" Color="{DynamicResource ContextMenu.Foregound.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CurrentEntryBackground" Color="{DynamicResource CurrentEntryBackground.Color}" Opacity="0.25" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Background" Color="{DynamicResource DataGrid.Background.Color}" options:Freeze="True"/>
@@ -508,6 +501,7 @@
     <SolidColorBrush x:Key="DocumentViewer.Foreground" Color="{DynamicResource DocumentViewer.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop1" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop2" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop2.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="DropShadow" Color="{DynamicResource DropShadow.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Background" Color="{DynamicResource Expander.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Border" Color="{DynamicResource Expander.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Foreground" Color="{DynamicResource Expander.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -622,7 +616,6 @@
         <GradientStop Color="{DynamicResource NavigationWindowDownArrowFill.GradientStop2.Color}" Offset="1"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Border" Color="{DynamicResource NavigationWindowDownArrowFill.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowDownArrowFill.DropShadow" Color="{DynamicResource NavigationWindowDownArrowFill.DropShadow.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Enabled" Color="{DynamicResource NavigationWindowDownArrowFill.Enabled.Color}" options:Freeze="True"/>
     <LinearGradientBrush x:Key="NavigationWindowNavigationChromeBackground" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop1.Color}" Offset="0"/>
@@ -731,7 +724,6 @@
     <SolidColorBrush x:Key="ToolBar.Thumb.Background" Color="{DynamicResource ToolBar.Thumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Thumb.GeometryDrawing" Color="{DynamicResource ToolBar.Thumb.GeometryDrawing.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ToolBar.DropShadow" Color="{DynamicResource ToolBar.DropShadow.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
@@ -746,7 +738,23 @@
 
 
 
-    
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                               DropShadowEffects                                                             |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <DropShadowEffect x:Key="DropShadowEffect" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5" Color="{DynamicResource DropShadow.Color}" />
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   Converters                                                                |
@@ -967,35 +975,17 @@
                                PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
                             <Border x:Name="SubMenuBorder" BorderThickness="1"
                                     Background="{DynamicResource NavigationWindowMenuItem.SubMenu.Background}" 
-                                    BorderBrush="{DynamicResource NavigationWindowMenuItem.SubMenu.Border}" Margin="0,0,10,10">
-                                <Grid>
-                                    <ScrollViewer x:Name="SubMenuScrollViewer" 
-                                                Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
-                                        <Grid RenderOptions.ClearTypeHint="Enabled">
-                                            <Canvas HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                                <Rectangle x:Name="OpaqueRect" Fill="{Binding Background, ElementName=SubMenuBorder}" 
-                                                        Height="{Binding ActualHeight, ElementName=SubMenuBorder}" Width="{Binding ActualWidth, ElementName=SubMenuBorder}"/>
-                                            </Canvas>
-                                            <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Cycle" Margin="2" KeyboardNavigation.TabNavigation="Cycle"/>
-                                        </Grid>
-                                    </ScrollViewer>
-                                    <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0">
-                                        <Border.Effect>
-                                            <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                              Color="{DynamicResource ComboBox.DropShadow.Color}" />
-                                        </Border.Effect>
-                                        <Border.Style>
-                                            <Style TargetType="Border">
-                                                <Setter Property="Visibility" Value="Collapsed" />
-                                                <Style.Triggers>
-                                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=HasDropShadow}" Value="True">
-                                                        <Setter Property="Visibility" Value="Visible" />
-                                                    </DataTrigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Border.Style>
-                                    </Border>
-                                </Grid>
+                                    BorderBrush="{DynamicResource NavigationWindowMenuItem.SubMenu.Border}">
+                                <ScrollViewer x:Name="SubMenuScrollViewer" 
+                                              Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
+                                    <Grid RenderOptions.ClearTypeHint="Enabled">
+                                        <Canvas HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
+                                            <Rectangle x:Name="OpaqueRect" Fill="{Binding Background, ElementName=SubMenuBorder}" 
+                                                       Height="{Binding ActualHeight, ElementName=SubMenuBorder}" Width="{Binding ActualWidth, ElementName=SubMenuBorder}"/>
+                                        </Canvas>
+                                        <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Cycle" Margin="2" KeyboardNavigation.TabNavigation="Cycle"/>
+                                    </Grid>
+                                </ScrollViewer>
                             </Border>
                         </Popup>
                         <Grid x:Name="Panel" Background="{DynamicResource NavigationWindowMenuItem.Panel.Background}" HorizontalAlignment="Right" Width="26">
@@ -1015,6 +1005,10 @@
                         </Grid>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="True">
+                            <Setter Property="Effect" TargetName="SubMenuBorder" Value="{DynamicResource DropShadowEffect}"/>
+                            <Setter Property="Margin" TargetName="SubMenuBorder" Value="0,0,5,5"/>
+                        </Trigger>
                         <Trigger Property="IsHighlighted" Value="true">
                             <Setter Property="Visibility" TargetName="HighlightBorder" Value="Visible"/>
                         </Trigger>
@@ -2047,6 +2041,7 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" TargetName="templateRoot" Value="{DynamicResource ComboBox.Pressed.Background}"/>
                             <Setter Property="BorderBrush" TargetName="templateRoot" Value="{DynamicResource ComboBox.Pressed.Border}"/>
+                            <Setter Property="Background" TargetName="splitBorder" Value="{DynamicResource ComboBox.Pressed.Background}"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -2137,7 +2132,6 @@
                     <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
                     <Condition Property="IsSelectionActive" Value="false"/>
                 </MultiTrigger.Conditions>
-                <!--<Setter Property="SelectionBrush" Value="{StaticResource TextBoxBase.InactiveSelection}"/>-->
                 <Setter Property="SelectionBrush" Value="{DynamicResource TextBoxBase.InactiveSelection}"/>
             </MultiTrigger>
         </Style.Triggers>
@@ -2200,37 +2194,18 @@
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
                 <Border x:Name="dropDownBorder" BorderThickness="1" Background="{DynamicResource ComboBox.DropDown.Background}" 
                         BorderBrush="{DynamicResource ComboBox.DropDown.Border}"
-                        MinWidth="{Binding ActualWidth, ElementName=templateRoot}" MaxHeight="{TemplateBinding MaxDropDownHeight}"
-                        Margin="0,0,10,10">
-                    <Grid>
-                        <ScrollViewer x:Name="DropDownScrollViewer">
-                            <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
-                                <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                    <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
-                                                    Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
-                                                    Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
-                                </Canvas>
-                                <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
-                                                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                            </Grid>
-                        </ScrollViewer>
-                        <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0">
-                            <Border.Effect>
-                                <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                  Color="{DynamicResource ComboBox.DropShadow.Color}" />
-                            </Border.Effect>
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="Visibility" Value="Collapsed" />
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=HasDropShadow}" Value="True">
-                                            <Setter Property="Visibility" Value="Visible" />
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                    </Grid>
+                        MinWidth="{Binding ActualWidth, ElementName=templateRoot}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                    <ScrollViewer x:Name="DropDownScrollViewer">
+                        <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
+                            <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
+                                <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
+                                           Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
+                                           Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
+                            </Canvas>
+                            <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Grid>
+                    </ScrollViewer>
                 </Border>
             </Popup>
             <ToggleButton x:Name="toggleButton" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
@@ -2244,6 +2219,10 @@
             </Border>
         </Grid>
         <ControlTemplate.Triggers>
+            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="True">
+                <Setter Property="Effect" TargetName="dropDownBorder" Value="{DynamicResource DropShadowEffect}"/>
+                <Setter Property="Margin" TargetName="dropDownBorder" Value="0,0,5,5"/>
+            </Trigger>
             <Trigger Property="IsEnabled" Value="false">
                 <Setter Property="Opacity" TargetName="border" Value="0.56"/>
             </Trigger>
@@ -2273,41 +2252,23 @@
                 <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
             </Grid.ColumnDefinitions>
             <Popup x:Name="PART_Popup" AllowsTransparency="true" Grid.ColumnSpan="2" Margin="1" Placement="Bottom"
-                   IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
+                   IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
                 <Border x:Name="dropDownBorder" Background="{DynamicResource ComboBox.DropDown.Background}" 
                         BorderBrush="{DynamicResource ComboBox.DropDown.Border}" BorderThickness="1"
                         MinWidth="{Binding ActualWidth, ElementName=templateRoot}" 
-                        MaxHeight="{TemplateBinding MaxDropDownHeight}" Margin="0,0,10,10">
-                    <Grid>
-                        <ScrollViewer x:Name="DropDownScrollViewer">
-                            <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
-                                <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                    <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
-                                               Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
-                                               Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
-                                </Canvas>
-                                <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
-                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                            </Grid>
-                        </ScrollViewer>
-                        <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Margin="0,0,10,10">
-                            <Border.Effect>
-                                <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                  Color="{DynamicResource ComboBox.DropShadow.Color}" />
-                            </Border.Effect>
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="Visibility" Value="Collapsed" />
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=HasDropShadow}" Value="True">
-                                            <Setter Property="Visibility" Value="Visible" />
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                    </Grid>
+                        MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                    <ScrollViewer x:Name="DropDownScrollViewer">
+                        <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
+                            <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
+                                <Rectangle x:Name="opaqueRect" Fill="{Binding Background, ElementName=dropDownBorder}" 
+                                           Height="{Binding ActualHeight, ElementName=dropDownBorder}" 
+                                           Width="{Binding ActualWidth, ElementName=dropDownBorder}"/>
+                            </Canvas>
+                            <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" 
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Grid>
+                    </ScrollViewer>
                 </Border>
             </Popup>
             <ToggleButton x:Name="toggleButton" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
@@ -2321,6 +2282,10 @@
                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
         </Grid>
         <ControlTemplate.Triggers>
+            <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="True">
+                <Setter Property="Effect" TargetName="dropDownBorder" Value="{DynamicResource DropShadowEffect}"/>
+                <Setter Property="Margin" TargetName="dropDownBorder" Value="0,0,5,5"/>
+            </Trigger>
             <Trigger Property="HasItems" Value="false">
                 <Setter Property="Height" TargetName="dropDownBorder" Value="95"/>
             </Trigger>
@@ -2367,7 +2332,7 @@
 
 
 
-
+    
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    ComboBoxItems                                                            |
@@ -2493,7 +2458,6 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="LightThemeContextMenuStyle" TargetType="{x:Type ContextMenu}">
         <Setter Property="Background" Value="{DynamicResource ContextMenu.Background}" />
-        <!--<Setter Property="Block.TextAlignment" Value="Left" />-->
         <Setter Property="BorderBrush" Value="{DynamicResource ContextMenu.Border}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.MenuFontFamilyKey}}" />
@@ -2503,16 +2467,14 @@
         <Setter Property="HasDropShadow" Value="True" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
-        <Setter Property="RenderOptions.ClearTypeHint" Value="Enabled" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-        <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContextMenu}">
                     <Border Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Padding="{TemplateBinding Padding}"
                             Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,10,10">
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,5,5">
                         <Grid>
                             <ScrollViewer x:Name="SubMenuScrollViewer" CanContentScroll="True"
                                           Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
@@ -3769,7 +3731,7 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <Border Grid.Column="0" Grid.Row="1">
+                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Transparent" BorderThickness="0">
                             <ScrollContentPresenter CanContentScroll="{TemplateBinding CanContentScroll}" Margin="{TemplateBinding Padding}"/>
                         </Border>
                         <RepeatButton Command="{x:Static ScrollBar.LineUpCommand}" CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}" 
@@ -4055,30 +4017,11 @@
                                    IsOpen="{Binding IsOverflowOpen, RelativeSource={RelativeSource TemplatedParent}}"  
                                    PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
                                 <Border x:Name="ToolBarSubMenuBorder" Background="{DynamicResource ToolBarSubMenuBackground}" 
-                                        BorderBrush="{DynamicResource ToolBarMenuBorder}" BorderThickness="1" RenderOptions.ClearTypeHint="Enabled"
-                                        Margin="0,0,10,10">
-                                    <Grid>
-                                        <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel" KeyboardNavigation.DirectionalNavigation="Cycle" 
-                                                                FocusVisualStyle="{x:Null}" Focusable="true" Margin="2" 
-                                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.TabNavigation="Cycle" 
-                                                                WrapWidth="200"/>
-                                        <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0">
-                                            <Border.Effect>
-                                                <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                                  Color="{DynamicResource ComboBox.DropShadow.Color}" />
-                                            </Border.Effect>
-                                            <Border.Style>
-                                                <Style TargetType="Border">
-                                                    <Setter Property="Visibility" Value="Collapsed" />
-                                                    <Style.Triggers>
-                                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=HasDropShadow}" Value="True">
-                                                            <Setter Property="Visibility" Value="Visible" />
-                                                        </DataTrigger>
-                                                    </Style.Triggers>
-                                                </Style>
-                                            </Border.Style>
-                                        </Border>
-                                    </Grid>
+                                        BorderBrush="{DynamicResource ToolBarMenuBorder}" BorderThickness="1" RenderOptions.ClearTypeHint="Enabled">
+                                    <ToolBarOverflowPanel x:Name="PART_ToolBarOverflowPanel" KeyboardNavigation.DirectionalNavigation="Cycle" 
+                                                          FocusVisualStyle="{x:Null}" Focusable="true" Margin="2" 
+                                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" KeyboardNavigation.TabNavigation="Cycle" 
+                                                          WrapWidth="200"/>
                                 </Border>
                             </Popup>
                         </Grid>
@@ -4093,6 +4036,10 @@
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" SourceName="OverflowPopup" Value="True">
+                            <Setter Property="Effect" TargetName="ToolBarSubMenuBorder" Value="{DynamicResource DropShadowEffect}"/>
+                            <Setter Property="Margin" TargetName="ToolBarSubMenuBorder" Value="0,0,5,5"/>
+                        </Trigger>
                         <Trigger Property="IsOverflowOpen" Value="true">
                             <Setter Property="IsEnabled" TargetName="ToolBarThumb" Value="false"/>
                         </Trigger>
