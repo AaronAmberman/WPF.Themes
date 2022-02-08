@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="475" Width="1091" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ComboBox ItemContainerStyle="{DynamicResource LightThemeComboBoxItemStyle}" />
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="10" />
+        <ComboBox Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100" />
     </Grid>
 </Window>
