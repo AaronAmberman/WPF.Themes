@@ -2486,7 +2486,7 @@
                             <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0">
                                 <Border.Effect>
                                     <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                  Color="{DynamicResource ContextMenu.DropShadow.Color}" />
+                                                      Color="{DynamicResource DropShadow.Color}" />
                                 </Border.Effect>
                                 <Border.Style>
                                     <Style TargetType="Border">
