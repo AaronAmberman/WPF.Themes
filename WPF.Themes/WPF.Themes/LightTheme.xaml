@@ -4,6 +4,25 @@
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
                     mc:Ignorable="options">
+    <!--
+        When consuming this ResourceDictionary in App.xaml make sure it is the first ResourceDictionary you consume. That way if you have custom 
+        styles they will be applied over this themeing. Order is important!
+    
+        <Application.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="pack://application:,,,/LightTheme.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/OtherResourceDictionary.xaml" />
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Application.Resources>
+    
+        
+    
+        As a part of the themeing things will be assigned a background color where as they are natively Transparent or x:Null. So if a transparent 
+        background is desired than it will have to be manually set (Background="Transparent" or Background="{x:Null}").
+    -->
+    
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                      Colors                                                                 |
@@ -11,6 +30,8 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Color x:Key="ArrowPath.Background.Color">#FF000000</Color>
     <Color x:Key="ArrowPath.Border.Color">#FF000000</Color>
+    <Color x:Key="Border.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="Border.Border.Color">#FF000000</Color>
     <Color x:Key="Button.Background.Color">#FFDDDDDD</Color>
     <Color x:Key="Button.Border.Color">#FF707070</Color>
     <Color x:Key="Button.Foreground.Color">#000000</Color>
@@ -94,7 +115,6 @@
     <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="DatePicker.Calendar.Disabled.Border.Color">#B2FFFFFF</Color>
     <Color x:Key="DatePicker.Foreground.Color">#B2FFFFFF</Color>
-    <!--<Color x:Key="DatePicker.Root.Disabled.Color">#A5FFFFFF</Color>-->
     <Color x:Key="DatePicker.Inner.Background.Color">#11FFFFFF</Color>
     <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FFFFFFFF</Color>
     <Color x:Key="DatePicker.Inner.Background.GradientStop2.Color">#F9FFFFFF</Color>
@@ -134,12 +154,16 @@
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop2.Color">#60FFFFFF</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop1.Color">#FFB7C2E3</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop2.Color">#A0FFFFFF</Color>
+    <Color x:Key="Grid.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="GridSplitter.Background.Color">#FFFAF0E6</Color>
     <Color x:Key="GridSplitter.PreviewStyle.Background.Color">#80000000</Color>
     <Color x:Key="GroupBox.Border.Color">#FFD5DFE5</Color>
     <Color x:Key="GroupBox.Inner.Border.Color">#00000000</Color>
     <Color x:Key="GroupBox.Inner.Inner.Border.Color">#FFFFFFFF</Color>
     <Color x:Key="GroupBox.Inner.Inner.Inner.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="Hyperlink.Foreground.Color">#FF005EFF</Color>
+    <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
     <Color x:Key="Label.Background.Color">#00000000</Color>
     <Color x:Key="Label.Foreground.Color">#FF000000</Color>
     <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>    
@@ -252,8 +276,6 @@
     <Color x:Key="RadioButton.Disabled.Border.Color">#FFBCBCBC</Color>
     <Color x:Key="RadioButton.Disabled.Glyph.Color">#FF707070</Color>
     <Color x:Key="RepeatButton.Transparent.Background.Color">#00000000</Color>
-    <Color x:Key="RichTextBox.Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="RichTextBox.Hyperlink.Foreground.Color">#FF0000FF</Color>
     <Color x:Key="ScrollBarButton.Background.Color">#F0F0F0</Color>
     <Color x:Key="ScrollBarButton.Border.Color">#F0F0F0</Color>
     <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#DADADA</Color>
@@ -318,14 +340,16 @@
     <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TreeView.Border.Color">#FF828790</Color>
     <Color x:Key="TreeView.Foreground.Color">#FF828790</Color>
+    <Color x:Key="UserControl.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="UserControl.Foreground.Color">#FF000000</Color>
 
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
 
     
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -335,6 +359,8 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <SolidColorBrush x:Key="ArrowPath.Background" Color="{DynamicResource ArrowPath.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ArrowPath.Border" Color="{DynamicResource ArrowPath.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Border.Background" Color="{DynamicResource Border.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Border.Border" Color="{DynamicResource Border.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Background" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Border" Color="{DynamicResource Button.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Foreground" Color="{DynamicResource Button.Foreground.Color}" options:Freeze="True"/>
@@ -428,7 +454,6 @@
     <SolidColorBrush x:Key="DatePicker.Calendar.Border" Color="{DynamicResource DatePicker.Calendar.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Circle.Background" Color="{DynamicResource DatePicker.Calendar.Circle.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Disabled.Border" Color="{DynamicResource DatePicker.Calendar.Disabled.Border.Color}" options:Freeze="True"/>
-    <!--<SolidColorBrush x:Key="DatePicker.Root.Disabled" Color="{DynamicResource DatePicker.Root.Disabled.Color}" options:Freeze="True"/>-->
     <SolidColorBrush x:Key="DatePicker.Inner.Background" Color="{DynamicResource DatePicker.Inner.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background.GradientStop1" Color="{DynamicResource DatePicker.Inner.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background.GradientStop2" Color="{DynamicResource DatePicker.Inner.Background.GradientStop2.Color}" options:Freeze="True"/>
@@ -468,12 +493,16 @@
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop2.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Grid.Background" Color="{DynamicResource Grid.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.Background" Color="{DynamicResource GridSplitter.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.PreviewStyle.Background" Color="{DynamicResource GridSplitter.PreviewStyle.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Border" Color="{DynamicResource GroupBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Border" Color="{DynamicResource GroupBox.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Inner.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Hyperlink.Disabled.Foreground" Color="{DynamicResource Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Hyperlink.Foreground" Color="{DynamicResource Hyperlink.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Hyperlink.MouseOver.Foreground" Color="{DynamicResource Hyperlink.MouseOver.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Background" Color="{DynamicResource Label.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Foreground" Color="{DynamicResource Label.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Disabled.Foreground" Color="{DynamicResource Label.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -603,9 +632,7 @@
     <SolidColorBrush x:Key="RadioButton.Disabled.Background" Color="{DynamicResource RadioButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Border" Color="{DynamicResource RadioButton.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Glyph" Color="{DynamicResource RadioButton.Disabled.Glyph.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="RichTextBox.Hyperlink.Disabled.Foreground" Color="{DynamicResource RichTextBox.Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="RichTextBox.Hyperlink.Foreground" Color="{DynamicResource RichTextBox.Hyperlink.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>    
     <SolidColorBrush x:Key="ScrollBarButton.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.MouseOver.Background" Color="{DynamicResource ScrollBarButton.MouseOver.Background.Color}" options:Freeze="True"/>
@@ -672,6 +699,8 @@
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="UserControl.Background" Color="{DynamicResource UserControl.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="UserControl.Foreground" Color="{DynamicResource UserControl.Foreground.Color}" options:Freeze="True"/>
 
 
 
@@ -680,7 +709,7 @@
 
 
 
-    
+
     
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
@@ -983,6 +1012,13 @@
     <Style x:Key="ToolBarMainPanelBorderStyle" TargetType="{x:Type Border}">
         <Setter Property="Margin" Value="0,0,11,0"/>
         <Setter Property="CornerRadius" Value="3,3,3,3"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+    </Style>
+    <Style x:Key="LightThemeBorderStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{DynamicResource Border.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Border.Border}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
     </Style>
 
 
@@ -2706,7 +2742,25 @@
 
 
 
-    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                      Grids                                                                  |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeGridStyle" TargetType="{x:Type Grid}">
+        <Setter Property="Background" Value="{DynamicResource Grid.Background}"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+    </Style>
+
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  GridSplitters                                                              |
@@ -2800,7 +2854,32 @@
 
 
 
-    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                   Hyperlink                                                                 |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeHyperlinkStyle" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
+        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{DynamicResource Hyperlink.MouseOver.Foreground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Disabled.Foreground}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                     Labels                                                                  |
@@ -3253,13 +3332,15 @@
             <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
                 <Setter Property="OverridesDefaultStyle" Value="true"/>
             </Style>
+            <!-- even though we have a global we still need to set this Hyperlink style on the RichTextBox for it to show (a copy of the global Hyperlink style) -->
             <Style x:Key="{x:Type Hyperlink}" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
+                <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}"/>
                 <Style.Triggers>
                     <Trigger Property="IsMouseOver" Value="true">
-                        <Setter Property="Foreground" Value="{DynamicResource RichTextBox.Hyperlink.Foreground}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.MouseOver.Foreground}"/>
                     </Trigger>
                     <Trigger Property="IsEnabled" Value="false">
-                        <Setter Property="Foreground" Value="{DynamicResource RichTextBox.Hyperlink.Disabled.Foreground}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Disabled.Foreground}"/>
                     </Trigger>
                 </Style.Triggers>
             </Style>
@@ -3903,16 +3984,52 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                                   UserControls                                                              |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeUserControlStyle" TargetType="{x:Type UserControl}">
+        <Setter Property="Background" Value="{DynamicResource UserControl.Background}"/>
+        <Setter Property="Foreground" Value="{DynamicResource UserControl.Foreground}"/>
+    </Style>
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                    WrapPanels                                                               |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeWrapPanelStyle" TargetType="{x:Type WrapPanel}">
+        <Setter Property="Background" Value="{DynamicResource UserControl.Background}"/>
+    </Style>
+
+
+
+
+
+
+
+
+
+    
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <!--<Style BasedOn="{StaticResource LightThemeBorderStyle}" TargetType="Border" />-->
+    <Style BasedOn="{StaticResource LightThemeBorderStyle}" TargetType="Border" />
     <Style BasedOn="{StaticResource LightThemeButtonStyle}" TargetType="Button" />
     <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
     <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
     <Style BasedOn="{StaticResource LightThemeComboBoxStyle}" TargetType="ComboBox" />
-    <!--<Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />-->
     <!--<Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />-->
+    <!--<Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />-->
     <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
     <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
     <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
@@ -3920,10 +4037,11 @@
     <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
     <Style BasedOn="{StaticResource LightThemeFrameStyle}" TargetType="Frame" />
+    <Style BasedOn="{StaticResource LightThemeGridStyle}" TargetType="Grid" />
     <Style BasedOn="{StaticResource LightThemeGridSplitterStyle}" TargetType="GridSplitter" />
     <!--<Style BasedOn="{StaticResource LightThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />-->
     <Style BasedOn="{StaticResource LightThemeGroupBoxStyle}" TargetType="GroupBox" />
-    <!--<Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />-->
+    <Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />
     <Style BasedOn="{StaticResource LightThemeLabelStyle}" TargetType="Label" />
     <Style BasedOn="{StaticResource LightThemeListBoxStyle}" TargetType="ListBox" />
     <Style BasedOn="{StaticResource LightThemeListBoxItemStyle}" TargetType="ListBoxItem" />
@@ -3952,9 +4070,8 @@
     <!--<Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />-->
     <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
     <!--<Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />-->
+    <Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />
     <!--<Style BasedOn="{StaticResource LightThemeViewboxStyle}" TargetType="Viewbox" />-->
     <!--<Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />-->
-    <!--<Style BasedOn="{StaticResource LightThemeWindowStyle}" TargetType="Window" />-->
-    <!--<Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />-->
     
 </ResourceDictionary>
