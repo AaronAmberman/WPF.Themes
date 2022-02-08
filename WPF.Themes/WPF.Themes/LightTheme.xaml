@@ -90,6 +90,20 @@
     <Color x:Key="ComboBox.Disabled.Editable.Border.Color">#FFBFBFBF</Color>
     <Color x:Key="ComboBox.Disabled.Editable.Button.Background.Color">#00000000</Color>
     <Color x:Key="ComboBox.Disabled.Editable.Button.Border.Color">#00000000</Color>
+    <Color x:Key="ComboBoxItem.Background.Color">#00000000</Color>
+    <Color x:Key="ComboBoxItem.Border.Color">#00000000</Color>
+    <Color x:Key="ComboBoxItem.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewFocus.Border.Color">#FF26A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Background.Color">#1F26A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Border.Color">#A826A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHoverFocus.Background.Color">#5426A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHoverFocus.Border.Color">#FF26A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Background.Color">#3D26A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Border.Color">#FF26A0DA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Background.Color">#2E0080FF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#99006CD9</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color">#3DDADADA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color">#FFDADADA</Color>
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
     <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
@@ -429,6 +443,20 @@
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Border" Color="{DynamicResource ComboBox.Disabled.Editable.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Background" Color="{DynamicResource ComboBox.Disabled.Editable.Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Border" Color="{DynamicResource ComboBox.Disabled.Editable.Button.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.Background" Color="{DynamicResource ComboBoxItem.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.Border" Color="{DynamicResource ComboBoxItem.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.Disabled.Foreground" Color="{DynamicResource ComboBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewFocus.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="{DynamicResource ComboBoxItem.ItemsviewHover.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="{DynamicResource ComboBoxItem.ItemsviewHover.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Background" Color="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelected.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelected.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CurrentEntryBackground" Color="{DynamicResource CurrentEntryBackground.Color}" Opacity="0.25" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Background" Color="{DynamicResource DataGrid.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Border" Color="{DynamicResource DataGrid.Border.Color}" options:Freeze="True"/>
@@ -2314,7 +2342,101 @@
 
 
 
-    
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                   ComboBoxeItems                                                            |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Padding" Value="4,1"/>
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Background" Value="{DynamicResource ComboBoxItem.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ComboBoxItem.Border}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                    <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" 
+                                SnapsToDevicePixels="true">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ComboBoxItem.Disabled.Foreground}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsKeyboardFocused" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHover.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHover.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="False"/>
+                                <Condition Property="IsKeyboardFocused" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelected.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelected.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="True"/>
+                                <Condition Property="IsMouseOver" Value="False"/>
+                                <Condition Property="IsKeyboardFocused" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="False"/>
+                                <Condition Property="IsKeyboardFocused" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewFocus.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsKeyboardFocused" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Border}"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  ContentControls                                                            |
@@ -4028,7 +4150,7 @@
     <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
     <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
     <Style BasedOn="{StaticResource LightThemeComboBoxStyle}" TargetType="ComboBox" />
-    <!--<Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />-->
+    <Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
     <!--<Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />-->
     <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
     <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
@@ -4072,6 +4194,5 @@
     <!--<Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />-->
     <Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />
     <!--<Style BasedOn="{StaticResource LightThemeViewboxStyle}" TargetType="Viewbox" />-->
-    <!--<Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />-->
-    
+    <!--<Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />-->    
 </ResourceDictionary>
