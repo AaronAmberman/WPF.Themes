@@ -747,8 +747,9 @@
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>    
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{DynamicResource TabItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{DynamicResource TabItem.Selected.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="TextBlock.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="TextBlock.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>
+    <!-- Adding a default TextBlock style changes the title bar in the designer. Uncomment if it doesn't matter. See style activation at bottom of file as well.  -->
+    <!--<SolidColorBrush x:Key="TextBlock.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>-->
+    <!--<SolidColorBrush x:Key="TextBlock.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>-->
     <SolidColorBrush x:Key="TextBoxBase.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.InactiveSelection" Color="{DynamicResource TextBoxBase.InactiveSelection.Color}" options:Freeze="True"/>
