@@ -9,6 +9,5 @@
                 <ResourceDictionary Source="pack://application:,,,/LightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>-->
-        
     </Application.Resources>
 </Application>
