@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="475" Width="1091" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TabControl ItemContainerStyle="{DynamicResource LightThemeTabItemStyle}">
-            <TabItem Header="One" />
-        </TabControl>
+        
     </Grid>
 </Window>
