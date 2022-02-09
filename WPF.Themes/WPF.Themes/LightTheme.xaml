@@ -144,6 +144,7 @@
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF494949</Color>
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF9F9F9F</Color>
     <Color x:Key="DatePicker.Popup.Background.Color">#A5FFFFFF</Color>
+    <Color x:Key="DockPanel.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="DocumentViewer.Background.Color">#FFDCDCDC</Color>
     <Color x:Key="DocumentViewer.Foreground.Color">#FF000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop1.Color">#66000000</Color>
@@ -353,9 +354,11 @@
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TreeView.Border.Color">#FF828790</Color>
+    <Color x:Key="TreeView.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TreeView.Foreground.Color">#FF828790</Color>
     <Color x:Key="UserControl.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="UserControl.Foreground.Color">#FF000000</Color>
+    <Color x:Key="WrapPanel.Background.Color">#FFFFFFFF</Color>
 
 
 
@@ -425,7 +428,7 @@
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource ComboBox.Pressed.Background.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="{DynamicResource ComboBox.Pressed.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ComboBox.Pressed.Border" Color="{DynamicResource ComboBox.Pressed.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="{DynamicResource ComboBox.Pressed.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Background" Color="{DynamicResource ComboBox.Pressed.Editable.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Editable.Border" Color="{DynamicResource ComboBox.Pressed.Editable.Border.Color}" options:Freeze="True"/>
@@ -497,6 +500,7 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Popup.Background" Color="{DynamicResource DatePicker.Popup.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="DockPanel.Background" Color="{DynamicResource DockPanel.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Background" Color="{DynamicResource DocumentViewer.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Foreground" Color="{DynamicResource DocumentViewer.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop1" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" options:Freeze="True"/>
@@ -726,9 +730,11 @@
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeView.Disabled.Foreground" Color="{DynamicResource TreeView.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Background" Color="{DynamicResource UserControl.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Foreground" Color="{DynamicResource UserControl.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="WrapPanel.Background" Color="{DynamicResource WrapPanel.Background.Color}" options:Freeze="True"/>
 
 
 
@@ -2638,7 +2644,6 @@
                         </VisualStateManager.VisualStateGroups>
                         <Grid x:Name="PART_Root" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                             <Grid.Resources>
-                                <!--<SolidColorBrush x:Key="DisabledBrush" Color="#A5FFFFFF"/>-->
                                 <ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
                                     <Grid>
                                         <VisualStateManager.VisualStateGroups>
@@ -2790,7 +2795,25 @@
 
 
 
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                    DockPanel                                                                |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeDockPanelStyle" TargetType="{x:Type DockPanel}">
+        <Setter Property="Background" Value="{DynamicResource DockPanel.Background}"/>
+    </Style>
     
+
+
+
+
+
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                 DocumentViewers                                                             |
@@ -4113,7 +4136,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeView.Disabled.Foreground}"/>
                         </Trigger>
                         <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
                             <Setter Property="CanContentScroll" TargetName="tv_scrollviewer" Value="true"/>
@@ -4162,13 +4185,14 @@
 
 
 
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    WrapPanels                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="LightThemeWrapPanelStyle" TargetType="{x:Type WrapPanel}">
-        <Setter Property="Background" Value="{DynamicResource UserControl.Background}"/>
+        <Setter Property="Background" Value="{DynamicResource WrapPanel.Background}"/>
     </Style>
 
 

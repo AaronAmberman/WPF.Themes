@@ -28,6 +28,9 @@ namespace WPF.Themes
      * MaterialDesign Toolkit...
      * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit
      * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/MaterialDesignThemes.Wpf/Themes/MaterialDesignTheme.ListView.xaml
+     * 
+     * WPF examples...
+     * https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/aa970773(v=vs.85)
      */
 
     /// <summary>
