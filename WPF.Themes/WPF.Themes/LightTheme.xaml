@@ -352,6 +352,7 @@
     <Color x:Key="ToolBar.Thumb.Background.Color">#00000000</Color>
     <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="ToolBarTray.Background.Color">#FFEEF5FD</Color>
     <Color x:Key="ToolTip.Background.Color">#FFF1EDED</Color>
     <Color x:Key="ToolTip.Border.Color">#FF828790</Color>
     <Color x:Key="ToolTip.Foreground.Color">#FF000000</Color>
@@ -744,6 +745,7 @@
     <SolidColorBrush x:Key="ToolBar.Thumb.Background" Color="{DynamicResource ToolBar.Thumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Thumb.GeometryDrawing" Color="{DynamicResource ToolBar.Thumb.GeometryDrawing.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ToolBarTrayBackground" Color="{DynamicResource ToolBarTray.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Background" Color="{DynamicResource ToolTip.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Border" Color="{DynamicResource ToolTip.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Foreground" Color="{DynamicResource ToolTip.Foreground.Color}" options:Freeze="True"/>
@@ -4190,6 +4192,25 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                                  ToolBarTrays                                                               |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeToolBarTrayStyle" TargetType="{x:Type ToolBarTray}">
+        <Setter Property="Background" Value="{StaticResource ToolBarTrayBackground}"/>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                    ToolTips                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -4205,10 +4226,10 @@
             <Setter.Value>
                 <ControlTemplate TargetType="ToolTip">
                     <Border x:Name="Root" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}" Opacity="0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                            BorderThickness="{TemplateBinding BorderThickness}" Opacity="0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
                         <ContentControl x:Name="PART_ContentPresenter" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}"
-                                            ContentStringFormat="{TemplateBinding ContentStringFormat}" ContentTemplate="{TemplateBinding ContentTemplate}"
-                                            ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                        ContentStringFormat="{TemplateBinding ContentStringFormat}" ContentTemplate="{TemplateBinding ContentTemplate}"
+                                        ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="OpenStates">
                                 <VisualStateGroup.Transitions>
