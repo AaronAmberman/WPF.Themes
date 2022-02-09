@@ -352,10 +352,26 @@
     <Color x:Key="ToolBar.Thumb.Background.Color">#00000000</Color>
     <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="ToolTip.Background.Color">#FFF1EDED</Color>
+    <Color x:Key="ToolTip.Border.Color">#FF828790</Color>
+    <Color x:Key="ToolTip.Foreground.Color">#FF000000</Color>
     <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TreeView.Border.Color">#FF828790</Color>
     <Color x:Key="TreeView.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TreeView.Foreground.Color">#FF828790</Color>
+    <Color x:Key="TreeViewItem.Background.Color">#00000000</Color>
+    <Color x:Key="TreeViewItem.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="TreeViewItem.Foreground.Color">#FF000000</Color>
+    <Color x:Key="TreeViewItem.Selected.Background.Color">#FF1E90FF</Color>
+    <Color x:Key="TreeViewItem.Selected.Foreground.Color">#FF000000</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Border.Color">#FF818181</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Background.Color">#FFCCEEFB</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Border.Color">#FF27C7F7</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Checked.Background.Color">#FF595959</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Checked.Border.Color">#FF262626</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color">#FF82DFFB</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border.Color">#FF1CC4F7</Color>
     <Color x:Key="UserControl.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="UserControl.Foreground.Color">#FF000000</Color>
     <Color x:Key="WrapPanel.Background.Color">#FFFFFFFF</Color>
@@ -728,10 +744,26 @@
     <SolidColorBrush x:Key="ToolBar.Thumb.Background" Color="{DynamicResource ToolBar.Thumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Thumb.GeometryDrawing" Color="{DynamicResource ToolBar.Thumb.GeometryDrawing.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ToolTip.Background" Color="{DynamicResource ToolTip.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ToolTip.Border" Color="{DynamicResource ToolTip.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ToolTip.Foreground" Color="{DynamicResource ToolTip.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Disabled.Foreground" Color="{DynamicResource TreeView.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.Background" Color="{DynamicResource TreeViewItem.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.Foreground" Color="{DynamicResource TreeViewItem.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.Disabled.Foreground" Color="{DynamicResource TreeViewItem.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.Selected.Background" Color="{DynamicResource TreeViewItem.Selected.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.Selected.Foreground" Color="{DynamicResource TreeViewItem.Selected.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Background" Color="{DynamicResource TreeViewItem.TreeArrow.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Border" Color="{DynamicResource TreeViewItem.TreeArrow.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Checked.Background" Color="{DynamicResource TreeViewItem.TreeArrow.Checked.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Checked.Border" Color="{DynamicResource TreeViewItem.TreeArrow.Checked.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Background" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Border" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Background" Color="{DynamicResource UserControl.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Foreground" Color="{DynamicResource UserControl.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="WrapPanel.Background" Color="{DynamicResource WrapPanel.Background.Color}" options:Freeze="True"/>
@@ -788,6 +820,7 @@
     <Geometry x:Key="LeftArrow">M 0,3.5 L 3.5,0 L 3.5,7 Z</Geometry>
     <Geometry x:Key="RightArrow">M 0,0 L 0,7 L 3.5,3.5 Z</Geometry>
     <Geometry x:Key="UpArrow">M 0,5.5 L 3.5,2 L 7,5.5 Z</Geometry>
+    <PathGeometry x:Key="TreeArrow" Figures="M0,0 L0,6 L6,0 Z"/>
 
 
 
@@ -852,6 +885,15 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="TreeViewItemFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
@@ -861,7 +903,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                       Menus                                                                 |
@@ -2085,6 +2127,48 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="ExpandCollapseToggleStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Width" Value="16"/>
+        <Setter Property="Height" Value="16"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border Background="Transparent" Height="16" Padding="5,5,5,5" Width="16">
+                        <Path x:Name="ExpandPath" Data="{StaticResource TreeArrow}" Fill="{StaticResource TreeViewItem.TreeArrow.Background}" 
+                                  Stroke="{StaticResource TreeViewItem.TreeArrow.Border}">
+                            <Path.RenderTransform>
+                                <RotateTransform Angle="135" CenterY="3" CenterX="3"/>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="RenderTransform" TargetName="ExpandPath">
+                                <Setter.Value>
+                                    <RotateTransform Angle="180" CenterY="3" CenterX="3"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Fill" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.Checked.Background}"/>
+                            <Setter Property="Stroke" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.Checked.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Stroke" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.MouseOver.Background}"/>
+                            <Setter Property="Fill" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.MouseOver.Border}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsChecked" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Stroke" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.MouseOver.Checked.Background}"/>
+                            <Setter Property="Fill" TargetName="ExpandPath" Value="{StaticResource TreeViewItem.TreeArrow.MouseOver.Checked.Border}"/>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
@@ -2094,7 +2178,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    TextBoxBases                                                             |
@@ -2489,11 +2573,8 @@
                                                 KeyboardNavigation.TabNavigation="Cycle"
                                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                             </ScrollViewer>
-                            <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0">
-                                <Border.Effect>
-                                    <DropShadowEffect x:Name="shadow" BlurRadius="3" Direction="315" Opacity="0.4" ShadowDepth="5"
-                                                      Color="{DynamicResource DropShadow.Color}" />
-                                </Border.Effect>
+                            <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
+                                    Effect="{DynamicResource DropShadowEffect}">
                                 <Border.Style>
                                     <Style TargetType="Border">
                                         <Setter Property="Visibility" Value="Collapsed" />
@@ -4109,6 +4190,69 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                                    ToolTips                                                                 |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeToolTipstyle" TargetType="{x:Type ToolTip}">
+        <Setter Property="Background" Value="{DynamicResource ToolTip.Background}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ToolTip.Border}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="{DynamicResource ToolTip.Foreground}" />
+        <Setter Property="HasDropShadow" Value="True" />
+        <Setter Property="Padding" Value="6 3" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToolTip">
+                    <Border x:Name="Root" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" Opacity="0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                        <ContentControl x:Name="PART_ContentPresenter" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}"
+                                            ContentStringFormat="{TemplateBinding ContentStringFormat}" ContentTemplate="{TemplateBinding ContentTemplate}"
+                                            ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="OpenStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition GeneratedDuration="0:0:0.3" From="Open" To="Closed" />
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Closed">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Root" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Open">
+                                    <Storyboard>
+                                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Root" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                            <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1" />
+                                        </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" Value="True">
+                            <Setter TargetName="Root" Property="Effect" Value="{DynamicResource DropShadowEffect}" />
+                            <Setter TargetName="Root" Property="Margin" Value="0,0,5,5" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                    TreeViews                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -4140,6 +4284,89 @@
                         </Trigger>
                         <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
                             <Setter Property="CanContentScroll" TargetName="tv_scrollviewer" Value="true"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="VirtualizingPanel.IsVirtualizing" Value="true">
+                <Setter Property="ItemsPanel">
+                    <Setter.Value>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel/>
+                        </ItemsPanelTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                  TreeViewItems                                                              |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="LightThemeTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
+        <Setter Property="Background" Value="{DynamicResource TreeViewItem.Background}"/>
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Padding" Value="1,0,0,0"/>
+        <Setter Property="Foreground" Value="{DynamicResource TreeViewItem.Foreground}"/>
+        <Setter Property="FocusVisualStyle" Value="{StaticResource TreeViewItemFocusVisual}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TreeViewItem}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="19" Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <ToggleButton x:Name="Expander" ClickMode="Press" IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" 
+                                          Style="{StaticResource ExpandCollapseToggleStyle}"/>
+                        <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="1" Padding="{TemplateBinding Padding}" 
+                                    SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="PART_Header" ContentSource="Header" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Border>
+                        <ItemsPresenter x:Name="ItemsHost" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsExpanded" Value="false">
+                            <Setter Property="Visibility" TargetName="ItemsHost" Value="Collapsed"/>
+                        </Trigger>
+                        <Trigger Property="HasItems" Value="false">
+                            <Setter Property="Visibility" TargetName="Expander" Value="Hidden"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="true">
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeViewItem.Background}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource TreeViewItem.Foreground}"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="true"/>
+                                <Condition Property="IsSelectionActive" Value="false"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeViewItem.Selected.Background}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource TreeViewItem.Selected.Foreground}"/>
+                        </MultiTrigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{DynamicResource TreeViewItem.Disabled.Foreground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -4219,7 +4446,6 @@
     <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
     <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
     <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
-    <!--<Style BasedOn="{StaticResource LightThemeDockPanelStyle}" TargetType="DockPanel" />-->
     <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
     <Style BasedOn="{StaticResource LightThemeFrameStyle}" TargetType="Frame" />
@@ -4255,8 +4481,7 @@
     <!--<Style BasedOn="{StaticResource LightThemeToolBarTrayStyle}" TargetType="ToolBarTray" />-->
     <!--<Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />-->
     <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
-    <!--<Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />-->
+    <Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
     <Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />
-    <!--<Style BasedOn="{StaticResource LightThemeViewboxStyle}" TargetType="Viewbox" />-->
-    <!--<Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />-->    
+    <Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />
 </ResourceDictionary>

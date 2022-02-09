@@ -31,6 +31,9 @@ namespace WPF.Themes
      * 
      * WPF examples...
      * https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/aa970773(v=vs.85)
+     * 
+     * Colors...
+     * https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=windowsdesktop-6.0
      */
 
     /// <summary>

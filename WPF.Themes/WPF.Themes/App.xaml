@@ -8,7 +8,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/LightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>-->
-        
+        </ResourceDictionary>-->        
     </Application.Resources>
 </Application>
