@@ -11,7 +11,8 @@
             <TabControl>
                 <TabItem Header="Controls 1">
                     <Grid>
-                        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5">
+                        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5"
+                                BorderBrush="Black" BorderThickness="1">
                             <TextBlock Text="Border" />
                         </Border>
                         <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,5,5,5" />
@@ -19,7 +20,7 @@
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Unchecked" Margin="300,5,0,0" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Checked" Margin="300,25,0,0" IsChecked="True" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Null" Margin="300,45,0,0" IsThreeState="True" IsChecked="{x:Null}" />
-                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="450,5,0,0">
+                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,5,0,0">
                             <ComboBoxItem Content="One" />
                             <ComboBoxItem Content="Two" />
                             <ComboBoxItem Content="Two" />
@@ -34,6 +35,25 @@
                         <DataGrid HorizontalAlignment="Right" VerticalAlignment="Top" Width="390" Height="170"/>
                         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" />
                         <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="170" Margin="0,200,0,0" />
+                        <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">
+                            <TextBlock Text="Expander" />
+                        </Expander>
+                        <Frame HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="50" Margin="52,80,0,0" Background="Aqua" />
+                        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0">
+                            <TextBlock Text="Group Box Group Box Group Box Group Box" />
+                        </GroupBox>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Controls 2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Background="Red" SnapsToDevicePixels="True" />
+                        <GridSplitter Grid.Column="1" Width="2" Background="Black" SnapsToDevicePixels="True" ResizeDirection="Columns" ResizeBehavior="PreviousAndNext" />
+                        <Border Grid.Column="2" Background="Blue" SnapsToDevicePixels="True" />
                     </Grid>
                 </TabItem>
             </TabControl>

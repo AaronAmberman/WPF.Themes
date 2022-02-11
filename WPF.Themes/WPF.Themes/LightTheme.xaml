@@ -20,7 +20,7 @@
         
     
         As a part of the themeing things will be assigned a background color where as they are natively Transparent or x:Null. So if a transparent 
-        background is desired than it will have to be manually set (Background="Transparent" or Background="{x:Null}").
+        background is desired than it will have to be manually set (Background="Transparent" or Background="{x:Null}" or Background="#00000000").
     -->
     
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1475,12 +1475,6 @@
         <Setter Property="CornerRadius" Value="3,3,3,3"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
     </Style>
-    <Style x:Key="LightThemeBorderStyle" TargetType="{x:Type Border}">
-        <Setter Property="Background" Value="{DynamicResource Border.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource Border.Border}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
-    </Style>
 
 
 
@@ -1490,7 +1484,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                     Buttons                                                                 |
@@ -5391,7 +5385,6 @@
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style BasedOn="{StaticResource LightThemeBorderStyle}" TargetType="Border" />
     <Style BasedOn="{StaticResource LightThemeButtonStyle}" TargetType="Button" />
     <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
     <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
