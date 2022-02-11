@@ -142,7 +142,6 @@
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF494949</Color>
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF9F9F9F</Color>
     <Color x:Key="DatePicker.Popup.Background.Color">#A5FFFFFF</Color>
-    <Color x:Key="DockPanel.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="DocumentViewer.Background.Color">#FFDCDCDC</Color>
     <Color x:Key="DocumentViewer.Foreground.Color">#FF000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop1.Color">#66000000</Color>
@@ -169,18 +168,17 @@
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop2.Color">#60FFFFFF</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop1.Color">#FFB7C2E3</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop2.Color">#A0FFFFFF</Color>
-    <Color x:Key="Grid.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="GridSplitter.Background.Color">#FFFAF0E6</Color>
     <Color x:Key="GridSplitter.PreviewStyle.Background.Color">#80000000</Color>
-    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop1.Color">#FFCCCCCC</Color>
-    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop2.Color">#FF444444</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop1.Color">#FFEEEEEE</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop2.Color">#FFCCCCCC</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop1.Color">#FF000000</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop2.Color">#FFFFFFFF</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Inner.Border.Color">#00000000</Color>
-    <Color x:Key="GridViewColumnHeader.Background.GradientStop1.Color">#FFF2F2F2</Color>
-    <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FFD5D5D5</Color>
-    <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FF8DD6F7</Color>
-    <Color x:Key="GridViewColumnHeader.Border.GradientStop2.Color">#FF8AD1F5</Color>
+    <Color x:Key="GridViewColumnHeader.Background.GradientStop1.Color">#FFFEFEFE</Color>
+    <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FFEDEDED</Color>
+    <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FFEEEEEE</Color>
+    <Color x:Key="GridViewColumnHeader.Border.GradientStop2.Color">#FFCCCCCC</Color>
     <Color x:Key="GridViewColumnHeader.Floating.Background.Color">#60000000</Color>
     <Color x:Key="GridViewColumnHeader.Foreground.Color">#FF000000</Color>
     <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop1.Color">#FFBDEDFF</Color>
@@ -189,9 +187,6 @@
     <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop1.Color">#FF8DD6F7</Color>
     <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop2.Color">#FF7A9EB1</Color>
     <Color x:Key="GridViewColumnHeader.Pressed.Border.Color">#FF95DAF9</Color>
-    <Color x:Key="GridViewColumnHeader.Role.Padding.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="GridViewColumnHeader.Role.Padding.Border.GradientStop1.Color">#FFCCCCCC</Color>
-    <Color x:Key="GridViewColumnHeader.Role.Padding.Border.GradientStop2.Color">#FF444444</Color>
     <Color x:Key="GroupBox.Border.Color">#FFD5DFE5</Color>
     <Color x:Key="GroupBox.Inner.Border.Color">#00000000</Color>
     <Color x:Key="GroupBox.Inner.Inner.Border.Color">#FFFFFFFF</Color>
@@ -426,7 +421,6 @@
     <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border.Color">#FF1CC4F7</Color>
     <Color x:Key="UserControl.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="UserControl.Foreground.Color">#FF000000</Color>
-    <Color x:Key="WrapPanel.Background.Color">#FFFFFFFF</Color>
 
 
 
@@ -436,7 +430,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                     Brushes                                                                 |
@@ -566,7 +560,6 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Popup.Background" Color="{DynamicResource DatePicker.Popup.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DockPanel.Background" Color="{DynamicResource DockPanel.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Background" Color="{DynamicResource DocumentViewer.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Foreground" Color="{DynamicResource DocumentViewer.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop1" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" options:Freeze="True"/>
@@ -593,7 +586,6 @@
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop2.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="Grid.Background" Color="{DynamicResource Grid.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.Background" Color="{DynamicResource GridSplitter.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.PreviewStyle.Background" Color="{DynamicResource GridSplitter.PreviewStyle.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Background.GradientStop1" Color="{DynamicResource GridViewColumnHeaderGripper.Background.GradientStop1.Color}" options:Freeze="True"/>
@@ -621,11 +613,6 @@
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Pressed.Background.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="GridViewColumnHeader.Pressed.Border" Color="{DynamicResource GridViewColumnHeader.Pressed.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GridViewColumnHeader.Role.Padding.Background" Color="{DynamicResource GridViewColumnHeader.Role.Padding.Background.Color}" options:Freeze="True"/>
-    <LinearGradientBrush x:Key="GridViewColumnHeader.Role.Padding.Border" StartPoint="0,0" EndPoint="0,1" options:Freeze="True">
-        <GradientStop Color="{DynamicResource GridViewColumnHeader.Role.Padding.Border.GradientStop1.Color}" Offset="0.0"/>
-        <GradientStop Color="{DynamicResource GridViewColumnHeader.Role.Padding.Border.GradientStop2.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
     <SolidColorBrush x:Key="GroupBox.Border" Color="{DynamicResource GroupBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Border" Color="{DynamicResource GroupBox.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Border.Color}" options:Freeze="True"/>
@@ -884,7 +871,6 @@
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Background" Color="{DynamicResource UserControl.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="UserControl.Foreground" Color="{DynamicResource UserControl.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="WrapPanel.Background" Color="{DynamicResource WrapPanel.Background.Color}" options:Freeze="True"/>
 
 
 
@@ -3274,24 +3260,6 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
-         |                                                    DockPanel                                                                |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDockPanelStyle" TargetType="{x:Type DockPanel}">
-        <Setter Property="Background" Value="{DynamicResource DockPanel.Background}"/>
-    </Style>
-    
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
          |                                                 DocumentViewers                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -3408,24 +3376,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                      Grids                                                                  |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGridStyle" TargetType="{x:Type Grid}">
-        <Setter Property="Background" Value="{DynamicResource Grid.Background}"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
     </Style>
 
 
@@ -3719,7 +3669,7 @@
          |                                             GridViewColumnHeaders                                                           |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="{x:Type GridViewColumnHeader}" TargetType="{x:Type GridViewColumnHeader}">
+    <Style x:Key="LightThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="{DynamicResource GridViewColumnHeader.Foreground}"/>
@@ -3765,8 +3715,8 @@
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="GridViewColumnHeader">
-                            <Border Name="HeaderBorder" BorderThickness="0,1,0,1" Background="{DynamicResource GridViewColumnHeader.Role.Padding.Background}"
-                                        BorderBrush="{DynamicResource GridViewColumnHeader.Role.Padding.Border}">
+                            <Border Name="HeaderBorder" BorderThickness="0,1,0,1" Background="{DynamicResource GridViewColumnHeader.Background}"
+                                        BorderBrush="{DynamicResource GridViewColumnHeader.Border}">
                             </Border>
                         </ControlTemplate>
                     </Setter.Value>
@@ -3794,6 +3744,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource ListView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Foreground" Value="{DynamicResource ListView.Foreground}"/>
+        <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
@@ -3804,8 +3755,8 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListView}">
                     <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}" Padding="1" SnapsToDevicePixels="true">
-                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}">
+                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource LightThemeScrollViewGridView}">
                             <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </ScrollViewer>
                     </Border>
@@ -4448,7 +4399,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="{x:Static GridView.GridViewScrollViewerStyleKey}" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="LightThemeScrollViewGridView" BasedOn="{StaticResource {x:Static GridView.GridViewScrollViewerStyleKey}}" TargetType="{x:Type ScrollViewer}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ScrollViewer">
@@ -4463,7 +4414,7 @@
                         </Grid.RowDefinitions>
                         <DockPanel Margin="{TemplateBinding Padding}">
                             <ScrollViewer DockPanel.Dock="Top" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Focusable="false">
-                                <GridViewHeaderRowPresenter Margin="2,0,2,0"
+                                <GridViewHeaderRowPresenter x:Name="PART_HeaderRowPresenter" Margin="2,0,2,0"
                                                             Columns="{Binding Path=TemplatedParent.View.Columns, RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderContainerStyle="{Binding Path=TemplatedParent.View.ColumnHeaderContainerStyle, RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderTemplate="{Binding Path=TemplatedParent.View.ColumnHeaderTemplate, RelativeSource={RelativeSource TemplatedParent}}"
@@ -4471,7 +4422,7 @@
                                                             AllowsColumnReorder="{Binding Path=TemplatedParent.View.AllowsColumnReorder, RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderContextMenu="{Binding Path=TemplatedParent.View.ColumnHeaderContextMenu, RelativeSource={RelativeSource TemplatedParent}}"
                                                             ColumnHeaderToolTip="{Binding Path=TemplatedParent.View.ColumnHeaderToolTip, RelativeSource={RelativeSource TemplatedParent}}"
-                                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                             </ScrollViewer>
                             <ScrollContentPresenter Name="PART_ScrollContentPresenter" KeyboardNavigation.DirectionalNavigation="Local"
                                                     CanContentScroll="True" CanHorizontallyScroll="False" CanVerticallyScroll="False"/>
@@ -4485,6 +4436,11 @@
                                    Maximum="{TemplateBinding ScrollableHeight}" ViewportSize="{TemplateBinding ViewportHeight}"
                                    Value="{TemplateBinding VerticalOffset}" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"/>
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding TemplatedParent.View.Columns, RelativeSource={RelativeSource Self}}" Value="{x:Null}">
+                            <Setter TargetName="PART_HeaderRowPresenter" Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -5332,24 +5288,6 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
-         |                                                    WrapPanels                                                               |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeWrapPanelStyle" TargetType="{x:Type WrapPanel}">
-        <Setter Property="Background" Value="{DynamicResource WrapPanel.Background}"/>
-    </Style>
-
-
-
-
-
-
-
-
-
-    
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -5365,8 +5303,8 @@
     <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
     <Style BasedOn="{StaticResource LightThemeFrameStyle}" TargetType="Frame" />
-    <Style BasedOn="{StaticResource LightThemeGridStyle}" TargetType="Grid" />
     <Style BasedOn="{StaticResource LightThemeGridSplitterStyle}" TargetType="GridSplitter" />
+    <Style BasedOn="{StaticResource LightThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
     <Style BasedOn="{StaticResource LightThemeGroupBoxStyle}" TargetType="GroupBox" />
     <Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />
     <Style BasedOn="{StaticResource LightThemeLabelStyle}" TargetType="Label" />
@@ -5394,5 +5332,4 @@
     <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
     <Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
     <Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />
-    <Style BasedOn="{StaticResource LightThemeWrapPanelStyle}" TargetType="WrapPanel" />
 </ResourceDictionary>

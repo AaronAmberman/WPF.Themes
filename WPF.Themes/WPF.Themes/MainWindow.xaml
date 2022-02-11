@@ -42,7 +42,23 @@
                         <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0">
                             <TextBlock Text="Group Box Group Box Group Box Group Box" />
                         </GroupBox>
-                        
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,70,0,0">
+                            <Hyperlink NavigateUri="https://www.google.com">Google</Hyperlink>
+                        </TextBlock>
+                        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,70,0,0" />
+                        <ListBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="100" Margin="300,105,0,0">
+                            <ListBoxItem Content="LBI" />
+                            <ListBoxItem Content="ListBoxItem" />
+                        </ListBox>
+                        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="135" Margin="450,70,0,0">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="My Items" />
+                                </GridView>
+                            </ListView.View>
+                            <ListViewItem Content="LBI" />
+                            <ListViewItem Content="ListBoxItem" />
+                        </ListView>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Controls 2">
