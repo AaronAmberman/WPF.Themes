@@ -16,11 +16,6 @@
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </Application.Resources>
-    
-        
-    
-        As a part of the themeing things will be assigned a background color where as they are natively Transparent or x:Null. So if a transparent 
-        background is desired than it will have to be manually set (Background="Transparent" or Background="{x:Null}" or Background="#00000000").
     -->
     
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -419,8 +414,6 @@
     <Color x:Key="TreeViewItem.TreeArrow.Checked.Border.Color">#FF262626</Color>
     <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color">#FF82DFFB</Color>
     <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border.Color">#FF1CC4F7</Color>
-    <Color x:Key="UserControl.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="UserControl.Foreground.Color">#FF000000</Color>
 
 
 
@@ -869,8 +862,6 @@
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Border" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border" Color="{DynamicResource TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="UserControl.Background" Color="{DynamicResource UserControl.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="UserControl.Foreground" Color="{DynamicResource UserControl.Foreground.Color}" options:Freeze="True"/>
 
 
 
@@ -5269,25 +5260,6 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
-         |                                                   UserControls                                                              |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeUserControlStyle" TargetType="{x:Type UserControl}">
-        <Setter Property="Background" Value="{DynamicResource UserControl.Background}"/>
-        <Setter Property="Foreground" Value="{DynamicResource UserControl.Foreground}"/>
-    </Style>
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -5331,5 +5303,4 @@
     <Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />
     <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
     <Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
-    <Style BasedOn="{StaticResource LightThemeUserControlStyle}" TargetType="UserControl" />
 </ResourceDictionary>
