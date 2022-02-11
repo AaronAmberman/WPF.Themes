@@ -384,9 +384,6 @@
     <Color x:Key="TabItem.MouseOver.Border.Color">#FF7EB4EA</Color>
     <Color x:Key="TabItem.Selected.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TabItem.Selected.Border.Color">#FFACACAC</Color>
-    <!-- Adding a default TextBlock style changes the title bar in the designer. Uncomment if it doesn't matter. See style activation at bottom of file as well.  -->
-    <!--<Color x:Key="TextBlock.Background.Color">#FFFFFFFF</Color>-->
-    <!--<Color x:Key="TextBlock.Foreground.Color">#FF000000</Color>-->
     <Color x:Key="TextBoxBase.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TextBoxBase.Foreground.Color">#FF000000</Color>
     <Color x:Key="TextBoxBase.InactiveSelection.Color">#FFDCDCDC</Color>
@@ -847,9 +844,6 @@
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>    
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{DynamicResource TabItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{DynamicResource TabItem.Selected.Border.Color}" options:Freeze="True"/>
-    <!-- Adding a default TextBlock style changes the title bar in the designer. Uncomment if it doesn't matter. See style activation at bottom of file as well.  -->
-    <!--<SolidColorBrush x:Key="TextBlock.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>-->
-    <!--<SolidColorBrush x:Key="TextBlock.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>-->
     <SolidColorBrush x:Key="TextBoxBase.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.InactiveSelection" Color="{DynamicResource TextBoxBase.InactiveSelection.Color}" options:Freeze="True"/>
@@ -5009,28 +5003,6 @@
 
 
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                   TextBlocks                                                                |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <!-- Adding a default TextBlock style changes the title bar in the designer. Uncomment if it doesn't matter. See style activation at bottom of file as well.  -->
-    <!--<Style x:Key="LightThemeTextBlockStyle" TargetType="{x:Type TextBlock}">
-        <Setter Property="TextWrapping" Value="Wrap"/>
-        <Setter Property="TextTrimming" Value="None"/>
-        <Setter Property="Background" Value="{DynamicResource TextBlock.Background}" />
-        <Setter Property="Foreground" Value="{DynamicResource TextBlock.Foreground}" />
-    </Style>-->
-
-
-
-
-
-
-
-
-
-
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
@@ -5420,7 +5392,6 @@
     <Style BasedOn="{StaticResource LightThemeStatusBarItemStyle}" TargetType="StatusBarItem" />
     <Style BasedOn="{StaticResource LightThemeTabControlStyle}" TargetType="TabControl" />
     <Style BasedOn="{StaticResource LightThemeTabItemStyle}" TargetType="TabItem" />
-    <!--<Style BasedOn="{StaticResource LightThemeTextBlockStyle}" TargetType="TextBlock" />-->
     <Style BasedOn="{StaticResource LightThemeToolBarStyle}" TargetType="ToolBar" />
     <Style BasedOn="{StaticResource LightThemeToolBarTrayStyle}" TargetType="ToolBarTray" />
     <Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />
