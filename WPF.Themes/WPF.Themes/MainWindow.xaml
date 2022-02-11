@@ -42,6 +42,7 @@
                         <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0">
                             <TextBlock Text="Group Box Group Box Group Box Group Box" />
                         </GroupBox>
+                        
                     </Grid>
                 </TabItem>
                 <TabItem Header="Controls 2">

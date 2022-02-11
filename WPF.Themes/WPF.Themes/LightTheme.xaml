@@ -30,8 +30,6 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Color x:Key="ArrowPath.Background.Color">#FF000000</Color>
     <Color x:Key="ArrowPath.Border.Color">#FF000000</Color>
-    <Color x:Key="Border.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="Border.Border.Color">#FF000000</Color>
     <Color x:Key="Button.Background.Color">#FFDDDDDD</Color>
     <Color x:Key="Button.Border.Color">#FF707070</Color>
     <Color x:Key="Button.Foreground.Color">#FF000000</Color>
@@ -446,8 +444,6 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <SolidColorBrush x:Key="ArrowPath.Background" Color="{DynamicResource ArrowPath.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ArrowPath.Border" Color="{DynamicResource ArrowPath.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="Border.Background" Color="{DynamicResource Border.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="Border.Border" Color="{DynamicResource Border.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Background" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Border" Color="{DynamicResource Button.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Foreground" Color="{DynamicResource Button.Foreground.Color}" options:Freeze="True"/>
