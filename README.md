@@ -15,6 +15,7 @@ All that being said, I didn't want to have to pull in Nuget packages or have 27 
 Which lead me to making an improved version of the tool which can be found here (https://github.com/AaronAmberman/WPF.DefaultControlTemplateViewer). It has the power to generate the entire resource dictionary from the Microsoft themes like Luna or Royale. This is cool because you can see what MS did to develop their Aero, Luna, Luna Homestead, Luna Metallic, Classic or Royale themes. Always helpful to see what the developers of the language do. Check it out!
 
 As aforementioned the file is very highly organized and changing colors should be easy (as long as you don't want to change the template). Just modify all the colors at the top of the file. Their name is a good indication of what they are used for. So if you see colors Button.Background, Button.Border and Button.Foreground then you can probably very easily figure out what those apply to. Anyway, tried to make theming easy by making it one stop shopping and highly organized. You don't even need to clone the repo. Just go to the GitHub page for the file and click the *"Copy raw contents"* button...
+
 ![CopyContentsOnGitHub](https://user-images.githubusercontent.com/23512394/153728498-1586d61a-5c7d-4ccb-9c53-cab629302c48.png)
 
 File organization...
