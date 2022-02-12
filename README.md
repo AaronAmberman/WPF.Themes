@@ -18,6 +18,8 @@ As aforementioned the file is very highly organized and changing colors should b
 
 ![CopyContentsOnGitHub](https://user-images.githubusercontent.com/23512394/153728498-1586d61a-5c7d-4ccb-9c53-cab629302c48.png)
 
+Just to be clear, the resource dictionary ***will style the built in WPF controls*** but it does not colorize all controls. The Grid, Border, Recangle, UserControl, etc. all still have native transparent backgrounds. The Window Background property was not set either so in darker themes you may still see some white. Its up to you to close these gaps as you see fit.
+
 File organization...
 ![Example1](https://user-images.githubusercontent.com/23512394/153728514-e8503a63-710c-4d7a-918c-edd0a01decf0.png)
 ![Uploading Example2.png…]()
