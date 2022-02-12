@@ -20,7 +20,10 @@
                     <MenuItem Header="Something Else" />
                     <Separator />
                     <MenuItem Header="Another Thing" />
-                    <MenuItem Header="Another Thing 2" />
+                    <MenuItem Header="Another Thing 2">
+                        <MenuItem Header="Another Thing 2.1" />
+                        <MenuItem Header="Another Thing 2.1" />
+                    </MenuItem>
                 </MenuItem>
             </Menu>
             <TabControl Grid.Row="1" Margin="0,5,0,0">
