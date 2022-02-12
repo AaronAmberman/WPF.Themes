@@ -3660,15 +3660,16 @@
          |                                             GridViewColumnHeaders                                                           |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
+    <Style x:Key="LightThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">        
+        <Setter Property="Foreground" Value="{DynamicResource GridViewColumnHeader.Foreground}"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="Foreground" Value="{DynamicResource GridViewColumnHeader.Foreground}"/>
+        <Setter Property="Padding" Value="2,0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="GridViewColumnHeader">
                     <Grid>
-                        <Border x:Name="HeaderBorder" BorderThickness="0,1,0,1" Padding="2,0,2,0" 
+                        <Border x:Name="HeaderBorder" BorderThickness="0,1,0,1" Padding="{TemplateBinding Padding}" 
                                     Background="{DynamicResource GridViewColumnHeader.Background}" BorderBrush="{DynamicResource GridViewColumnHeader.Border}">
                             <ContentPresenter x:Name="HeaderContent" Margin="0,0,0,1" RecognizesAccessKey="True" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
@@ -3735,10 +3736,10 @@
         <Setter Property="BorderBrush" Value="{DynamicResource ListView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Foreground" Value="{DynamicResource ListView.Foreground}"/>
-        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
-        <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+        <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
         <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -3747,7 +3748,8 @@
                 <ControlTemplate TargetType="{x:Type ListView}">
                     <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource LightThemeScrollViewGridView}">
+                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource LightThemeScrollViewGridView}" 
+                                      CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
                             <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </ScrollViewer>
                     </Border>
@@ -3796,11 +3798,24 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListViewItem}">
                     <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
-                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
-                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                        <Grid Margin="{TemplateBinding BorderThickness}">
+                            <GridViewRowPresenter x:Name="RowPresenter"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            <ContentPresenter x:Name="ContentPresenter"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              Visibility="Collapsed"/>
+                        </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="GridView.ColumnCollection" Value="{x:Null}">
+                            <Setter TargetName="ContentPresenter" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="RowPresenter" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True"/>
@@ -4416,7 +4431,7 @@
                                                             SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                             </ScrollViewer>
                             <ScrollContentPresenter Name="PART_ScrollContentPresenter" KeyboardNavigation.DirectionalNavigation="Local"
-                                                    CanContentScroll="True" CanHorizontallyScroll="False" CanVerticallyScroll="False"/>
+                                                    CanContentScroll="{TemplateBinding CanContentScroll}" CanHorizontallyScroll="False" CanVerticallyScroll="False"/>
                         </DockPanel>
                         <ScrollBar Name="PART_HorizontalScrollBar" Orientation="Horizontal" Grid.Row="1"
                                    Maximum="{TemplateBinding ScrollableWidth}"

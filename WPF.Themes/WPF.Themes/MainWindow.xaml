@@ -68,7 +68,7 @@
                         <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="135" Margin="450,70,0,0">
                             <ListView.View>
                                 <GridView>
-                                    <GridViewColumn Header="My Items" />
+                                    <GridViewColumn Header="My Items" Width="Auto" />
                                 </GridView>
                             </ListView.View>
                             <ListViewItem Content="LBI" />
