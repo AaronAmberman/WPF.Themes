@@ -8,7 +8,22 @@
         Title="Testing" Height="768" Width="1024" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid Margin="5">
-            <TabControl>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Menu Grid.Row="0">
+                <MenuItem Header="File">
+                    <MenuItem Header="Something" />
+                </MenuItem>
+                <MenuItem Header="Something">
+                    <MenuItem Header="Something Else" />
+                    <Separator />
+                    <MenuItem Header="Another Thing" />
+                    <MenuItem Header="Another Thing 2" />
+                </MenuItem>
+            </Menu>
+            <TabControl Grid.Row="1" Margin="0,5,0,0">
                 <TabItem Header="Controls 1">
                     <Grid>
                         <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5"
@@ -59,6 +74,114 @@
                             <ListViewItem Content="LBI" />
                             <ListViewItem Content="ListBoxItem" />
                         </ListView>
+                        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="5,230,0,0" />
+                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,230,0,0" />
+                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,230,0,0" IsChecked="True" />
+                        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="257" Margin="333,221,0,0" Height="149">
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run>Rich</Run>
+                                    <Run Foreground="Red">Text</Run>
+                                    <Run Foreground="Blue">Box</Run>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Height="117" Margin="10,253,0,0">
+                            <RichTextBox>
+                                <FlowDocument>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                    <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                    </Paragraph>
+                                </FlowDocument>
+                            </RichTextBox>
+                        </ScrollViewer>
+                        <Slider HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,380,0,0" />
+                        <StatusBar VerticalAlignment="Bottom">
+                            <StatusBarItem Content="Status Content" />
+                        </StatusBar>
+                        <ToolBarTray VerticalAlignment="Bottom" Margin="0,0,0,30">
+                            <ToolBar>
+                                <ToolBarPanel>
+                                    <Button Content="ToolBar Button" />
+                                </ToolBarPanel>
+                                <Separator />
+                                <ToolBarPanel>
+                                    <Menu>
+                                        <MenuItem Header="ToolBar MenuItem">
+                                            <MenuItem Header="Some Other ToolBat MenuItem" />
+                                        </MenuItem>
+                                    </Menu>
+                                </ToolBarPanel>
+                            </ToolBar>
+                            <ToolBar>
+                                <ToolBarPanel>
+                                    <Button Content="ToolBar Button 2" />
+                                </ToolBarPanel>
+                                <Separator />
+                                <ToolBarPanel>
+                                    <Menu>
+                                        <MenuItem Header="ToolBar MenuItem 2">
+                                            <MenuItem Header="Some Other ToolBat MenuItem 2" />
+                                        </MenuItem>
+                                    </Menu>
+                                </ToolBarPanel>
+                            </ToolBar>
+                        </ToolBarTray>
+                        <TreeView HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,450,0,0" Height="120" Width="300">
+                            <TreeViewItem Header="TVI">
+                                <TreeViewItem Header="TVI">
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                </TreeViewItem>
+                                <TreeViewItem Header="TVI">
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                    <TreeViewItem Header="TVI" />
+                                </TreeViewItem>
+                            </TreeViewItem>
+                            <TreeViewItem Header="Another TVI" />
+                            <TreeViewItem Header="TVI">
+                                <TreeViewItem Header="TVI">
+                                    <TreeViewItem Header="TVI" />
+                                </TreeViewItem>
+                                <TreeViewItem Header="TVI">
+                                    <TreeViewItem Header="TVI" />
+                                </TreeViewItem>
+                            </TreeViewItem>
+                            <TreeView.ToolTip>
+                                <ToolTip Content="TreeView ToolTip" />
+                            </TreeView.ToolTip>
+                        </TreeView>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Controls 2">
@@ -71,6 +194,16 @@
                         <Border Grid.Column="0" Background="Red" SnapsToDevicePixels="True" />
                         <GridSplitter Grid.Column="1" Width="2" Background="Black" SnapsToDevicePixels="True" ResizeDirection="Columns" ResizeBehavior="PreviousAndNext" />
                         <Border Grid.Column="2" Background="Blue" SnapsToDevicePixels="True" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Controls 3">
+                    <Grid>
+                        <Canvas Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Rectangle Fill="{x:Null}" Name="OpaqueRect" Width="Auto" Height="Auto" />
+                        </Canvas>
+                        <Rectangle RadiusX="2" RadiusY="2" Fill="#FFF1F1F1" Width="28" Margin="1,2,1,2" HorizontalAlignment="Left" />
+                        <Rectangle Fill="#FFE2E3E3" Width="1" Margin="29,2,0,2" HorizontalAlignment="Left" />
+                        <Rectangle Fill="#FFFFFFFF" Width="1" Margin="30,2,0,2" HorizontalAlignment="Left" />
                     </Grid>
                 </TabItem>
             </TabControl>

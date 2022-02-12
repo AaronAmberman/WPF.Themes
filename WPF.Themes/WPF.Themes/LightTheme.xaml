@@ -95,9 +95,11 @@
     <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#99006CD9</Color>
     <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color">#3DDADADA</Color>
     <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color">#FFDADADA</Color>
-    <Color x:Key="ContextMenu.Background.Color">#FFDCDCDC</Color>
+    <Color x:Key="ContextMenu.Background.Color">#FFF1F1F1</Color>
     <Color x:Key="ContextMenu.Border.Color">#FF888888</Color>
     <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
+    <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFE2E3E3</Color>
+    <Color x:Key="ContextMenu.Splitter.Color2.Color">#FFFFFFFF</Color>
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
     <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
@@ -514,6 +516,8 @@
     <SolidColorBrush x:Key="ContextMenu.Background" Color="{DynamicResource ContextMenu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Border" Color="{DynamicResource ContextMenu.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Foreground" Color="{DynamicResource ContextMenu.Foregound.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ContextMenu.Splitter.Color1" Color="{DynamicResource ContextMenu.Splitter.Color1.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ContextMenu.Splitter.Color2" Color="{DynamicResource ContextMenu.Splitter.Color2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CurrentEntryBackground" Color="{DynamicResource CurrentEntryBackground.Color}" Opacity="0.25" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Background" Color="{DynamicResource DataGrid.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Border" Color="{DynamicResource DataGrid.Border.Color}" options:Freeze="True"/>
@@ -2934,32 +2938,28 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContextMenu}">
-                    <Border Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Padding="{TemplateBinding Padding}"
+                    <Border x:Name="PopupBorder" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Padding="{TemplateBinding Padding}"
                             Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0,0,5,5">
-                        <Grid>
-                            <ScrollViewer x:Name="SubMenuScrollViewer" CanContentScroll="True"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                        <ScrollViewer x:Name="SubMenuScrollViewer" CanContentScroll="True"
                                           Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
+                            <Grid>
+                                <Rectangle RadiusX="2" RadiusY="2" Fill="{DynamicResource ContextMenu.Background}" Width="28" Margin="1,2,1,2" HorizontalAlignment="Left" />
+                                <Rectangle Fill="{DynamicResource ContextMenu.Splitter.Color1}" Width="1" Margin="29,2,0,2" HorizontalAlignment="Left" />
+                                <Rectangle Fill="{DynamicResource ContextMenu.Splitter.Color2}" Width="1" Margin="30,2,0,2" HorizontalAlignment="Left" />
                                 <ItemsPresenter x:Name="ItemsPresenter" Margin="0"
                                                 KeyboardNavigation.DirectionalNavigation="Cycle"
                                                 KeyboardNavigation.TabNavigation="Cycle"
                                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                            </ScrollViewer>
-                            <Border x:Name="DropShadow" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
-                                    Effect="{DynamicResource DropShadowEffect}">
-                                <Border.Style>
-                                    <Style TargetType="Border">
-                                        <Setter Property="Visibility" Value="Collapsed" />
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Popup}, Path=HasDropShadow}" Value="True">
-                                                <Setter Property="Visibility" Value="Visible" />
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </Border.Style>
-                            </Border>
-                        </Grid>
+                            </Grid>
+                        </ScrollViewer>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" Value="True">
+                            <Setter Property="Effect" TargetName="PopupBorder" Value="{DynamicResource DropShadowEffect}"/>
+                            <Setter Property="Margin" TargetName="PopupBorder" Value="0,0,5,5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -5218,7 +5218,7 @@
                             <Setter Property="Visibility" TargetName="Expander" Value="Hidden"/>
                         </Trigger>
                         <Trigger Property="IsSelected" Value="true">
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeViewItem.Background}"/>
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeViewItem.Selected.Background}"/>
                             <Setter Property="Foreground" Value="{DynamicResource TreeViewItem.Foreground}"/>
                         </Trigger>
                         <MultiTrigger>
