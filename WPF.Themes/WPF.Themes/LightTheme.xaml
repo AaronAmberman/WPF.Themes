@@ -6,7 +6,7 @@
                     mc:Ignorable="options">
     <!--
         When consuming this ResourceDictionary in App.xaml make sure it is the first ResourceDictionary you consume. That way if you have custom 
-        styles they will be applied over this themeing. Order is important!
+        styles they will be applied over this theming. Order is important!
     
         <Application.Resources>
             <ResourceDictionary>
