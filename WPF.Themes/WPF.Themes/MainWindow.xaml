@@ -24,7 +24,7 @@
                 </MenuItem>
             </Menu>
             <TabControl Grid.Row="1" Margin="0,5,0,0">
-                <TabItem Header="Controls 1">
+                <TabItem Header="Controls">
                     <Grid>
                         <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5"
                                 BorderBrush="Black" BorderThickness="1">
@@ -122,7 +122,7 @@
                                 </FlowDocument>
                             </RichTextBox>
                         </ScrollViewer>
-                        <Slider HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="0,380,0,0" />
+                        <Slider HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="5,400,0,0" />
                         <StatusBar VerticalAlignment="Bottom">
                             <StatusBarItem Content="Status Content" />
                         </StatusBar>
@@ -184,7 +184,7 @@
                         </TreeView>
                     </Grid>
                 </TabItem>
-                <TabItem Header="Controls 2">
+                <TabItem Header="Red vs Blue">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -196,14 +196,9 @@
                         <Border Grid.Column="2" Background="Blue" SnapsToDevicePixels="True" />
                     </Grid>
                 </TabItem>
-                <TabItem Header="Controls 3">
+                <TabItem Header="Testing">
                     <Grid>
-                        <Canvas Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top">
-                            <Rectangle Fill="{x:Null}" Name="OpaqueRect" Width="Auto" Height="Auto" />
-                        </Canvas>
-                        <Rectangle RadiusX="2" RadiusY="2" Fill="#FFF1F1F1" Width="28" Margin="1,2,1,2" HorizontalAlignment="Left" />
-                        <Rectangle Fill="#FFE2E3E3" Width="1" Margin="29,2,0,2" HorizontalAlignment="Left" />
-                        <Rectangle Fill="#FFFFFFFF" Width="1" Margin="30,2,0,2" HorizontalAlignment="Left" />
+                        
                     </Grid>
                 </TabItem>
             </TabControl>
