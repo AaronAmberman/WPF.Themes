@@ -38,10 +38,22 @@
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Unchecked" Margin="300,5,0,0" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Checked" Margin="300,25,0,0" IsChecked="True" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Null" Margin="300,45,0,0" IsThreeState="True" IsChecked="{x:Null}" />
-                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,5,0,0">
+                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,5,0,0" IsEnabled="True">
                             <ComboBoxItem Content="One" />
                             <ComboBoxItem Content="Two" />
+                            <ComboBoxItem Content="Three" />
+                            <ComboBox.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="One" />
+                                    <MenuItem Header="Two" />
+                                    <MenuItem Header="Three" />
+                                </ContextMenu>
+                            </ComboBox.ContextMenu>
+                        </ComboBox>
+                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,35,0,0" IsEditable="True" IsEnabled="True">
+                            <ComboBoxItem Content="One" />
                             <ComboBoxItem Content="Two" />
+                            <ComboBoxItem Content="Three" />
                             <ComboBox.ContextMenu>
                                 <ContextMenu>
                                     <MenuItem Header="One" />
@@ -68,7 +80,7 @@
                             <ListBoxItem Content="LBI" />
                             <ListBoxItem Content="ListBoxItem" />
                         </ListBox>
-                        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="135" Margin="450,70,0,0">
+                        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="115" Margin="450,85,0,0">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="My Items" Width="Auto" />
