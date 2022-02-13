@@ -123,17 +123,9 @@
     <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
     <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFE2E3E3</Color>
     <Color x:Key="ContextMenu.Splitter.Color2.Color">#FFFFFFFF</Color>
-    
+
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
-    
-    <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
-    <Color x:Key="DataGrid.Foreground.Color">#FF000000</Color>
-    <Color x:Key="DataGrid.SelectAllButton.Arrow.Color">#FF000000</Color>
-    <Color x:Key="DataGrid.SelectAllButton.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="DataGrid.SelectAllButton.MouseOver.Border.Color">#FFA9A9A9</Color>
-    <Color x:Key="DataGrid.SelectAllButton.Pressed.Arrow.Color">#FFA9A9A9</Color>
-    
+
     <Color x:Key="DatePicker.Background.Color">#00000000</Color>
     <Color x:Key="DatePicker.Background.Pressed.Color">#FF448DCA</Color>
     <Color x:Key="DatePicker.Border.GradientStop1.Color">#FFA3AEB9</Color>
@@ -598,17 +590,9 @@
     <SolidColorBrush x:Key="ContextMenu.Foreground" Color="{DynamicResource ContextMenu.Foregound.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Splitter.Color1" Color="{DynamicResource ContextMenu.Splitter.Color1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Splitter.Color2" Color="{DynamicResource ContextMenu.Splitter.Color2.Color}" options:Freeze="True"/>
-    
+
     <SolidColorBrush x:Key="CurrentEntryBackground" Color="{DynamicResource CurrentEntryBackground.Color}" Opacity="0.25" options:Freeze="True"/>
-    
-    <SolidColorBrush x:Key="DataGrid.Background" Color="{DynamicResource DataGrid.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.Border" Color="{DynamicResource DataGrid.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.Foreground" Color="{DynamicResource DataGrid.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.SelectAllButton.Arrow" Color="{DynamicResource DataGrid.SelectAllButton.Arrow.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.SelectAllButton.Border" Color="{DynamicResource DataGrid.SelectAllButton.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.SelectAllButton.MouseOver.Border" Color="{DynamicResource DataGrid.SelectAllButton.MouseOver.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DataGrid.SelectAllButton.Pressed.Arrow" Color="{DynamicResource DataGrid.SelectAllButton.Pressed.Arrow.Color}" options:Freeze="True"/>
-    
+
     <SolidColorBrush x:Key="DatePicker.Background" Color="{DynamicResource DatePicker.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Background.Pressed" Color="{DynamicResource DatePicker.Background.Pressed.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Border.GradientStop1" Color="{DynamicResource DatePicker.Border.GradientStop1.Color}" options:Freeze="True"/>
@@ -1659,30 +1643,6 @@
                             <Setter Property="Background" TargetName="border" Value="{DynamicResource Button.Disabled.Background}"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.Disabled.Border}"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{DynamicResource Button.Disabled.Foreground}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style x:Key="{ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}" TargetType="{x:Type Button}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid>
-                        <Rectangle x:Name="Border" Fill="{DynamicResource DataGrid.SelectAllButton.Border}" SnapsToDevicePixels="True"/>
-                        <Polygon x:Name="Arrow" Fill="{DynamicResource DataGrid.SelectAllButton.Arrow}" HorizontalAlignment="Right" Margin="8,8,3,3" Opacity="0.15" 
-                                 Points="0,10 10,10 10,0" Stretch="Uniform" VerticalAlignment="Bottom"/>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Stroke" TargetName="Border" Value="{DynamicResource DataGrid.SelectAllButton.MouseOver.Border}"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Fill" TargetName="Border" Value="{DynamicResource DataGrid.SelectAllButton.Pressed.Arrow}"/>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Visibility" TargetName="Arrow" Value="Collapsed"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -3485,89 +3445,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                     DataGrids                                                               |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="DarkThemeDataGridStyle" TargetType="{x:Type DataGrid}">
-        <Setter Property="Background" Value="{DynamicResource DataGrid.Background}"/>
-        <Setter Property="Foreground" Value="{DynamicResource DataGrid.Foreground}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource DataGrid.Border}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="RowDetailsVisibilityMode" Value="VisibleWhenSelected"/>
-        <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
-        <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
-        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type DataGrid}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
-                        <ScrollViewer x:Name="DG_ScrollViewer" Focusable="false">
-                            <ScrollViewer.Template>
-                                <ControlTemplate TargetType="{x:Type ScrollViewer}">
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
-                                        <Button Command="{x:Static DataGrid.SelectAllCommand}" Focusable="false" 
-                                                Style="{DynamicResource {ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}}" 
-                                                Visibility="{Binding HeadersVisibility, ConverterParameter={x:Static DataGridHeadersVisibility.All}, Converter={x:Static DataGrid.HeadersVisibilityConverter}, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" 
-                                                Width="{Binding CellsPanelHorizontalOffset, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
-                                        <DataGridColumnHeadersPresenter x:Name="PART_ColumnHeadersPresenter" Grid.Column="1" 
-                                                                        Visibility="{Binding HeadersVisibility, ConverterParameter={x:Static DataGridHeadersVisibility.Column}, Converter={x:Static DataGrid.HeadersVisibilityConverter}, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
-                                        <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" CanContentScroll="{TemplateBinding CanContentScroll}" 
-                                                                Grid.ColumnSpan="2" Grid.Row="1"/>
-                                        <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="2" Maximum="{TemplateBinding ScrollableHeight}" Orientation="Vertical" 
-                                                   Grid.Row="1" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" 
-                                                   ViewportSize="{TemplateBinding ViewportHeight}" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"/>
-                                        <Grid Grid.Column="1" Grid.Row="2">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="{Binding NonFrozenColumnsViewportHorizontalOffset, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"/>
-                                                <ColumnDefinition Width="*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <ScrollBar x:Name="PART_HorizontalScrollBar" Grid.Column="1" Maximum="{TemplateBinding ScrollableWidth}" Orientation="Horizontal" 
-                                                       Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" 
-                                                       Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"/>
-                                        </Grid>
-                                    </Grid>
-                                </ControlTemplate>
-                            </ScrollViewer.Template>
-                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                        </ScrollViewer>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="IsGrouping" Value="true"/>
-                    <Condition Property="VirtualizingPanel.IsVirtualizingWhenGrouping" Value="false"/>
-                </MultiTrigger.Conditions>
-                <Setter Property="ScrollViewer.CanContentScroll" Value="false"/>
-            </MultiTrigger>
-        </Style.Triggers>
     </Style>
 
 
@@ -5807,7 +5684,6 @@
     <Style BasedOn="{StaticResource DarkThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
     <Style BasedOn="{StaticResource DarkThemeContextMenuStyle}" TargetType="ContextMenu" />
     <Style BasedOn="{StaticResource DarkThemeContentControlStyle}" TargetType="ContentControl" />
-    <Style BasedOn="{StaticResource DarkThemeDataGridStyle}" TargetType="DataGrid" />
     <Style BasedOn="{StaticResource DarkThemeDatePickerStyle}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource DarkThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource DarkThemeExpanderStyle}" TargetType="Expander" />

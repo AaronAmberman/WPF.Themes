@@ -38,7 +38,7 @@
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Unchecked" Margin="300,5,0,0" IsEnabled="True" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Checked" Margin="300,25,0,0" IsChecked="True" IsEnabled="True" />
                         <CheckBox HorizontalAlignment="Left" VerticalAlignment="Top" Content="CheckBox Null" Margin="300,45,0,0" IsThreeState="True" IsChecked="{x:Null}" IsEnabled="False" />
-                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,5,0,0" IsEnabled="False">
+                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,5,0,0" IsEnabled="True">
                             <ComboBoxItem Content="One" />
                             <ComboBoxItem Content="Two" />
                             <ComboBoxItem Content="Three" />
@@ -50,7 +50,7 @@
                                 </ContextMenu>
                             </ComboBox.ContextMenu>
                         </ComboBox>
-                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,35,0,0" IsEditable="True" IsEnabled="False">
+                        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="450,35,0,0" IsEditable="True" IsEnabled="True">
                             <ComboBoxItem Content="One" />
                             <ComboBoxItem Content="Two" />
                             <ComboBoxItem Content="Three" />
@@ -62,7 +62,6 @@
                                 </ContextMenu>
                             </ComboBox.ContextMenu>
                         </ComboBox>
-                        <DataGrid HorizontalAlignment="Right" VerticalAlignment="Top" Width="390" Height="170"/>
                         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" />
                         <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="170" Margin="0,200,0,0" />
                         <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">

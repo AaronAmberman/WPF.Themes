@@ -22,6 +22,7 @@ I made a large ***highly organized and readable*** resource dictionary containin
 This ***will style the built in WPF controls*** but it does not colorize all controls.
 
 Unaffected types...
+ - DataGrid (I am not a fan of DataGrids and I never use them so I did not style them because they are complex and there is a lot to them, sorry)
  - All panels
  - Border
  - Grid
