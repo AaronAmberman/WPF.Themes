@@ -11,13 +11,13 @@
         <Application.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.MergedDictionaries>
-                    <ResourceDictionary Source="pack://application:,,,/LightTheme.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/DarkTheme.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/OtherResourceDictionary.xaml" />
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </Application.Resources>
     -->
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                      Colors                                                                 |
@@ -122,7 +122,7 @@
     <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
     <Color x:Key="DataGrid.Foreground.Color">#FF000000</Color>
     <Color x:Key="DataGrid.SelectAllButton.Arrow.Color">#FF000000</Color>
-    <Color x:Key="DataGrid.SelectAllButton.Border.Color">#FFFFFFFF</Color>    
+    <Color x:Key="DataGrid.SelectAllButton.Border.Color">#FFFFFFFF</Color>
     <Color x:Key="DataGrid.SelectAllButton.MouseOver.Border.Color">#FFA9A9A9</Color>
     <Color x:Key="DataGrid.SelectAllButton.Pressed.Arrow.Color">#FFA9A9A9</Color>
     <Color x:Key="DatePicker.Background.Color">#00000000</Color>
@@ -210,7 +210,7 @@
     <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
     <Color x:Key="Label.Background.Color">#00000000</Color>
     <Color x:Key="Label.Foreground.Color">#FF000000</Color>
-    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>    
+    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="ListBox.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListBox.Border.Color">#FFABADB3</Color>
     <Color x:Key="ListBox.Disabled.Background.Color">#FFFFFFFF</Color>
@@ -320,7 +320,7 @@
     <Color x:Key="OptionMark.Pressed.Glyph.Color">#FF212121</Color>
     <Color x:Key="OptionMark.Disabled.Background.Color">#FFE6E6E6</Color>
     <Color x:Key="OptionMark.Disabled.Border.Color">#FFBCBCBC</Color>
-    <Color x:Key="OptionMark.Disabled.Glyph.Color">#FF707070</Color>    
+    <Color x:Key="OptionMark.Disabled.Glyph.Color">#FF707070</Color>
     <Color x:Key="ProgressBar.Progress.Color">#FF06B025</Color>
     <Color x:Key="ProgressBar.Background.Color">#FFE6E6E6</Color>
     <Color x:Key="ProgressBar.Border.Color">#FFBCBCBC</Color>
@@ -798,7 +798,7 @@
     <SolidColorBrush x:Key="RadioButton.Disabled.Background" Color="{DynamicResource RadioButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Border" Color="{DynamicResource RadioButton.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Glyph" Color="{DynamicResource RadioButton.Disabled.Glyph.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>    
+    <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.MouseOver.Background" Color="{DynamicResource ScrollBarButton.MouseOver.Background.Color}" options:Freeze="True"/>
@@ -853,7 +853,7 @@
         <GradientStop Color="{DynamicResource TabItem.MouseOver.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource TabItem.MouseOver.Background.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>    
+    <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{DynamicResource TabItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{DynamicResource TabItem.Selected.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
@@ -941,7 +941,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   Geometries                                                                |
@@ -962,7 +962,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                      Paths                                                                  |
@@ -979,10 +979,10 @@
 
 
 
-    
-    
-    
-    
+
+
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  Focus Visuals                                                              |
@@ -1041,7 +1041,7 @@
          |                                                       Menus                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeMenuStyle" TargetType="{x:Type Menu}">
+    <Style x:Key="DarkThemeMenuStyle" TargetType="{x:Type Menu}">
         <Setter Property="Background" Value="{DynamicResource Menu.Background}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.MenuFontFamilyKey}}"/>
         <Setter Property="FontSize" Value="{DynamicResource {x:Static SystemFonts.MenuFontSizeKey}}"/>
@@ -1088,8 +1088,8 @@
 
 
 
-    
-    
+
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    MenuItems                                                                |
@@ -1454,7 +1454,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeMenuItemStyle" TargetType="{x:Type MenuItem}">
+    <Style x:Key="DarkThemeMenuItemStyle" TargetType="{x:Type MenuItem}">
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="Background" Value="Transparent"/>
@@ -1518,7 +1518,7 @@
          |                                                     Buttons                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeButtonStyle" TargetType="{x:Type Button}">
+    <Style x:Key="DarkThemeButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource Button.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource Button.Border}"/>
@@ -1659,7 +1659,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                      Frames                                                                 |
@@ -1738,7 +1738,7 @@
             </MultiTrigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeFrameStyle" TargetType="{x:Type Frame}">
+    <Style x:Key="DarkThemeFrameStyle" TargetType="{x:Type Frame}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Frame}">
@@ -1771,7 +1771,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                      Thumbs                                                                 |
@@ -2064,7 +2064,7 @@
          |                                                     Calendars                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarStyle" TargetType="{x:Type Calendar}">
+    <Style x:Key="DarkThemeCalendarStyle" TargetType="{x:Type Calendar}">
         <Setter Property="Foreground" Value="{DynamicResource Calendar.Foreground}"/>
         <Setter Property="Background">
             <Setter.Value>
@@ -2113,7 +2113,7 @@
          |                                                  CalendarButtons                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarDayButtonStyle" TargetType="{x:Type CalendarDayButton}">
+    <Style x:Key="DarkThemeCalendarDayButtonStyle" TargetType="{x:Type CalendarDayButton}">
         <Setter Property="MinWidth" Value="5"/>
         <Setter Property="MinHeight" Value="5"/>
         <Setter Property="FontSize" Value="10"/>
@@ -2244,7 +2244,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeCalendarButtonStyle" TargetType="{x:Type CalendarButton}">
+    <Style x:Key="DarkThemeCalendarButtonStyle" TargetType="{x:Type CalendarButton}">
         <Setter Property="Background" Value="{Binding CalendarButton.Background}"/>
         <Setter Property="MinWidth" Value="40"/>
         <Setter Property="MinHeight" Value="42"/>
@@ -2357,7 +2357,7 @@
          |                                                   CalendarItems                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarItemStyle" TargetType="{x:Type CalendarItem}">
+    <Style x:Key="DarkThemeCalendarItemStyle" TargetType="{x:Type CalendarItem}">
         <Setter Property="Margin" Value="0,3,0,3"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -2560,7 +2560,7 @@
          |                                                     CheckBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCheckBoxStyle" TargetType="{x:Type CheckBox}">
+    <Style x:Key="DarkThemeCheckBoxStyle" TargetType="{x:Type CheckBox}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource OptionMark.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource OptionMark.Border}"/>
@@ -2631,7 +2631,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    ToggleButtons                                                            |
@@ -3115,7 +3115,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                     TextBoxes                                                               |
@@ -3138,7 +3138,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
+
 
 
 
@@ -3272,7 +3272,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeComboBoxStyle" TargetType="{x:Type ComboBox}">
+    <Style x:Key="DarkThemeComboBoxStyle" TargetType="{x:Type ComboBox}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource ComboBox.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ComboBox.Border}"/>
@@ -3302,13 +3302,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    ComboBoxItems                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">
+    <Style x:Key="DarkThemeComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -3402,7 +3402,7 @@
          |                                                  ContentControls                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeContentControlStyle" TargetType="{x:Type ContentControl}">
+    <Style x:Key="DarkThemeContentControlStyle" TargetType="{x:Type ContentControl}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContentControl}">
@@ -3420,13 +3420,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    ContextMenus                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeContextMenuStyle" TargetType="{x:Type ContextMenu}">
+    <Style x:Key="DarkThemeContextMenuStyle" TargetType="{x:Type ContextMenu}">
         <Setter Property="Background" Value="{DynamicResource ContextMenu.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ContextMenu.Border}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -3478,13 +3478,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                     DataGrids                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDataGridStyle" TargetType="{x:Type DataGrid}">
+    <Style x:Key="DarkThemeDataGridStyle" TargetType="{x:Type DataGrid}">
         <Setter Property="Background" Value="{DynamicResource DataGrid.Background}"/>
         <Setter Property="Foreground" Value="{DynamicResource DataGrid.Foreground}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource DataGrid.Border}"/>
@@ -3560,13 +3560,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   DatePickers                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDatePickerStyle" TargetType="{x:Type DatePicker}">
+    <Style x:Key="DarkThemeDatePickerStyle" TargetType="{x:Type DatePicker}">
         <Setter Property="Foreground" Value="{DynamicResource DatePicker.Foreground}"/>
         <Setter Property="IsTodayHighlighted" Value="True"/>
         <Setter Property="SelectedDateFormat" Value="Short"/>
@@ -3758,7 +3758,7 @@
          |                                                 DocumentViewers                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDocumentViewerStyle" BasedOn="{x:Null}" TargetType="{x:Type DocumentViewer}">
+    <Style x:Key="DarkThemeDocumentViewerStyle" BasedOn="{x:Null}" TargetType="{x:Type DocumentViewer}">
         <Setter Property="Foreground" Value="{DynamicResource DocumentViewer.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource DocumentViewer.Background}"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -3813,13 +3813,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    Expanders                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeExpanderStyle" TargetType="{x:Type Expander}">
+    <Style x:Key="DarkThemeExpanderStyle" TargetType="{x:Type Expander}">
         <Setter Property="Foreground" Value="{DynamicResource Expander.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource Expander.Background}"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -3896,7 +3896,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeGridSplitterStyle" TargetType="{x:Type GridSplitter}">
+    <Style x:Key="DarkThemeGridSplitterStyle" TargetType="{x:Type GridSplitter}">
         <Setter Property="Background" Value="{DynamicResource GridSplitter.Background}"/>
         <Setter Property="PreviewStyle" Value="{DynamicResource GridSplitterPreviewStyle}"/>
         <Setter Property="Template">
@@ -3916,13 +3916,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   GroupBoxes                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGroupBoxStyle" TargetType="{x:Type GroupBox}">
+    <Style x:Key="DarkThemeGroupBoxStyle" TargetType="{x:Type GroupBox}">
         <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Template">
@@ -3980,7 +3980,7 @@
          |                                                   Hyperlink                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeHyperlinkStyle" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
+    <Style x:Key="DarkThemeHyperlinkStyle" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
         <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="true">
@@ -4006,7 +4006,7 @@
          |                                                     Labels                                                                  |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeLabelStyle" TargetType="{x:Type Label}">
+    <Style x:Key="DarkThemeLabelStyle" TargetType="{x:Type Label}">
         <Setter Property="Foreground" Value="{DynamicResource Label.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource Label.Background}"/>
         <Setter Property="Padding" Value="5"/>
@@ -4040,13 +4040,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   ListBoxes                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListBoxStyle" TargetType="{x:Type ListBox}">
+    <Style x:Key="DarkThemeListBoxStyle" TargetType="{x:Type ListBox}">
         <Setter Property="Background" Value="{DynamicResource ListBox.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ListBox.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -4098,7 +4098,7 @@
          |                                                 ListBoxItems                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
+    <Style x:Key="DarkThemeListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -4164,7 +4164,7 @@
          |                                             GridViewColumnHeaders                                                           |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">        
+    <Style x:Key="DarkThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
         <Setter Property="Foreground" Value="{DynamicResource GridViewColumnHeader.Foreground}"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -4235,7 +4235,7 @@
          |                                                   ListViews                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListViewStyle" TargetType="{x:Type ListView}">
+    <Style x:Key="DarkThemeListViewStyle" TargetType="{x:Type ListView}">
         <Setter Property="Background" Value="{DynamicResource ListView.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ListView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -4252,7 +4252,7 @@
                 <ControlTemplate TargetType="{x:Type ListView}">
                     <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource LightThemeScrollViewGridView}" 
+                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource DarkThemeScrollViewGridView}" 
                                       CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
                             <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </ScrollViewer>
@@ -4289,7 +4289,7 @@
          |                                                 ListViewItems                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListViewItemStyle" TargetType="{x:Type ListViewItem}">
+    <Style x:Key="DarkThemeListViewItemStyle" TargetType="{x:Type ListViewItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -4366,7 +4366,7 @@
          |                                                 PasswordBoxes                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+    <Style x:Key="DarkThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
         <Setter Property="PasswordChar" Value="●"/>
         <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
@@ -4418,13 +4418,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                 ProgressBars                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeProgressBarStyle" TargetType="{x:Type ProgressBar}">
+    <Style x:Key="DarkThemeProgressBarStyle" TargetType="{x:Type ProgressBar}">
         <Setter Property="Foreground" Value="{DynamicResource ProgressBar.Progress}"/>
         <Setter Property="Background" Value="{DynamicResource ProgressBar.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ProgressBar.Border}"/>
@@ -4494,13 +4494,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                 RadioButtons                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeRadioButtonStyle" TargetType="{x:Type RadioButton}">
+    <Style x:Key="DarkThemeRadioButtonStyle" TargetType="{x:Type RadioButton}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource RadioButton.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource RadioButton.Border}"/>
@@ -4567,7 +4567,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                 RepeatButtons                                                               |
@@ -4644,13 +4644,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  RichTextBox                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
+    <Style x:Key="DarkThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
         <Style.Resources>
             <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
                 <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -4682,13 +4682,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  ScrollBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeScrollBarStyle" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="DarkThemeScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
         <Setter Property="Background" Value="{DynamicResource ScrollBar.Background}"/>
@@ -4856,7 +4856,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                ScrollViewers                                                                |
@@ -4909,7 +4909,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeScrollViewGridView" BasedOn="{StaticResource {x:Static GridView.GridViewScrollViewerStyleKey}}" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="DarkThemeScrollViewGridView" BasedOn="{StaticResource {x:Static GridView.GridViewScrollViewerStyleKey}}" TargetType="{x:Type ScrollViewer}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ScrollViewer">
@@ -4955,7 +4955,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeScrollViewerStyle" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="DarkThemeScrollViewerStyle" TargetType="{x:Type ScrollViewer}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ScrollViewer}">
@@ -5000,7 +5000,7 @@
          |                                                  Separators                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeSeparatorStyle" TargetType="{x:Type Separator}">
+    <Style x:Key="DarkThemeSeparatorStyle" TargetType="{x:Type Separator}">
         <Setter Property="Background" Value="{DynamicResource Separator.Background}"/>
         <Setter Property="Margin" Value="0,2,0,2"/>
         <Setter Property="Focusable" Value="false"/>
@@ -5022,7 +5022,7 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                    Sliders                                                                  |
@@ -5082,7 +5082,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeSliderStyle" TargetType="{x:Type Slider}">
+    <Style x:Key="DarkThemeSliderStyle" TargetType="{x:Type Slider}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Background" Value="{DynamicResource Slider.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource Slider.Border}"/>
@@ -5103,13 +5103,13 @@
 
 
 
-    
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                  StatusBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeStatusBarStyle" TargetType="{x:Type StatusBar}">
+    <Style x:Key="DarkThemeStatusBarStyle" TargetType="{x:Type StatusBar}">
         <Setter Property="Background" Value="{DynamicResource StatusBar.Background}"/>
         <Setter Property="Foreground" Value="{DynamicResource StatusBar.Foreground}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}"/>
@@ -5143,7 +5143,7 @@
          |                                                StatusBarItems                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeStatusBarItemStyle" TargetType="{x:Type StatusBarItem}">
+    <Style x:Key="DarkThemeStatusBarItemStyle" TargetType="{x:Type StatusBarItem}">
         <Setter Property="Background" Value="{DynamicResource StatusBarItem.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource StatusBarItem.Border}" />
         <Setter Property="Foreground" Value="{DynamicResource StatusBarItem.Foreground}" />
@@ -5184,7 +5184,7 @@
          |                                                  TabControls                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTabControlStyle" TargetType="{x:Type TabControl}">
+    <Style x:Key="DarkThemeTabControlStyle" TargetType="{x:Type TabControl}">
         <Setter Property="Padding" Value="2"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -5266,7 +5266,7 @@
          |                                                    TabItems                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTabItemStyle" TargetType="{x:Type TabItem}">
+    <Style x:Key="DarkThemeTabItemStyle" TargetType="{x:Type TabItem}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Foreground" Value="Black"/>
         <Setter Property="Background" Value="{StaticResource TabItem.Background}"/>
@@ -5471,7 +5471,7 @@
          |                                                    ToolBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolBarStyle" TargetType="{x:Type ToolBar}">
+    <Style x:Key="DarkThemeToolBarStyle" TargetType="{x:Type ToolBar}">
         <Setter Property="Background" Value="{DynamicResource ToolBarHorizontalBackground}"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -5557,7 +5557,7 @@
          |                                                  ToolBarTrays                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolBarTrayStyle" TargetType="{x:Type ToolBarTray}">
+    <Style x:Key="DarkThemeToolBarTrayStyle" TargetType="{x:Type ToolBarTray}">
         <Setter Property="Background" Value="{StaticResource ToolBarTrayBackground}"/>
     </Style>
 
@@ -5576,7 +5576,7 @@
          |                                                    ToolTips                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolTipStyle" TargetType="{x:Type ToolTip}">
+    <Style x:Key="DarkThemeToolTipStyle" TargetType="{x:Type ToolTip}">
         <Setter Property="Background" Value="{DynamicResource ToolTip.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ToolTip.Border}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -5639,7 +5639,7 @@
          |                                                    TreeViews                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTreeViewStyle" TargetType="{x:Type TreeView}">
+    <Style x:Key="DarkThemeTreeViewStyle" TargetType="{x:Type TreeView}">
         <Setter Property="Background" Value="{DynamicResource TreeView.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource TreeView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -5699,7 +5699,7 @@
          |                                                  TreeViewItems                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
+    <Style x:Key="DarkThemeTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
         <Setter Property="Background" Value="{DynamicResource TreeViewItem.Background}"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -5782,46 +5782,46 @@
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style BasedOn="{StaticResource LightThemeButtonStyle}" TargetType="Button" />
-    <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
-    <Style BasedOn="{StaticResource LightThemeCalendarButtonStyle}" TargetType="CalendarButton" />
-    <Style BasedOn="{StaticResource LightThemeCalendarItemStyle}" TargetType="CalendarItem" />
-    <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
-    <Style BasedOn="{StaticResource LightThemeComboBoxStyle}" TargetType="ComboBox" />
-    <Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
-    <Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />
-    <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
-    <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
-    <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
-    <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
-    <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
-    <Style BasedOn="{StaticResource LightThemeFrameStyle}" TargetType="Frame" />
-    <Style BasedOn="{StaticResource LightThemeGridSplitterStyle}" TargetType="GridSplitter" />
-    <Style BasedOn="{StaticResource LightThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
-    <Style BasedOn="{StaticResource LightThemeGroupBoxStyle}" TargetType="GroupBox" />
-    <Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />
-    <Style BasedOn="{StaticResource LightThemeLabelStyle}" TargetType="Label" />
-    <Style BasedOn="{StaticResource LightThemeListBoxStyle}" TargetType="ListBox" />
-    <Style BasedOn="{StaticResource LightThemeListBoxItemStyle}" TargetType="ListBoxItem" />
-    <Style BasedOn="{StaticResource LightThemeListViewStyle}" TargetType="ListView" />
-    <Style BasedOn="{StaticResource LightThemeListViewItemStyle}" TargetType="ListViewItem" />
-    <Style BasedOn="{StaticResource LightThemeMenuStyle}" TargetType="Menu" />
-    <Style BasedOn="{StaticResource LightThemeMenuItemStyle}" TargetType="MenuItem" />
-    <Style BasedOn="{StaticResource LightThemePasswordBoxStyle}" TargetType="PasswordBox" />
-    <Style BasedOn="{StaticResource LightThemeProgressBarStyle}" TargetType="ProgressBar" />
-    <Style BasedOn="{StaticResource LightThemeRadioButtonStyle}" TargetType="RadioButton" />
-    <Style BasedOn="{StaticResource LightThemeRichTextBoxStyle}" TargetType="RichTextBox" />
-    <Style BasedOn="{StaticResource LightThemeScrollBarStyle}" TargetType="ScrollBar" />
-    <Style BasedOn="{StaticResource LightThemeScrollViewerStyle}" TargetType="ScrollViewer" />
-    <Style BasedOn="{StaticResource LightThemeSeparatorStyle}" TargetType="Separator" />
-    <Style BasedOn="{StaticResource LightThemeSliderStyle}" TargetType="Slider" />
-    <Style BasedOn="{StaticResource LightThemeStatusBarStyle}" TargetType="StatusBar" />
-    <Style BasedOn="{StaticResource LightThemeStatusBarItemStyle}" TargetType="StatusBarItem" />
-    <Style BasedOn="{StaticResource LightThemeTabControlStyle}" TargetType="TabControl" />
-    <Style BasedOn="{StaticResource LightThemeTabItemStyle}" TargetType="TabItem" />
-    <Style BasedOn="{StaticResource LightThemeToolBarStyle}" TargetType="ToolBar" />
-    <Style BasedOn="{StaticResource LightThemeToolBarTrayStyle}" TargetType="ToolBarTray" />
-    <Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />
-    <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
-    <Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
+    <Style BasedOn="{StaticResource DarkThemeButtonStyle}" TargetType="Button" />
+    <Style BasedOn="{StaticResource DarkThemeCalendarStyle}" TargetType="Calendar" />
+    <Style BasedOn="{StaticResource DarkThemeCalendarButtonStyle}" TargetType="CalendarButton" />
+    <Style BasedOn="{StaticResource DarkThemeCalendarItemStyle}" TargetType="CalendarItem" />
+    <Style BasedOn="{StaticResource DarkThemeCheckBoxStyle}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource DarkThemeComboBoxStyle}" TargetType="ComboBox" />
+    <Style BasedOn="{StaticResource DarkThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
+    <Style BasedOn="{StaticResource DarkThemeContextMenuStyle}" TargetType="ContextMenu" />
+    <Style BasedOn="{StaticResource DarkThemeContentControlStyle}" TargetType="ContentControl" />
+    <Style BasedOn="{StaticResource DarkThemeDataGridStyle}" TargetType="DataGrid" />
+    <Style BasedOn="{StaticResource DarkThemeDatePickerStyle}" TargetType="DatePicker" />
+    <Style BasedOn="{StaticResource DarkThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
+    <Style BasedOn="{StaticResource DarkThemeExpanderStyle}" TargetType="Expander" />
+    <Style BasedOn="{StaticResource DarkThemeFrameStyle}" TargetType="Frame" />
+    <Style BasedOn="{StaticResource DarkThemeGridSplitterStyle}" TargetType="GridSplitter" />
+    <Style BasedOn="{StaticResource DarkThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
+    <Style BasedOn="{StaticResource DarkThemeGroupBoxStyle}" TargetType="GroupBox" />
+    <Style BasedOn="{StaticResource DarkThemeHyperlinkStyle}" TargetType="Hyperlink" />
+    <Style BasedOn="{StaticResource DarkThemeLabelStyle}" TargetType="Label" />
+    <Style BasedOn="{StaticResource DarkThemeListBoxStyle}" TargetType="ListBox" />
+    <Style BasedOn="{StaticResource DarkThemeListBoxItemStyle}" TargetType="ListBoxItem" />
+    <Style BasedOn="{StaticResource DarkThemeListViewStyle}" TargetType="ListView" />
+    <Style BasedOn="{StaticResource DarkThemeListViewItemStyle}" TargetType="ListViewItem" />
+    <Style BasedOn="{StaticResource DarkThemeMenuStyle}" TargetType="Menu" />
+    <Style BasedOn="{StaticResource DarkThemeMenuItemStyle}" TargetType="MenuItem" />
+    <Style BasedOn="{StaticResource DarkThemePasswordBoxStyle}" TargetType="PasswordBox" />
+    <Style BasedOn="{StaticResource DarkThemeProgressBarStyle}" TargetType="ProgressBar" />
+    <Style BasedOn="{StaticResource DarkThemeRadioButtonStyle}" TargetType="RadioButton" />
+    <Style BasedOn="{StaticResource DarkThemeRichTextBoxStyle}" TargetType="RichTextBox" />
+    <Style BasedOn="{StaticResource DarkThemeScrollBarStyle}" TargetType="ScrollBar" />
+    <Style BasedOn="{StaticResource DarkThemeScrollViewerStyle}" TargetType="ScrollViewer" />
+    <Style BasedOn="{StaticResource DarkThemeSeparatorStyle}" TargetType="Separator" />
+    <Style BasedOn="{StaticResource DarkThemeSliderStyle}" TargetType="Slider" />
+    <Style BasedOn="{StaticResource DarkThemeStatusBarStyle}" TargetType="StatusBar" />
+    <Style BasedOn="{StaticResource DarkThemeStatusBarItemStyle}" TargetType="StatusBarItem" />
+    <Style BasedOn="{StaticResource DarkThemeTabControlStyle}" TargetType="TabControl" />
+    <Style BasedOn="{StaticResource DarkThemeTabItemStyle}" TargetType="TabItem" />
+    <Style BasedOn="{StaticResource DarkThemeToolBarStyle}" TargetType="ToolBar" />
+    <Style BasedOn="{StaticResource DarkThemeToolBarTrayStyle}" TargetType="ToolBarTray" />
+    <Style BasedOn="{StaticResource DarkThemeToolTipStyle}" TargetType="ToolTip" />
+    <Style BasedOn="{StaticResource DarkThemeTreeViewStyle}" TargetType="TreeView" />
+    <Style BasedOn="{StaticResource DarkThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
 </ResourceDictionary>
