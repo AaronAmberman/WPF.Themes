@@ -5774,7 +5774,6 @@
     <Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
     <Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />
     <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
-    <Style BasedOn="{StaticResource LightThemeDataGridStyle}" TargetType="DataGrid" />
     <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource LightThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
