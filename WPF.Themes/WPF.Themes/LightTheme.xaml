@@ -25,6 +25,7 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Color x:Key="ArrowPath.Background.Color">#FF000000</Color>
     <Color x:Key="ArrowPath.Border.Color">#FF000000</Color>
+    
     <Color x:Key="Button.Background.Color">#FFDDDDDD</Color>
     <Color x:Key="Button.Border.Color">#FF707070</Color>
     <Color x:Key="Button.Foreground.Color">#FF000000</Color>
@@ -36,6 +37,7 @@
     <Color x:Key="Button.Disabled.Background.Color">#FFF4F4F4</Color>
     <Color x:Key="Button.Disabled.Border.Color">#FFADB2B5</Color>
     <Color x:Key="Button.Disabled.Foreground.Color">#FF707070</Color>
+    
     <Color x:Key="Calendar.Background.GradientStop1.Color">#FFE4EAF0</Color>
     <Color x:Key="Calendar.Background.GradientStop2.Color">#FFECF0F4</Color>
     <Color x:Key="Calendar.Background.GradientStop3.Color">#FFFCFCFD</Color>
@@ -45,10 +47,12 @@
     <Color x:Key="Calendar.Border.GradientStop3.Color">#FF718597</Color>
     <Color x:Key="Calendar.Border.GradientStop4.Color">#FF617584</Color>
     <Color x:Key="Calendar.Foreground.Color">#FF333333</Color>
+    
     <Color x:Key="CalendarButton.Background.Color">#FFBADDE9</Color>
     <Color x:Key="CalendarButton.FocusVisual.Border.Color">#FF45D6FA</Color>
     <Color x:Key="CalendarButton.Foreground.Color">#FF333333</Color>
     <Color x:Key="CalendarButton.Inactive.Foreground.Color">#FF777777</Color>
+    
     <Color x:Key="CalendarDayButton.Blackout.Background.Color">#FF000000</Color>
     <Color x:Key="CalendarDayButton.Foreground.Color">#FF333333</Color>
     <Color x:Key="CalendarDayButton.Inactive.Foreground.Color">#FF777777</Color>
@@ -56,6 +60,7 @@
     <Color x:Key="CalendarDayButton.Today.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="CalendarDayButton.Today.Highlight.Background.Color">#FFBADDE9</Color>
     <Color x:Key="CalendarDayButton.Today.Selected.Background.Color">#FFBADDE9</Color>
+    
     <Color x:Key="CalendarItem.Root.Disabled.Background.Color">#A5FFFFFF</Color>
     <Color x:Key="CalendarItem.Inner.Border.Color">#FFFFFFFF</Color>
     <Color x:Key="CalendarItem.HeaderButton.Background.Color">#FF73A9D8</Color>
@@ -63,6 +68,7 @@
     <Color x:Key="CalendarItem.HeaderButton.Next.Background.Color">#FF333333</Color>
     <Color x:Key="CalendarItem.HeaderButton.Previous.Background.Color">#FF333333</Color>
     <Color x:Key="CalendarItem.HeaderButton.Rectangle.Background.Color">#11E5EBF1</Color>
+    
     <Color x:Key="ComboBox.Background.GradientStop1.Color">#FFF0F0F0</Color>
     <Color x:Key="ComboBox.Background.GradientStop2.Color">#FFE5E5E5</Color>
     <Color x:Key="ComboBox.Border.Color">#FFACACAC</Color>
@@ -99,6 +105,7 @@
     <Color x:Key="ComboBox.Disabled.Editable.Border.Color">#FFBFBFBF</Color>
     <Color x:Key="ComboBox.Disabled.Editable.Button.Background.Color">#00000000</Color>
     <Color x:Key="ComboBox.Disabled.Editable.Button.Border.Color">#00000000</Color>
+    
     <Color x:Key="ComboBoxItem.Background.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Border.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Disabled.Foreground.Color">#FF808080</Color>
@@ -113,12 +120,15 @@
     <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#99006CD9</Color>
     <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color">#3DDADADA</Color>
     <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color">#FFDADADA</Color>
+    
     <Color x:Key="ContextMenu.Background.Color">#FFF1F1F1</Color>
     <Color x:Key="ContextMenu.Border.Color">#FF888888</Color>
     <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
     <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFE2E3E3</Color>
     <Color x:Key="ContextMenu.Splitter.Color2.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
+    
     <Color x:Key="DataGrid.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="DataGrid.Border.Color">#FF688CAF</Color>
     <Color x:Key="DataGrid.Foreground.Color">#FF000000</Color>
@@ -126,6 +136,7 @@
     <Color x:Key="DataGrid.SelectAllButton.Border.Color">#FFFFFFFF</Color>    
     <Color x:Key="DataGrid.SelectAllButton.MouseOver.Border.Color">#FFA9A9A9</Color>
     <Color x:Key="DataGrid.SelectAllButton.Pressed.Arrow.Color">#FFA9A9A9</Color>
+    
     <Color x:Key="DatePicker.Background.Color">#00000000</Color>
     <Color x:Key="DatePicker.Background.Pressed.Color">#FF448DCA</Color>
     <Color x:Key="DatePicker.Border.GradientStop1.Color">#FFA3AEB9</Color>
@@ -157,11 +168,14 @@
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF494949</Color>
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF9F9F9F</Color>
     <Color x:Key="DatePicker.Popup.Background.Color">#A5FFFFFF</Color>
+    
     <Color x:Key="DocumentViewer.Background.Color">#FFDCDCDC</Color>
     <Color x:Key="DocumentViewer.Foreground.Color">#FF000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop1.Color">#66000000</Color>
     <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop2.Color">#00000000</Color>
+    
     <Color x:Key="DropShadow.Color">#71000000</Color>
+    
     <Color x:Key="Expander.Background.Color">#00000000</Color>
     <Color x:Key="Expander.Border.Color">#00000000</Color>
     <Color x:Key="Expander.Disabled.Foreground.Color">#FF808080</Color>
@@ -178,18 +192,23 @@
     <Color x:Key="Expander.Disabled.Circle.Stroke.Color">#FFBCBCBC</Color>
     <Color x:Key="Expander.Disabled.Circle.Fill.Color">#FFE6E6E6</Color>
     <Color x:Key="Expander.Disabled.Arrow.Stroke.Color">#FF707070</Color>
+    
     <Color x:Key="FocusVisual.Stroke.Color">#FF000000</Color>
+    
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop1.Color">#A0C2CCE7</Color>
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop2.Color">#60FFFFFF</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop1.Color">#FFB7C2E3</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop2.Color">#A0FFFFFF</Color>
+    
     <Color x:Key="GridSplitter.Background.Color">#FFFAF0E6</Color>
     <Color x:Key="GridSplitter.PreviewStyle.Background.Color">#80000000</Color>
+    
     <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop1.Color">#FFEEEEEE</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop2.Color">#FFCCCCCC</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop1.Color">#FF000000</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop2.Color">#FFFFFFFF</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Inner.Border.Color">#00000000</Color>
+    
     <Color x:Key="GridViewColumnHeader.Background.GradientStop1.Color">#FFFEFEFE</Color>
     <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FFEDEDED</Color>
     <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FFEEEEEE</Color>
@@ -202,21 +221,26 @@
     <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop1.Color">#FF8DD6F7</Color>
     <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop2.Color">#FF7A9EB1</Color>
     <Color x:Key="GridViewColumnHeader.Pressed.Border.Color">#FF95DAF9</Color>
+    
     <Color x:Key="GroupBox.Border.Color">#FFD5DFE5</Color>
     <Color x:Key="GroupBox.Inner.Border.Color">#00000000</Color>
     <Color x:Key="GroupBox.Inner.Inner.Border.Color">#FFFFFFFF</Color>
     <Color x:Key="GroupBox.Inner.Inner.Inner.Border.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="Hyperlink.Foreground.Color">#FF005EFF</Color>
     <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
+    
     <Color x:Key="Label.Background.Color">#00000000</Color>
     <Color x:Key="Label.Foreground.Color">#FF000000</Color>
-    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>    
+    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>  
+    
     <Color x:Key="ListBox.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListBox.Border.Color">#FFABADB3</Color>
     <Color x:Key="ListBox.Disabled.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListBox.Disabled.Border.Color">#FFD9D9D9</Color>
     <Color x:Key="ListBox.Foreground.Color">#FF000000</Color>
+    
     <Color x:Key="ListBoxItem.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="ListBoxItem.MouseOver.Background.Color">#1F26A0DA</Color>
     <Color x:Key="ListBoxItem.MouseOver.Border.Color">#A826A0DA</Color>
@@ -224,30 +248,36 @@
     <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#FF26A0DA</Color>
     <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#3DDADADA</Color>
     <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#FFDADADA</Color>
+    
     <Color x:Key="ListView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListView.Border.Color">#FFABADB3</Color>
     <Color x:Key="ListView.Disabled.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="ListView.Disabled.Border.Color">#FFD9D9D9</Color>
     <Color x:Key="ListView.Foreground.Color">#FF000000</Color>
+    
     <Color x:Key="Item.MouseOver.Background.Color">#1F26A0DA</Color>
     <Color x:Key="Item.MouseOver.Border.Color">#A826A0DA</Color>
     <Color x:Key="Item.SelectedActive.Background.Color">#3D26A0DA</Color>
     <Color x:Key="Item.SelectedActive.Border.Color">#FF26A0DA</Color>
     <Color x:Key="Item.SelectedInactive.Background.Color">#3DDADADA</Color>
     <Color x:Key="Item.SelectedInactive.Border.Color">#FFDADADA</Color>
+    
     <Color x:Key="Menu.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="Menu.Border.Color">#FF999999</Color>
     <Color x:Key="Menu.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="Menu.Foreground.Color">#FF212121</Color>
     <Color x:Key="Menu.Separator.Color">#FFD7D7D7</Color>
+    
     <Color x:Key="MenuItem.Selected.Background.Color">#3D26A0DA</Color>
     <Color x:Key="MenuItem.Selected.Border.Color">#FF26A0DA</Color>
     <Color x:Key="MenuItem.Highlight.Background.Color">#3D26A0DA</Color>
     <Color x:Key="MenuItem.Highlight.Border.Color">#FF26A0DA</Color>
     <Color x:Key="MenuItem.Highlight.Disabled.Background.Color">#0A000000</Color>
     <Color x:Key="MenuItem.Highlight.Disabled.Border.Color">#21000000</Color>
+    
     <Color x:Key="MenuScrollButton.Background.Color">#00000000</Color>
     <Color x:Key="MenuScrollButton.Border.Color">#00000000</Color>
+    
     <Color x:Key="NavigationWindowNavigationButton.Background.Color">#FF212121</Color>
     <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop1.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop2.Color">#FFCCD4E9</Color>
@@ -279,28 +309,35 @@
     <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Background.Color">#D0FFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Border.Color">#FFB5BACE</Color>
     <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Border2.Color">#B0B5BACE</Color>
+    
     <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background.Color">#00000000</Color>
     <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background.Color">#FF1E90FF</Color>
     <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop1.Color">#FF6C90C4</Color>
     <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop2.Color">#FF315BB4</Color>
     <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop3.Color">#FF002091</Color>
     <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop4.Color">#FF08377C</Color>
+    
     <Color x:Key="NavigationWindowNavigationArrowStrokeEnabled.GradientStop1.Color">#FF8AB1FB</Color>
     <Color x:Key="NavigationWindowNavigationArrowStrokeEnabled.GradientStop2.Color">#FF002874</Color>
+    
     <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop1.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop2.Color">#FFEEEEEE</Color>
     <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop3.Color">#FFB0B0B0</Color>
+    
     <Color x:Key="NavigationWindowDownArrowFill.Border.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowDownArrowFill.Enabled.Color">#FFA5AABE</Color>
     <Color x:Key="NavigationWindowDownArrowFill.GradientStop1.Color">#FF33B5DA</Color>
     <Color x:Key="NavigationWindowDownArrowFill.GradientStop2.Color">#FF335799</Color>
+    
     <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop1.Color">#FFFFFFFF</Color>
     <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop2.Color">#FFE3E8F4</Color>
     <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop3.Color">#FFCFD7EB</Color>
     <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop4.Color">#FFE9ECFA</Color>
+    
     <Color x:Key="NavigationWindowMenuItem.Panel.Background.Color">#00000000</Color>
     <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color">#20DDDDDD</Color>
     <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2.Color">#80FFFFFF</Color>
@@ -308,6 +345,7 @@
     <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Inner.Border.Color">#A0FFFFFF</Color>
     <Color x:Key="NavigationWindowMenuItem.SubMenu.Background.Color">#FFFFFAF0</Color>
     <Color x:Key="NavigationWindowMenuItem.SubMenu.Border.Color">#FFA9A9A9</Color>
+    
     <Color x:Key="OptionMark.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="OptionMark.Border.Color">#FF707070</Color>
     <Color x:Key="OptionMark.Foreground.Color">#FF000000</Color>
@@ -322,9 +360,11 @@
     <Color x:Key="OptionMark.Disabled.Background.Color">#FFE6E6E6</Color>
     <Color x:Key="OptionMark.Disabled.Border.Color">#FFBCBCBC</Color>
     <Color x:Key="OptionMark.Disabled.Glyph.Color">#FF707070</Color>    
+    
     <Color x:Key="ProgressBar.Progress.Color">#FF06B025</Color>
     <Color x:Key="ProgressBar.Background.Color">#FFE6E6E6</Color>
     <Color x:Key="ProgressBar.Border.Color">#FFBCBCBC</Color>
+    
     <Color x:Key="RadioButton.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="RadioButton.Border.Color">#FF707070</Color>
     <Color x:Key="RadioButton.Foreground.Color">#FF000000</Color>
@@ -340,6 +380,7 @@
     <Color x:Key="RadioButton.Disabled.Border.Color">#FFBCBCBC</Color>
     <Color x:Key="RadioButton.Disabled.Glyph.Color">#FF707070</Color>
     <Color x:Key="RepeatButton.Transparent.Background.Color">#00000000</Color>
+    
     <Color x:Key="ScrollBarButton.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="ScrollBarButton.Border.Color">#FFF0F0F0</Color>
     <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#FFDADADA</Color>
@@ -348,6 +389,7 @@
     <Color x:Key="ScrollBarButton.Pressed.Border.Color">#FF606060</Color>
     <Color x:Key="ScrollBarButton.Disabled.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="ScrollBarButton.Disabled.Border.Color">#FFF0F0F0</Color>
+    
     <Color x:Key="ScrollBar.Foreground.Color">#FF000000</Color>
     <Color x:Key="ScrollBar.Glyph.Color">#FF606060</Color>
     <Color x:Key="ScrollBar.Thumb.Color">#FFCDCDCD</Color>
@@ -356,11 +398,14 @@
     <Color x:Key="ScrollBar.Pressed.Thumb.Color">#FF606060</Color>
     <Color x:Key="ScrollBar.Pressed.Glyph.Color">#FFFFFFFF</Color>
     <Color x:Key="ScrollBar.Disabled.Glyph.Color">#FFBFBFBF</Color>
+    
     <Color x:Key="Separator.Background.Color">#FFC0C0C0</Color>
+    
     <Color x:Key="Slider.Background.Color">#00000000</Color>
     <Color x:Key="Slider.Border.Color">#00000000</Color>
     <Color x:Key="Slider.SelectionRange.Background.Color">#FF1E90FF</Color>
     <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF0000FF</Color>
+    
     <Color x:Key="SliderThumb.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="SliderThumb.Border.Color">#FFACACAC</Color>
     <Color x:Key="SliderThumb.Foreground.Color">#FFE5E5E5</Color>
@@ -372,15 +417,19 @@
     <Color x:Key="SliderThumb.Disabled.Border.Color">#FFD9D9D9</Color>
     <Color x:Key="SliderThumb.Track.Background.Color">#FFE7EAEA</Color>
     <Color x:Key="SliderThumb.Track.Border.Color">#FFD6D6D6</Color>
+    
     <Color x:Key="StatusBar.Background.Color">#FFF1EDED</Color>
     <Color x:Key="StatusBar.Foreground.Color">#FF000000</Color>
+    
     <Color x:Key="StatusBarItem.Background.Color">#00000000</Color>
     <Color x:Key="StatusBarItem.Border.Color">#00000000</Color>
     <Color x:Key="StatusBarItem.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="StatusBarItem.Foreground.Color">#FF000000</Color>
+    
     <Color x:Key="TabControl.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TabControl.Foreground.Color">#FF000000</Color>
     <Color x:Key="TabControl.TabPanel.Background.Color">#00000000</Color>
+    
     <Color x:Key="TabItem.Background.GradientStop1.Color">#FFF0F0F0</Color>
     <Color x:Key="TabItem.Background.GradientStop2.Color">#FFE5E5E5</Color>
     <Color x:Key="TabItem.Border.Color">#FFACACAC</Color>
@@ -391,35 +440,51 @@
     <Color x:Key="TabItem.MouseOver.Border.Color">#FF7EB4EA</Color>
     <Color x:Key="TabItem.Selected.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TabItem.Selected.Border.Color">#FFACACAC</Color>
+    
     <Color x:Key="TextBoxBase.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TextBoxBase.Foreground.Color">#FF000000</Color>
     <Color x:Key="TextBoxBase.InactiveSelection.Color">#FFDCDCDC</Color>
+    
     <Color x:Key="TextBox.Focus.Border.Color">#FF569DE5</Color>
     <Color x:Key="TextBox.MouseOver.Border.Color">#FF7EB4EA</Color>
     <Color x:Key="TextBox.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TextBox.Border.Color">#FFABAdB3</Color>
     <Color x:Key="TextBox.ContentHost.Background.Color">#FFABAdB3</Color>
+    
     <Color x:Key="ToolBarButtonHover.Color">#210080FF</Color>
     <Color x:Key="ToolBarMenuBorder.Color">#FFB6BDC5</Color>
-    <Color x:Key="ToolBarHorizontalOverflow.Path.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="ToolBarVerticalOverflow.Path.Border.Color">#FFFFFFFF</Color>
+    
+    <Color x:Key="ToolBarHorizontalOverflow.Path.Border.Color">#FFFFFFFF</Color>  
+    
+    <Color x:Key="ToolBarVerticalOverflow.Path.Border.Color">#FFFFFFFF</Color>  
+    
     <Color x:Key="ToolBarSubMenuBackground.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolBarHorizontalBackground.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolBarVerticalBackground.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolBarGripper.Color">#FF6D6D6D</Color>
+    
     <Color x:Key="ToolBarToggleButtonHorizontalBackground.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolBarToggleButtonVerticalBackground.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolBar.Thumb.Background.Color">#00000000</Color>
-    <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>
+    <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>    
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
+    
     <Color x:Key="ToolBarTray.Background.Color">#FFEEF5FD</Color>
+    
     <Color x:Key="ToolTip.Background.Color">#FFF1EDED</Color>
     <Color x:Key="ToolTip.Border.Color">#FF828790</Color>
     <Color x:Key="ToolTip.Foreground.Color">#FF000000</Color>
+    
     <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
     <Color x:Key="TreeView.Border.Color">#FF828790</Color>
     <Color x:Key="TreeView.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TreeView.Foreground.Color">#FF828790</Color>
+    
     <Color x:Key="TreeViewItem.Background.Color">#00000000</Color>
     <Color x:Key="TreeViewItem.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="TreeViewItem.Foreground.Color">#FF000000</Color>
@@ -450,6 +515,7 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <SolidColorBrush x:Key="ArrowPath.Background" Color="{DynamicResource ArrowPath.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ArrowPath.Border" Color="{DynamicResource ArrowPath.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Button.Background" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Border" Color="{DynamicResource Button.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Foreground" Color="{DynamicResource Button.Foreground.Color}" options:Freeze="True"/>
@@ -461,6 +527,7 @@
     <SolidColorBrush x:Key="Button.Disabled.Background" Color="{DynamicResource Button.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Disabled.Border" Color="{DynamicResource Button.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="{DynamicResource Button.Disabled.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Calendar.Background.GradientStop1" Color="{DynamicResource Calendar.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Background.GradientStop2" Color="{DynamicResource Calendar.Background.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Background.GradientStop3" Color="{DynamicResource Calendar.Background.GradientStop3.Color}" options:Freeze="True"/>
@@ -470,17 +537,20 @@
     <SolidColorBrush x:Key="Calendar.Border.GradientStop3" Color="{DynamicResource Calendar.Border.GradientStop3.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Border.GradientStop4" Color="{DynamicResource Calendar.Border.GradientStop4.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Foreground" Color="{DynamicResource Calendar.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="CalendarButton.Background" Color="{DynamicResource CalendarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.Foreground" Color="{DynamicResource CalendarButton.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.Inactive.Foreground" Color="{DynamicResource CalendarButton.Inactive.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="CalendarDayButton.Blackout.Background" Color="{DynamicResource CalendarDayButton.Blackout.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.FocusVisual.Border" Color="{DynamicResource CalendarButton.FocusVisual.Border.Color}" options:Freeze="True"/>
+        
+    <SolidColorBrush x:Key="CalendarDayButton.Blackout.Background" Color="{DynamicResource CalendarDayButton.Blackout.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Foreground" Color="{DynamicResource CalendarDayButton.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Inactive.Foreground" Color="{DynamicResource CalendarDayButton.Inactive.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Background" Color="{DynamicResource CalendarDayButton.Today.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Foreground" Color="{DynamicResource CalendarDayButton.Today.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Highlight.Background" Color="{DynamicResource CalendarDayButton.Today.Highlight.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Selected.Background" Color="{DynamicResource CalendarDayButton.Today.Selected.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="CalendarItem.Root.Disabled.Background" Color="{DynamicResource CalendarItem.Root.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.Inner.Border" Color="{DynamicResource CalendarItem.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.HeaderButton.Background" Color="{DynamicResource CalendarItem.HeaderButton.Background.Color}" options:Freeze="True"/>
@@ -488,6 +558,7 @@
     <SolidColorBrush x:Key="CalendarItem.HeaderButton.Next.Background" Color="{DynamicResource CalendarItem.HeaderButton.Next.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.HeaderButton.Previous.Background" Color="{DynamicResource CalendarItem.HeaderButton.Previous.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.HeaderButton.Rectangle.Background" Color="{DynamicResource CalendarItem.HeaderButton.Rectangle.Background.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="ComboBox.Background" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource ComboBox.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource ComboBox.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -534,6 +605,7 @@
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Border" Color="{DynamicResource ComboBox.Disabled.Editable.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Background" Color="{DynamicResource ComboBox.Disabled.Editable.Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Border" Color="{DynamicResource ComboBox.Disabled.Editable.Button.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ComboBoxItem.Background" Color="{DynamicResource ComboBoxItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.Border" Color="{DynamicResource ComboBoxItem.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.Disabled.Foreground" Color="{DynamicResource ComboBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -548,12 +620,15 @@
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ContextMenu.Background" Color="{DynamicResource ContextMenu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Border" Color="{DynamicResource ContextMenu.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Foreground" Color="{DynamicResource ContextMenu.Foregound.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Splitter.Color1" Color="{DynamicResource ContextMenu.Splitter.Color1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Splitter.Color2" Color="{DynamicResource ContextMenu.Splitter.Color2.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="CurrentEntryBackground" Color="{DynamicResource CurrentEntryBackground.Color}" Opacity="0.25" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="DataGrid.Background" Color="{DynamicResource DataGrid.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Border" Color="{DynamicResource DataGrid.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.Foreground" Color="{DynamicResource DataGrid.Foreground.Color}" options:Freeze="True"/>
@@ -561,6 +636,7 @@
     <SolidColorBrush x:Key="DataGrid.SelectAllButton.Border" Color="{DynamicResource DataGrid.SelectAllButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.SelectAllButton.MouseOver.Border" Color="{DynamicResource DataGrid.SelectAllButton.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DataGrid.SelectAllButton.Pressed.Arrow" Color="{DynamicResource DataGrid.SelectAllButton.Pressed.Arrow.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="DatePicker.Background" Color="{DynamicResource DatePicker.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Background.Pressed" Color="{DynamicResource DatePicker.Background.Pressed.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Border.GradientStop1" Color="{DynamicResource DatePicker.Border.GradientStop1.Color}" options:Freeze="True"/>
@@ -592,11 +668,14 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Popup.Background" Color="{DynamicResource DatePicker.Popup.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="DocumentViewer.Background" Color="{DynamicResource DocumentViewer.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Foreground" Color="{DynamicResource DocumentViewer.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop1" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop2" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop2.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="DropShadow" Color="{DynamicResource DropShadow.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Expander.Background" Color="{DynamicResource Expander.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Border" Color="{DynamicResource Expander.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Foreground" Color="{DynamicResource Expander.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -613,18 +692,23 @@
     <SolidColorBrush x:Key="Expander.Disabled.Circle.Stroke" Color="{DynamicResource Expander.Disabled.Circle.Stroke.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Circle.Fill" Color="{DynamicResource Expander.Disabled.Circle.Fill.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Arrow.Stroke" Color="{DynamicResource Expander.Disabled.Arrow.Stroke.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="FocusVisual.Stroke" Color="{DynamicResource FocusVisual.Stroke.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop2.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="GridSplitter.Background" Color="{DynamicResource GridSplitter.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.PreviewStyle.Background" Color="{DynamicResource GridSplitter.PreviewStyle.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Background.GradientStop1" Color="{DynamicResource GridViewColumnHeaderGripper.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Background.GradientStop2" Color="{DynamicResource GridViewColumnHeaderGripper.Background.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Border.GradientStop1" Color="{DynamicResource GridViewColumnHeaderGripper.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Border.GradientStop2" Color="{DynamicResource GridViewColumnHeaderGripper.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Inner.Border" Color="{DynamicResource GridViewColumnHeaderGripper.Inner.Border.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="GridViewColumnHeader.Background" StartPoint="0,0" EndPoint="0,1" options:Freeze="True">
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -645,21 +729,26 @@
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Pressed.Background.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="GridViewColumnHeader.Pressed.Border" Color="{DynamicResource GridViewColumnHeader.Pressed.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="GroupBox.Border" Color="{DynamicResource GroupBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Border" Color="{DynamicResource GroupBox.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Inner.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Inner.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Hyperlink.Disabled.Foreground" Color="{DynamicResource Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.Foreground" Color="{DynamicResource Hyperlink.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.MouseOver.Foreground" Color="{DynamicResource Hyperlink.MouseOver.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Label.Background" Color="{DynamicResource Label.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Foreground" Color="{DynamicResource Label.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Disabled.Foreground" Color="{DynamicResource Label.Disabled.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ListBox.Background" Color="{DynamicResource ListBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Border" Color="{DynamicResource ListBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="{DynamicResource ListBox.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="{DynamicResource ListBox.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Foreground" Color="{DynamicResource ListBox.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ListBoxItem.Disabled.Foreground" Color="{DynamicResource ListBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Background" Color="{DynamicResource ListBoxItem.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Border" Color="{DynamicResource ListBoxItem.MouseOver.Border.Color}" options:Freeze="True"/>
@@ -667,31 +756,38 @@
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Border" Color="{DynamicResource ListBoxItem.SelectedActive.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Background" Color="{DynamicResource ListBoxItem.SelectedInactive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Border" Color="{DynamicResource ListBoxItem.SelectedInactive.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ListView.Background" Color="{DynamicResource ListView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Border" Color="{DynamicResource ListView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Disabled.Background" Color="{DynamicResource ListView.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Disabled.Border" Color="{DynamicResource ListView.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Foreground" Color="{DynamicResource ListView.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Item.MouseOver.Background" Color="{DynamicResource Item.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.MouseOver.Border" Color="{DynamicResource Item.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Background" Color="{DynamicResource Item.SelectedActive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Border" Color="{DynamicResource Item.SelectedActive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedInactive.Background" Color="{DynamicResource Item.SelectedInactive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="{DynamicResource Item.SelectedInactive.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Menu.Background" Color="{DynamicResource Menu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Border" Color="{DynamicResource Menu.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="{DynamicResource Menu.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Foreground" Color="{DynamicResource Menu.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Separator" Color="{DynamicResource Menu.Separator.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="MenuItem.Highlight.Background" Color="{DynamicResource MenuItem.Highlight.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Highlight.Border" Color="{DynamicResource MenuItem.Highlight.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Background" Color="{DynamicResource MenuItem.Highlight.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Border" Color="{DynamicResource MenuItem.Highlight.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Selected.Background" Color="{DynamicResource MenuItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Selected.Border" Color="{DynamicResource MenuItem.Selected.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="MenuScrollButton.Background" Color="{DynamicResource MenuScrollButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuScrollButton.Border" Color="{DynamicResource MenuScrollButton.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="NavigationWindowNavigationButton.Background" Color="{DynamicResource NavigationWindowNavigationButton.Background.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="NavigationWindowNavigationButtonFillEnabled" EndPoint="0.5,1.0" StartPoint="0.5,0.0" options:Freeze="True">
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop2.Color}" Offset="0.1"/>
@@ -727,14 +823,17 @@
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop3.Color}" Offset="0.5"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop4.Color}" Offset="1.0"/>
     </LinearGradientBrush>
+    
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Background" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Border" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Border2" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border2.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="NavigationWindowNavigationButtonStrokeEnabled" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop1.Color}" Offset="0"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop2.Color}" Offset="0.5"/>
@@ -754,14 +853,17 @@
         <GradientStop Color="{DynamicResource NavigationWindowDownArrowFill.GradientStop1.Color}" Offset="0"/>
         <GradientStop Color="{DynamicResource NavigationWindowDownArrowFill.GradientStop2.Color}" Offset="1"/>
     </LinearGradientBrush>
+    
     <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Border" Color="{DynamicResource NavigationWindowDownArrowFill.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Enabled" Color="{DynamicResource NavigationWindowDownArrowFill.Enabled.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="NavigationWindowNavigationChromeBackground" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop1.Color}" Offset="0"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop2.Color}" Offset="0.5"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop3.Color}" Offset="0.5"/>
         <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop4.Color}" Offset="1.0"/>
     </LinearGradientBrush>
+    
     <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Background" Color="{DynamicResource NavigationWindowMenuItem.Panel.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2.Color}" options:Freeze="True"/>
@@ -769,6 +871,7 @@
     <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Inner.Border" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowMenuItem.SubMenu.Background" Color="{DynamicResource NavigationWindowMenuItem.SubMenu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="NavigationWindowMenuItem.SubMenu.Border" Color="{DynamicResource NavigationWindowMenuItem.SubMenu.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="OptionMark.Background" Color="{DynamicResource OptionMark.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Border" Color="{DynamicResource OptionMark.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Foreground" Color="{DynamicResource OptionMark.Foreground.Color}" options:Freeze="True"/>
@@ -783,9 +886,11 @@
     <SolidColorBrush x:Key="OptionMark.Disabled.Background" Color="{DynamicResource OptionMark.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Disabled.Border" Color="{DynamicResource OptionMark.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Disabled.Glyph" Color="{DynamicResource OptionMark.Disabled.Glyph.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ProgressBar.Progress" Color="{DynamicResource ProgressBar.Progress.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Background" Color="{DynamicResource ProgressBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Border" Color="{DynamicResource ProgressBar.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="RadioButton.Background" Color="{DynamicResource RadioButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Border" Color="{DynamicResource RadioButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Foreground" Color="{DynamicResource RadioButton.Foreground.Color}" options:Freeze="True"/>
@@ -800,7 +905,9 @@
     <SolidColorBrush x:Key="RadioButton.Disabled.Background" Color="{DynamicResource RadioButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Border" Color="{DynamicResource RadioButton.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Glyph" Color="{DynamicResource RadioButton.Disabled.Glyph.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>    
+    
     <SolidColorBrush x:Key="ScrollBarButton.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.MouseOver.Background" Color="{DynamicResource ScrollBarButton.MouseOver.Background.Color}" options:Freeze="True"/>
@@ -809,6 +916,7 @@
     <SolidColorBrush x:Key="ScrollBarButton.Pressed.Border" Color="{DynamicResource ScrollBarButton.Pressed.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Background" Color="{DynamicResource ScrollBarButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Border" Color="{DynamicResource ScrollBarButton.Disabled.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ScrollBar.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Foreground" Color="{DynamicResource ScrollBar.Foreground.Color}" options:Freeze="True"/>
@@ -819,11 +927,14 @@
     <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{DynamicResource ScrollBar.Pressed.Thumb.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Pressed.Glyph" Color="{DynamicResource ScrollBar.Pressed.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Disabled.Glyph" Color="{DynamicResource ScrollBar.Disabled.Glyph.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Separator.Background" Color="{DynamicResource Separator.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="Slider.Background" Color="{DynamicResource Slider.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.Border" Color="{DynamicResource Slider.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.SelectionRange.Background" Color="{DynamicResource Slider.SelectionRange.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.IsKeyboardfocused.Foreground" Color="{DynamicResource Slider.IsKeyboardfocused.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="SliderThumb.Background" Color="{DynamicResource SliderThumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Border" Color="{DynamicResource SliderThumb.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Foreground" Color="{DynamicResource SliderThumb.Foreground.Color}" options:Freeze="True"/>
@@ -835,22 +946,26 @@
     <SolidColorBrush x:Key="SliderThumb.Disabled.Border" Color="{DynamicResource SliderThumb.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Track.Background" Color="{DynamicResource SliderThumb.Track.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Track.Border" Color="{DynamicResource SliderThumb.Track.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="StatusBar.Background" Color="{DynamicResource StatusBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBar.Foreground" Color="{DynamicResource StatusBar.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="StatusBarItem.Background" Color="{DynamicResource StatusBarItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Border" Color="{DynamicResource StatusBarItem.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Disabled.Foreground" Color="{DynamicResource StatusBarItem.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Foreground" Color="{DynamicResource StatusBarItem.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="TabControl.Disabled.Foreground" Color="{DynamicResource TabControl.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabControl.Foreground" Color="{DynamicResource TabControl.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabControl.TabPanel.Background" Color="{DynamicResource TabControl.TabPanel.Background.Color}" options:Freeze="True"/>
+    
     <LinearGradientBrush x:Key="TabItem.Background" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource TabItem.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource TabItem.Background.GradientStop2.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
+    </LinearGradientBrush>    
     <SolidColorBrush x:Key="TabItem.Border" Color="{DynamicResource TabItem.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Disabled.Background" Color="{DynamicResource TabItem.Disabled.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="{DynamicResource TabItem.Disabled.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="{DynamicResource TabItem.Disabled.Border.Color}" options:Freeze="True"/>    
     <LinearGradientBrush x:Key="TabItem.MouseOver.Background" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource TabItem.MouseOver.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource TabItem.MouseOver.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -858,14 +973,17 @@
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>    
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{DynamicResource TabItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{DynamicResource TabItem.Selected.Border.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="TextBoxBase.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.InactiveSelection" Color="{DynamicResource TextBoxBase.InactiveSelection.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="{DynamicResource TextBox.Focus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="{DynamicResource TextBox.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Background" Color="{DynamicResource TextBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Border" Color="{DynamicResource TextBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.ContentHost.Background" Color="{DynamicResource TextBox.ContentHost.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ToolBarButtonHover" Color="{DynamicResource ToolBarButtonHover.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarMenuBorder" Color="{DynamicResource ToolBarMenuBorder.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarHorizontalOverflow.Path.Border" Color="{DynamicResource ToolBarHorizontalOverflow.Path.Border.Color}" options:Freeze="True"/>
@@ -876,17 +994,22 @@
     <SolidColorBrush x:Key="ToolBarGripper" Color="{DynamicResource ToolBarGripper.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarToggleButtonHorizontalBackground" Color="{DynamicResource ToolBarToggleButtonHorizontalBackground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarToggleButtonVerticalBackground" Color="{DynamicResource ToolBarToggleButtonVerticalBackground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ToolBar.Thumb.Background" Color="{DynamicResource ToolBar.Thumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Thumb.GeometryDrawing" Color="{DynamicResource ToolBar.Thumb.GeometryDrawing.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ToolBarTrayBackground" Color="{DynamicResource ToolBarTray.Background.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ToolTip.Background" Color="{DynamicResource ToolTip.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Border" Color="{DynamicResource ToolTip.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Foreground" Color="{DynamicResource ToolTip.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Disabled.Foreground" Color="{DynamicResource TreeView.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="TreeViewItem.Background" Color="{DynamicResource TreeViewItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.Foreground" Color="{DynamicResource TreeViewItem.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.Disabled.Foreground" Color="{DynamicResource TreeViewItem.Disabled.Foreground.Color}" options:Freeze="True"/>
