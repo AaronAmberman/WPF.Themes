@@ -16,6 +16,7 @@ Even with those resources I didn't want nuget packages or a collection of resour
 Finding Show Me The Templates! lead me to making an improved version of the tool which can be found here (https://github.com/AaronAmberman/WPF.DefaultControlTemplateViewer). It has the power to generate the entire resource dictionary from the Microsoft themes like Luna or Royale. This is cool because you can see what MS did to develop their Aero, Luna, Luna Homestead, Luna Metallic, Classic or Royale themes. Always helpful to see what the developers of the language do. Check it out!
 
 I made a large ***highly organized and readable*** resource dictionary containing all my resources. This way I don't need to clone a whole GitHub repo (or you if you use this). Just go to the GitHub page for the file and click the *"Copy raw contents"* button...
+
 ![CopyContentsOnGitHub](https://user-images.githubusercontent.com/23512394/153728498-1586d61a-5c7d-4ccb-9c53-cab629302c48.png)
 
 This ***will style the built in WPF controls*** but it does not colorize all controls.
