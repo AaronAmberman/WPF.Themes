@@ -24,3 +24,4 @@ File organization...
 ![Example1](https://user-images.githubusercontent.com/23512394/153728514-e8503a63-710c-4d7a-918c-edd0a01decf0.png)
 ![Example2](https://user-images.githubusercontent.com/23512394/153728788-4c71a2af-a860-4ccc-b2e1-63ebdfda5811.png)
 
+The LightTheme is 99% the same as the default look and feel. Some colors are slightly different. 
