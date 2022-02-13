@@ -2092,7 +2092,7 @@
                 <ControlTemplate TargetType="{x:Type Calendar}">
                     <StackPanel x:Name="PART_Root" HorizontalAlignment="Center">
                         <CalendarItem x:Name="PART_CalendarItem" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                                      BorderThickness="{TemplateBinding BorderThickness}" Style="{TemplateBinding LightThemeCalendarItemStyle}"/>
+                                      BorderThickness="{TemplateBinding BorderThickness}" Style="{TemplateBinding ThemeCalendarItemStyle}"/>
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>
