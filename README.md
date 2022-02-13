@@ -10,7 +10,7 @@ https://github.com/ControlzEx/ControlzEx
 There is even a cool ThemeManager as a part of one of the GitHub packages. I think this looks pretty cool. 
 https://github.com/ControlzEx/ControlzEx/blob/develop/Wiki/ThemeManager.md
 
-###Theming Made Easy
+### Theming Made Easy
 Even with those resources I didn't want nuget packages or a collection of resource dictionaries. I wanted one. So I set out to make one. Got to generating templates via Blend. Found Show Me The Templates! (https://sellsbrothers.com/2091) and grabbed a few from there. I also referenced what the MahApp folks did quite a bit.
 
 Finding Show Me The Templates! lead me to making an improved version of the tool which can be found here (https://github.com/AaronAmberman/WPF.DefaultControlTemplateViewer). It has the power to generate the entire resource dictionary from the Microsoft themes like Luna or Royale. This is cool because you can see what MS did to develop their Aero, Luna, Luna Homestead, Luna Metallic, Classic or Royale themes. Always helpful to see what the developers of the language do. Check it out!
