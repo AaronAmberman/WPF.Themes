@@ -2066,6 +2066,9 @@
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="LightThemeCalendarStyle" TargetType="{x:Type Calendar}">
         <Setter Property="Foreground" Value="{DynamicResource Calendar.Foreground}"/>
+        <Setter Property="CalendarButtonStyle" Value="{DynamicResource LightThemeCalendarButtonStyle}" />
+        <Setter Property="CalendarDayButtonStyle" Value="{DynamicResource LightThemeCalendarDayButtonStyle}" />
+        <Setter Property="CalendarItemStyle" Value="{DynamicResource LightThemeCalendarItemStyle}" />
         <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
