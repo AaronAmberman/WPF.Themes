@@ -10,18 +10,30 @@ https://github.com/ControlzEx/ControlzEx
 There is even a cool ThemeManager as a part of one of the GitHub packages. I think this looks pretty cool. 
 https://github.com/ControlzEx/ControlzEx/blob/develop/Wiki/ThemeManager.md
 
-All that being said, I didn't want to have to pull in Nuget packages or have 27 different XAML resource dictionaries holding all my templates. I just wanted **one** file even if it was going to be big because I like one stop shopping. As long as the ***file was highly organized and easy to read***. So I got to generating templates through Blend. Got most of what I have from Blend. I found a tool online called Show Me The Templates! (https://sellsbrothers.com/2091) and used that to grab templates I didn't have from Blend that it had.
+###Theming Made Easy
+Even with those resources I didn't want nuget packages or a collection of resource dictionaries. I wanted one. So I set out to make one. Got to generating templates via Blend. Found Show Me The Templates! (https://sellsbrothers.com/2091) and grabbed a few from there. I also referenced what the MahApp folks did quite a bit.
 
-Which lead me to making an improved version of the tool which can be found here (https://github.com/AaronAmberman/WPF.DefaultControlTemplateViewer). It has the power to generate the entire resource dictionary from the Microsoft themes like Luna or Royale. This is cool because you can see what MS did to develop their Aero, Luna, Luna Homestead, Luna Metallic, Classic or Royale themes. Always helpful to see what the developers of the language do. Check it out!
+Finding Show Me The Templates! lead me to making an improved version of the tool which can be found here (https://github.com/AaronAmberman/WPF.DefaultControlTemplateViewer). It has the power to generate the entire resource dictionary from the Microsoft themes like Luna or Royale. This is cool because you can see what MS did to develop their Aero, Luna, Luna Homestead, Luna Metallic, Classic or Royale themes. Always helpful to see what the developers of the language do. Check it out!
 
-As aforementioned the file is very highly organized and changing colors should be easy (as long as you don't want to change the template). Just modify all the colors at the top of the file. Their name is a good indication of what they are used for. So if you see colors Button.Background, Button.Border and Button.Foreground then you can probably very easily figure out what those apply to. Anyway, tried to make theming easy by making it one stop shopping and highly organized. You don't even need to clone the repo. Just go to the GitHub page for the file and click the *"Copy raw contents"* button...
-
+I made a large ***highly organized and readable*** resource dictionary containing all my resources. This way I don't need to clone a whole GitHub repo (or you if you use this). Just go to the GitHub page for the file and click the *"Copy raw contents"* button...
 ![CopyContentsOnGitHub](https://user-images.githubusercontent.com/23512394/153728498-1586d61a-5c7d-4ccb-9c53-cab629302c48.png)
 
-Just to be clear, the resource dictionary ***will style the built in WPF controls*** but it does not colorize all controls. The Grid, Border, Recangle, UserControl, etc. all still have native transparent backgrounds. The Window Background property was not set either so in darker themes you may still see some white. Its up to you to close these gaps as you see fit. Another thing to note is that there is not an overridden style for the TextBlock. You again will have to make this one yourself. Making overridden styles for Borders and TextBlocks affects many other control templates so be careful when apply global styling to these types.
+This ***will style the built in WPF controls*** but it does not colorize all controls.
+
+Unaffected types...
+ - All panels
+ - Border
+ - Grid
+ - Recangle
+ - TextBlock (yup, you'll have to set a "defult" style for dark themes where you wish to have white text, I do not do this for reasons)
+ - UserControl
+ - Window
+ 
+I am sure there may be a few more but you get the idea.
+
+**Each theme's templates are not the same**. The LightTheme was mostly auto generated templates that were not modified much. The LightTheme is 99% the same as the default look and feel. Some colors are slightly different.  DarkTheme (and others in the future) will not have the same template structures as some of the auto generated templates act strangely and can be hard to modify. Making overridden styles for Borders and TextBlocks affects many other control templates so be careful when apply global styling to these types.
 
 File organization...
 ![Example1](https://user-images.githubusercontent.com/23512394/153728514-e8503a63-710c-4d7a-918c-edd0a01decf0.png)
 ![Example2](https://user-images.githubusercontent.com/23512394/153728788-4c71a2af-a860-4ccc-b2e1-63ebdfda5811.png)
 
-The LightTheme is 99% the same as the default look and feel. Some colors are slightly different. 
