@@ -76,8 +76,8 @@
     <Color x:Key="CalendarDayButton.Today.Highlight.Background.Color">#88007BFF</Color>
     <Color x:Key="CalendarDayButton.Today.Selected.Background.Color">#AA007BFF</Color>
     
-    <Color x:Key="CalendarItem.Root.Disabled.Background.Color">#A5FFFFFF</Color>
-    <Color x:Key="CalendarItem.Inner.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarItem.Root.Disabled.Background.Color">#FF444444</Color>
+    <Color x:Key="CalendarItem.Inner.Border.Color">#FF2F2F2F</Color>
     <Color x:Key="CalendarItem.HeaderButton.Background.Color">#FF007BFF</Color>
     <Color x:Key="CalendarItem.HeaderButton.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="CalendarItem.HeaderButton.Next.Background.Color">#FFFFFFFF</Color>
@@ -1859,9 +1859,14 @@
                         </Storyboard>
                     </VisualState>
                     <VisualState x:Name="Disabled">
-                        <Storyboard>
+                        <!--<Storyboard>
                             <DoubleAnimation Duration="0" Storyboard.TargetName="buttonContent" To=".5" 
                                              Storyboard.TargetProperty="Opacity"/>
+                        </Storyboard>-->
+                        <Storyboard>
+                            <ColorAnimation Duration="0" Storyboard.TargetName="buttonContent" 
+                                            To="{DynamicResource CalendarButton.Foreground.Color}" 
+                                            Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
@@ -2496,12 +2501,13 @@
                                     <VisualTransition GeneratedDuration="0"/>
                                 </VisualStateGroup.Transitions>
                                 <VisualState x:Name="Active"/>
-                                <VisualState x:Name="Inactive">
+                                <VisualState x:Name="Inactive" />
+                                <!--<VisualState x:Name="Inactive">
                                     <Storyboard>
                                         <ColorAnimation Duration="0" Storyboard.TargetName="NormalText" To="{DynamicResource CalendarButton.Inactive.Foreground.Color}" 
                                                         Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
                                     </Storyboard>
-                                </VisualState>
+                                </VisualState>-->
                             </VisualStateGroup>
                             <VisualStateGroup x:Name="CalendarButtonFocusStates">
                                 <VisualStateGroup.Transitions>
