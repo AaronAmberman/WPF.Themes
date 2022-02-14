@@ -62,8 +62,8 @@
                                 </ContextMenu>
                             </ComboBox.ContextMenu>
                         </ComboBox>
-                        <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40,0,0" />
-                        <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="170" Margin="0,200,0,0" />
+                        <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,40,0,0" />
+                        <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="170" Margin="0,5,5,0" />
                         <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">
                             <TextBlock Text="Expander" />
                         </Expander>
@@ -211,7 +211,7 @@
                 </TabItem>
                 <TabItem Header="Testing">
                     <Grid Background="#FF1F1F1F">
-                        
+
                     </Grid>
                 </TabItem>
             </TabControl>

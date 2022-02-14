@@ -126,37 +126,37 @@
 
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
 
-    <Color x:Key="DatePicker.Background.Color">#00000000</Color>
-    <Color x:Key="DatePicker.Background.Pressed.Color">#FF448DCA</Color>
-    <Color x:Key="DatePicker.Border.GradientStop1.Color">#FFA3AEB9</Color>
-    <Color x:Key="DatePicker.Border.GradientStop2.Color">#FF8399A9</Color>
-    <Color x:Key="DatePicker.Border.GradientStop3.Color">#FF718597</Color>
-    <Color x:Key="DatePicker.Border.GradientStop4.Color">#FF617584</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop2.Color">#7FFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop3.Color">#CCFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop4.Color">#F2FFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop1.Color">#EAFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop2.Color">#C6FFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop3.Color">#6BFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop4.Color">#F4FFFFFF</Color>
-    <Color x:Key="DatePicker.Calendar.Border.Color">#FF2F2F2F</Color>
-    <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Calendar.Disabled.Border.Color">#B2FFFFFF</Color>
-    <Color x:Key="DatePicker.Foreground.Color">#B2FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.Color">#11FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop2.Color">#F9FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop3.Color">#E5FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop4.Color">#C6FFFFFF</Color>
+    <Color x:Key="DatePicker.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="DatePicker.Background.Pressed.Color">#770F0F0F</Color>
+    <Color x:Key="DatePicker.Border.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop3.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop4.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop2.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop3.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop4.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop1.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop2.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop3.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop4.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFCCCCCC</Color>
+    <Color x:Key="DatePicker.Calendar.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="DatePicker.Calendar.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="DatePicker.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="DatePicker.Inner.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop2.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop3.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop4.Color">#FF4F4F4F</Color>
     <Color x:Key="DatePicker.Inner.Background.Gradient.Border.Color">#BF000000</Color>
-    <Color x:Key="DatePicker.Inner.Highlight.Color">#FF45D6FA</Color>
+    <Color x:Key="DatePicker.Inner.Highlight.Color">#FF007BFF</Color>
     <Color x:Key="DatePicker.Inner.Inner.Background.Color">#FF1F3B53</Color>
     <Color x:Key="DatePicker.Inner.Inner.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop1.Color">#FF4084BD</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop2.Color">#FFAFCFEA</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF494949</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF9F9F9F</Color>
-    <Color x:Key="DatePicker.Popup.Background.Color">#A5FFFFFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop1.Color">#FF007BFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop2.Color">#AA007BFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Popup.Background.Color">#FF1F1F1F</Color>
     
     <Color x:Key="DocumentViewer.Background.Color">#FFDCDCDC</Color>
     <Color x:Key="DocumentViewer.Foreground.Color">#FF000000</Color>
@@ -607,7 +607,7 @@
     <SolidColorBrush x:Key="DatePicker.Border.Pressed.GradientStop3" Color="{DynamicResource DatePicker.Border.Pressed.GradientStop3.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Border.Pressed.GradientStop4" Color="{DynamicResource DatePicker.Border.Pressed.GradientStop4.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Foreground" Color="{DynamicResource DatePicker.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DatePicker.Calendar.Border" Color="{DynamicResource DatePicker.Calendar.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="DatePicker.Calendar.Foreground" Color="{DynamicResource DatePicker.Calendar.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Circle.Background" Color="{DynamicResource DatePicker.Calendar.Circle.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Disabled.Border" Color="{DynamicResource DatePicker.Calendar.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background" Color="{DynamicResource DatePicker.Inner.Background.Color}" options:Freeze="True"/>
@@ -1719,53 +1719,25 @@
     </Style>
     <ControlTemplate x:Key="CalendarPreviousButtonTemplate" TargetType="{x:Type Button}">
         <Grid Cursor="Hand">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
-                    <VisualState x:Name="MouseOver">
-                        <Storyboard>
-                            <ColorAnimation Duration="0" Storyboard.TargetName="previousPath" 
-                                            To="{DynamicResource CalendarItem.HeaderButton.Background.Color}" 
-                                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
-                        </Storyboard>
-                    </VisualState>
-                    <VisualState x:Name="Disabled">
-                        <Storyboard>
-                            <DoubleAnimation Duration="0" Storyboard.TargetName="previousPath" To=".5" 
-                                             Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
-                        </Storyboard>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
-            <Rectangle Fill="{DynamicResource CalendarItem.HeaderButton.Rectangle.Background}" Opacity="1" Stretch="Fill"/>
+            <Rectangle Fill="{StaticResource CalendarItem.HeaderButton.Rectangle.Background}" Opacity="1" Stretch="Fill"/>
             <Grid>
                 <Path x:Name="previousPath" Data="M288.75,232.25 L288.75,240.625 L283,236.625 Z" 
-                      Fill="{DynamicResource CalendarItem.HeaderButton.Previous.Background}" 
+                      Fill="{StaticResource CalendarItem.HeaderButton.Previous.Background}" 
                       HorizontalAlignment="Left" Height="10" Margin="14,-6,0,0" Stretch="Fill" 
                       VerticalAlignment="Center" Width="6"/>
             </Grid>
         </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value=".5" TargetName="previousPath"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Fill" Value="{DynamicResource CalendarItem.HeaderButton.Background}" TargetName="previousPath"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
     <ControlTemplate x:Key="CalendarNextButtonTemplate" TargetType="{x:Type Button}">
         <Grid Cursor="Hand">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
-                    <VisualState x:Name="MouseOver">
-                        <Storyboard>
-                            <ColorAnimation Duration="0" Storyboard.TargetName="nextPath" 
-                                            To="{DynamicResource CalendarItem.HeaderButton.Background.Color}" 
-                                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"/>
-                        </Storyboard>
-                    </VisualState>
-                    <VisualState x:Name="Disabled">
-                        <Storyboard>
-                            <DoubleAnimation Duration="0" Storyboard.TargetName="nextPath" To=".5" 
-                                             Storyboard.TargetProperty="(Shape.Fill).(Brush.Opacity)"/>
-                        </Storyboard>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
             <Rectangle Fill="{DynamicResource CalendarItem.HeaderButton.Rectangle.Background}" Opacity="1" Stretch="Fill"/>
             <Grid>
                 <Path x:Name="nextPath" Data="M282.875,231.875 L282.875,240.375 L288.625,236 Z" 
@@ -1774,38 +1746,31 @@
                       VerticalAlignment="Center" Width="6"/>
             </Grid>
         </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value=".5" TargetName="nextPath"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Fill" Value="{DynamicResource CalendarItem.HeaderButton.Background}" TargetName="nextPath"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
     <ControlTemplate x:Key="CalendarHeaderButtonTemplate" TargetType="{x:Type Button}">
         <Grid Cursor="Hand">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal"/>
-                    <VisualState x:Name="MouseOver">
-                        <Storyboard>
-                            <ColorAnimation Duration="0" Storyboard.TargetName="buttonContent" 
-                                            To="{DynamicResource CalendarItem.HeaderButton.Background.Color}" 
-                                            Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
-                        </Storyboard>
-                    </VisualState>
-                    <VisualState x:Name="Disabled">
-                        <!--<Storyboard>
-                            <DoubleAnimation Duration="0" Storyboard.TargetName="buttonContent" To=".5" 
-                                             Storyboard.TargetProperty="Opacity"/>
-                        </Storyboard>-->
-                        <Storyboard>
-                            <ColorAnimation Duration="0" Storyboard.TargetName="buttonContent" 
-                                            To="{DynamicResource CalendarButton.Foreground.Color}" 
-                                            Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)"/>
-                        </Storyboard>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
             <ContentPresenter x:Name="buttonContent" ContentTemplate="{TemplateBinding ContentTemplate}" 
                               Content="{TemplateBinding Content}" 
                               TextElement.Foreground="{DynamicResource CalendarItem.HeaderButton.Foreground}" 
                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,4,1,9" 
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
         </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value=".5" TargetName="buttonContent"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="TextElement.Foreground" Value="{DynamicResource CalendarItem.HeaderButton.Background}" TargetName="buttonContent"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
 
 
@@ -3462,6 +3427,7 @@
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="DarkThemeDatePickerStyle" TargetType="{x:Type DatePicker}">
+        <Setter Property="CalendarStyle" Value="{DynamicResource DarkThemeCalendarStyle}"/>
         <Setter Property="Foreground" Value="{DynamicResource DatePicker.Foreground}"/>
         <Setter Property="IsTodayHighlighted" Value="True"/>
         <Setter Property="SelectedDateFormat" Value="Short"/>
@@ -3599,7 +3565,7 @@
                                                     </LinearGradientBrush>
                                                 </Rectangle.Stroke>
                                             </Rectangle>
-                                            <Path Grid.Column="0" Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Border}" 
+                                            <Path Grid.Column="0" Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Foreground}" 
                                                   HorizontalAlignment="Center" Margin="4,3,4,3" 
                                                   RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Grid.Row="1" Stretch="Fill" VerticalAlignment="Center"
                                                   Data="M11.426758,8.4305077 L11.749023,8.4305077 L11.749023,16.331387 L10.674805,16.331387 L10.674805,10.299648 L9.0742188,11.298672 L9.0742188,10.294277 C9.4788408,10.090176 9.9094238,9.8090878 10.365967,9.4510155 C10.82251,9.0929432 11.176106,8.7527733 11.426758,8.4305077 z M14.65086,8.4305077 L18.566387,8.4305077 L18.566387,9.3435936 L15.671368,9.3435936 L15.671368,11.255703 C15.936341,11.058764 16.27293,10.960293 16.681133,10.960293 C17.411602,10.960293 17.969301,11.178717 18.354229,11.615566 C18.739157,12.052416 18.931622,12.673672 18.931622,13.479336 C18.931622,15.452317 18.052553,16.438808 16.294415,16.438808 C15.560365,16.438808 14.951641,16.234707 14.468243,15.826504 L14.881817,14.929531 C15.368796,15.326992 15.837872,15.525723 16.289043,15.525723 C17.298809,15.525723 17.803692,14.895514 17.803692,13.635098 C17.803692,12.460618 17.305971,11.873379 16.310528,11.873379 C15.83071,11.873379 15.399232,12.079271 15.016094,12.491055 L14.65086,12.238613 Z"/>
