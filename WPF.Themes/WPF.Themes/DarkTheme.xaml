@@ -215,21 +215,19 @@
     <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop2.Color">#FFAAAAAA</Color>
     
     <Color x:Key="GroupBox.Background.Color">#FF1F1F1F</Color>
-    <Color x:Key="GroupBox.Border.Color">#FF007BFF</Color>
-    <Color x:Key="GroupBox.Disabled.Border.Color">#AA007BFF</Color>
-    <Color x:Key="GroupBox.Disabled.Background.Color">#FF0F0F0F</Color>
+    <Color x:Key="GroupBox.Border.Color">#BB007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Border.Color">#88007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Background.Color">#BB444444</Color>
     <Color x:Key="GroupBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
-    <Color x:Key="GroupBox.Disabled.Header.Foreground.Color">#FF7D7D7D</Color>
     <Color x:Key="GroupBox.Foreground.Color">#FFFFFFFF</Color>
-    <Color x:Key="GroupBox.Header.Foreground.Color">#FFFFFFFF</Color>
 
-    <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="Hyperlink.Foreground.Color">#FF005EFF</Color>
-    <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
+    <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FFAAAAAA</Color>
+    <Color x:Key="Hyperlink.Foreground.Color">#FF007BFF</Color>
+    <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF218CFF</Color>
     
     <Color x:Key="Label.Background.Color">#00000000</Color>
-    <Color x:Key="Label.Foreground.Color">#FF000000</Color>
-    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="Label.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="Label.Disabled.Foreground.Color">#FFAAAAAA</Color>
 
     <Color x:Key="ListBox.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="ListBox.Border.Color">#FF707070</Color>
@@ -710,9 +708,7 @@
     <SolidColorBrush x:Key="GroupBox.Disabled.Background" Color="{DynamicResource GroupBox.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Disabled.Border" Color="{DynamicResource GroupBox.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Disabled.Foreground" Color="{DynamicResource GroupBox.Disabled.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GroupBox.Disabled.Header.Foreground" Color="{DynamicResource GroupBox.Disabled.Header.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Foreground" Color="{DynamicResource GroupBox.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GroupBox.Header.Foreground" Color="{DynamicResource GroupBox.Header.Foreground.Color}" options:Freeze="True"/>
 
     <SolidColorBrush x:Key="Hyperlink.Disabled.Foreground" Color="{DynamicResource Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.Foreground" Color="{DynamicResource Hyperlink.Foreground.Color}" options:Freeze="True"/>
@@ -3825,22 +3821,22 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <Border Background="{TemplateBinding BorderBrush}" BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="1" CornerRadius="0" Grid.Row="0">
+                        <Border x:Name="headerBorder" Background="{TemplateBinding BorderBrush}" BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="1" CornerRadius="0" Grid.Row="0">
                             <ContentPresenter x:Name="header" Content="{TemplateBinding Header}" Margin="{TemplateBinding Padding}"
-                                                  TextElement.Foreground="{DynamicResource GroupBox.Header.Foreground}"/>
+                                              TextElement.Foreground="{TemplateBinding Foreground}"/>
                         </Border>
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                        <Border x:Name="contentBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="1" Grid.Row="1">
-                            <ContentPresenter Margin="{TemplateBinding Padding}" />
+                            <ContentPresenter x:Name="content" Margin="{TemplateBinding Padding}" Content="{TemplateBinding Content}" 
+                                              TextElement.Foreground="{DynamicResource GroupBox.Foreground}"/>
                         </Border>
+                        <Rectangle x:Name="disabledRect" Fill="{DynamicResource GroupBox.Disabled.Background}" Visibility="Collapsed"
+                                   Grid.Row="0" Grid.RowSpan="2"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Background" Value="{DynamicResource GroupBox.Disabled.Background}"/>
-                            <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Disabled.Border}"/>
-                            <Setter Property="Foreground" Value="{DynamicResource GroupBox.Disabled.Foreground}"/>
-                            <Setter Property="TextElement.Foreground" Value="{DynamicResource GroupBox.Disabled.Header.Foreground}"/>
+                            <Setter Property="Visibility" TargetName="disabledRect" Value="Visible"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

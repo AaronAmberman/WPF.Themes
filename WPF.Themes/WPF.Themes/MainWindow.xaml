@@ -67,13 +67,13 @@
                         <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">
                             <TextBlock Text="Expander" />
                         </Expander>
-                        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0">
-                            <TextBlock Text="Group Box Group Box Group Box Group Box" Foreground="White" />
+                        <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0" IsEnabled="True">
+                            <TextBlock Text="Group Box Group Box Group Box Group Box" />
                         </GroupBox>
-                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,70,0,0">
+                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,70,0,0" IsEnabled="True">
                             <Hyperlink NavigateUri="https://www.google.com">Google</Hyperlink>
                         </TextBlock>
-                        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,70,0,0" />
+                        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,70,0,0" IsEnabled="True" />
                         <ListBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="100" Margin="300,105,0,0" IsEnabled="True">
                             <ListBoxItem Content="LBI" />
                             <ListBoxItem Content="ListBoxItem" />
