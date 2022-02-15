@@ -23,11 +23,13 @@ This ***will style the built in WPF controls*** but it does not colorize all con
 
 Unaffected types...
  - DataGrid (I am not a fan of DataGrids and I never use them so I did not style them because they are complex and there is a lot to them, sorry)
+ - TextBlock (yup, you'll have to set a "defult" style for dark themes where you wish to have white text, I do not do this for reasons)
+ - DocumentViewer
+ - NavigationWindow
  - All panels
  - Border
  - Grid
- - Recangle
- - TextBlock (yup, you'll have to set a "defult" style for dark themes where you wish to have white text, I do not do this for reasons)
+ - Recangle 
  - UserControl
  - Window
  

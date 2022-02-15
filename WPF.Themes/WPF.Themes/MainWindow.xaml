@@ -63,7 +63,6 @@
                             </ComboBox.ContextMenu>
                         </ComboBox>
                         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,40,0,0" />
-                        <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="170" Margin="0,5,5,0" />
                         <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">
                             <TextBlock Text="Expander" />
                         </Expander>
@@ -90,7 +89,7 @@
                         <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="30,259,0,0" />
                         <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,303,0,0" />
                         <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,331,0,0" IsChecked="True" />
-                        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="257" Margin="709,395,0,0" Height="149">
+                        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Margin="639,169,0,0" Height="108">
                             <FlowDocument>
                                 <Paragraph>
                                     <Run>Rich</Run>
@@ -99,10 +98,31 @@
                                 </Paragraph>
                             </FlowDocument>
                         </RichTextBox>
-                        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Height="117" Margin="300,292,0,0">
+                        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Height="117" Margin="639,19,0,0">
                             <RichTextBox>
                                 <FlowDocument>
                                     <Paragraph>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
+                                        <Run>Rich</Run>
+                                        <Run Foreground="Red">Text</Run>
+                                        <Run Foreground="Blue">Box</Run>
                                         <Run>Rich</Run>
                                         <Run Foreground="Red">Text</Run>
                                         <Run Foreground="Blue">Box</Run>
@@ -195,6 +215,7 @@
                                 <ToolTip Content="TreeView ToolTip" />
                             </TreeView.ToolTip>
                         </TreeView>
+                        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="164,259,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Red vs Blue">

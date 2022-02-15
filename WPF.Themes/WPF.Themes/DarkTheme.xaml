@@ -157,12 +157,7 @@
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF707070</Color>
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF707070</Color>
     <Color x:Key="DatePicker.Popup.Background.Color">#FF1F1F1F</Color>
-    
-    <Color x:Key="DocumentViewer.Background.Color">#FF1F1F1F</Color>
-    <Color x:Key="DocumentViewer.Foreground.Color">#FFFFFFFF</Color>
-    <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop1.Color">#00000000</Color>
-    <Color x:Key="DocumentViewer.Rectangle.Background.GradientStop2.Color">#00000000</Color>
-    
+
     <Color x:Key="DropShadow.Color">#71000000</Color>
     
     <Color x:Key="Expander.Background.Color">#00000000</Color>
@@ -274,80 +269,7 @@
     <Color x:Key="MenuItem.Highlight.Disabled.Border.Color">#21000000</Color>
     
     <Color x:Key="MenuScrollButton.Background.Color">#00000000</Color>
-    <Color x:Key="MenuScrollButton.Border.Color">#00000000</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButton.Background.Color">#FF212121</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop2.Color">#FFCCD4E9</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop3.Color">#FF4881D2</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop4.Color">#FF001A5A</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop5.Color">#FF007BD6</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop6.Color">#FF54DAFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop7.Color">#FF86FFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillEnabled.GradientStop8.Color">#FFFFFFFF</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop2.Color">#FFDFEDF9</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop3.Color">#FF3086E1</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop4.Color">#FF003B91</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop5.Color">#FF1793EF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop6.Color">#FF5AD4FF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop7.Color">#FFBDFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillHover.GradientStop8.Color">#FFFFFFFF</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop1.Color">#FFC0D2F5</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop2.Color">#FF5E7A9C</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop3.Color">#FF00062D</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop4.Color">#FF005F9F</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop5.Color">#FF1FA4E2</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop6.Color">#FF61DAFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillPressed.GradientStop7.Color">#FF48CFFF</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.GradientStop2.Color">#FFEBEEF5</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.GradientStop3.Color">#FFD8DDEB</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.GradientStop4.Color">#FFDFE2F0</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Background.Color">#D0FFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Border.Color">#FFB5BACE</Color>
-    <Color x:Key="NavigationWindowNavigationButtonFillDisabled.Border2.Color">#B0B5BACE</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background.Color">#00000000</Color>
-    <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background.Color">#FF1E90FF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground.Color">#FFFFFFFF</Color>
-    
-    <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop1.Color">#FF6C90C4</Color>
-    <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop2.Color">#FF315BB4</Color>
-    <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop3.Color">#FF002091</Color>
-    <Color x:Key="NavigationWindowNavigationButtonStrokeEnabled.GradientStop4.Color">#FF08377C</Color>
-    
-    <Color x:Key="NavigationWindowNavigationArrowStrokeEnabled.GradientStop1.Color">#FF8AB1FB</Color>
-    <Color x:Key="NavigationWindowNavigationArrowStrokeEnabled.GradientStop2.Color">#FF002874</Color>
-    
-    <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop2.Color">#FFEEEEEE</Color>
-    <Color x:Key="NavigationWindowNavigationArrowFill.GradientStop3.Color">#FFB0B0B0</Color>
-    
-    <Color x:Key="NavigationWindowDownArrowFill.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowDownArrowFill.Enabled.Color">#FFA5AABE</Color>
-    <Color x:Key="NavigationWindowDownArrowFill.GradientStop1.Color">#FF33B5DA</Color>
-    <Color x:Key="NavigationWindowDownArrowFill.GradientStop2.Color">#FF335799</Color>
-    
-    <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop2.Color">#FFE3E8F4</Color>
-    <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop3.Color">#FFCFD7EB</Color>
-    <Color x:Key="NavigationWindowNavigationChromeBackground.GradientStop4.Color">#FFE9ECFA</Color>
-    
-    <Color x:Key="NavigationWindowMenuItem.Panel.Background.Color">#00000000</Color>
-    <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color">#20DDDDDD</Color>
-    <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2.Color">#80FFFFFF</Color>
-    <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Border.Color">#B0B5BACE</Color>
-    <Color x:Key="NavigationWindowMenuItem.Panel.Highlight.Inner.Border.Color">#A0FFFFFF</Color>
-    <Color x:Key="NavigationWindowMenuItem.SubMenu.Background.Color">#FFFFFAF0</Color>
-    <Color x:Key="NavigationWindowMenuItem.SubMenu.Border.Color">#FFA9A9A9</Color>
+    <Color x:Key="MenuScrollButton.Border.Color">#00000000</Color>    
 
     <Color x:Key="OptionMark.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="OptionMark.Border.Color">#FF707070</Color>
@@ -633,12 +555,7 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Popup.Background" Color="{DynamicResource DatePicker.Popup.Background.Color}" options:Freeze="True"/>
-    
-    <SolidColorBrush x:Key="DocumentViewer.Background" Color="{DynamicResource DocumentViewer.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DocumentViewer.Foreground" Color="{DynamicResource DocumentViewer.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop1" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DocumentViewer.Rectangle.Background.GradientStop2" Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop2.Color}" options:Freeze="True"/>
-    
+
     <SolidColorBrush x:Key="DropShadow" Color="{DynamicResource DropShadow.Color}" options:Freeze="True"/>
     
     <SolidColorBrush x:Key="Expander.Background" Color="{DynamicResource Expander.Background.Color}" options:Freeze="True"/>
@@ -764,93 +681,7 @@
     
     <SolidColorBrush x:Key="MenuScrollButton.Background" Color="{DynamicResource MenuScrollButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuScrollButton.Border" Color="{DynamicResource MenuScrollButton.Border.Color}" options:Freeze="True"/>
-    
-    <SolidColorBrush x:Key="NavigationWindowNavigationButton.Background" Color="{DynamicResource NavigationWindowNavigationButton.Background.Color}" options:Freeze="True"/>
-    
-    <LinearGradientBrush x:Key="NavigationWindowNavigationButtonFillEnabled" EndPoint="0.5,1.0" StartPoint="0.5,0.0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop1.Color}" Offset="0.0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop2.Color}" Offset="0.1"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop3.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop4.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop5.Color}" Offset="0.70"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop6.Color}" Offset="0.85"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop7.Color}" Offset="0.95"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillEnabled.GradientStop8.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowNavigationButtonFillHover" EndPoint="0.5,1.0" StartPoint="0.5,0.0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop1.Color}" Offset="0.0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop2.Color}" Offset="0.1"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop3.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop4.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop5.Color}" Offset="0.70"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop6.Color}" Offset="0.85"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop7.Color}" Offset="0.95"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillHover.GradientStop8.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowNavigationButtonFillPressed" EndPoint="0.5,1.0" StartPoint="0.5,0.0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop1.Color}" Offset="0.0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop2.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop3.Color}" Offset="0.47"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop4.Color}" Offset="0.70"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop5.Color}" Offset="0.85"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop6.Color}" Offset="0.95"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillPressed.GradientStop7.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowNavigationButtonFillDisabled" EndPoint="0.5,1.0" StartPoint="0.5,0.0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop1.Color}" Offset="0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop2.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop3.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.GradientStop4.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
-    
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Background" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Border" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonFillDisabled.Border2" Color="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border2.Color}" options:Freeze="True"/>
-    
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground" Color="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground.Color}" options:Freeze="True"/>
-    
-    <LinearGradientBrush x:Key="NavigationWindowNavigationButtonStrokeEnabled" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop1.Color}" Offset="0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop2.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop3.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled.GradientStop4.Color}" Offset="1"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowNavigationArrowStrokeEnabled" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationArrowStrokeEnabled.GradientStop1.Color}" Offset="0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationArrowStrokeEnabled.GradientStop2.Color}" Offset="1"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowNavigationArrowFill" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationArrowFill.GradientStop1.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationArrowFill.GradientStop2.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationArrowFill.GradientStop3.Color}" Offset="1"/>
-    </LinearGradientBrush>
-    <LinearGradientBrush x:Key="NavigationWindowDownArrowFill" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowDownArrowFill.GradientStop1.Color}" Offset="0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowDownArrowFill.GradientStop2.Color}" Offset="1"/>
-    </LinearGradientBrush>
-    
-    <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Border" Color="{DynamicResource NavigationWindowDownArrowFill.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowDownArrowFill.Enabled" Color="{DynamicResource NavigationWindowDownArrowFill.Enabled.Color}" options:Freeze="True"/>
-    
-    <LinearGradientBrush x:Key="NavigationWindowNavigationChromeBackground" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop1.Color}" Offset="0"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop2.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop3.Color}" Offset="0.5"/>
-        <GradientStop Color="{DynamicResource NavigationWindowNavigationChromeBackground.GradientStop4.Color}" Offset="1.0"/>
-    </LinearGradientBrush>
-    
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Background" Color="{DynamicResource NavigationWindowMenuItem.Panel.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop2.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Border" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.Panel.Highlight.Inner.Border" Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Inner.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.SubMenu.Background" Color="{DynamicResource NavigationWindowMenuItem.SubMenu.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="NavigationWindowMenuItem.SubMenu.Border" Color="{DynamicResource NavigationWindowMenuItem.SubMenu.Border.Color}" options:Freeze="True"/>
-    
+
     <SolidColorBrush x:Key="OptionMark.Background" Color="{DynamicResource OptionMark.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Border" Color="{DynamicResource OptionMark.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Foreground" Color="{DynamicResource OptionMark.Foreground.Color}" options:Freeze="True"/>
@@ -1209,115 +1040,6 @@
          |                                                    MenuItems                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="NavigationWindowNavigationButtonJournalEntryStyle" TargetType="{x:Type MenuItem}">
-        <Setter Property="OverridesDefaultStyle" Value="true"/>
-        <Setter Property="Header" Value="{Binding (JournalEntry.Name)}"/>
-        <Setter Property="Command" Value="NavigationCommands.NavigateJournal"/>
-        <Setter Property="CommandTarget" Value="{Binding TemplatedParent, RelativeSource={RelativeSource AncestorType={x:Type Menu}}}"/>
-        <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
-        <Setter Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="{Binding (JournalEntryUnifiedViewConverter.JournalEntryPosition)}"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type MenuItem}">
-                    <Grid x:Name="Panel" Background="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Background}" SnapsToDevicePixels="true">
-                        <Path x:Name="Glyph" HorizontalAlignment="Left" Height="10" Margin="7,5" Stroke="{TemplateBinding Foreground}" 
-                              StrokeStartLineCap="Triangle" SnapsToDevicePixels="false" StrokeThickness="2" StrokeEndLineCap="Triangle" Width="10"/>
-                        <ContentPresenter ContentSource="Header" Margin="24,5,21,5"/>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Current">
-                            <Setter Property="Background" TargetName="Panel" Value="{DynamicResource CurrentEntryBackground}"/>
-                            <Setter Property="Data" TargetName="Glyph" Value="M 0,5 L 2.5,8 L 7,3 "/>
-                            <Setter Property="FlowDirection" TargetName="Glyph" Value="LeftToRight"/>
-                            <Setter Property="StrokeLineJoin" TargetName="Glyph" Value="Miter"/>
-                        </Trigger>
-                        <Trigger Property="IsHighlighted" Value="true">
-                            <Setter Property="Foreground" Value="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Foreground}"/>
-                            <Setter Property="Background" TargetName="Panel" Value="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Background}"/>
-                        </Trigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsHighlighted" Value="true"/>
-                                <Condition Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Forward"/>
-                            </MultiTrigger.Conditions>
-                            <Setter Property="Stroke" TargetName="Glyph" Value="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Forward.Foreground}"/>
-                            <Setter Property="Data" TargetName="Glyph" Value="M 1,5 L 7,5 M 5,1 L 9,5 L 5,9"/>
-                        </MultiTrigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsHighlighted" Value="true"/>
-                                <Condition Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Back"/>
-                            </MultiTrigger.Conditions>
-                            <Setter Property="Stroke" TargetName="Glyph" Value="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle.MenuItem.Highlight.Backward.Foreground}"/>
-                            <Setter Property="Data" TargetName="Glyph" Value="M 9,5 L 3,5 M 5,1 L 1,5 L 5,9"/>
-                        </MultiTrigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style x:Key="NavigationWindowMenuItem" TargetType="{x:Type MenuItem}">
-        <Setter Property="OverridesDefaultStyle" Value="true"/>
-        <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
-        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type MenuItem}">
-                    <Grid>
-                        <Popup x:Name="PART_Popup" AllowsTransparency="true" Focusable="false" Placement="Bottom" VerticalOffset="2"
-                               IsOpen="{Binding (MenuItem.IsSubmenuOpen), RelativeSource={RelativeSource TemplatedParent}}"
-                               PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
-                            <Border x:Name="SubMenuBorder" BorderThickness="1"
-                                    Background="{DynamicResource NavigationWindowMenuItem.SubMenu.Background}" 
-                                    BorderBrush="{DynamicResource NavigationWindowMenuItem.SubMenu.Border}">
-                                <ScrollViewer x:Name="SubMenuScrollViewer" 
-                                              Style="{DynamicResource {ComponentResourceKey ResourceId=MenuScrollViewer, TypeInTargetAssembly={x:Type FrameworkElement}}}">
-                                    <Grid RenderOptions.ClearTypeHint="Enabled">
-                                        <Canvas HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
-                                            <Rectangle x:Name="OpaqueRect" Fill="{Binding Background, ElementName=SubMenuBorder}" 
-                                                       Height="{Binding ActualHeight, ElementName=SubMenuBorder}" Width="{Binding ActualWidth, ElementName=SubMenuBorder}"/>
-                                        </Canvas>
-                                        <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Cycle" Margin="2" KeyboardNavigation.TabNavigation="Cycle"/>
-                                    </Grid>
-                                </ScrollViewer>
-                            </Border>
-                        </Popup>
-                        <Grid x:Name="Panel" Background="{DynamicResource NavigationWindowMenuItem.Panel.Background}" HorizontalAlignment="Right" Width="26">
-                            <Border x:Name="HighlightBorder" BorderBrush="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Border}" 
-                                    BorderThickness="1,1,1,1" CornerRadius="2" SnapsToDevicePixels="True" Visibility="Hidden">
-                                <Border.Background>
-                                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                                        <GradientStop Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color}" Offset="0"/>
-                                        <GradientStop Color="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Background.GradientStop1.Color}" Offset="1"/>
-                                    </LinearGradientBrush>
-                                </Border.Background>
-                                <Border BorderBrush="{DynamicResource NavigationWindowMenuItem.Panel.Highlight.Inner.Border}" BorderThickness="1" CornerRadius="1.5"/>
-                            </Border>
-                            <Path x:Name="Arrow" Data="M 0 0 L 4.5 5 L 9 0 Z" Fill="{DynamicResource NavigationWindowDownArrowFill}" HorizontalAlignment="Right" 
-                                  Margin="{TemplateBinding Padding}" Stroke="{DynamicResource NavigationWindowDownArrowFill.Border}" 
-                                  SnapsToDevicePixels="false" StrokeThickness="1" StrokeLineJoin="Round" VerticalAlignment="Center"/>
-                        </Grid>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="True">
-                            <Setter Property="Effect" TargetName="SubMenuBorder" Value="{DynamicResource DropShadowEffect}"/>
-                            <Setter Property="Margin" TargetName="SubMenuBorder" Value="0,0,5,5"/>
-                        </Trigger>
-                        <Trigger Property="IsHighlighted" Value="true">
-                            <Setter Property="Visibility" TargetName="HighlightBorder" Value="Visible"/>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource NavigationWindowDownArrowFill.Enabled}"/>
-                        </Trigger>
-                        <Trigger Property="ScrollViewer.CanContentScroll" SourceName="SubMenuScrollViewer" Value="false">
-                            <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=SubMenuScrollViewer}"/>
-                            <Setter Property="Canvas.Left" TargetName="OpaqueRect" Value="{Binding HorizontalOffset, ElementName=SubMenuScrollViewer}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
     <ControlTemplate x:Key="{ComponentResourceKey ResourceId=TopLevelItemTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}" TargetType="{x:Type MenuItem}">
         <Border x:Name="templateRoot" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                 BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
@@ -1672,74 +1394,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="NavigationWindowBackButtonStyle" TargetType="{x:Type Button}">
-        <Setter Property="OverridesDefaultStyle" Value="true"/>
-        <Setter Property="Command" Value="NavigationCommands.BrowseBack"/>
-        <Setter Property="Focusable" Value="false"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid Background="{DynamicResource NavigationWindowNavigationButton.Background}" Height="24" Width="24">
-                        <Ellipse x:Name="Circle" Fill="{DynamicResource NavigationWindowNavigationButtonFillEnabled}" 
-                                 Stroke="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled}" StrokeThickness="1"/>
-                        <Path x:Name="Arrow" Data="M0.37,7.69 L5.74,14.20 A1.5,1.5,0,1,0,10.26,12.27 L8.42,10.42 14.90,10.39 A1.5,1.5,0,1,0,14.92,5.87 L8.44,5.90 10.31,4.03 A1.5,1.5,0,1,0,5.79,1.77 Z" 
-                              Fill="{DynamicResource NavigationWindowNavigationArrowFill}" HorizontalAlignment="Center" Stroke="{DynamicResource NavigationWindowNavigationArrowStrokeEnabled}" 
-                              StrokeThickness="0.75" VerticalAlignment="Center"/>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled}"/>
-                            <Setter Property="Stroke" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border}"/>
-                            <Setter Property="Stroke" TargetName="Arrow" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border2}"/>
-                            <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Background}"/>
-                        </Trigger>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillHover}"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillPressed}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style x:Key="NavigationWindowForwardButtonStyle" TargetType="{x:Type Button}">
-        <Setter Property="OverridesDefaultStyle" Value="true"/>
-        <Setter Property="Command" Value="NavigationCommands.BrowseForward"/>
-        <Setter Property="Focusable" Value="false"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Grid Background="{DynamicResource NavigationWindowNavigationButton.Background}" Height="24" Width="24">
-                        <Ellipse x:Name="Circle" Grid.Column="0" Fill="{DynamicResource NavigationWindowNavigationButtonFillEnabled}" 
-                                 Stroke="{DynamicResource NavigationWindowNavigationButtonStrokeEnabled}" StrokeThickness="1"/>
-                        <Path x:Name="Arrow" Grid.Column="0" Data="M0.37,7.69 L5.74,14.20 A1.5,1.5,0,1,0,10.26,12.27 L8.42,10.42 14.90,10.39 A1.5,1.5,0,1,0,14.92,5.87 L8.44,5.90 10.31,4.03 A1.5,1.5,0,1,0,5.79,1.77 Z" 
-                              Fill="{DynamicResource NavigationWindowNavigationArrowFill}" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0" Stroke="{DynamicResource NavigationWindowNavigationArrowStrokeEnabled}" 
-                              StrokeThickness="0.75" VerticalAlignment="Center">
-                            <Path.RenderTransform>
-                                <ScaleTransform ScaleX="-1"/>
-                            </Path.RenderTransform>
-                        </Path>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled}"/>
-                            <Setter Property="Stroke" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border}"/>
-                            <Setter Property="Stroke" TargetName="Arrow" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Border2}"/>
-                            <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource NavigationWindowNavigationButtonFillDisabled.Background}"/>
-                        </Trigger>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillHover}"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Fill" TargetName="Circle" Value="{DynamicResource NavigationWindowNavigationButtonFillPressed}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
     <ControlTemplate x:Key="CalendarPreviousButtonTemplate" TargetType="{x:Type Button}">
         <Grid Cursor="Hand">
             <Rectangle Fill="{StaticResource CalendarItem.HeaderButton.Rectangle.Background}" Opacity="1" Stretch="Fill"/>
@@ -1795,118 +1449,6 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                      Frames                                                                 |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <ControlTemplate x:Key="FrameNavChromeTemplateKey" TargetType="{x:Type Frame}">
-        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
-                Padding="{TemplateBinding Padding}">
-            <DockPanel>
-                <Grid Background="{DynamicResource NavigationWindowNavigationChromeBackground}" DockPanel.Dock="Top" Height="22">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="16"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Menu x:Name="NavMenu" Grid.ColumnSpan="3" Height="16" Margin="1,0,0,0" Style="{DynamicResource NavigationWindowMenu}" VerticalAlignment="Center">
-                        <MenuItem Padding="0,2,4,0" ItemContainerStyle="{DynamicResource NavigationWindowNavigationButtonJournalEntryStyle}" 
-                                  IsSubmenuOpen="{Binding (MenuItem.IsSubmenuOpen), Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
-                                  Style="{DynamicResource NavigationWindowMenuItem}">
-                            <MenuItem.ItemsSource>
-                                <MultiBinding Converter="{StaticResource JournalEntryUnifiedViewConverter}">
-                                    <Binding Path="BackStack" RelativeSource="{RelativeSource TemplatedParent}"/>
-                                    <Binding Path="ForwardStack" RelativeSource="{RelativeSource TemplatedParent}"/>
-                                </MultiBinding>
-                            </MenuItem.ItemsSource>
-                        </MenuItem>
-                    </Menu>
-                    <Path Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" IsHitTestVisible="false" Margin="2,0,0,0" SnapsToDevicePixels="false" StrokeThickness="1" VerticalAlignment="Center"
-                          Data="M22.5767,21.035 Q27,19.37 31.424,21.035 A12.5,12.5,0,0,0,53.5,13 A12.5,12.5,0,0,0,37.765,0.926 Q27,4.93 16.235,0.926 A12.5,12.5,0,0,0,0.5,13 A12.5,12.5,0,0,0,22.5767,21.035 Z">
-                        <Path.Fill>
-                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                                <LinearGradientBrush.GradientStops>
-                                    <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop1.Color}" Offset="0"/>
-                                        <GradientStop Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop2.Color}" Offset="1"/>
-                                    </GradientStopCollection>
-                                </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>
-                        </Path.Fill>
-                        <Path.LayoutTransform>
-                            <ScaleTransform ScaleX="0.667" ScaleY="0.667"/>
-                        </Path.LayoutTransform>
-                        <Path.Stroke>
-                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                                <LinearGradientBrush.GradientStops>
-                                    <GradientStopCollection>
-                                        <GradientStop Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop1.Color}" Offset="0.2"/>
-                                        <GradientStop Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop2.Color}" Offset="0.9"/>
-                                    </GradientStopCollection>
-                                </LinearGradientBrush.GradientStops>
-                            </LinearGradientBrush>
-                        </Path.Stroke>
-                    </Path>
-                    <Button Grid.Column="0" Margin="3,0,1,0" Style="{DynamicResource NavigationWindowBackButtonStyle}">
-                        <Button.LayoutTransform>
-                            <ScaleTransform ScaleX="0.667" ScaleY="0.667"/>
-                        </Button.LayoutTransform>
-                    </Button>
-                    <Button Grid.Column="1" Margin="1,0,0,0" Style="{DynamicResource NavigationWindowForwardButtonStyle}">
-                        <Button.LayoutTransform>
-                            <ScaleTransform ScaleX="0.667" ScaleY="0.667"/>
-                        </Button.LayoutTransform>
-                    </Button>
-                </Grid>
-                <ContentPresenter x:Name="PART_FrameCP"/>
-            </DockPanel>
-        </Border>
-        <ControlTemplate.Triggers>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="CanGoForward" Value="false"/>
-                    <Condition Property="CanGoBack" Value="false"/>
-                </MultiTrigger.Conditions>
-                <Setter Property="IsEnabled" TargetName="NavMenu" Value="false"/>
-            </MultiTrigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
-    <Style x:Key="DarkThemeFrameStyle" TargetType="{x:Type Frame}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Frame}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
-                        <ContentPresenter x:Name="PART_FrameCP"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="NavigationUIVisibility" Value="Visible">
-                <Setter Property="Template" Value="{DynamicResource FrameNavChromeTemplateKey}"/>
-            </Trigger>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="JournalOwnership" Value="OwnsJournal"/>
-                    <Condition Property="NavigationUIVisibility" Value="Automatic"/>
-                </MultiTrigger.Conditions>
-                <Setter Property="Template" Value="{DynamicResource FrameNavChromeTemplateKey}"/>
-            </MultiTrigger>
-        </Style.Triggers>
-    </Style>
 
 
 
@@ -3059,6 +2601,122 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                                      TextBoxes                                                              |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="DarkThemeTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" 
+                                      VerticalScrollBarVisibility="Hidden"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.MouseOver.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="SelectionBrush" Value="{DynamicResource TextBoxBase.InactiveSelection}"/>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
+         |                                                 PasswordBoxes                                                               |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="DarkThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+        <Setter Property="PasswordChar" Value="●"/>
+        <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type PasswordBox}">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.MouseOver.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="SelectionBrush" Value="{DynamicResource TextBoxBase.InactiveSelection}"/>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                     ComboBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -3639,67 +3297,6 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
-         |                                                 DocumentViewers                                                             |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="DarkThemeDocumentViewerStyle" BasedOn="{x:Null}" TargetType="{x:Type DocumentViewer}">
-        <Setter Property="Foreground" Value="{DynamicResource DocumentViewer.Foreground}"/>
-        <Setter Property="Background" Value="{DynamicResource DocumentViewer.Background}"/>
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="ContextMenu" Value="{DynamicResource {ComponentResourceKey ResourceId=PUIDocumentViewerContextMenu, 
-                                                               TypeInTargetAssembly={x:Type ui:PresentationUIStyleResources}}}"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type DocumentViewer}">
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Focusable="False">
-                        <Grid Background="{TemplateBinding Background}" KeyboardNavigation.TabNavigation="Local">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <ContentControl Grid.Column="0" Focusable="{TemplateBinding Focusable}" Grid.Row="0" TabIndex="0"
-                                            Style="{DynamicResource {ComponentResourceKey ResourceId=PUIDocumentViewerToolBarStyleKey, 
-                                                                    TypeInTargetAssembly={x:Type ui:PresentationUIStyleResources}}}"/>
-                            <ScrollViewer x:Name="PART_ContentHost" Grid.Column="0" CanContentScroll="true" IsTabStop="true" Grid.Row="1" TabIndex="1"
-                                          Focusable="{TemplateBinding Focusable}" HorizontalScrollBarVisibility="Auto"/>
-                            <DockPanel Grid.Row="1">
-                                <FrameworkElement DockPanel.Dock="Right" Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}"/>
-                                <Rectangle Height="10" VerticalAlignment="top" Visibility="Visible">
-                                    <Rectangle.Fill>
-                                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                                            <LinearGradientBrush.GradientStops>
-                                                <GradientStopCollection>
-                                                    <GradientStop Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop1.Color}" Offset="0"/>
-                                                    <GradientStop Color="{DynamicResource DocumentViewer.Rectangle.Background.GradientStop2.Color}" Offset="1"/>
-                                                </GradientStopCollection>
-                                            </LinearGradientBrush.GradientStops>
-                                        </LinearGradientBrush>
-                                    </Rectangle.Fill>
-                                </Rectangle>
-                            </DockPanel>
-                            <ContentControl x:Name="PART_FindToolBarHost" Grid.Column="0" Focusable="{TemplateBinding Focusable}" Grid.Row="2" TabIndex="2"/>
-                        </Grid>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
          |                                                    Expanders                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -4214,14 +3811,14 @@
                         <Trigger Property="GridView.ColumnCollection" Value="{x:Null}">
                             <Setter TargetName="ContentPresenter" Property="Visibility" Value="Visible" />
                             <Setter TargetName="RowPresenter" Property="Visibility" Value="Collapsed" />
-                        </Trigger>                        
+                        </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True"/>
                             </MultiTrigger.Conditions>
                             <Setter Property="Background" TargetName="Bd" Value="{StaticResource Item.MouseOver.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource Item.MouseOver.Border}"/>
-                        </MultiTrigger>                        
+                        </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="False"/>
@@ -4253,64 +3850,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                 PasswordBoxes                                                               |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="DarkThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
-        <Setter Property="PasswordChar" Value="●"/>
-        <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
-        <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
-        <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="AllowDrop" Value="true"/>
-        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
-        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type PasswordBox}">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
-                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Opacity" TargetName="border" Value="0.56"/>
-                        </Trigger>
-                        <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.MouseOver.Border}"/>
-                        </Trigger>
-                        <Trigger Property="IsKeyboardFocused" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <MultiTrigger>
-                <MultiTrigger.Conditions>
-                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
-                    <Condition Property="IsSelectionActive" Value="false"/>
-                </MultiTrigger.Conditions>
-                <Setter Property="SelectionBrush" Value="{DynamicResource TextBoxBase.InactiveSelection}"/>
-            </MultiTrigger>
-        </Style.Triggers>
     </Style>
 
 
@@ -5693,9 +5232,7 @@
     <Style BasedOn="{StaticResource DarkThemeContextMenuStyle}" TargetType="ContextMenu" />
     <Style BasedOn="{StaticResource DarkThemeContentControlStyle}" TargetType="ContentControl" />
     <Style BasedOn="{StaticResource DarkThemeDatePickerStyle}" TargetType="DatePicker" />
-    <Style BasedOn="{StaticResource DarkThemeDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource DarkThemeExpanderStyle}" TargetType="Expander" />
-    <Style BasedOn="{StaticResource DarkThemeFrameStyle}" TargetType="Frame" />
     <Style BasedOn="{StaticResource DarkThemeGridSplitterStyle}" TargetType="GridSplitter" />
     <Style BasedOn="{StaticResource DarkThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
     <Style BasedOn="{StaticResource DarkThemeGroupBoxStyle}" TargetType="GroupBox" />
@@ -5719,6 +5256,7 @@
     <Style BasedOn="{StaticResource DarkThemeStatusBarItemStyle}" TargetType="StatusBarItem" />
     <Style BasedOn="{StaticResource DarkThemeTabControlStyle}" TargetType="TabControl" />
     <Style BasedOn="{StaticResource DarkThemeTabItemStyle}" TargetType="TabItem" />
+    <Style BasedOn="{StaticResource DarkThemeTextBoxStyle}" TargetType="TextBox" />
     <Style BasedOn="{StaticResource DarkThemeToolBarStyle}" TargetType="ToolBar" />
     <Style BasedOn="{StaticResource DarkThemeToolBarTrayStyle}" TargetType="ToolBarTray" />
     <Style BasedOn="{StaticResource DarkThemeToolTipStyle}" TargetType="ToolTip" />
