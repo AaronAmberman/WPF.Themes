@@ -202,6 +202,7 @@
     <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FF1F1F1F</Color>
     <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FF1F1F1F</Color>
     <Color x:Key="GridViewColumnHeader.Border.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Disabled.Foreground.Color">#FF7D7D7D</Color>
     <Color x:Key="GridViewColumnHeader.Floating.Background.Color">#60000000</Color>
     <Color x:Key="GridViewColumnHeader.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop1.Color">#FF2F2F2F</Color>
@@ -213,11 +214,15 @@
     <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop1.Color">#FF1F1F1F</Color>
     <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop2.Color">#FFAAAAAA</Color>
     
-    <Color x:Key="GroupBox.Border.Color">#FFD5DFE5</Color>
-    <Color x:Key="GroupBox.Inner.Border.Color">#00000000</Color>
-    <Color x:Key="GroupBox.Inner.Inner.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="GroupBox.Inner.Inner.Inner.Border.Color">#FFFFFFFF</Color>
-    
+    <Color x:Key="GroupBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="GroupBox.Border.Color">#FF007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Border.Color">#AA007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Background.Color">#FF0F0F0F</Color>
+    <Color x:Key="GroupBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="GroupBox.Disabled.Header.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="GroupBox.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="GroupBox.Header.Foreground.Color">#FFFFFFFF</Color>
+
     <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
     <Color x:Key="Hyperlink.Foreground.Color">#FF005EFF</Color>
     <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
@@ -225,33 +230,37 @@
     <Color x:Key="Label.Background.Color">#00000000</Color>
     <Color x:Key="Label.Foreground.Color">#FF000000</Color>
     <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>
-    
-    <Color x:Key="ListBox.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ListBox.Border.Color">#FFABADB3</Color>
-    <Color x:Key="ListBox.Disabled.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ListBox.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="ListBox.Foreground.Color">#FF000000</Color>
-    
-    <Color x:Key="ListBoxItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="ListBoxItem.MouseOver.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="ListBoxItem.MouseOver.Border.Color">#A826A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#3DDADADA</Color>
-    <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#FFDADADA</Color>
+
+    <Color x:Key="ListBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ListBox.Border.Color">#FF707070</Color>
+    <Color x:Key="ListBox.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="ListBox.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="ListBox.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="ListBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
+
+    <Color x:Key="ListBoxItem.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="ListBoxItem.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Background.Color">#33007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#CC007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Background.Color">#66007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Border.Color">#FF007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#18007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#44007BFF</Color>
     
     <Color x:Key="ListView.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="ListView.Border.Color">#FF707070</Color>
     <Color x:Key="ListView.Disabled.Background.Color">#773D3D3D</Color>
     <Color x:Key="ListView.Disabled.Border.Color">#FF3D3D3D</Color>
     <Color x:Key="ListView.Foreground.Color">#FFFFFFFF</Color>
-    
-    <Color x:Key="Item.MouseOver.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="Item.MouseOver.Border.Color">#A826A0DA</Color>
-    <Color x:Key="Item.SelectedActive.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="Item.SelectedActive.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="Item.SelectedInactive.Background.Color">#3DDADADA</Color>
-    <Color x:Key="Item.SelectedInactive.Border.Color">#FFDADADA</Color>
+
+    <Color x:Key="Item.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="Item.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="Item.SelectedActive.Background.Color">#33007BFF</Color>
+    <Color x:Key="Item.SelectedActive.Border.Color">#CC007BFF</Color>
+    <Color x:Key="Item.SelectedActive.MouseOver.Background.Color">#66007BFF</Color>
+    <Color x:Key="Item.SelectedActive.MouseOver.Border.Color">#FF007BFF</Color>
+    <Color x:Key="Item.SelectedInactive.Background.Color">#18007BFF</Color>
+    <Color x:Key="Item.SelectedInactive.Border.Color">#44007BFF</Color>
     
     <Color x:Key="Menu.Background.Color">#FFF0F0F0</Color>
     <Color x:Key="Menu.Border.Color">#FF999999</Color>
@@ -675,6 +684,7 @@
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Border.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Border.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
+    <SolidColorBrush x:Key="GridViewColumnHeader.Disabled.Foreground" Color="{DynamicResource GridViewColumnHeader.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeader.Floating.Background" Color="{DynamicResource GridViewColumnHeader.Floating.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeader.Foreground" Color="{DynamicResource GridViewColumnHeader.Foreground.Color}" options:Freeze="True"/>
     <LinearGradientBrush x:Key="GridViewColumnHeader.MouseOver.Background" StartPoint="0,0" EndPoint="0,1" options:Freeze="True">
@@ -695,11 +705,15 @@
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Pressed.Border.GradientStop2.Color}" Offset="1.0"/>
     </LinearGradientBrush>
 
+    <SolidColorBrush x:Key="GroupBox.Background" Color="{DynamicResource GroupBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GroupBox.Border" Color="{DynamicResource GroupBox.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GroupBox.Inner.Border" Color="{DynamicResource GroupBox.Inner.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GroupBox.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="GroupBox.Inner.Inner.Inner.Border" Color="{DynamicResource GroupBox.Inner.Inner.Inner.Border.Color}" options:Freeze="True"/>
-    
+    <SolidColorBrush x:Key="GroupBox.Disabled.Background" Color="{DynamicResource GroupBox.Disabled.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="GroupBox.Disabled.Border" Color="{DynamicResource GroupBox.Disabled.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="GroupBox.Disabled.Foreground" Color="{DynamicResource GroupBox.Disabled.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="GroupBox.Disabled.Header.Foreground" Color="{DynamicResource GroupBox.Disabled.Header.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="GroupBox.Foreground" Color="{DynamicResource GroupBox.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="GroupBox.Header.Foreground" Color="{DynamicResource GroupBox.Header.Foreground.Color}" options:Freeze="True"/>
+
     <SolidColorBrush x:Key="Hyperlink.Disabled.Foreground" Color="{DynamicResource Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.Foreground" Color="{DynamicResource Hyperlink.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.MouseOver.Foreground" Color="{DynamicResource Hyperlink.MouseOver.Foreground.Color}" options:Freeze="True"/>
@@ -713,12 +727,14 @@
     <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="{DynamicResource ListBox.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="{DynamicResource ListBox.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Foreground" Color="{DynamicResource ListBox.Foreground.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Foreground" Color="{DynamicResource ListBox.Disabled.Foreground.Color}" options:Freeze="True"/>
     
-    <SolidColorBrush x:Key="ListBoxItem.Disabled.Foreground" Color="{DynamicResource ListBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Background" Color="{DynamicResource ListBoxItem.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Border" Color="{DynamicResource ListBoxItem.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Background" Color="{DynamicResource ListBoxItem.SelectedActive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Border" Color="{DynamicResource ListBoxItem.SelectedActive.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.MouseOver.Background" Color="{DynamicResource ListBoxItem.SelectedActive.MouseOver.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ListBoxItem.SelectedActive.MouseOver.Border" Color="{DynamicResource ListBoxItem.SelectedActive.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Background" Color="{DynamicResource ListBoxItem.SelectedInactive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Border" Color="{DynamicResource ListBoxItem.SelectedInactive.Border.Color}" options:Freeze="True"/>
     
@@ -731,10 +747,12 @@
     <SolidColorBrush x:Key="Item.MouseOver.Background" Color="{DynamicResource Item.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.MouseOver.Border" Color="{DynamicResource Item.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Background" Color="{DynamicResource Item.SelectedActive.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="Item.SelectedActive.Border" Color="{DynamicResource Item.SelectedActive.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.Border" Color="{DynamicResource Item.SelectedActive.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.MouseOver.Background" Color="{DynamicResource Item.SelectedActive.MouseOver.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.MouseOver.Border" Color="{DynamicResource Item.SelectedActive.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedInactive.Background" Color="{DynamicResource Item.SelectedInactive.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="{DynamicResource Item.SelectedInactive.Background.Color}" options:Freeze="True"/>
-    
+    <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="{DynamicResource Item.SelectedInactive.Border.Color}" options:Freeze="True"/>
+
     <SolidColorBrush x:Key="Menu.Background" Color="{DynamicResource Menu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Border" Color="{DynamicResource Menu.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="{DynamicResource Menu.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -3793,45 +3811,38 @@
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="DarkThemeGroupBoxStyle" TargetType="{x:Type GroupBox}">
-        <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Border}"/>
-        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Background" Value="{DynamicResource GroupBox.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Border}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="{DynamicResource GroupBox.Foreground}" />
+        <Setter Property="Padding" Value="10,3" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupBox}">
-                    <Grid SnapsToDevicePixels="true">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="6"/>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="6"/>
-                        </Grid.ColumnDefinitions>
+                    <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="6"/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{DynamicResource GroupBox.Inner.Border}" BorderThickness="{TemplateBinding BorderThickness}" 
-                                CornerRadius="4" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3" Grid.Row="1"/>
-                        <Border BorderBrush="{DynamicResource GroupBox.Inner.Inner.Border}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="4" Grid.ColumnSpan="4" 
-                                Grid.RowSpan="3" Grid.Row="1">
-                            <Border.OpacityMask>
-                                <MultiBinding ConverterParameter="7" Converter="{StaticResource BorderGapMaskConverter}">
-                                    <Binding ElementName="Header" Path="ActualWidth"/>
-                                    <Binding Path="ActualWidth" RelativeSource="{RelativeSource Self}"/>
-                                    <Binding Path="ActualHeight" RelativeSource="{RelativeSource Self}"/>
-                                </MultiBinding>
-                            </Border.OpacityMask>
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="3">
-                                <Border BorderBrush="{DynamicResource GroupBox.Inner.Inner.Inner.Border}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2"/>
-                            </Border>
+                        <Border Background="{TemplateBinding BorderBrush}" BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="1" CornerRadius="0" Grid.Row="0">
+                            <ContentPresenter x:Name="header" Content="{TemplateBinding Header}" Margin="{TemplateBinding Padding}"
+                                                  TextElement.Foreground="{DynamicResource GroupBox.Header.Foreground}"/>
                         </Border>
-                        <Border x:Name="Header" Grid.Column="1" Padding="3,1,3,0" Grid.RowSpan="2" Grid.Row="0">
-                            <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="1" Grid.Row="1">
+                            <ContentPresenter Margin="{TemplateBinding Padding}" />
                         </Border>
-                        <ContentPresenter Grid.Column="1" Grid.ColumnSpan="2" Margin="{TemplateBinding Padding}" Grid.Row="2" 
-                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{DynamicResource GroupBox.Disabled.Background}"/>
+                            <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Disabled.Border}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource GroupBox.Disabled.Foreground}"/>
+                            <Setter Property="TextElement.Foreground" Value="{DynamicResource GroupBox.Disabled.Header.Foreground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -3845,6 +3856,7 @@
 
 
 
+    
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   Hyperlink                                                                 |
@@ -3932,7 +3944,7 @@
                 <ControlTemplate TargetType="{x:Type ListBox}">
                     <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}" Padding="1" SnapsToDevicePixels="true">
-                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}">
+                        <ScrollViewer x:Name="sv" Focusable="false" Padding="{TemplateBinding Padding}">
                             <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </ScrollViewer>
                     </Border>
@@ -4010,8 +4022,16 @@
                             <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedActive.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ListBoxItem.SelectedActive.Border}"/>
                         </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{StaticResource ListBoxItem.SelectedActive.MouseOver.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ListBoxItem.SelectedActive.MouseOver.Border}"/>
+                        </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ListBoxItem.Disabled.Foreground}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ListBox.Disabled.Foreground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -4044,9 +4064,9 @@
                 <ControlTemplate TargetType="GridViewColumnHeader">
                     <Grid>
                         <Border x:Name="HeaderBorder" BorderThickness="0,1,0,1" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True"
-                                    Background="{DynamicResource GridViewColumnHeader.Background}" BorderBrush="{DynamicResource GridViewColumnHeader.Border}">
+                                Background="{DynamicResource GridViewColumnHeader.Background}" BorderBrush="{DynamicResource GridViewColumnHeader.Border}">
                             <ContentPresenter x:Name="HeaderContent" Margin="0,0,0,4" RecognizesAccessKey="True" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </Border>
                         <Border x:Name="BottomHeaderBorder" VerticalAlignment="Bottom" Height="1" BorderThickness="0,0,0,1" SnapsToDevicePixels="True"
                                 BorderBrush="{DynamicResource GridViewColumnHeaderGripper.MouseOver.Lower.Border}"/>
@@ -4060,6 +4080,9 @@
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="Background" TargetName="HeaderBorder" Value="{DynamicResource GridViewColumnHeader.Pressed.Background}"/>
                             <Setter Property="BorderBrush" TargetName="HeaderBorder" Value="{DynamicResource GridViewColumnHeader.Pressed.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="TextElement.Foreground" Value="{DynamicResource GridViewColumnHeader.Disabled.Foreground}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -4195,14 +4218,14 @@
                         <Trigger Property="GridView.ColumnCollection" Value="{x:Null}">
                             <Setter TargetName="ContentPresenter" Property="Visibility" Value="Visible" />
                             <Setter TargetName="RowPresenter" Property="Visibility" Value="Collapsed" />
-                        </Trigger>
+                        </Trigger>                        
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True"/>
                             </MultiTrigger.Conditions>
                             <Setter Property="Background" TargetName="Bd" Value="{StaticResource Item.MouseOver.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource Item.MouseOver.Border}"/>
-                        </MultiTrigger>
+                        </MultiTrigger>                        
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="False"/>
@@ -4218,6 +4241,14 @@
                             </MultiTrigger.Conditions>
                             <Setter Property="Background" TargetName="Bd" Value="{StaticResource Item.SelectedActive.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource Item.SelectedActive.Border}"/>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsSelected" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="Bd" Value="{StaticResource Item.SelectedActive.MouseOver.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource Item.SelectedActive.MouseOver.Border}"/>
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>

@@ -63,22 +63,22 @@
                             </ComboBox.ContextMenu>
                         </ComboBox>
                         <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,40,0,0" />
-                        <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="170" Margin="0,5,5,0" />
+                        <DocumentViewer HorizontalAlignment="Right" VerticalAlignment="Top" Width="300" Height="170" Margin="0,5,5,0" />
                         <Expander HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,0">
                             <TextBlock Text="Expander" />
                         </Expander>
                         <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="GroupBox" Margin="0,180,0,0">
-                            <TextBlock Text="Group Box Group Box Group Box Group Box" />
+                            <TextBlock Text="Group Box Group Box Group Box Group Box" Foreground="White" />
                         </GroupBox>
                         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,70,0,0">
                             <Hyperlink NavigateUri="https://www.google.com">Google</Hyperlink>
                         </TextBlock>
                         <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,70,0,0" />
-                        <ListBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="100" Margin="300,105,0,0">
+                        <ListBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="100" Margin="300,105,0,0" IsEnabled="True">
                             <ListBoxItem Content="LBI" />
                             <ListBoxItem Content="ListBoxItem" />
                         </ListBox>
-                        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="115" Margin="450,85,0,0">
+                        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="115" Margin="450,85,0,0" IsEnabled="True">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn Header="My Items" Width="Auto" />
@@ -87,10 +87,10 @@
                             <ListViewItem Content="LBI" />
                             <ListViewItem Content="ListBoxItem" />
                         </ListView>
-                        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="5,230,0,0" />
-                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,230,0,0" />
-                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,230,0,0" IsChecked="True" />
-                        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="257" Margin="333,221,0,0" Height="149">
+                        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="30,259,0,0" />
+                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,303,0,0" />
+                        <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,331,0,0" IsChecked="True" />
+                        <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="257" Margin="709,395,0,0" Height="149">
                             <FlowDocument>
                                 <Paragraph>
                                     <Run>Rich</Run>
@@ -99,7 +99,7 @@
                                 </Paragraph>
                             </FlowDocument>
                         </RichTextBox>
-                        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Height="117" Margin="10,253,0,0">
+                        <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Height="117" Margin="300,292,0,0">
                             <RichTextBox>
                                 <FlowDocument>
                                     <Paragraph>
@@ -167,7 +167,7 @@
                                 </ToolBarPanel>
                             </ToolBar>
                         </ToolBarTray>
-                        <TreeView HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,450,0,0" Height="120" Width="300">
+                        <TreeView HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,484,0,0" Height="120" Width="300">
                             <TreeViewItem Header="TVI">
                                 <TreeViewItem Header="TVI">
                                     <TreeViewItem Header="TVI" />
