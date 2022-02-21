@@ -332,7 +332,7 @@
     <Color x:Key="Slider.Border.Color">#00000000</Color>
     <Color x:Key="Slider.Disabled.Background.Color">#AA505050</Color>
     <Color x:Key="Slider.SelectionRange.Background.Color">#FF007BFF</Color>
-    <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF0000FF</Color>
+    <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF007BFF</Color>
 
     <Color x:Key="SliderThumb.Background.Color">#FF007BFF</Color>
     <Color x:Key="SliderThumb.Border.Color">#FF007BFF</Color>
