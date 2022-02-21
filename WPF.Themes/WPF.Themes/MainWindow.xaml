@@ -29,7 +29,7 @@
                     </MenuItem>
                 </MenuItem>
             </Menu>
-            <TabControl Grid.Row="1" Margin="0,5,0,0" IsEnabled="False">
+            <TabControl Grid.Row="1" Margin="0,5,0,0" IsEnabled="True">
                 <TabItem Header="Controls">
                     <Grid Background="#FF1F1F1F">
                         <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5"
