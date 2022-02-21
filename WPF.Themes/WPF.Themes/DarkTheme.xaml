@@ -106,22 +106,17 @@
     <Color x:Key="ComboBoxItem.Background.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Border.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewFocus.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHover.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHover.Border.Color">#A826A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHoverFocus.Background.Color">#5426A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHoverFocus.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelected.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelected.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Background.Color">#2E0080FF</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#99006CD9</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color">#3DDADADA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color">#FFDADADA</Color>
-    
-    <Color x:Key="ContextMenu.Background.Color">#FFF1F1F1</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Background.Color">#77525252</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Background.Color">#3D007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Border.Color">#BB007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Background.Color">#77007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#FF007BFF</Color>
+
+    <Color x:Key="ContextMenu.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="ContextMenu.Border.Color">#FF888888</Color>
-    <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
-    <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFE2E3E3</Color>
+    <Color x:Key="ContextMenu.Foregound.Color">#FFFFFFFF</Color>
+    <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFFFFFFF</Color>
     <Color x:Key="ContextMenu.Splitter.Color2.Color">#FFFFFFFF</Color>
 
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
@@ -140,8 +135,8 @@
     <Color x:Key="DatePicker.Border.Pressed.GradientStop3.Color">#55AAAAAA</Color>
     <Color x:Key="DatePicker.Border.Pressed.GradientStop4.Color">#55AAAAAA</Color>
     <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFCCCCCC</Color>
-    <Color x:Key="DatePicker.Calendar.Disabled.Border.Color">#FF3D3D3D</Color>
     <Color x:Key="DatePicker.Calendar.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="DatePicker.Disabled.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="DatePicker.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="DatePicker.Inner.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FF4F4F4F</Color>
@@ -158,14 +153,14 @@
     <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF707070</Color>
     <Color x:Key="DatePicker.Popup.Background.Color">#FF1F1F1F</Color>
 
-    <Color x:Key="DropShadow.Color">#71000000</Color>
+    <Color x:Key="DropShadow.Color">#91000000</Color>
     
     <Color x:Key="Expander.Background.Color">#00000000</Color>
     <Color x:Key="Expander.Border.Color">#00000000</Color>
     <Color x:Key="Expander.Disabled.Foreground.Color">#FF7D7D7D</Color>
     <Color x:Key="Expander.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="Expander.Circle.Stroke.Color">#FF1F1F1F</Color>
-    <Color x:Key="Expander.Circle.Fill.Color">#FF5F5F5F</Color>
+    <Color x:Key="Expander.Circle.Fill.Color">#FF007BFF</Color>
     <Color x:Key="Expander.Arrow.Stroke.Color">#FFFFFFFF</Color>
     <Color x:Key="Expander.MouseOver.Circle.Stroke.Color">#FFAAAAAA</Color>
     <Color x:Key="Expander.MouseOver.Circle.Fill.Color">#FF1F1F1F</Color>
@@ -173,8 +168,8 @@
     <Color x:Key="Expander.Pressed.Circle.Stroke.Color">#55AAAAAA</Color>
     <Color x:Key="Expander.Pressed.Circle.Fill.Color">#770F0F0F</Color>
     <Color x:Key="Expander.Pressed.Arrow.Stroke.Color">#FF7F7F7F</Color>
-    <Color x:Key="Expander.Disabled.Circle.Stroke.Color">#FFBCBCBC</Color>
-    <Color x:Key="Expander.Disabled.Circle.Fill.Color">#FFE6E6E6</Color>
+    <Color x:Key="Expander.Disabled.Circle.Stroke.Color">#FF505050</Color>
+    <Color x:Key="Expander.Disabled.Circle.Fill.Color">#FF505050</Color>
     <Color x:Key="Expander.Disabled.Arrow.Stroke.Color">#FF707070</Color>
     
     <Color x:Key="FocusVisual.Stroke.Color">#FFFFFFFF</Color>
@@ -210,7 +205,7 @@
     <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop2.Color">#FFAAAAAA</Color>
     
     <Color x:Key="GroupBox.Background.Color">#FF1F1F1F</Color>
-    <Color x:Key="GroupBox.Border.Color">#BB007BFF</Color>
+    <Color x:Key="GroupBox.Border.Color">#FF007BFF</Color>
     <Color x:Key="GroupBox.Disabled.Border.Color">#88007BFF</Color>
     <Color x:Key="GroupBox.Disabled.Background.Color">#BB444444</Color>
     <Color x:Key="GroupBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
@@ -290,6 +285,7 @@
     <Color x:Key="ProgressBar.Progress.Color">#FF007BFF</Color>
     <Color x:Key="ProgressBar.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="ProgressBar.Border.Color">#FF707070</Color>
+    <Color x:Key="ProgressBar.Disabled.Color">#FF505050</Color>
 
     <Color x:Key="RadioButton.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="RadioButton.Border.Color">#FF707070</Color>
@@ -308,76 +304,81 @@
     <Color x:Key="RadioButton.Disabled.Glyph.Color">#FF5F5F5F</Color>
     
     <Color x:Key="RepeatButton.Transparent.Background.Color">#00000000</Color>
-    
-    <Color x:Key="ScrollBarButton.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.Border.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#FFDADADA</Color>
-    <Color x:Key="ScrollBarButton.MouseOver.Border.Color">#FFDADADA</Color>
+
+    <Color x:Key="ScrollBarButton.Background.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBarButton.Border.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBarButton.MouseOver.Border.Color">#88FFFFFF</Color>
     <Color x:Key="ScrollBarButton.Pressed.Background.Color">#FF606060</Color>
     <Color x:Key="ScrollBarButton.Pressed.Border.Color">#FF606060</Color>
-    <Color x:Key="ScrollBarButton.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.Disabled.Border.Color">#FFF0F0F0</Color>
-    
-    <Color x:Key="ScrollBar.Foreground.Color">#FF000000</Color>
-    <Color x:Key="ScrollBar.Glyph.Color">#FF606060</Color>
-    <Color x:Key="ScrollBar.Thumb.Color">#FFCDCDCD</Color>
-    <Color x:Key="ScrollBar.MouseOver.Glyph.Color">#FF000000</Color>
-    <Color x:Key="ScrollBar.MouseOver.Thumb.Color">#FFA6A6A6</Color>
-    <Color x:Key="ScrollBar.Pressed.Thumb.Color">#FF606060</Color>
-    <Color x:Key="ScrollBar.Pressed.Glyph.Color">#FFFFFFFF</Color>
-    <Color x:Key="ScrollBar.Disabled.Glyph.Color">#FFBFBFBF</Color>
+    <Color x:Key="ScrollBarButton.Disabled.Background.Color">#FF707070</Color>
+    <Color x:Key="ScrollBarButton.Disabled.Border.Color">#FF707070</Color>
+
+    <Color x:Key="ScrollBar.Background.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBar.Border.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBar.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="ScrollBar.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="ScrollBar.Thumb.Color">#33FFFFFF</Color>
+    <Color x:Key="ScrollBar.MouseOver.Glyph.Color">#FF1F1F1F</Color>
+    <Color x:Key="ScrollBar.MouseOver.Thumb.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBar.Pressed.Glyph.Color">#FF1F1F1F</Color>
+    <Color x:Key="ScrollBar.Pressed.Thumb.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBar.Disabled.Glyph.Color">#FFCCCCCC</Color>
+    <Color x:Key="ScrollBar.Disabled.Thumb.Color">#FF707070</Color>
     
     <Color x:Key="Separator.Background.Color">#FFC0C0C0</Color>
     
     <Color x:Key="Slider.Background.Color">#00000000</Color>
     <Color x:Key="Slider.Border.Color">#00000000</Color>
-    <Color x:Key="Slider.SelectionRange.Background.Color">#FF1E90FF</Color>
+    <Color x:Key="Slider.Disabled.Background.Color">#AA505050</Color>
+    <Color x:Key="Slider.SelectionRange.Background.Color">#FF007BFF</Color>
     <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF0000FF</Color>
+
+    <Color x:Key="SliderThumb.Background.Color">#FF007BFF</Color>
+    <Color x:Key="SliderThumb.Border.Color">#FF007BFF</Color>
+    <Color x:Key="SliderThumb.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="SliderThumb.MouseOver.Background.Color">#FF1284FF</Color>
+    <Color x:Key="SliderThumb.MouseOver.Border.Color">#FF1284FF</Color>
+    <Color x:Key="SliderThumb.Pressed.Background.Color">#FF0073F0</Color>
+    <Color x:Key="SliderThumb.Pressed.Border.Color">#FF0073F0</Color>
+    <Color x:Key="SliderThumb.Disabled.Background.Color">#FF505050</Color>
+    <Color x:Key="SliderThumb.Disabled.Border.Color">#FF505050</Color>
+    <Color x:Key="SliderThumb.Track.Background.Color">#FF707070</Color>
+    <Color x:Key="SliderThumb.Track.Border.Color">#FF707070</Color>
     
-    <Color x:Key="SliderThumb.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="SliderThumb.Border.Color">#FFACACAC</Color>
-    <Color x:Key="SliderThumb.Foreground.Color">#FFE5E5E5</Color>
-    <Color x:Key="SliderThumb.MouseOver.Background.Color">#FFDCECFC</Color>
-    <Color x:Key="SliderThumb.MouseOver.Border.Color">#FF7Eb4EA</Color>
-    <Color x:Key="SliderThumb.Pressed.Background.Color">#FFDAECFC</Color>
-    <Color x:Key="SliderThumb.Pressed.Border.Color">#FF569DE5</Color>
-    <Color x:Key="SliderThumb.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="SliderThumb.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="SliderThumb.Track.Background.Color">#FFE7EAEA</Color>
-    <Color x:Key="SliderThumb.Track.Border.Color">#FFD6D6D6</Color>
-    
-    <Color x:Key="StatusBar.Background.Color">#FFF1EDED</Color>
-    <Color x:Key="StatusBar.Foreground.Color">#FF000000</Color>
+    <Color x:Key="StatusBar.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="StatusBar.Foreground.Color">#FFFFFFFF</Color>
     
     <Color x:Key="StatusBarItem.Background.Color">#00000000</Color>
     <Color x:Key="StatusBarItem.Border.Color">#00000000</Color>
-    <Color x:Key="StatusBarItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="StatusBarItem.Foreground.Color">#FF000000</Color>
-    
-    <Color x:Key="TabControl.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="TabControl.Foreground.Color">#FF000000</Color>
+    <Color x:Key="StatusBarItem.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="StatusBarItem.Foreground.Color">#FFFFFFFF</Color>
+
+    <Color x:Key="TabControl.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="TabControl.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="TabControl.TabPanel.Background.Color">#00000000</Color>
-    
-    <Color x:Key="TabItem.Background.GradientStop1.Color">#FFF0F0F0</Color>
-    <Color x:Key="TabItem.Background.GradientStop2.Color">#FFE5E5E5</Color>
-    <Color x:Key="TabItem.Border.Color">#FFACACAC</Color>
-    <Color x:Key="TabItem.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="TabItem.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="TabItem.MouseOver.Background.GradientStop1.Color">#FFECF4FC</Color>
-    <Color x:Key="TabItem.MouseOver.Background.GradientStop2.Color">#FFDCECFC</Color>
-    <Color x:Key="TabItem.MouseOver.Border.Color">#FF7EB4EA</Color>
-    <Color x:Key="TabItem.Selected.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TabItem.Selected.Border.Color">#FFACACAC</Color>
-    
-    <Color x:Key="TextBoxBase.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TextBoxBase.Foreground.Color">#FF000000</Color>
-    <Color x:Key="TextBoxBase.InactiveSelection.Color">#FFDCDCDC</Color>
-    
-    <Color x:Key="TextBox.Focus.Border.Color">#FF569DE5</Color>
-    <Color x:Key="TextBox.MouseOver.Border.Color">#FF7EB4EA</Color>
-    <Color x:Key="TextBox.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TextBox.Border.Color">#FFABAdB3</Color>
-    <Color x:Key="TextBox.ContentHost.Background.Color">#FFABAdB3</Color>
+
+    <Color x:Key="TabItem.Background.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Background.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Border.Color">#FF707070</Color>
+    <Color x:Key="TabItem.Disabled.Background.Color">#FF505050</Color>
+    <Color x:Key="TabItem.Disabled.Border.Color">#FF606060</Color>
+    <Color x:Key="TabItem.MouseOver.Background.GradientStop1.Color">#FF3F3F3F</Color>
+    <Color x:Key="TabItem.MouseOver.Background.GradientStop2.Color">#FF3F3F3F</Color>
+    <Color x:Key="TabItem.MouseOver.Border.Color">#FF0073F0</Color>
+    <Color x:Key="TabItem.Selected.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Selected.Border.Color">#FF707070</Color>
+
+    <Color x:Key="TextBoxBase.Background.Color">#FF4F4F4F</Color>
+    <Color x:Key="TextBoxBase.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="TextBoxBase.InactiveSelection.Color">#330073F0</Color>
+
+    <Color x:Key="TextBox.Focus.Border.Color">#BB0073F0</Color>
+    <Color x:Key="TextBox.MouseOver.Border.Color">#FF0073F0</Color>
+    <Color x:Key="TextBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="TextBox.Border.Color">#FF707070</Color>
+    <Color x:Key="TextBox.ContentHost.Background.Color">#FF707070</Color>
+    <Color x:Key="TextBox.Watermark.Color">#FFAAAAAA</Color>
     
     <Color x:Key="ToolBarButtonHover.Color">#210080FF</Color>
     <Color x:Key="ToolBarMenuBorder.Color">#FFB6BDC5</Color>
@@ -505,18 +506,13 @@
     <SolidColorBrush x:Key="ComboBoxItem.Background" Color="{DynamicResource ComboBoxItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.Border" Color="{DynamicResource ComboBoxItem.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.Disabled.Foreground" Color="{DynamicResource ComboBoxItem.Disabled.Foreground.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewFocus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="{DynamicResource ComboBoxItem.ItemsviewHover.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="{DynamicResource ComboBoxItem.ItemsviewHover.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Background" Color="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelected.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Border.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border" Color="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border.Color}" options:Freeze="True"/>
-    
+
     <SolidColorBrush x:Key="ContextMenu.Background" Color="{DynamicResource ContextMenu.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Border" Color="{DynamicResource ContextMenu.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ContextMenu.Foreground" Color="{DynamicResource ContextMenu.Foregound.Color}" options:Freeze="True"/>
@@ -541,7 +537,7 @@
     <SolidColorBrush x:Key="DatePicker.Foreground" Color="{DynamicResource DatePicker.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Foreground" Color="{DynamicResource DatePicker.Calendar.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Calendar.Circle.Background" Color="{DynamicResource DatePicker.Calendar.Circle.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DatePicker.Calendar.Disabled.Border" Color="{DynamicResource DatePicker.Calendar.Disabled.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="DatePicker.Disabled.Background" Color="{DynamicResource DatePicker.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background" Color="{DynamicResource DatePicker.Inner.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background.GradientStop1" Color="{DynamicResource DatePicker.Inner.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Background.GradientStop2" Color="{DynamicResource DatePicker.Inner.Background.GradientStop2.Color}" options:Freeze="True"/>
@@ -555,7 +551,6 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Background.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Background.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="DatePicker.Popup.Background" Color="{DynamicResource DatePicker.Popup.Background.Color}" options:Freeze="True"/>
 
     <SolidColorBrush x:Key="DropShadow" Color="{DynamicResource DropShadow.Color}" options:Freeze="True"/>
     
@@ -702,6 +697,7 @@
     <SolidColorBrush x:Key="ProgressBar.Progress" Color="{DynamicResource ProgressBar.Progress.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Background" Color="{DynamicResource ProgressBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Border" Color="{DynamicResource ProgressBar.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ProgressBar.Disabled" Color="{DynamicResource ProgressBar.Disabled.Color}" options:Freeze="True"/>
     
     <SolidColorBrush x:Key="RadioButton.Background" Color="{DynamicResource RadioButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Border" Color="{DynamicResource RadioButton.Border.Color}" options:Freeze="True"/>
@@ -730,21 +726,23 @@
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Background" Color="{DynamicResource ScrollBarButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Border" Color="{DynamicResource ScrollBarButton.Disabled.Border.Color}" options:Freeze="True"/>
     
-    <SolidColorBrush x:Key="ScrollBar.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ScrollBar.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ScrollBar.Background" Color="{DynamicResource ScrollBar.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ScrollBar.Border" Color="{DynamicResource ScrollBar.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Foreground" Color="{DynamicResource ScrollBar.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Glyph" Color="{DynamicResource ScrollBar.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Thumb" Color="{DynamicResource ScrollBar.Thumb.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.MouseOver.Glyph" Color="{DynamicResource ScrollBar.MouseOver.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.MouseOver.Thumb" Color="{DynamicResource ScrollBar.MouseOver.Thumb.Color}" options:Freeze="True"/>
-    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{DynamicResource ScrollBar.Pressed.Thumb.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Pressed.Glyph" Color="{DynamicResource ScrollBar.Pressed.Glyph.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{DynamicResource ScrollBar.Pressed.Thumb.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Disabled.Glyph" Color="{DynamicResource ScrollBar.Disabled.Glyph.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="ScrollBar.Disabled.Thumb" Color="{DynamicResource ScrollBar.Disabled.Thumb.Color}" options:Freeze="True"/>
     
     <SolidColorBrush x:Key="Separator.Background" Color="{DynamicResource Separator.Background.Color}" options:Freeze="True"/>
     
     <SolidColorBrush x:Key="Slider.Background" Color="{DynamicResource Slider.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.Border" Color="{DynamicResource Slider.Border.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="Slider.Disabled.Background" Color="{DynamicResource Slider.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.SelectionRange.Background" Color="{DynamicResource Slider.SelectionRange.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.IsKeyboardfocused.Foreground" Color="{DynamicResource Slider.IsKeyboardfocused.Foreground.Color}" options:Freeze="True"/>
     
@@ -796,6 +794,7 @@
     <SolidColorBrush x:Key="TextBox.Background" Color="{DynamicResource TextBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Border" Color="{DynamicResource TextBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.ContentHost.Background" Color="{DynamicResource TextBox.ContentHost.Background.Color}" options:Freeze="True"/>
+    <SolidColorBrush x:Key="TextBox.Watermark" Color="{DynamicResource TextBox.Watermark.Color}" options:Freeze="True"/>
     
     <SolidColorBrush x:Key="ToolBarButtonHover" Color="{DynamicResource ToolBarButtonHover.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarMenuBorder" Color="{DynamicResource ToolBarMenuBorder.Color}" options:Freeze="True"/>
@@ -1534,61 +1533,7 @@
                 <Setter Property="Stroke" TargetName="grip" Value="{DynamicResource SliderThumb.Disabled.Border}"/>
             </Trigger>
         </ControlTemplate.Triggers>
-    </ControlTemplate>
-    <ControlTemplate x:Key="SliderHorizontal" TargetType="{x:Type Slider}">
-        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <TickBar x:Name="TopTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,0,0,2" Placement="Top" Grid.Row="0" Visibility="Collapsed"/>
-                <TickBar x:Name="BottomTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,2,0,0" Placement="Bottom" Grid.Row="2" Visibility="Collapsed"/>
-                <Border x:Name="TrackBackground" Background="{DynamicResource SliderThumb.Track.Background}" BorderBrush="{DynamicResource SliderThumb.Track.Border}" 
-                        BorderThickness="1" Height="4.0" Margin="5,0" Grid.Row="1" VerticalAlignment="center">
-                    <Canvas Margin="-6,-1">
-                        <Rectangle x:Name="PART_SelectionRange" Fill="{DynamicResource Slider.SelectionRange.Background}" Height="4.0" Visibility="Hidden"/>
-                    </Canvas>
-                </Border>
-                <Track x:Name="PART_Track" Grid.Row="1">
-                    <Track.DecreaseRepeatButton>
-                        <RepeatButton Command="{x:Static Slider.DecreaseLarge}" Style="{DynamicResource RepeatButtonTransparent}"/>
-                    </Track.DecreaseRepeatButton>
-                    <Track.IncreaseRepeatButton>
-                        <RepeatButton Command="{x:Static Slider.IncreaseLarge}" Style="{DynamicResource RepeatButtonTransparent}"/>
-                    </Track.IncreaseRepeatButton>
-                    <Track.Thumb>
-                        <Thumb x:Name="Thumb" Focusable="False" Height="18" OverridesDefaultStyle="True" Template="{DynamicResource SliderThumbHorizontalDefault}"
-                               VerticalAlignment="Center" Width="11"/>
-                    </Track.Thumb>
-                </Track>
-            </Grid>
-        </Border>
-        <ControlTemplate.Triggers>
-            <Trigger Property="TickPlacement" Value="TopLeft">
-                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
-                <Setter Property="Template" TargetName="Thumb" Value="{DynamicResource SliderThumbHorizontalTop}"/>
-                <Setter Property="Margin" TargetName="TrackBackground" Value="5,2,5,0"/>
-            </Trigger>
-            <Trigger Property="TickPlacement" Value="BottomRight">
-                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
-                <Setter Property="Template" TargetName="Thumb" Value="{DynamicResource SliderThumbHorizontalBottom}"/>
-                <Setter Property="Margin" TargetName="TrackBackground" Value="5,0,5,2"/>
-            </Trigger>
-            <Trigger Property="TickPlacement" Value="Both">
-                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
-                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
-            </Trigger>
-            <Trigger Property="IsSelectionRangeEnabled" Value="true">
-                <Setter Property="Visibility" TargetName="PART_SelectionRange" Value="Visible"/>
-            </Trigger>
-            <Trigger Property="IsKeyboardFocused" Value="true">
-                <Setter Property="Foreground" TargetName="Thumb" Value="{DynamicResource Slider.IsKeyboardfocused.Foreground}"/>
-            </Trigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
+    </ControlTemplate>    
     <ControlTemplate x:Key="SliderThumbVerticalDefault" TargetType="{x:Type Thumb}">
         <Grid HorizontalAlignment="Center" UseLayoutRounding="True" VerticalAlignment="Center">
             <Path x:Name="grip" Data="M0.5,0.5 L18.5,0.5 18.5,11.5 0.5,11.5 Z" Fill="{DynamicResource SliderThumb.Background}" 
@@ -1664,11 +1609,14 @@
                         <Trigger Property="IsDragging" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="{DynamicResource ScrollBar.Pressed.Thumb}"/>
                         </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Fill" TargetName="rectangle" Value="{DynamicResource ScrollBar.Disabled.Thumb}"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>    
     <Style x:Key="ScrollBarThumbHorizontal" TargetType="{x:Type Thumb}">
         <Setter Property="OverridesDefaultStyle" Value="true"/>
         <Setter Property="IsTabStop" Value="false"/>
@@ -1683,6 +1631,9 @@
                         </Trigger>
                         <Trigger Property="IsDragging" Value="true">
                             <Setter Property="Fill" TargetName="rectangle" Value="{DynamicResource ScrollBar.Pressed.Thumb}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Fill" TargetName="rectangle" Value="{DynamicResource ScrollBar.Disabled.Thumb}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -2698,6 +2649,93 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                              DatePickerTextBoxes                                                            |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="DarkThemeDatePickerTextBoxStyle" TargetType="{x:Type DatePickerTextBox}">
+        <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DatePickerTextBox}">
+                    <Grid>
+                        <Grid.Resources>
+                            <SolidColorBrush x:Key="WatermarkBrush" Color="{DynamicResource TextBox.Watermark.Color}"/>
+                        </Grid.Resources>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition GeneratedDuration="0"/>
+                                    <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="ContentElement" To="{DynamicResource TextBox.MouseOver.Border.Color}" 
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"/>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="watermark_decorator" To="{DynamicResource TextBox.MouseOver.Border.Color}" 
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"/>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="WatermarkStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition GeneratedDuration="0"/>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Unwatermarked"/>
+                                <VisualState x:Name="Watermarked">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0" Storyboard.TargetName="ContentElement" To="0" Storyboard.TargetProperty="Opacity"/>
+                                        <DoubleAnimation Duration="0" Storyboard.TargetName="PART_Watermark" To="1" Storyboard.TargetProperty="Opacity"/>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="FocusStates">
+                                <VisualStateGroup.Transitions>
+                                    <VisualTransition GeneratedDuration="0"/>
+                                </VisualStateGroup.Transitions>
+                                <VisualState x:Name="Unfocused"/>
+                                <VisualState x:Name="Focused">
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0" Storyboard.TargetName="FocusVisual" To="1" Storyboard.TargetProperty="Opacity"/>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1" Opacity="1" 
+                                Padding="{TemplateBinding Padding}">
+                            <Grid x:Name="WatermarkContent" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                <Border x:Name="ContentElement" BorderBrush="{DynamicResource TextBox.Border}" BorderThickness="1"/>
+                                <Border x:Name="watermark_decorator" BorderBrush="{DynamicResource TextBox.Border}" BorderThickness="1">
+                                    <ContentControl x:Name="PART_Watermark" Focusable="False" IsHitTestVisible="False" Opacity="0" Padding="2"/>
+                                </Border>
+                                <ScrollViewer x:Name="PART_ContentHost" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              Margin="0" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                <Border x:Name="FocusVisual" BorderBrush="{DynamicResource TextBox.Focus.Border}" CornerRadius="1" 
+                                        IsHitTestVisible="False" Opacity="0"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                     ComboBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -2935,24 +2973,14 @@
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="TextElement.Foreground" TargetName="Bd" Value="{DynamicResource ComboBoxItem.Disabled.Foreground}"/>
                         </Trigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="False"/>
-                                <Condition Property="IsMouseOver" Value="True"/>
-                                <Condition Property="IsKeyboardFocused" Value="False"/>
-                            </MultiTrigger.Conditions>
+                        <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHover.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHover.Border}"/>
-                        </MultiTrigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="True"/>
-                                <Condition Property="IsMouseOver" Value="False"/>
-                                <Condition Property="IsKeyboardFocused" Value="True"/>
-                            </MultiTrigger.Conditions>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelected.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelected.Border}"/>
-                        </MultiTrigger>
+                        </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsSelected" Value="True"/>
@@ -2960,32 +2988,6 @@
                             </MultiTrigger.Conditions>
                             <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedHover.Border}"/>
-                        </MultiTrigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="True"/>
-                                <Condition Property="IsMouseOver" Value="False"/>
-                                <Condition Property="IsKeyboardFocused" Value="False"/>
-                            </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewSelectedNoFocus.Border}"/>
-                        </MultiTrigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="False"/>
-                                <Condition Property="IsMouseOver" Value="False"/>
-                                <Condition Property="IsKeyboardFocused" Value="True"/>
-                            </MultiTrigger.Conditions>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewFocus.Border}"/>
-                        </MultiTrigger>
-                        <MultiTrigger>
-                            <MultiTrigger.Conditions>
-                                <Condition Property="IsSelected" Value="False"/>
-                                <Condition Property="IsMouseOver" Value="True"/>
-                                <Condition Property="IsKeyboardFocused" Value="True"/>
-                            </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="Bd" Value="{DynamicResource ComboBoxItem.ItemsviewHoverFocus.Border}"/>
                         </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -3234,9 +3236,6 @@
                                             <Ellipse Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Circle.Background}" 
                                                      HorizontalAlignment="Center" Height="3" StrokeThickness="0" 
                                                      VerticalAlignment="Center" Width="3"/>
-                                            <Border x:Name="DisabledVisual" BorderBrush="{DynamicResource DatePicker.Calendar.Disabled.Border}" 
-                                                    BorderThickness="1" CornerRadius="0,0,.5,.5" 
-                                                    Grid.ColumnSpan="4" Opacity="0" Grid.RowSpan="4" Grid.Row="0"/>
                                         </Grid>
                                     </Grid>
                                 </ControlTemplate>
@@ -3249,17 +3248,12 @@
                                     HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0" Template="{DynamicResource DropDownButtonTemplate}" 
                                     VerticalAlignment="Top" Width="20"/>
                             <DatePickerTextBox x:Name="PART_TextBox" Grid.Column="0" Focusable="{TemplateBinding Focusable}" 
-                                               HorizontalContentAlignment="Stretch" Grid.Row="0" VerticalContentAlignment="Stretch"/>
+                                               HorizontalContentAlignment="Stretch" Grid.Row="0" VerticalContentAlignment="Stretch"
+                                               Style="{DynamicResource DarkThemeDatePickerTextBoxStyle}"/>
                             <Grid x:Name="PART_DisabledVisual" Grid.Column="0" Grid.ColumnSpan="2" IsHitTestVisible="False" Opacity="0" Grid.Row="0">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <Rectangle Grid.Column="0" Fill="{DynamicResource DatePicker.Popup.Background}" Grid.Row="0" RadiusX="1" RadiusY="1"/>
-                                <Rectangle Grid.Column="1" Fill="{DynamicResource DatePicker.Popup.Background}" Height="18" Margin="3,0,3,0" Grid.Row="0" 
-                                           RadiusX="1" RadiusY="1" Width="19"/>
-                                <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False"/>
+                                <Rectangle Fill="{DynamicResource DatePicker.Disabled.Background}" />
                             </Grid>
+                            <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False"/>
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -3891,6 +3885,7 @@
                                 </Rectangle.RenderTransform>
                             </Rectangle>
                         </Grid>
+                        <Rectangle x:Name="DisabledOverlay" Fill="{DynamicResource ProgressBar.Disabled}" Visibility="Collapsed"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="Orientation" Value="Vertical">
@@ -3902,6 +3897,9 @@
                         </Trigger>
                         <Trigger Property="IsIndeterminate" Value="true">
                             <Setter Property="Visibility" TargetName="Indicator" Value="Collapsed"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Visibility" Value="Visible" TargetName="DisabledOverlay"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -3994,6 +3992,44 @@
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
+         |                                                  RichTextBox                                                                |
+         |                                                                                                                             |
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <Style x:Key="DarkThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
+        <Style.Resources>
+            <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
+                <Setter Property="OverridesDefaultStyle" Value="true"/>
+            </Style>
+            <!-- even though we have a global we still need to set this Hyperlink style on the RichTextBox for it to show (a copy of the global Hyperlink style) -->
+            <Style x:Key="{x:Type Hyperlink}" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
+                <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="true">
+                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.MouseOver.Foreground}"/>
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="false">
+                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Disabled.Foreground}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Style.Resources>
+        <Setter Property="MinWidth" Value="10"/>
+        <Style.BasedOn>
+            <StaticResource ResourceKey="{x:Type TextBoxBase}"/>
+        </Style.BasedOn>
+    </Style>
+
+
+
+
+
+
+
+
+
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         |                                                                                                                             |
          |                                                 RepeatButtons                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
@@ -4006,6 +4042,19 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
                     <Rectangle Fill="{TemplateBinding Background}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="MenuScrollButton" BasedOn="{x:Null}" TargetType="{x:Type RepeatButton}">
+        <Setter Property="ClickMode" Value="Hover"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Border x:Name="templateRoot" BorderThickness="1" SnapsToDevicePixels="true"
+                            Background="{DynamicResource MenuScrollButton.Background}" BorderBrush="{DynamicResource MenuScrollButton.Background}">
+                        <ContentPresenter HorizontalAlignment="Center" Margin="6" VerticalAlignment="Center"/>
+                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -4046,57 +4095,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="MenuScrollButton" BasedOn="{x:Null}" TargetType="{x:Type RepeatButton}">
-        <Setter Property="ClickMode" Value="Hover"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type RepeatButton}">
-                    <Border x:Name="templateRoot" BorderThickness="1" SnapsToDevicePixels="true"
-                            Background="{DynamicResource MenuScrollButton.Background}" BorderBrush="{DynamicResource MenuScrollButton.Background}">
-                        <ContentPresenter HorizontalAlignment="Center" Margin="6" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-
-
-
-
-
-
-
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         |                                                                                                                             |
-         |                                                  RichTextBox                                                                |
-         |                                                                                                                             |
-         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="DarkThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
-        <Style.Resources>
-            <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
-                <Setter Property="OverridesDefaultStyle" Value="true"/>
-            </Style>
-            <!-- even though we have a global we still need to set this Hyperlink style on the RichTextBox for it to show (a copy of the global Hyperlink style) -->
-            <Style x:Key="{x:Type Hyperlink}" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
-                <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}"/>
-                <Style.Triggers>
-                    <Trigger Property="IsMouseOver" Value="true">
-                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.MouseOver.Foreground}"/>
-                    </Trigger>
-                    <Trigger Property="IsEnabled" Value="false">
-                        <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Disabled.Foreground}"/>
-                    </Trigger>
-                </Style.Triggers>
-            </Style>
-        </Style.Resources>
-        <Setter Property="MinWidth" Value="10"/>
-        <Style.BasedOn>
-            <StaticResource ResourceKey="{x:Type TextBoxBase}"/>
-        </Style.BasedOn>
-    </Style>
 
 
 
@@ -4132,12 +4130,12 @@
                         </Grid.RowDefinitions>
                         <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
                                 Grid.Row="1"/>
-                        <RepeatButton x:Name="PART_LineUpButton" Command="{x:Static ScrollBar.LineUpCommand}" IsEnabled="{TemplateBinding IsMouseOver}" 
+                        <RepeatButton x:Name="PART_LineUpButton" Command="{x:Static ScrollBar.LineUpCommand}"
                                       Style="{DynamicResource ScrollBarButton}">
                             <Path x:Name="ArrowTop" Data="M 0,4 C0,4 0,6 0,6 0,6 3.5,2.5 3.5,2.5 3.5,2.5 7,6 7,6 7,6 7,4 7,4 7,4 3.5,0.5 3.5,0.5 3.5,0.5 0,4 0,4 Z" 
                                   Fill="{DynamicResource ScrollBar.Glyph}" Margin="3,4,3,3" Stretch="Uniform"/>
                         </RepeatButton>
-                        <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}" Grid.Row="1">
+                        <Track x:Name="PART_Track" IsDirectionReversed="true" Grid.Row="1" Margin="2,0">
                             <Track.DecreaseRepeatButton>
                                 <RepeatButton Command="{x:Static ScrollBar.PageUpCommand}" Style="{DynamicResource RepeatButtonTransparent}"/>
                             </Track.DecreaseRepeatButton>
@@ -4148,7 +4146,7 @@
                                 <Thumb Style="{DynamicResource ScrollBarThumbVertical}"/>
                             </Track.Thumb>
                         </Track>
-                        <RepeatButton x:Name="PART_LineDownButton" Command="{x:Static ScrollBar.LineDownCommand}" IsEnabled="{TemplateBinding IsMouseOver}" Grid.Row="2" 
+                        <RepeatButton x:Name="PART_LineDownButton" Command="{x:Static ScrollBar.LineDownCommand}" Grid.Row="2" 
                                       Style="{DynamicResource ScrollBarButton}">
                             <Path x:Name="ArrowBottom" Data="M 0,2.5 C0,2.5 0,0.5 0,0.5 0,0.5 3.5,4 3.5,4 3.5,4 7,0.5 7,0.5 7,0.5 7,2.5 7,2.5 7,2.5 3.5,6 3.5,6 3.5,6 0,2.5 0,2.5 Z" 
                                   Fill="{DynamicResource ScrollBar.Glyph}" Margin="3,4,3,3" Stretch="Uniform"/>
@@ -4209,12 +4207,12 @@
                                 </Grid.ColumnDefinitions>
                                 <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                         BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="1"/>
-                                <RepeatButton x:Name="PART_LineLeftButton" Command="{x:Static ScrollBar.LineLeftCommand}" IsEnabled="{TemplateBinding IsMouseOver}" 
+                                <RepeatButton x:Name="PART_LineLeftButton" Command="{x:Static ScrollBar.LineLeftCommand}"
                                               Style="{DynamicResource ScrollBarButton}">
                                     <Path x:Name="ArrowLeft" Fill="{DynamicResource ScrollBar.Glyph}" Margin="3" Stretch="Uniform"
                                           Data="M 3.18,7 C3.18,7 5,7 5,7 5,7 1.81,3.5 1.81,3.5 1.81,3.5 5,0 5,0 5,0 3.18,0 3.18,0 3.18,0 0,3.5 0,3.5 0,3.5 3.18,7 3.18,7 Z"/>
                                 </RepeatButton>
-                                <Track x:Name="PART_Track" Grid.Column="1" IsEnabled="{TemplateBinding IsMouseOver}">
+                                <Track x:Name="PART_Track" Grid.Column="1" Margin="0,2">
                                     <Track.DecreaseRepeatButton>
                                         <RepeatButton Command="{x:Static ScrollBar.PageLeftCommand}" Style="{DynamicResource RepeatButtonTransparent}"/>
                                     </Track.DecreaseRepeatButton>
@@ -4226,7 +4224,7 @@
                                     </Track.Thumb>
                                 </Track>
                                 <RepeatButton x:Name="PART_LineRightButton" Command="{x:Static ScrollBar.LineRightCommand}" Grid.Column="2" 
-                                              IsEnabled="{TemplateBinding IsMouseOver}" Style="{DynamicResource ScrollBarButton}">
+                                              Style="{DynamicResource ScrollBarButton}">
                                     <Path x:Name="ArrowRight" Fill="{DynamicResource ScrollBar.Glyph}" Margin="3" Stretch="Uniform"
                                           Data="M 1.81,7 C1.81,7 0,7 0,7 0,7 3.18,3.5 3.18,3.5 3.18,3.5 0,0 0,0 0,0 1.81,0 1.81,0 1.81,0 5,3.5 5,3.5 5,3.5 1.81,7 1.81,7 Z" />
                                 </RepeatButton>
@@ -4452,6 +4450,64 @@
          |                                                    Sliders                                                                  |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <ControlTemplate x:Key="SliderHorizontal" TargetType="{x:Type Slider}">
+        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" MinHeight="{TemplateBinding MinHeight}"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TickBar x:Name="TopTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,0,0,2" Placement="Top" Grid.Row="0" Visibility="Collapsed"/>
+                <TickBar x:Name="BottomTick" Fill="{TemplateBinding Foreground}" Height="4" Margin="0,2,0,0" Placement="Bottom" Grid.Row="2" Visibility="Collapsed"/>
+                <Border x:Name="TrackBackground" Background="{DynamicResource SliderThumb.Track.Background}" BorderBrush="{DynamicResource SliderThumb.Track.Border}" 
+                        BorderThickness="1" Height="4.0" Margin="5,0" Grid.Row="1" VerticalAlignment="center">
+                    <Canvas Margin="-6,-1">
+                        <Rectangle x:Name="PART_SelectionRange" Fill="{DynamicResource Slider.SelectionRange.Background}" Height="4.0" Visibility="Hidden"/>
+                    </Canvas>
+                </Border>
+                <Track x:Name="PART_Track" Grid.Row="1">
+                    <Track.DecreaseRepeatButton>
+                        <RepeatButton Command="{x:Static Slider.DecreaseLarge}" Style="{DynamicResource RepeatButtonTransparent}"/>
+                    </Track.DecreaseRepeatButton>
+                    <Track.IncreaseRepeatButton>
+                        <RepeatButton Command="{x:Static Slider.IncreaseLarge}" Style="{DynamicResource RepeatButtonTransparent}"/>
+                    </Track.IncreaseRepeatButton>
+                    <Track.Thumb>
+                        <Thumb x:Name="Thumb" Focusable="False" Height="18" OverridesDefaultStyle="True" Template="{DynamicResource SliderThumbHorizontalDefault}"
+                               VerticalAlignment="Center" Width="11"/>
+                    </Track.Thumb>
+                </Track>
+                <Rectangle x:Name="DisabledOverlay" Fill="{DynamicResource Slider.Disabled.Background}" Visibility="Collapsed"  Grid.RowSpan="3"/>
+            </Grid>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="TickPlacement" Value="TopLeft">
+                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                <Setter Property="Template" TargetName="Thumb" Value="{DynamicResource SliderThumbHorizontalTop}"/>
+                <Setter Property="Margin" TargetName="TrackBackground" Value="5,2,5,0"/>
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="BottomRight">
+                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+                <Setter Property="Template" TargetName="Thumb" Value="{DynamicResource SliderThumbHorizontalBottom}"/>
+                <Setter Property="Margin" TargetName="TrackBackground" Value="5,0,5,2"/>
+            </Trigger>
+            <Trigger Property="TickPlacement" Value="Both">
+                <Setter Property="Visibility" TargetName="TopTick" Value="Visible"/>
+                <Setter Property="Visibility" TargetName="BottomTick" Value="Visible"/>
+            </Trigger>
+            <Trigger Property="IsSelectionRangeEnabled" Value="true">
+                <Setter Property="Visibility" TargetName="PART_SelectionRange" Value="Visible"/>
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter Property="Foreground" TargetName="Thumb" Value="{DynamicResource Slider.IsKeyboardfocused.Foreground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Visibility" Value="Visible" TargetName="DisabledOverlay"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
     <ControlTemplate x:Key="SliderVertical" TargetType="{x:Type Slider}">
         <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                 BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
@@ -4466,7 +4522,7 @@
                 <Border x:Name="TrackBackground" Background="{DynamicResource SliderThumb.Track.Background}" 
                         BorderBrush="{DynamicResource SliderThumb.Track.Border}" BorderThickness="1" Grid.Column="1" HorizontalAlignment="center" Margin="0,5" Width="4.0">
                     <Canvas Margin="-1,-6">
-                        <Rectangle x:Name="PART_SelectionRange" Fill="{DynamicResource Slider.SelectionRange.Background}" Visibility="Hidden" Width="4.0"/>
+                        <Rectangle x:Name="PART_SelectionRange" Fill="{DynamicResource Slider.SelectionRange.Background}" Visibility="Hidden" Width="4.0" Height="2"/>
                     </Canvas>
                 </Border>
                 <Track x:Name="PART_Track" Grid.Column="1">
@@ -4481,6 +4537,7 @@
                                Template="{DynamicResource SliderThumbVerticalDefault}" VerticalAlignment="Top" Width="18"/>
                     </Track.Thumb>
                 </Track>
+                <Rectangle x:Name="DisabledOverlay" Fill="{DynamicResource Slider.Disabled.Background}" Visibility="Collapsed" Grid.ColumnSpan="3"/>
             </Grid>
         </Border>
         <ControlTemplate.Triggers>
@@ -4503,6 +4560,9 @@
             </Trigger>
             <Trigger Property="IsKeyboardFocused" Value="true">
                 <Setter Property="Foreground" TargetName="Thumb" Value="{DynamicResource Slider.IsKeyboardfocused.Foreground}"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Visibility" Value="Visible" TargetName="DisabledOverlay"/>
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -4629,7 +4689,7 @@
                             <RowDefinition x:Name="RowDefinition1" Height="*"/>
                         </Grid.RowDefinitions>
                         <TabPanel x:Name="headerPanel" Background="{DynamicResource TabControl.TabPanel.Background}" Grid.Column="0" IsItemsHost="true" Margin="2,2,2,0" 
-                                  Grid.Row="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1"/>
+                                  Grid.Row="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" TextElement.Foreground="{DynamicResource TabControl.Foreground}"/>
                         <Border x:Name="contentPanel" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained" 
                                 Grid.Row="1" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local">
@@ -4691,10 +4751,10 @@
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
     <Style x:Key="DarkThemeTabItemStyle" TargetType="{x:Type TabItem}">
-        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Foreground" Value="Black"/>
-        <Setter Property="Background" Value="{StaticResource TabItem.Background}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource TabItem.Border}"/>
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TabControl.Foreground}"/>
+        <Setter Property="Background" Value="{DynamicResource TabItem.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource TabItem.Border}"/>
         <Setter Property="Margin" Value="0"/>
         <Setter Property="Padding" Value="6,2,6,2"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -4874,6 +4934,9 @@
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,1,0"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,1,0"/>
                         </MultiDataTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource TabControl.Disabled.Foreground}"/>
+                        </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
