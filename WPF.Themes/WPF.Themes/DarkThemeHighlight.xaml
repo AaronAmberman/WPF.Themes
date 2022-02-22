@@ -42,7 +42,8 @@
                not letting the focus for the control go which is causing it to stay highlighted. There is different behavior if the 
                controls are added to a ToolBarPanel or directly to the ToolBar. See styling controls for ToolBars here...
                https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-style-controls-on-a-toolbar?view=netframeworkdesktop-4.8
-               Notice how they don't use ToolBarPanels directly...maybe this is the key...or just don't use ToolBars.
+               Notice how they don't use ToolBarPanels directly...maybe this is the key...or just don't use ToolBars. Or you can set 
+               Focusable="False" on controls in ToolBars and that should fix it as well but ay cause other problems for you.
     -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
