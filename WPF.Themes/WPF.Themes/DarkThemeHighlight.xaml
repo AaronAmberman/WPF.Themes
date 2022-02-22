@@ -10,7 +10,7 @@
         <Application.Resources>
             <ResourceDictionary>
                 <ResourceDictionary.MergedDictionaries>
-                    <ResourceDictionary Source="pack://application:,,,/LightTheme.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/DarkThemeHighlight.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/OtherResourceDictionary.xaml" />
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
@@ -18,20 +18,31 @@
     -->
 
     <!--
-        Background: #FFDDDDDD
+        Background: #FF1F1F1F
         Border: #FF707070
-        Foreground: #FF000000
-        Disabled Background: #FFF4F4F4
-        Disabled Border: #FFADB2B5
-        Disabled Foreground:#FF707070
+        Foreground: #FFFFFFFF
+        Disabled Background: #773D3D3D
+        Disabled Border: #FF3D3D3D
+        Disabled Foreground:#FF7D7D7D
         Active Accent Color: #FF007BFF
         Inactive Accent Color: #BB5F7296
-        MouseOver Background: #FFBEE6FD
-        MouseOver Border: #FF3C7FB1
-        Press Background: #FFB6D4E3
-        Press Border: #FF2C628B
+        MouseOver Background: #77525252
+        MouseOver Border: #FFAAAAAA
+        Press Background: #770F0F0F
+        Press Border: #55AAAAAA
     
         These are not all the colors used below but make up a majority of it and are the colors that represent most major states.
+    -->
+    
+    <!-- 
+        Note : there are some strange behaviors with ToolBars and the highlight for controls. If there is only one item in the ToolBar
+               and that one item gets focus the highlight will never go away. Not sure why if there is only one item in the ToolBar it
+               is unable to release focus for that one item. If there are multiple items this does not occur. There are also instances 
+               where you will see an item in a ToolBar highlighted and an item not in a ToolBar highlighted. This again the ToolBar is 
+               not letting the focus for the control go which is causing it to stay highlighted. There is different behavior if the 
+               controls are added to a ToolBarPanel or directly to the ToolBar. See styling controls for ToolBars here...
+               https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-style-controls-on-a-toolbar?view=netframeworkdesktop-4.8
+               Notice how they don't use ToolBarPanels directly...maybe this is the key...or just don't use ToolBars.
     -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -39,387 +50,390 @@
          |                                                      Colors                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Color x:Key="ArrowPath.Background.Color">#FF000000</Color>
-    <Color x:Key="ArrowPath.Border.Color">#FF000000</Color>
-
-    <Color x:Key="Button.Background.Color">#FFDDDDDD</Color>
+    <Color x:Key="Accent.Color">#FF007BFF</Color>
+    
+    <Color x:Key="ArrowPath.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="ArrowPath.Border.Color">#FFFFFFFF</Color>
+    
+    <Color x:Key="Button.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="Button.Border.Color">#FF707070</Color>
-    <Color x:Key="Button.Foreground.Color">#FF000000</Color>
+    <Color x:Key="Button.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="Button.IsDefault.Border.Color">#FF007BFF</Color>
-    <Color x:Key="Button.MouseOver.Background.Color">#FFBEE6FD</Color>
-    <Color x:Key="Button.MouseOver.Border.Color">#FF3C7FB1</Color>
-    <Color x:Key="Button.Pressed.Background.Color">#FFB6D4E3</Color>
-    <Color x:Key="Button.Pressed.Border.Color">#FF2C628B</Color>
-    <Color x:Key="Button.Disabled.Background.Color">#FFF4F4F4</Color>
-    <Color x:Key="Button.Disabled.Border.Color">#FFADB2B5</Color>
-    <Color x:Key="Button.Disabled.Foreground.Color">#FF707070</Color>
-
-    <Color x:Key="Calendar.Background.GradientStop1.Color">#FFE4EAF0</Color>
-    <Color x:Key="Calendar.Background.GradientStop2.Color">#FFECF0F4</Color>
-    <Color x:Key="Calendar.Background.GradientStop3.Color">#FFFCFCFD</Color>
-    <Color x:Key="Calendar.Background.GradientStop4.Color">#FFFFFFFF</Color>
-    <Color x:Key="Calendar.Border.GradientStop1.Color">#FFA3AEB9</Color>
-    <Color x:Key="Calendar.Border.GradientStop2.Color">#FF8399A9</Color>
-    <Color x:Key="Calendar.Border.GradientStop3.Color">#FF718597</Color>
-    <Color x:Key="Calendar.Border.GradientStop4.Color">#FF617584</Color>
-    <Color x:Key="Calendar.Foreground.Color">#FF333333</Color>
-
-    <Color x:Key="CalendarButton.Background.Color">#FFBADDE9</Color>
-    <Color x:Key="CalendarButton.FocusVisual.Border.Color">#FF45D6FA</Color>
-    <Color x:Key="CalendarButton.Foreground.Color">#FF333333</Color>
-    <Color x:Key="CalendarButton.Inactive.Foreground.Color">#FF777777</Color>
-
+    <Color x:Key="Button.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="Button.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="Button.Pressed.Background.Color">#770F0F0F</Color>
+    <Color x:Key="Button.Pressed.Border.Color">#55AAAAAA</Color>
+    <Color x:Key="Button.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="Button.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="Button.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    
+    <Color x:Key="Calendar.Background.GradientStop1.Color">#FF222222</Color>
+    <Color x:Key="Calendar.Background.GradientStop2.Color">#FF212121</Color>
+    <Color x:Key="Calendar.Background.GradientStop3.Color">#FF202020</Color>
+    <Color x:Key="Calendar.Background.GradientStop4.Color">#FF1F1F1F</Color>
+    <Color x:Key="Calendar.Border.GradientStop1.Color">#FF737373</Color>
+    <Color x:Key="Calendar.Border.GradientStop2.Color">#FF727272</Color>
+    <Color x:Key="Calendar.Border.GradientStop3.Color">#FF717171</Color>
+    <Color x:Key="Calendar.Border.GradientStop4.Color">#FF707070</Color>
+    <Color x:Key="Calendar.Foreground.Color">#FFFFFFFF</Color>
+    
+    <Color x:Key="CalendarButton.Background.Color">#88007BFF</Color>
+    <Color x:Key="CalendarButton.FocusVisual.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarButton.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarButton.Inactive.Foreground.Color">#FF7D7D7D</Color>  
+    
     <Color x:Key="CalendarDayButton.Blackout.Background.Color">#FF000000</Color>
-    <Color x:Key="CalendarDayButton.Foreground.Color">#FF333333</Color>
-    <Color x:Key="CalendarDayButton.Inactive.Foreground.Color">#FF777777</Color>
-    <Color x:Key="CalendarDayButton.Today.Background.Color">#FFAAAAAA</Color>
+    <Color x:Key="CalendarDayButton.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarDayButton.Inactive.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="CalendarDayButton.Today.Background.Color">#55007BFF</Color>
     <Color x:Key="CalendarDayButton.Today.Foreground.Color">#FFFFFFFF</Color>
-    <Color x:Key="CalendarDayButton.Today.Highlight.Background.Color">#FFBADDE9</Color>
-    <Color x:Key="CalendarDayButton.Today.Selected.Background.Color">#FFBADDE9</Color>
+    <Color x:Key="CalendarDayButton.Today.Highlight.Background.Color">#88007BFF</Color>
+    <Color x:Key="CalendarDayButton.Today.Selected.Background.Color">#AA007BFF</Color>
+    
+    <Color x:Key="CalendarItem.Root.Disabled.Background.Color">#AA444444</Color>
+    <Color x:Key="CalendarItem.Inner.Border.Color">#FF2F2F2F</Color>
+    <Color x:Key="CalendarItem.HeaderButton.Background.Color">#FF007BFF</Color>
+    <Color x:Key="CalendarItem.HeaderButton.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarItem.HeaderButton.Next.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarItem.HeaderButton.Previous.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="CalendarItem.HeaderButton.Rectangle.Background.Color">#00000000</Color>
 
-    <Color x:Key="CalendarItem.Root.Disabled.Background.Color">#A5FFFFFF</Color>
-    <Color x:Key="CalendarItem.Inner.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="CalendarItem.HeaderButton.Background.Color">#FF73A9D8</Color>
-    <Color x:Key="CalendarItem.HeaderButton.Foreground.Color">#FF333333</Color>
-    <Color x:Key="CalendarItem.HeaderButton.Next.Background.Color">#FF333333</Color>
-    <Color x:Key="CalendarItem.HeaderButton.Previous.Background.Color">#FF333333</Color>
-    <Color x:Key="CalendarItem.HeaderButton.Rectangle.Background.Color">#11E5EBF1</Color>
-
-    <Color x:Key="ComboBox.Background.GradientStop1.Color">#FFF0F0F0</Color>
-    <Color x:Key="ComboBox.Background.GradientStop2.Color">#FFE5E5E5</Color>
-    <Color x:Key="ComboBox.Border.Color">#FFACACAC</Color>
-    <Color x:Key="ComboBox.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ComboBox.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="ComboBox.Disabled.Foreground.Color">#FF707070</Color>
-    <Color x:Key="ComboBox.Disabled.Editable.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ComboBox.Disabled.Glyph.Color">#FFBFBFBF</Color>
-    <Color x:Key="ComboBox.DropDown.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ComboBox.DropDown.Border.Color">#99000000</Color>
-    <Color x:Key="ComboBox.Editable.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ComboBox.Foreground.Color">#FF000000</Color>
-    <Color x:Key="ComboBox.Glyph.Color">#FF606060</Color>
-    <Color x:Key="ComboBox.MouseOver.Background.GradientStop1.Color">#FFECF4FC</Color>
-    <Color x:Key="ComboBox.MouseOver.Background.GradientStop2.Color">#FFDCECFC</Color>
-    <Color x:Key="ComboBox.MouseOver.Editable.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ComboBox.MouseOver.Editable.Border.Color">#FFABADB3</Color>
-    <Color x:Key="ComboBox.MouseOver.Border.Color">#FF7EB4EA</Color>
+    <Color x:Key="ComboBox.Background.GradientStop1.Color">#FF4F4F4F</Color>
+    <Color x:Key="ComboBox.Background.GradientStop2.Color">#FF4F4F4F</Color>
+    <Color x:Key="ComboBox.Border.Color">#FF4F4F4F</Color>
+    <Color x:Key="ComboBox.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="ComboBox.Disabled.Border.Color">#FF4F4F4F</Color>
+    <Color x:Key="ComboBox.Disabled.Foreground.Color">#773D3D3D</Color>
+    <Color x:Key="ComboBox.Disabled.Editable.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ComboBox.Disabled.Glyph.Color">#FF444444</Color>
+    <Color x:Key="ComboBox.DropDown.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ComboBox.DropDown.Border.Color">#FF5F5F5F</Color>
+    <Color x:Key="ComboBox.Editable.Background.Color">#FF4F4F4F</Color>
+    <Color x:Key="ComboBox.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="ComboBox.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="ComboBox.MouseOver.Background.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="ComboBox.MouseOver.Background.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="ComboBox.MouseOver.Editable.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ComboBox.MouseOver.Editable.Border.Color">#FFCCCCCC</Color>
+    <Color x:Key="ComboBox.MouseOver.Border.Color">#FFCCCCCC</Color>
 
     <Color x:Key="ComboBoxItem.Background.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Border.Color">#00000000</Color>
     <Color x:Key="ComboBoxItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHover.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewHover.Border.Color">#A826A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelected.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelected.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Background.Color">#2E0080FF</Color>
-    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#99006CD9</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Background.Color">#77525252</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewHover.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Background.Color">#3D007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelected.Border.Color">#BB007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Background.Color">#77007BFF</Color>
+    <Color x:Key="ComboBoxItem.ItemsviewSelectedHover.Border.Color">#FF007BFF</Color>
 
-    <Color x:Key="ContextMenu.Background.Color">#FFF1F1F1</Color>
+    <Color x:Key="ContextMenu.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="ContextMenu.Border.Color">#FF888888</Color>
-    <Color x:Key="ContextMenu.Foregound.Color">#FF000000</Color>
-    <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFE2E3E3</Color>
+    <Color x:Key="ContextMenu.Foregound.Color">#FFFFFFFF</Color>
+    <Color x:Key="ContextMenu.Splitter.Color1.Color">#FFFFFFFF</Color>
     <Color x:Key="ContextMenu.Splitter.Color2.Color">#FFFFFFFF</Color>
 
     <Color x:Key="CurrentEntryBackground.Color">#FF0078D7</Color>
 
-    <Color x:Key="DatePicker.Background.Color">#00000000</Color>
-    <Color x:Key="DatePicker.Background.Pressed.Color">#FF448DCA</Color>
-    <Color x:Key="DatePicker.Border.GradientStop1.Color">#FFA3AEB9</Color>
-    <Color x:Key="DatePicker.Border.GradientStop2.Color">#FF8399A9</Color>
-    <Color x:Key="DatePicker.Border.GradientStop3.Color">#FF718597</Color>
-    <Color x:Key="DatePicker.Border.GradientStop4.Color">#FF617584</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop2.Color">#7FFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop3.Color">#CCFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.MouseOver.GradientStop4.Color">#F2FFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop1.Color">#EAFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop2.Color">#C6FFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop3.Color">#6BFFFFFF</Color>
-    <Color x:Key="DatePicker.Border.Pressed.GradientStop4.Color">#F4FFFFFF</Color>
-    <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Calendar.Foreground.Color">#FF000000</Color>
-    <Color x:Key="DatePicker.Disabled.Background.Color">#B2FFFFFF</Color>
-    <Color x:Key="DatePicker.Foreground.Color">#B2FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.Color">#11FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop2.Color">#F9FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop3.Color">#E5FFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Background.GradientStop4.Color">#C6FFFFFF</Color>
+    <Color x:Key="DatePicker.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="DatePicker.Background.Pressed.Color">#770F0F0F</Color>
+    <Color x:Key="DatePicker.Border.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop3.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.GradientStop4.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop2.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop3.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.MouseOver.GradientStop4.Color">#FF5F5F5F</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop1.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop2.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop3.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Border.Pressed.GradientStop4.Color">#55AAAAAA</Color>
+    <Color x:Key="DatePicker.Calendar.Circle.Background.Color">#FFCCCCCC</Color>
+    <Color x:Key="DatePicker.Calendar.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="DatePicker.Disabled.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="DatePicker.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="DatePicker.Inner.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop1.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop2.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop3.Color">#FF4F4F4F</Color>
+    <Color x:Key="DatePicker.Inner.Background.GradientStop4.Color">#FF4F4F4F</Color>
     <Color x:Key="DatePicker.Inner.Background.Gradient.Border.Color">#BF000000</Color>
-    <Color x:Key="DatePicker.Inner.Highlight.Color">#FF45D6FA</Color>
+    <Color x:Key="DatePicker.Inner.Highlight.Color">#FF007BFF</Color>
     <Color x:Key="DatePicker.Inner.Inner.Background.Color">#FF1F3B53</Color>
     <Color x:Key="DatePicker.Inner.Inner.Border.Color">#FFFFFFFF</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop1.Color">#FF4084BD</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop2.Color">#FFAFCFEA</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF494949</Color>
-    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF9F9F9F</Color>
-    <Color x:Key="DatePicker.Popup.Background.Color">#A5FFFFFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop1.Color">#FF007BFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Background.GradientStop2.Color">#AA007BFF</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="DatePicker.Popup.Background.Color">#FF1F1F1F</Color>
 
-    <Color x:Key="DropShadow.Color">#71000000</Color>
-
+    <Color x:Key="DropShadow.Color">#91000000</Color>
+    
     <Color x:Key="Expander.Background.Color">#00000000</Color>
     <Color x:Key="Expander.Border.Color">#00000000</Color>
-    <Color x:Key="Expander.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="Expander.Foreground.Color">#FF000000</Color>
-    <Color x:Key="Expander.Circle.Stroke.Color">#FF333333</Color>
-    <Color x:Key="Expander.Circle.Fill.Color">#FFFFFFFF</Color>
-    <Color x:Key="Expander.Arrow.Stroke.Color">#FF333333</Color>
-    <Color x:Key="Expander.MouseOver.Circle.Stroke.Color">#FF5593FF</Color>
-    <Color x:Key="Expander.MouseOver.Circle.Fill.Color">#FFF3F9FF</Color>
-    <Color x:Key="Expander.MouseOver.Arrow.Stroke.Color">#FF000000</Color>
-    <Color x:Key="Expander.Pressed.Circle.Stroke.Color">#FF3C77DD</Color>
-    <Color x:Key="Expander.Pressed.Circle.Fill.Color">#FFD9ECFF</Color>
-    <Color x:Key="Expander.Pressed.Arrow.Stroke.Color">#FF000000</Color>
-    <Color x:Key="Expander.Disabled.Circle.Stroke.Color">#FFBCBCBC</Color>
-    <Color x:Key="Expander.Disabled.Circle.Fill.Color">#FFE6E6E6</Color>
+    <Color x:Key="Expander.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="Expander.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="Expander.Circle.Stroke.Color">#FF1F1F1F</Color>
+    <Color x:Key="Expander.Circle.Fill.Color">#FF007BFF</Color>
+    <Color x:Key="Expander.Arrow.Stroke.Color">#FFFFFFFF</Color>
+    <Color x:Key="Expander.MouseOver.Circle.Stroke.Color">#FFAAAAAA</Color>
+    <Color x:Key="Expander.MouseOver.Circle.Fill.Color">#FF1F1F1F</Color>
+    <Color x:Key="Expander.MouseOver.Arrow.Stroke.Color">#FFFFFFFF</Color>
+    <Color x:Key="Expander.Pressed.Circle.Stroke.Color">#55AAAAAA</Color>
+    <Color x:Key="Expander.Pressed.Circle.Fill.Color">#770F0F0F</Color>
+    <Color x:Key="Expander.Pressed.Arrow.Stroke.Color">#FF7F7F7F</Color>
+    <Color x:Key="Expander.Disabled.Circle.Stroke.Color">#FF505050</Color>
+    <Color x:Key="Expander.Disabled.Circle.Fill.Color">#FF505050</Color>
     <Color x:Key="Expander.Disabled.Arrow.Stroke.Color">#FF707070</Color>
-
-    <Color x:Key="FocusVisual.Stroke.Color">#FF000000</Color>
-
+    
+    <Color x:Key="FocusVisual.Stroke.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop1.Color">#A0C2CCE7</Color>
     <Color x:Key="FrameNavChrome.Path.Fill.GradientStop2.Color">#60FFFFFF</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop1.Color">#FFB7C2E3</Color>
     <Color x:Key="FrameNavChrome.Path.Stroke.GradientStop2.Color">#A0FFFFFF</Color>
+    
+    <Color x:Key="GridSplitter.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="GridSplitter.PreviewStyle.Background.Color">#FFFFFFFF</Color>
 
-    <Color x:Key="GridSplitter.Background.Color">#FFFAF0E6</Color>
-    <Color x:Key="GridSplitter.PreviewStyle.Background.Color">#80000000</Color>
-
-    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop1.Color">#FFEEEEEE</Color>
-    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop2.Color">#FFCCCCCC</Color>
-    <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop1.Color">#FF000000</Color>
-    <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop2.Color">#FFFFFFFF</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Background.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop1.Color">#FF707070</Color>
+    <Color x:Key="GridViewColumnHeaderGripper.Border.GradientStop2.Color">#FF707070</Color>
     <Color x:Key="GridViewColumnHeaderGripper.Inner.Border.Color">#00000000</Color>
-
-    <Color x:Key="GridViewColumnHeader.Background.GradientStop1.Color">#FFFEFEFE</Color>
-    <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FFEDEDED</Color>
-    <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FFEEEEEE</Color>
-    <Color x:Key="GridViewColumnHeader.Border.GradientStop2.Color">#FFCCCCCC</Color>
-    <Color x:Key="GridViewColumnHeader.Disabled.Foreground.Color">#FF707070</Color>
+    
+    <Color x:Key="GridViewColumnHeader.Background.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Background.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Border.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Border.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Disabled.Foreground.Color">#FF7D7D7D</Color>
     <Color x:Key="GridViewColumnHeader.Floating.Background.Color">#60000000</Color>
-    <Color x:Key="GridViewColumnHeader.Foreground.Color">#FF000000</Color>
-    <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop1.Color">#FFBDEDFF</Color>
-    <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop2.Color">#FFB7E7FB</Color>
-    <Color x:Key="GridViewColumnHeader.MouseOver.Border.GradientStop1.Color">#FFBDEDFF</Color>
-    <Color x:Key="GridViewColumnHeader.MouseOver.Border.GradientStop2.Color">#FF88CBEB</Color>
-    <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop1.Color">#FF8DD6F7</Color>
-    <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop2.Color">#FF7A9EB1</Color>
-    <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop1.Color">#FF95DAF9</Color>
-    <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop2.Color">#FF7A9EB1</Color>
+    <Color x:Key="GridViewColumnHeader.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop1.Color">#FF2F2F2F</Color>
+    <Color x:Key="GridViewColumnHeader.MouseOver.Background.GradientStop2.Color">#FF2F2F2F</Color>
+    <Color x:Key="GridViewColumnHeader.MouseOver.Border.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.MouseOver.Border.GradientStop2.Color">#FF707070</Color>
+    <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop1.Color">#FF0F0F0F</Color>
+    <Color x:Key="GridViewColumnHeader.Pressed.Background.GradientStop2.Color">#FF0F0F0F</Color>
+    <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="GridViewColumnHeader.Pressed.Border.GradientStop2.Color">#FFAAAAAA</Color>
+    
+    <Color x:Key="GroupBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="GroupBox.Border.Color">#FF007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Border.Color">#88007BFF</Color>
+    <Color x:Key="GroupBox.Disabled.Background.Color">#BB444444</Color>
+    <Color x:Key="GroupBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="GroupBox.Foreground.Color">#FFFFFFFF</Color>
 
-    <Color x:Key="GroupBox.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="GroupBox.Border.Color">#FFD5DFE5</Color>
-    <Color x:Key="GroupBox.Disabled.Border.Color">#FFADB2B5</Color>
-    <Color x:Key="GroupBox.Disabled.Background.Color">#FFBBBBBB</Color>
-    <Color x:Key="GroupBox.Disabled.Foreground.Color">#FF707070</Color>
-    <Color x:Key="GroupBox.Foreground.Color">#FF000000</Color>
-
-    <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="Hyperlink.Foreground.Color">#FF005EFF</Color>
-    <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF0000FF</Color>
-
+    <Color x:Key="Hyperlink.Disabled.Foreground.Color">#FFAAAAAA</Color>
+    <Color x:Key="Hyperlink.Foreground.Color">#FF007BFF</Color>
+    <Color x:Key="Hyperlink.MouseOver.Foreground.Color">#FF218CFF</Color>
+    
     <Color x:Key="Label.Background.Color">#00000000</Color>
-    <Color x:Key="Label.Foreground.Color">#FF000000</Color>
-    <Color x:Key="Label.Disabled.Foreground.Color">#FF808080</Color>
+    <Color x:Key="Label.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="Label.Disabled.Foreground.Color">#FFAAAAAA</Color>
 
-    <Color x:Key="ListBox.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ListBox.Border.Color">#FFABADB3</Color>
-    <Color x:Key="ListBox.Disabled.Background.Color">#FFDDDDDD</Color>
-    <Color x:Key="ListBox.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="ListBox.Disabled.Foreground.Color">#FF707070</Color>
-    <Color x:Key="ListBox.Foreground.Color">#FF000000</Color>
+    <Color x:Key="ListBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ListBox.Border.Color">#FF707070</Color>
+    <Color x:Key="ListBox.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="ListBox.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="ListBox.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="ListBox.Disabled.Foreground.Color">#FF7D7D7D</Color>
 
-    <Color x:Key="ListBoxItem.MouseOver.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="ListBoxItem.MouseOver.Border.Color">#A826A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#CC26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Background.Color">#6D26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#3DDADADA</Color>
-    <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#FFDADADA</Color>
+    <Color x:Key="ListBoxItem.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="ListBoxItem.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Background.Color">#33007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.Border.Color">#CC007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Background.Color">#66007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedActive.MouseOver.Border.Color">#FF007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Background.Color">#18007BFF</Color>
+    <Color x:Key="ListBoxItem.SelectedInactive.Border.Color">#44007BFF</Color>
+    
+    <Color x:Key="ListView.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ListView.Border.Color">#FF707070</Color>
+    <Color x:Key="ListView.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="ListView.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="ListView.Foreground.Color">#FFFFFFFF</Color>
 
-    <Color x:Key="ListView.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ListView.Border.Color">#FFABADB3</Color>
-    <Color x:Key="ListView.Disabled.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="ListView.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="ListView.Foreground.Color">#FF000000</Color>
+    <Color x:Key="Item.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="Item.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="Item.SelectedActive.Background.Color">#33007BFF</Color>
+    <Color x:Key="Item.SelectedActive.Border.Color">#CC007BFF</Color>
+    <Color x:Key="Item.SelectedActive.MouseOver.Background.Color">#66007BFF</Color>
+    <Color x:Key="Item.SelectedActive.MouseOver.Border.Color">#FF007BFF</Color>
+    <Color x:Key="Item.SelectedInactive.Background.Color">#18007BFF</Color>
+    <Color x:Key="Item.SelectedInactive.Border.Color">#44007BFF</Color>
 
-    <Color x:Key="Item.MouseOver.Background.Color">#1F26A0DA</Color>
-    <Color x:Key="Item.MouseOver.Border.Color">#A826A0DA</Color>
-    <Color x:Key="Item.SelectedActive.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="Item.SelectedActive.Border.Color">#CC26A0DA</Color>
-    <Color x:Key="Item.SelectedActive.MouseOver.Background.Color">#6626A0DA</Color>
-    <Color x:Key="Item.SelectedActive.MouseOver.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="Item.SelectedInactive.Background.Color">#3DDADADA</Color>
-    <Color x:Key="Item.SelectedInactive.Border.Color">#FFDADADA</Color>
+    <Color x:Key="Menu.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="Menu.Border.Color">#FF707070</Color>
+    <Color x:Key="Menu.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="Menu.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="Menu.Separator.Color">#FFDDDDDD</Color>
 
-    <Color x:Key="Menu.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="Menu.Border.Color">#FF999999</Color>
-    <Color x:Key="Menu.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="Menu.Foreground.Color">#FF212121</Color>
-    <Color x:Key="Menu.Separator.Color">#FFD7D7D7</Color>
-
-    <Color x:Key="MenuItem.Highlight.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="MenuItem.Highlight.Border.Color">#FF26A0DA</Color>
-    <Color x:Key="MenuItem.Highlight.Disabled.Background.Color">#0A000000</Color>
-    <Color x:Key="MenuItem.Highlight.Disabled.Border.Color">#21000000</Color>
-    <Color x:Key="MenuItem.Selected.Background.Color">#3D26A0DA</Color>
-    <Color x:Key="MenuItem.Selected.Border.Color">#FF26A0DA</Color>
+    <Color x:Key="MenuItem.Highlight.Background.Color">#77525252</Color>
+    <Color x:Key="MenuItem.Highlight.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="MenuItem.Highlight.Disabled.Background.Color">#773D3D3D</Color>
+    <Color x:Key="MenuItem.Highlight.Disabled.Border.Color">#FF3D3D3D</Color>
+    <Color x:Key="MenuItem.Selected.Background.Color">#33007BFF</Color>
+    <Color x:Key="MenuItem.Selected.Border.Color">#CC007BFF</Color>
 
     <Color x:Key="MenuScrollButton.Background.Color">#00000000</Color>
-    <Color x:Key="MenuScrollButton.Border.Color">#00000000</Color>
+    <Color x:Key="MenuScrollButton.Border.Color">#00000000</Color>    
 
-    <Color x:Key="OptionMark.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="OptionMark.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="OptionMark.Border.Color">#FF707070</Color>
-    <Color x:Key="OptionMark.Foreground.Color">#FF000000</Color>
-    <Color x:Key="OptionMark.Glyph.Color">#FF212121</Color>
+    <Color x:Key="OptionMark.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="OptionMark.Glyph.Color">#FFFFFFFF</Color>
     <Color x:Key="OptionMark.Root.Background.Color">#00000000</Color>
-    <Color x:Key="OptionMark.MouseOver.Background.Color">#FFF3F9FF</Color>
-    <Color x:Key="OptionMark.MouseOver.Border.Color">#FF5593FF</Color>
-    <Color x:Key="OptionMark.MouseOver.Glyph.Color">#FF212121</Color>
-    <Color x:Key="OptionMark.Pressed.Background.Color">#FFD9ECFF</Color>
-    <Color x:Key="OptionMark.Pressed.Border.Color">#FF3C77DD</Color>
+    <Color x:Key="OptionMark.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="OptionMark.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="OptionMark.MouseOver.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="OptionMark.Pressed.Background.Color">#770F0F0F</Color>
+    <Color x:Key="OptionMark.Pressed.Border.Color">#FF777777</Color>
     <Color x:Key="OptionMark.Pressed.Glyph.Color">#FF212121</Color>
-    <Color x:Key="OptionMark.Disabled.Background.Color">#FFE6E6E6</Color>
-    <Color x:Key="OptionMark.Disabled.Border.Color">#FFBCBCBC</Color>
-    <Color x:Key="OptionMark.Disabled.Foreground.Color">#FF707070</Color>
-    <Color x:Key="OptionMark.Disabled.Glyph.Color">#FF707070</Color>
+    <Color x:Key="OptionMark.Disabled.Background.Color">#AA4F4F4F</Color>
+    <Color x:Key="OptionMark.Disabled.Border.Color">#AA4F4F4F</Color>
+    <Color x:Key="OptionMark.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="OptionMark.Disabled.Glyph.Color">#FF5F5F5F</Color>
 
-    <Color x:Key="ProgressBar.Progress.Color">#FF06B025</Color>
-    <Color x:Key="ProgressBar.Background.Color">#FFE6E6E6</Color>
-    <Color x:Key="ProgressBar.Border.Color">#FFBCBCBC</Color>
-    <Color x:Key="ProgressBar.Disabled.Color">#FFAAAAAA</Color>
+    <Color x:Key="ProgressBar.Progress.Color">#FF007BFF</Color>
+    <Color x:Key="ProgressBar.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ProgressBar.Border.Color">#FF707070</Color>
+    <Color x:Key="ProgressBar.Disabled.Color">#FF505050</Color>
 
-    <Color x:Key="RadioButton.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="RadioButton.Background.Color">#FF1F1F1F</Color>
     <Color x:Key="RadioButton.Border.Color">#FF707070</Color>
-    <Color x:Key="RadioButton.Foreground.Color">#FF000000</Color>
-    <Color x:Key="RadioButton.Glyph.Color">#FF212121</Color>
-    <Color x:Key="RadioButton.MouseOver.Background.Color">#FFF3F9FF</Color>
-    <Color x:Key="RadioButton.MouseOver.Border.Color">#FF5593FF</Color>
-    <Color x:Key="RadioButton.MouseOver.Glyph.Color">#FF212121</Color>
-    <Color x:Key="RadioButton.Pressed.Background.Color">#FFD9ECFF</Color>
-    <Color x:Key="RadioButton.Pressed.Border.Color">#FF3C77DD</Color>
+    <Color x:Key="RadioButton.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="RadioButton.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="RadioButton.MouseOver.Background.Color">#77525252</Color>
+    <Color x:Key="RadioButton.MouseOver.Border.Color">#FFAAAAAA</Color>
+    <Color x:Key="RadioButton.MouseOver.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="RadioButton.Pressed.Background.Color">#770F0F0F</Color>
+    <Color x:Key="RadioButton.Pressed.Border.Color">#FF777777</Color>
     <Color x:Key="RadioButton.Pressed.Glyph.Color">#FF212121</Color>
     <Color x:Key="RadioButton.Root.Background.Color">#00000000</Color>
-    <Color x:Key="RadioButton.Disabled.Background.Color">#FFE6E6E6</Color>
-    <Color x:Key="RadioButton.Disabled.Border.Color">#FFBCBCBC</Color>
-    <Color x:Key="RadioButton.Disabled.Foreground.Color">#FF707070</Color>
-    <Color x:Key="RadioButton.Disabled.Glyph.Color">#FF707070</Color>
-
+    <Color x:Key="RadioButton.Disabled.Background.Color">#AA4F4F4F</Color>
+    <Color x:Key="RadioButton.Disabled.Border.Color">#AA4F4F4F</Color>
+    <Color x:Key="RadioButton.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="RadioButton.Disabled.Glyph.Color">#FF5F5F5F</Color>
+    
     <Color x:Key="RepeatButton.Transparent.Background.Color">#00000000</Color>
 
-    <Color x:Key="ScrollBarButton.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.Border.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#FFDADADA</Color>
-    <Color x:Key="ScrollBarButton.MouseOver.Border.Color">#FFDADADA</Color>
+    <Color x:Key="ScrollBarButton.Background.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBarButton.Border.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBarButton.MouseOver.Background.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBarButton.MouseOver.Border.Color">#88FFFFFF</Color>
     <Color x:Key="ScrollBarButton.Pressed.Background.Color">#FF606060</Color>
     <Color x:Key="ScrollBarButton.Pressed.Border.Color">#FF606060</Color>
-    <Color x:Key="ScrollBarButton.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBarButton.Disabled.Border.Color">#FFF0F0F0</Color>
+    <Color x:Key="ScrollBarButton.Disabled.Background.Color">#FF707070</Color>
+    <Color x:Key="ScrollBarButton.Disabled.Border.Color">#FF707070</Color>
 
-    <Color x:Key="ScrollBar.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBar.Border.Color">#FFF0F0F0</Color>
-    <Color x:Key="ScrollBar.Foreground.Color">#FF000000</Color>
-    <Color x:Key="ScrollBar.Glyph.Color">#FF606060</Color>
-    <Color x:Key="ScrollBar.Thumb.Color">#FFCDCDCD</Color>
-    <Color x:Key="ScrollBar.MouseOver.Glyph.Color">#FF000000</Color>
-    <Color x:Key="ScrollBar.MouseOver.Thumb.Color">#FFA6A6A6</Color>
-    <Color x:Key="ScrollBar.Pressed.Thumb.Color">#FF606060</Color>
-    <Color x:Key="ScrollBar.Pressed.Glyph.Color">#FFFFFFFF</Color>
-    <Color x:Key="ScrollBar.Disabled.Glyph.Color">#FFBFBFBF</Color>
-    <Color x:Key="ScrollBar.Disabled.Thumb.Color">#FFAAAAAA</Color>
-
+    <Color x:Key="ScrollBar.Background.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBar.Border.Color">#FF3F3F3F</Color>
+    <Color x:Key="ScrollBar.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="ScrollBar.Glyph.Color">#FFFFFFFF</Color>
+    <Color x:Key="ScrollBar.Thumb.Color">#33FFFFFF</Color>
+    <Color x:Key="ScrollBar.MouseOver.Glyph.Color">#FF1F1F1F</Color>
+    <Color x:Key="ScrollBar.MouseOver.Thumb.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBar.Pressed.Glyph.Color">#FF1F1F1F</Color>
+    <Color x:Key="ScrollBar.Pressed.Thumb.Color">#88FFFFFF</Color>
+    <Color x:Key="ScrollBar.Disabled.Glyph.Color">#FFCCCCCC</Color>
+    <Color x:Key="ScrollBar.Disabled.Thumb.Color">#FF707070</Color>
+    
     <Color x:Key="Separator.Background.Color">#FFC0C0C0</Color>
-
+    
     <Color x:Key="Slider.Background.Color">#00000000</Color>
     <Color x:Key="Slider.Border.Color">#00000000</Color>
-    <Color x:Key="Slider.Disabled.Background.Color">#FFBBBBBB</Color>
-    <Color x:Key="Slider.SelectionRange.Background.Color">#FF1E90FF</Color>
-    <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF0000FF</Color>
+    <Color x:Key="Slider.Disabled.Background.Color">#AA505050</Color>
+    <Color x:Key="Slider.SelectionRange.Background.Color">#FF007BFF</Color>
+    <Color x:Key="Slider.IsKeyboardfocused.Foreground.Color">#FF007BFF</Color>
 
-    <Color x:Key="SliderThumb.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="SliderThumb.Border.Color">#FFACACAC</Color>
-    <Color x:Key="SliderThumb.Foreground.Color">#FFE5E5E5</Color>
-    <Color x:Key="SliderThumb.MouseOver.Background.Color">#FFDCECFC</Color>
-    <Color x:Key="SliderThumb.MouseOver.Border.Color">#FF7Eb4EA</Color>
-    <Color x:Key="SliderThumb.Pressed.Background.Color">#FFDAECFC</Color>
-    <Color x:Key="SliderThumb.Pressed.Border.Color">#FF569DE5</Color>
-    <Color x:Key="SliderThumb.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="SliderThumb.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="SliderThumb.Track.Background.Color">#FFE7EAEA</Color>
-    <Color x:Key="SliderThumb.Track.Border.Color">#FFD6D6D6</Color>
-
-    <Color x:Key="StatusBar.Background.Color">#FFF1EDED</Color>
-    <Color x:Key="StatusBar.Foreground.Color">#FF000000</Color>
-
+    <Color x:Key="SliderThumb.Background.Color">#FF007BFF</Color>
+    <Color x:Key="SliderThumb.Border.Color">#FF007BFF</Color>
+    <Color x:Key="SliderThumb.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="SliderThumb.MouseOver.Background.Color">#FF1284FF</Color>
+    <Color x:Key="SliderThumb.MouseOver.Border.Color">#FF1284FF</Color>
+    <Color x:Key="SliderThumb.Pressed.Background.Color">#FF0073F0</Color>
+    <Color x:Key="SliderThumb.Pressed.Border.Color">#FF0073F0</Color>
+    <Color x:Key="SliderThumb.Disabled.Background.Color">#FF505050</Color>
+    <Color x:Key="SliderThumb.Disabled.Border.Color">#FF505050</Color>
+    <Color x:Key="SliderThumb.Track.Background.Color">#FF707070</Color>
+    <Color x:Key="SliderThumb.Track.Border.Color">#FF707070</Color>
+    
+    <Color x:Key="StatusBar.Background.Color">#FF3F3F3F</Color>
+    <Color x:Key="StatusBar.Foreground.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="StatusBarItem.Background.Color">#00000000</Color>
     <Color x:Key="StatusBarItem.Border.Color">#00000000</Color>
-    <Color x:Key="StatusBarItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="StatusBarItem.Foreground.Color">#FF000000</Color>
+    <Color x:Key="StatusBarItem.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="StatusBarItem.Foreground.Color">#FFFFFFFF</Color>
 
-    <Color x:Key="TabControl.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="TabControl.Foreground.Color">#FF000000</Color>
+    <Color x:Key="TabControl.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="TabControl.Foreground.Color">#FFFFFFFF</Color>
     <Color x:Key="TabControl.TabPanel.Background.Color">#00000000</Color>
 
-    <Color x:Key="TabItem.Background.GradientStop1.Color">#FFF0F0F0</Color>
-    <Color x:Key="TabItem.Background.GradientStop2.Color">#FFE5E5E5</Color>
-    <Color x:Key="TabItem.Border.Color">#FFACACAC</Color>
-    <Color x:Key="TabItem.Disabled.Background.Color">#FFF0F0F0</Color>
-    <Color x:Key="TabItem.Disabled.Border.Color">#FFD9D9D9</Color>
-    <Color x:Key="TabItem.MouseOver.Background.GradientStop1.Color">#FFECF4FC</Color>
-    <Color x:Key="TabItem.MouseOver.Background.GradientStop2.Color">#FFDCECFC</Color>
-    <Color x:Key="TabItem.MouseOver.Border.Color">#FF7EB4EA</Color>
-    <Color x:Key="TabItem.Selected.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TabItem.Selected.Border.Color">#FFACACAC</Color>
+    <Color x:Key="TabItem.Accent.Color">#FF007BFF</Color>
+    <Color x:Key="TabItem.Background.GradientStop1.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Background.GradientStop2.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Border.Color">#FF707070</Color>
+    <Color x:Key="TabItem.Disabled.Background.Color">#FF505050</Color>
+    <Color x:Key="TabItem.Disabled.Border.Color">#FF606060</Color>
+    <Color x:Key="TabItem.MouseOver.Background.GradientStop1.Color">#FF3F3F3F</Color>
+    <Color x:Key="TabItem.MouseOver.Background.GradientStop2.Color">#FF3F3F3F</Color>
+    <Color x:Key="TabItem.MouseOver.Border.Color">#FF0073F0</Color>
+    <Color x:Key="TabItem.Selected.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="TabItem.Selected.Border.Color">#FF707070</Color>
 
-    <Color x:Key="TextBoxBase.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TextBoxBase.Foreground.Color">#FF000000</Color>
-    <Color x:Key="TextBoxBase.InactiveSelection.Color">#FFDCDCDC</Color>
+    <Color x:Key="TextBoxBase.Background.Color">#FF4F4F4F</Color>
+    <Color x:Key="TextBoxBase.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="TextBoxBase.InactiveSelection.Color">#330073F0</Color>
 
-    <Color x:Key="TextBox.Focus.Border.Color">#FF569DE5</Color>
-    <Color x:Key="TextBox.MouseOver.Border.Color">#FF7EB4EA</Color>
-    <Color x:Key="TextBox.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TextBox.Border.Color">#FFABADB3</Color>
-    <Color x:Key="TextBox.ContentHost.Background.Color">#FFABADB3</Color>
+    <Color x:Key="TextBox.Focus.Border.Color">#BB0073F0</Color>
+    <Color x:Key="TextBox.MouseOver.Border.Color">#FF0073F0</Color>
+    <Color x:Key="TextBox.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="TextBox.Border.Color">#FF707070</Color>
+    <Color x:Key="TextBox.ContentHost.Background.Color">#FF707070</Color>
     <Color x:Key="TextBox.Watermark.Color">#FFAAAAAA</Color>
-
+    
     <Color x:Key="ToolBarButtonHover.Color">#210080FF</Color>
     <Color x:Key="ToolBarMenuBorder.Color">#FFB6BDC5</Color>
-    <Color x:Key="ToolBarHorizontalOverflow.Path.Border.Color">#FF000000</Color>
-    <Color x:Key="ToolBarVerticalOverflow.Path.Border.Color">#FF000000</Color>
-    <Color x:Key="ToolBarSubMenuBackground.Color">#00000000</Color>
-    <Color x:Key="ToolBarHorizontalBackground.Color">#00000000</Color>
-    <Color x:Key="ToolBarVerticalBackground.Color">#00000000</Color>
-    <Color x:Key="ToolBarGripper.Color">#FF444444</Color>
-    <Color x:Key="ToolBarToggleButtonHorizontalBackground.Color">#00000000</Color>
-    <Color x:Key="ToolBarToggleButtonVerticalBackground.Color">#00000000</Color>
-
+    <Color x:Key="ToolBarHorizontalOverflow.Path.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="ToolBarVerticalOverflow.Path.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="ToolBarSubMenuBackground.Color">#FF1F1F1F</Color>
+    <Color x:Key="ToolBarHorizontalBackground.Color">#FF1F1F1F</Color>
+    <Color x:Key="ToolBarVerticalBackground.Color">#FF1F1F1F</Color>
+    <Color x:Key="ToolBarGripper.Color">#FFFFFFFF</Color>
+    <Color x:Key="ToolBarToggleButtonHorizontalBackground.Color">#FF1F1F1F</Color>
+    <Color x:Key="ToolBarToggleButtonVerticalBackground.Color">#FF1F1F1F</Color>
+    
     <Color x:Key="ToolBar.Thumb.Background.Color">#00000000</Color>
     <Color x:Key="ToolBar.Thumb.GeometryDrawing.Color">#FFFFFFFF</Color>
     <Color x:Key="ToolBar.Disabled.Foreground.Color">#FF808080</Color>
-
-    <Color x:Key="ToolBarTray.Background.Color">#FFEEF5FD</Color>
-
-    <Color x:Key="ToolTip.Background.Color">#FFF1EDED</Color>
-    <Color x:Key="ToolTip.Border.Color">#FF828790</Color>
-    <Color x:Key="ToolTip.Foreground.Color">#FF000000</Color>
-
-    <Color x:Key="TreeView.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TreeView.Border.Color">#FF828790</Color>
-    <Color x:Key="TreeView.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="TreeView.Foreground.Color">#FF000000</Color>
-
+    
+    <Color x:Key="ToolBarTray.Background.Color">#FF1F1F1F</Color>
+    
+    <Color x:Key="ToolTip.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="ToolTip.Border.Color">#FF707070</Color>
+    <Color x:Key="ToolTip.Foreground.Color">#FFFFFFFF</Color>
+    
+    <Color x:Key="TreeView.Background.Color">#FF1F1F1F</Color>
+    <Color x:Key="TreeView.Border.Color">#FF707070</Color>
+    <Color x:Key="TreeView.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="TreeView.Foreground.Color">#FFFFFFFF</Color>
+    
     <Color x:Key="TreeViewItem.Background.Color">#00000000</Color>
-    <Color x:Key="TreeViewItem.Disabled.Foreground.Color">#FF808080</Color>
-    <Color x:Key="TreeViewItem.Foreground.Color">#FF000000</Color>
-    <Color x:Key="TreeViewItem.Selected.Background.Color">#FF1E90FF</Color>
-    <Color x:Key="TreeViewItem.Selected.Foreground.Color">#FF000000</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.Background.Color">#FFFFFFFF</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.Border.Color">#FF818181</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Background.Color">#FFCCEEFB</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Border.Color">#FF27C7F7</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.Checked.Background.Color">#FF595959</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.Checked.Border.Color">#FF262626</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color">#FF82DFFB</Color>
-    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border.Color">#FF1CC4F7</Color>
+    <Color x:Key="TreeViewItem.Disabled.Foreground.Color">#FF7D7D7D</Color>
+    <Color x:Key="TreeViewItem.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.Selected.Background.Color">#FF007BFF</Color>
+    <Color x:Key="TreeViewItem.Selected.Foreground.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Background.Color">#FFCCCCCC</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Border.Color">#FFCCCCCC</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Border.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Checked.Background.Color">#FF707070</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.Checked.Border.Color">#FF1F1F1F</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Background.Color">#FFFFFFFF</Color>
+    <Color x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Border.Color">#FFFFFFFF</Color>
 
 
 
@@ -435,9 +449,11 @@
          |                                                     Brushes                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <SolidColorBrush x:Key="Accent" Color="{DynamicResource Accent.Color}" options:Freeze="True"/>
+    
     <SolidColorBrush x:Key="ArrowPath.Background" Color="{DynamicResource ArrowPath.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ArrowPath.Border" Color="{DynamicResource ArrowPath.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Button.Background" Color="{DynamicResource Button.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Border" Color="{DynamicResource Button.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Foreground" Color="{DynamicResource Button.Foreground.Color}" options:Freeze="True"/>
@@ -449,7 +465,7 @@
     <SolidColorBrush x:Key="Button.Disabled.Background" Color="{DynamicResource Button.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Disabled.Border" Color="{DynamicResource Button.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="{DynamicResource Button.Disabled.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Calendar.Background.GradientStop1" Color="{DynamicResource Calendar.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Background.GradientStop2" Color="{DynamicResource Calendar.Background.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Background.GradientStop3" Color="{DynamicResource Calendar.Background.GradientStop3.Color}" options:Freeze="True"/>
@@ -459,12 +475,12 @@
     <SolidColorBrush x:Key="Calendar.Border.GradientStop3" Color="{DynamicResource Calendar.Border.GradientStop3.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Border.GradientStop4" Color="{DynamicResource Calendar.Border.GradientStop4.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Calendar.Foreground" Color="{DynamicResource Calendar.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="CalendarButton.Background" Color="{DynamicResource CalendarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.Foreground" Color="{DynamicResource CalendarButton.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.Inactive.Foreground" Color="{DynamicResource CalendarButton.Inactive.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarButton.FocusVisual.Border" Color="{DynamicResource CalendarButton.FocusVisual.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="CalendarDayButton.Blackout.Background" Color="{DynamicResource CalendarDayButton.Blackout.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Foreground" Color="{DynamicResource CalendarDayButton.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Inactive.Foreground" Color="{DynamicResource CalendarDayButton.Inactive.Foreground.Color}" options:Freeze="True"/>
@@ -472,7 +488,7 @@
     <SolidColorBrush x:Key="CalendarDayButton.Today.Foreground" Color="{DynamicResource CalendarDayButton.Today.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Highlight.Background" Color="{DynamicResource CalendarDayButton.Today.Highlight.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarDayButton.Today.Selected.Background" Color="{DynamicResource CalendarDayButton.Today.Selected.Background.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="CalendarItem.Root.Disabled.Background" Color="{DynamicResource CalendarItem.Root.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.Inner.Border" Color="{DynamicResource CalendarItem.Inner.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="CalendarItem.HeaderButton.Background" Color="{DynamicResource CalendarItem.HeaderButton.Background.Color}" options:Freeze="True"/>
@@ -554,7 +570,7 @@
     <SolidColorBrush x:Key="DatePicker.Inner.Rectangle.Border.GradientStop2" Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop2.Color}" options:Freeze="True"/>
 
     <SolidColorBrush x:Key="DropShadow" Color="{DynamicResource DropShadow.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Expander.Background" Color="{DynamicResource Expander.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Border" Color="{DynamicResource Expander.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Foreground" Color="{DynamicResource Expander.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -571,23 +587,23 @@
     <SolidColorBrush x:Key="Expander.Disabled.Circle.Stroke" Color="{DynamicResource Expander.Disabled.Circle.Stroke.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Circle.Fill" Color="{DynamicResource Expander.Disabled.Circle.Fill.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Expander.Disabled.Arrow.Stroke" Color="{DynamicResource Expander.Disabled.Arrow.Stroke.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="FocusVisual.Stroke" Color="{DynamicResource FocusVisual.Stroke.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Path.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Fill.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop1" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="FrameNavChrome.Stroke.Fill.GradientStop2" Color="{DynamicResource FrameNavChrome.Path.Stroke.GradientStop2.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="GridSplitter.Background" Color="{DynamicResource GridSplitter.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridSplitter.PreviewStyle.Background" Color="{DynamicResource GridSplitter.PreviewStyle.Background.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Background.GradientStop1" Color="{DynamicResource GridViewColumnHeaderGripper.Background.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Background.GradientStop2" Color="{DynamicResource GridViewColumnHeaderGripper.Background.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Border.GradientStop1" Color="{DynamicResource GridViewColumnHeaderGripper.Border.GradientStop1.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Border.GradientStop2" Color="{DynamicResource GridViewColumnHeaderGripper.Border.GradientStop2.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderGripper.Inner.Border" Color="{DynamicResource GridViewColumnHeaderGripper.Inner.Border.Color}" options:Freeze="True"/>
-
+    
     <LinearGradientBrush x:Key="GridViewColumnHeader.Background" StartPoint="0,0" EndPoint="0,1" options:Freeze="True">
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource GridViewColumnHeader.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -627,18 +643,18 @@
     <SolidColorBrush x:Key="Hyperlink.Disabled.Foreground" Color="{DynamicResource Hyperlink.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.Foreground" Color="{DynamicResource Hyperlink.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Hyperlink.MouseOver.Foreground" Color="{DynamicResource Hyperlink.MouseOver.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Label.Background" Color="{DynamicResource Label.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Foreground" Color="{DynamicResource Label.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Label.Disabled.Foreground" Color="{DynamicResource Label.Disabled.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ListBox.Background" Color="{DynamicResource ListBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Border" Color="{DynamicResource ListBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="{DynamicResource ListBox.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="{DynamicResource ListBox.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Foreground" Color="{DynamicResource ListBox.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBox.Disabled.Foreground" Color="{DynamicResource ListBox.Disabled.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Background" Color="{DynamicResource ListBoxItem.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.MouseOver.Border" Color="{DynamicResource ListBoxItem.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.Background" Color="{DynamicResource ListBoxItem.SelectedActive.Background.Color}" options:Freeze="True"/>
@@ -647,13 +663,13 @@
     <SolidColorBrush x:Key="ListBoxItem.SelectedActive.MouseOver.Border" Color="{DynamicResource ListBoxItem.SelectedActive.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Background" Color="{DynamicResource ListBoxItem.SelectedInactive.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListBoxItem.SelectedInactive.Border" Color="{DynamicResource ListBoxItem.SelectedInactive.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ListView.Background" Color="{DynamicResource ListView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Border" Color="{DynamicResource ListView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Disabled.Background" Color="{DynamicResource ListView.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Disabled.Border" Color="{DynamicResource ListView.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ListView.Foreground" Color="{DynamicResource ListView.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Item.MouseOver.Background" Color="{DynamicResource Item.MouseOver.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.MouseOver.Border" Color="{DynamicResource Item.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Background" Color="{DynamicResource Item.SelectedActive.Background.Color}" options:Freeze="True"/>
@@ -668,7 +684,7 @@
     <SolidColorBrush x:Key="Menu.Disabled.Foreground" Color="{DynamicResource Menu.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Foreground" Color="{DynamicResource Menu.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Menu.Separator" Color="{DynamicResource Menu.Separator.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="MenuItem.Highlight.Background" Color="{DynamicResource MenuItem.Highlight.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Highlight.Border" Color="{DynamicResource MenuItem.Highlight.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="MenuItem.Highlight.Disabled.Background" Color="{DynamicResource MenuItem.Highlight.Disabled.Background.Color}" options:Freeze="True"/>
@@ -694,12 +710,12 @@
     <SolidColorBrush x:Key="OptionMark.Disabled.Border" Color="{DynamicResource OptionMark.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Disabled.Foreground" Color="{DynamicResource OptionMark.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="OptionMark.Disabled.Glyph" Color="{DynamicResource OptionMark.Disabled.Glyph.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ProgressBar.Progress" Color="{DynamicResource ProgressBar.Progress.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Background" Color="{DynamicResource ProgressBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Border" Color="{DynamicResource ProgressBar.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ProgressBar.Disabled" Color="{DynamicResource ProgressBar.Disabled.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="RadioButton.Background" Color="{DynamicResource RadioButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Border" Color="{DynamicResource RadioButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Foreground" Color="{DynamicResource RadioButton.Foreground.Color}" options:Freeze="True"/>
@@ -715,9 +731,9 @@
     <SolidColorBrush x:Key="RadioButton.Disabled.Border" Color="{DynamicResource RadioButton.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Foreground" Color="{DynamicResource RadioButton.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="RadioButton.Disabled.Glyph" Color="{DynamicResource RadioButton.Disabled.Glyph.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="RepeatButton.Transparent.Background" Color="{DynamicResource RepeatButton.Transparent.Background.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ScrollBarButton.Background" Color="{DynamicResource ScrollBarButton.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Border" Color="{DynamicResource ScrollBarButton.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.MouseOver.Background" Color="{DynamicResource ScrollBarButton.MouseOver.Background.Color}" options:Freeze="True"/>
@@ -726,7 +742,7 @@
     <SolidColorBrush x:Key="ScrollBarButton.Pressed.Border" Color="{DynamicResource ScrollBarButton.Pressed.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Background" Color="{DynamicResource ScrollBarButton.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBarButton.Disabled.Border" Color="{DynamicResource ScrollBarButton.Disabled.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ScrollBar.Background" Color="{DynamicResource ScrollBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Border" Color="{DynamicResource ScrollBar.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Foreground" Color="{DynamicResource ScrollBar.Foreground.Color}" options:Freeze="True"/>
@@ -738,15 +754,15 @@
     <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{DynamicResource ScrollBar.Pressed.Thumb.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Disabled.Glyph" Color="{DynamicResource ScrollBar.Disabled.Glyph.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ScrollBar.Disabled.Thumb" Color="{DynamicResource ScrollBar.Disabled.Thumb.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Separator.Background" Color="{DynamicResource Separator.Background.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="Slider.Background" Color="{DynamicResource Slider.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.Border" Color="{DynamicResource Slider.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.Disabled.Background" Color="{DynamicResource Slider.Disabled.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.SelectionRange.Background" Color="{DynamicResource Slider.SelectionRange.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="Slider.IsKeyboardfocused.Foreground" Color="{DynamicResource Slider.IsKeyboardfocused.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="SliderThumb.Background" Color="{DynamicResource SliderThumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Border" Color="{DynamicResource SliderThumb.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Foreground" Color="{DynamicResource SliderThumb.Foreground.Color}" options:Freeze="True"/>
@@ -758,19 +774,20 @@
     <SolidColorBrush x:Key="SliderThumb.Disabled.Border" Color="{DynamicResource SliderThumb.Disabled.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Track.Background" Color="{DynamicResource SliderThumb.Track.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="SliderThumb.Track.Border" Color="{DynamicResource SliderThumb.Track.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="StatusBar.Background" Color="{DynamicResource StatusBar.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBar.Foreground" Color="{DynamicResource StatusBar.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="StatusBarItem.Background" Color="{DynamicResource StatusBarItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Border" Color="{DynamicResource StatusBarItem.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Disabled.Foreground" Color="{DynamicResource StatusBarItem.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="StatusBarItem.Foreground" Color="{DynamicResource StatusBarItem.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="TabControl.Disabled.Foreground" Color="{DynamicResource TabControl.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabControl.Foreground" Color="{DynamicResource TabControl.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabControl.TabPanel.Background" Color="{DynamicResource TabControl.TabPanel.Background.Color}" options:Freeze="True"/>
 
+    <SolidColorBrush x:Key="TabItem.Accent" Color="{DynamicResource TabItem.Accent.Color}" options:Freeze="True"/>
     <LinearGradientBrush x:Key="TabItem.Background" EndPoint="0,1" StartPoint="0,0" options:Freeze="True">
         <GradientStop Color="{DynamicResource TabItem.Background.GradientStop1.Color}" Offset="0.0"/>
         <GradientStop Color="{DynamicResource TabItem.Background.GradientStop2.Color}" Offset="1.0"/>
@@ -785,18 +802,18 @@
     <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource TabItem.MouseOver.Border.Color}"/>
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{DynamicResource TabItem.Selected.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{DynamicResource TabItem.Selected.Border.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="TextBoxBase.Background" Color="{DynamicResource TextBoxBase.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.Foreground" Color="{DynamicResource TextBoxBase.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBoxBase.InactiveSelection" Color="{DynamicResource TextBoxBase.InactiveSelection.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="{DynamicResource TextBox.Focus.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="{DynamicResource TextBox.MouseOver.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Background" Color="{DynamicResource TextBox.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Border" Color="{DynamicResource TextBox.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.ContentHost.Background" Color="{DynamicResource TextBox.ContentHost.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TextBox.Watermark" Color="{DynamicResource TextBox.Watermark.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ToolBarButtonHover" Color="{DynamicResource ToolBarButtonHover.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarMenuBorder" Color="{DynamicResource ToolBarMenuBorder.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarHorizontalOverflow.Path.Border" Color="{DynamicResource ToolBarHorizontalOverflow.Path.Border.Color}" options:Freeze="True"/>
@@ -807,22 +824,22 @@
     <SolidColorBrush x:Key="ToolBarGripper" Color="{DynamicResource ToolBarGripper.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarToggleButtonHorizontalBackground" Color="{DynamicResource ToolBarToggleButtonHorizontalBackground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBarToggleButtonVerticalBackground" Color="{DynamicResource ToolBarToggleButtonVerticalBackground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ToolBar.Thumb.Background" Color="{DynamicResource ToolBar.Thumb.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Thumb.GeometryDrawing" Color="{DynamicResource ToolBar.Thumb.GeometryDrawing.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolBar.Disabled.Foreground" Color="{DynamicResource ToolBar.Disabled.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ToolBarTrayBackground" Color="{DynamicResource ToolBarTray.Background.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="ToolTip.Background" Color="{DynamicResource ToolTip.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Border" Color="{DynamicResource ToolTip.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="ToolTip.Foreground" Color="{DynamicResource ToolTip.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="TreeView.Background" Color="{DynamicResource TreeView.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Border" Color="{DynamicResource TreeView.Border.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Disabled.Foreground" Color="{DynamicResource TreeView.Disabled.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeView.Foreground" Color="{DynamicResource TreeView.Foreground.Color}" options:Freeze="True"/>
-
+    
     <SolidColorBrush x:Key="TreeViewItem.Background" Color="{DynamicResource TreeViewItem.Background.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.Foreground" Color="{DynamicResource TreeViewItem.Foreground.Color}" options:Freeze="True"/>
     <SolidColorBrush x:Key="TreeViewItem.Disabled.Foreground" Color="{DynamicResource TreeViewItem.Disabled.Foreground.Color}" options:Freeze="True"/>
@@ -986,7 +1003,7 @@
          |                                                       Menus                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeMenuStyle" TargetType="{x:Type Menu}">
+    <Style x:Key="DarkThemeHighlightMenuStyle" TargetType="{x:Type Menu}">
         <Setter Property="Background" Value="{DynamicResource Menu.Background}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.MenuFontFamilyKey}}"/>
         <Setter Property="FontSize" Value="{DynamicResource {x:Static SystemFonts.MenuFontSizeKey}}"/>
@@ -1271,7 +1288,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeMenuItemStyle" TargetType="{x:Type MenuItem}">
+    <Style x:Key="DarkThemeHighlightMenuItemStyle" TargetType="{x:Type MenuItem}">
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="Background" Value="Transparent"/>
@@ -1335,7 +1352,7 @@
          |                                                     Buttons                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeButtonStyle" TargetType="{x:Type Button}">
+    <Style x:Key="DarkThemeHighlightButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource Button.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource Button.Border}"/>
@@ -1349,11 +1366,27 @@
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
-                                          Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <Grid>
+                            <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                                <Border.Effect>
+                                    <BlurEffect Radius="5" KernelType="Gaussian"/>
+                                </Border.Effect>
+                            </Border>
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                              Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>                            
+                        </Grid>
                     </Border>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
+                        <!--<Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>-->
+                        <!--<Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>-->
                         <Trigger Property="IsDefaulted" Value="true">
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.IsDefault.Border}"/>
                         </Trigger>
@@ -1430,6 +1463,46 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
+    <Style x:Key="{x:Static ToolBar.ButtonStyleKey}" TargetType="{x:Type Button}">
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
+        <Setter Property="Background" Value="{DynamicResource Button.Background}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Button.Border}"/>
+        <Setter Property="Foreground" Value="{DynamicResource Button.Foreground}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                          Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDefaulted" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.IsDefault.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource Button.MouseOver.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.MouseOver.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource Button.Pressed.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.Pressed.Border}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource Button.Disabled.Background}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Button.Disabled.Border}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{DynamicResource Button.Disabled.Foreground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
 
 
@@ -1478,7 +1551,7 @@
                   Fill="{DynamicResource SliderThumb.Background}" Stroke="{DynamicResource SliderThumb.Border}" 
                   SnapsToDevicePixels="True" Stretch="Fill" StrokeThickness="1" UseLayoutRounding="True" VerticalAlignment="Center"/>
         </Grid>
-        <ControlTemplate.Triggers>
+        <ControlTemplate.Triggers>            
             <Trigger Property="IsMouseOver" Value="true">
                 <Setter Property="Fill" TargetName="grip" Value="{DynamicResource SliderThumb.MouseOver.Background}"/>
                 <Setter Property="Stroke" TargetName="grip" Value="{DynamicResource SliderThumb.MouseOver.Border}"/>
@@ -1534,7 +1607,7 @@
                 <Setter Property="Stroke" TargetName="grip" Value="{DynamicResource SliderThumb.Disabled.Border}"/>
             </Trigger>
         </ControlTemplate.Triggers>
-    </ControlTemplate>
+    </ControlTemplate>    
     <ControlTemplate x:Key="SliderThumbVerticalDefault" TargetType="{x:Type Thumb}">
         <Grid HorizontalAlignment="Center" UseLayoutRounding="True" VerticalAlignment="Center">
             <Path x:Name="grip" Data="M0.5,0.5 L18.5,0.5 18.5,11.5 0.5,11.5 Z" Fill="{DynamicResource SliderThumb.Background}" 
@@ -1617,7 +1690,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
+    </Style>    
     <Style x:Key="ScrollBarThumbHorizontal" TargetType="{x:Type Thumb}">
         <Setter Property="OverridesDefaultStyle" Value="true"/>
         <Setter Property="IsTabStop" Value="false"/>
@@ -1684,11 +1757,11 @@
          |                                                     Calendars                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarStyle" TargetType="{x:Type Calendar}">
+    <Style x:Key="DarkThemeHighlightCalendarStyle" TargetType="{x:Type Calendar}">
         <Setter Property="TextElement.Foreground" Value="{DynamicResource Calendar.Foreground}"/>
-        <Setter Property="CalendarButtonStyle" Value="{DynamicResource LightThemeCalendarButtonStyle}" />
-        <Setter Property="CalendarDayButtonStyle" Value="{DynamicResource LightThemeCalendarDayButtonStyle}" />
-        <Setter Property="CalendarItemStyle" Value="{DynamicResource LightThemeCalendarItemStyle}" />
+        <Setter Property="CalendarButtonStyle" Value="{DynamicResource DarkThemeHighlightCalendarButtonStyle}" />
+        <Setter Property="CalendarDayButtonStyle" Value="{DynamicResource DarkThemeHighlightCalendarDayButtonStyle}" />
+        <Setter Property="CalendarItemStyle" Value="{DynamicResource DarkThemeHighlightCalendarItemStyle}" />
         <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -1736,7 +1809,7 @@
          |                                                  CalendarButtons                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarDayButtonStyle" TargetType="{x:Type CalendarDayButton}">
+    <Style x:Key="DarkThemeHighlightCalendarDayButtonStyle" TargetType="{x:Type CalendarDayButton}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource CalendarDayButtonFocusVisual}"/>
         <Setter Property="MinWidth" Value="5"/>
         <Setter Property="MinHeight" Value="5"/>
@@ -1846,7 +1919,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeCalendarButtonStyle" TargetType="{x:Type CalendarButton}">
+    <Style x:Key="DarkThemeHighlightCalendarButtonStyle" TargetType="{x:Type CalendarButton}">
         <Setter Property="Background" Value="{DynamicResource CalendarButton.Background}"/>
         <Setter Property="MinWidth" Value="40"/>
         <Setter Property="MinHeight" Value="42"/>
@@ -1960,7 +2033,7 @@
          |                                                   CalendarItems                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCalendarItemStyle" TargetType="{x:Type CalendarItem}">
+    <Style x:Key="DarkThemeHighlightCalendarItemStyle" TargetType="{x:Type CalendarItem}">
         <Setter Property="Margin" Value="0,3,0,3"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -1983,6 +2056,11 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-2" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
                         <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1">
                             <Border BorderBrush="{DynamicResource CalendarItem.Inner.Border}" BorderThickness="2" CornerRadius="1">
@@ -2045,6 +2123,9 @@
                                    Stroke="{DynamicResource CalendarItem.Root.Disabled.Background}" Stretch="Fill" StrokeThickness="1" Visibility="Collapsed"/>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Visibility" TargetName="PART_DisabledVisual" Value="Visible"/>
                         </Trigger>
@@ -2076,7 +2157,7 @@
          |                                                     CheckBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeCheckBoxStyle" TargetType="{x:Type CheckBox}">
+    <Style x:Key="DarkThemeHighlightCheckBoxStyle" TargetType="{x:Type CheckBox}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource OptionMark.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource OptionMark.Border}"/>
@@ -2090,6 +2171,11 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-2" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
                         <Border x:Name="checkBoxBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
                                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                             <Grid x:Name="markGrid">
@@ -2103,6 +2189,9 @@
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
                         <Trigger Property="HasContent" Value="true">
                             <Setter Property="FocusVisualStyle" Value="{DynamicResource OptionMarkFocusVisual}"/>
                             <Setter Property="Padding" Value="4,-1,0,0"/>
@@ -2483,7 +2572,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="ContextMenu" Value="{DynamicResource LightThemeTextBoxContextMenuStyle}"/>
+        <Setter Property="ContextMenu" Value="{DynamicResource DarkThemeHighlightTextBoxContextMenuStyle}"/>
         <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
@@ -2493,10 +2582,17 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBoxBase}">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
-                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
-                    </Border>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                    </Grid>                    
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
@@ -2506,6 +2602,7 @@
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="true">
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -2536,26 +2633,34 @@
          |                                                      TextBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTextBoxStyle" TargetType="{x:Type TextBox}">
+    <Style x:Key="DarkThemeHighlightTextBoxStyle" TargetType="{x:Type TextBox}">
         <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="ContextMenu" Value="{DynamicResource LightThemeTextBoxContextMenuStyle}"/>
+        <Setter Property="ContextMenu" Value="{DynamicResource DarkThemeHighlightTextBoxContextMenuStyle}"/>
         <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="AllowDrop" Value="true"/>        
         <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="MinHeight" Value="18"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
-                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" 
-                                      VerticalScrollBarVisibility="Hidden"/>
-                    </Border>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden"
+                                          VerticalScrollBarVisibility="Hidden"/>
+                        </Border>                        
+                    </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
@@ -2565,6 +2670,7 @@
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="true">
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -2595,26 +2701,34 @@
          |                                                 PasswordBoxes                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemePasswordBoxStyle" TargetType="{x:Type PasswordBox}">
+    <Style x:Key="DarkThemeHighlightPasswordBoxStyle" TargetType="{x:Type PasswordBox}">
         <Setter Property="PasswordChar" Value="●"/>
         <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource TextBox.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="ContextMenu" Value="{DynamicResource LightThemeTextBoxContextMenuStyle}"/>
+        <Setter Property="ContextMenu" Value="{DynamicResource DarkThemeHighlightTextBoxContextMenuStyle}"/>
         <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="AllowDrop" Value="true"/>
         <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="MinHeight" Value="18"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
-                        <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
-                    </Border>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                    </Grid>                    
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Opacity" TargetName="border" Value="0.56"/>
@@ -2624,6 +2738,7 @@
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="true">
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource TextBox.Focus.Border}"/>
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -2654,10 +2769,10 @@
          |                                              DatePickerTextBoxes                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDatePickerTextBoxStyle" TargetType="{x:Type DatePickerTextBox}">
+    <Style x:Key="DarkThemeHighlightDatePickerTextBoxStyle" TargetType="{x:Type DatePickerTextBox}">
         <Setter Property="Background" Value="{DynamicResource TextBoxBase.Background}"/>
         <Setter Property="Foreground" Value="{DynamicResource TextBoxBase.Foreground}"/>
-        <Setter Property="ContextMenu" Value="{DynamicResource LightThemeTextBoxContextMenuStyle}"/>
+        <Setter Property="ContextMenu" Value="{DynamicResource DarkThemeHighlightTextBoxContextMenuStyle}"/>
         <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         <Setter Property="Template">
@@ -2727,7 +2842,7 @@
                             </Grid>
                         </Border>
                     </Grid>
-                </ControlTemplate>
+                </ControlTemplate>                
             </Setter.Value>
         </Setter>
     </Style>
@@ -2746,7 +2861,7 @@
          |                                                     ComboBoxes                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeComboBoxStyle" TargetType="{x:Type ComboBox}">
+    <Style x:Key="DarkThemeHighlightComboBoxStyle" TargetType="{x:Type ComboBox}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource ComboBox.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ComboBox.Border}"/>
@@ -2787,6 +2902,11 @@
                                 </ScrollViewer>
                             </Border>
                         </Popup>
+                        <Border x:Name="highlightBorder" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
                         <ToggleButton x:Name="toggleButton" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                       BorderThickness="{TemplateBinding BorderThickness}" Grid.ColumnSpan="2"
                                       IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
@@ -2853,7 +2973,7 @@
                         <TextBox x:Name="PART_EditableTextBox" CaretBrush="{DynamicResource ComboBox.Foreground}"
                                  HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                  IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}" Margin="{TemplateBinding Padding}" 
-                                 VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" ContextMenu="{DynamicResource LightThemeTextBoxContextMenuStyle}"
+                                 VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" ContextMenu="{DynamicResource DarkThemeHighlightTextBoxContextMenuStyle}"
                                  Visibility="Collapsed">
                             <TextBox.Style>
                                 <Style TargetType="TextBox">
@@ -2900,6 +3020,7 @@
                         <Trigger Property="IsKeyboardFocusWithin" Value="True">
                             <Setter Property="Background" TargetName="toggleButton" Value="{DynamicResource ComboBox.MouseOver.Editable.Background}"/>
                             <Setter Property="BorderBrush" TargetName="toggleButton" Value="{DynamicResource ComboBox.MouseOver.Editable.Border}"/>
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="{DynamicResource ComboBox.MouseOver.Background}" TargetName="toggleButton"/>
@@ -2958,7 +3079,7 @@
          |                                                    ComboBoxItems                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">
+    <Style x:Key="DarkThemeHighlightComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -3016,7 +3137,7 @@
          |                                                  ContentControls                                                            |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeContentControlStyle" TargetType="{x:Type ContentControl}">
+    <Style x:Key="DarkThemeHighlightContentControlStyle" TargetType="{x:Type ContentControl}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ContentControl}">
@@ -3040,7 +3161,7 @@
          |                                                    ContextMenus                                                             |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeContextMenuStyle" TargetType="{x:Type ContextMenu}">
+    <Style x:Key="DarkThemeHighlightContextMenuStyle" TargetType="{x:Type ContextMenu}">
         <Setter Property="Background" Value="{DynamicResource ContextMenu.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ContextMenu.Border}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -3082,10 +3203,10 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <ContextMenu x:Key="LightThemeTextBoxContextMenuStyle" x:Shared="False" Style="{DynamicResource LightThemeContextMenuStyle}">
-        <MenuItem Command="ApplicationCommands.Cut" Style="{DynamicResource LightThemeMenuItemStyle}" />
-        <MenuItem Command="ApplicationCommands.Copy" Style="{DynamicResource LightThemeMenuItemStyle}" />
-        <MenuItem Command="ApplicationCommands.Paste" Style="{DynamicResource LightThemeMenuItemStyle}" />
+    <ContextMenu x:Key="DarkThemeHighlightTextBoxContextMenuStyle" x:Shared="False" Style="{DynamicResource DarkThemeHighlightContextMenuStyle}">
+        <MenuItem Command="ApplicationCommands.Cut" Style="{DynamicResource DarkThemeHighlightMenuItemStyle}" />
+        <MenuItem Command="ApplicationCommands.Copy" Style="{DynamicResource DarkThemeHighlightMenuItemStyle}" />
+        <MenuItem Command="ApplicationCommands.Paste" Style="{DynamicResource DarkThemeHighlightMenuItemStyle}" />
     </ContextMenu>
 
 
@@ -3102,8 +3223,8 @@
          |                                                   DatePickers                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeDatePickerStyle" TargetType="{x:Type DatePicker}">
-        <Setter Property="CalendarStyle" Value="{DynamicResource LightThemeCalendarStyle}"/>
+    <Style x:Key="DarkThemeHighlightDatePickerStyle" TargetType="{x:Type DatePicker}">
+        <Setter Property="CalendarStyle" Value="{DynamicResource DarkThemeHighlightCalendarStyle}"/>
         <Setter Property="Foreground" Value="{DynamicResource DatePicker.Foreground}"/>
         <Setter Property="IsTodayHighlighted" Value="True"/>
         <Setter Property="SelectedDateFormat" Value="Short"/>
@@ -3124,150 +3245,162 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DatePicker}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
-                        <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="CommonStates">
-                                <VisualState x:Name="Normal"/>
-                                <VisualState x:Name="Disabled">
-                                    <Storyboard>
-                                        <DoubleAnimation Duration="0" Storyboard.TargetName="PART_DisabledVisual" To="1" Storyboard.TargetProperty="Opacity"/>
-                                    </Storyboard>
-                                </VisualState>
-                            </VisualStateGroup>
-                        </VisualStateManager.VisualStateGroups>
-                        <Grid x:Name="PART_Root" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
-                            <Grid.Resources>
-                                <ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
-                                    <Grid>
-                                        <VisualStateManager.VisualStateGroups>
-                                            <VisualStateGroup x:Name="CommonStates">
-                                                <VisualStateGroup.Transitions>
-                                                    <VisualTransition GeneratedDuration="0"/>
-                                                    <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
-                                                    <VisualTransition GeneratedDuration="0:0:0.1" To="Pressed"/>
-                                                </VisualStateGroup.Transitions>
-                                                <VisualState x:Name="Normal"/>
-                                                <VisualState x:Name="MouseOver">
-                                                    <Storyboard>
-                                                        <ColorAnimation Duration="0" Storyboard.TargetName="Background" To="#FF448DCA" 
-                                                                        Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"/>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop4.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop3.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop2.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                    </Storyboard>
-                                                </VisualState>
-                                                <VisualState x:Name="Pressed">
-                                                    <Storyboard>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="Background" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Background.Pressed.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <DoubleAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="Highlight" 
-                                                                                       Storyboard.TargetProperty="(UIElement.Opacity)">
-                                                            <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
-                                                        </DoubleAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop2.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop3.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop4.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                        <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
-                                                                                      Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
-                                                            <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop1.Color}"/>
-                                                        </ColorAnimationUsingKeyFrames>
-                                                    </Storyboard>
-                                                </VisualState>
-                                                <VisualState x:Name="Disabled"/>
-                                            </VisualStateGroup>
-                                        </VisualStateManager.VisualStateGroups>
-                                        <Grid Background="{DynamicResource DatePicker.Inner.Background}" FlowDirection="LeftToRight" HorizontalAlignment="Center" Height="18" Margin="0" 
-                                              VerticalAlignment="Center" Width="19">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="20*"/>
-                                                <ColumnDefinition Width="20*"/>
-                                                <ColumnDefinition Width="20*"/>
-                                                <ColumnDefinition Width="20*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="23*"/>
-                                                <RowDefinition Height="19*"/>
-                                                <RowDefinition Height="19*"/>
-                                                <RowDefinition Height="19*"/>
-                                            </Grid.RowDefinitions>
-                                            <Border x:Name="Highlight" BorderBrush="{DynamicResource DatePicker.Inner.Highlight}" BorderThickness="1" 
-                                                    CornerRadius="0,0,1,1" Grid.ColumnSpan="4" Margin="-1" Opacity="0" Grid.RowSpan="4" Grid.Row="0"/>
-                                            <Border x:Name="Background" BorderThickness="1" CornerRadius=".5" Grid.ColumnSpan="4" Margin="0,-1,0,0" 
-                                                    Opacity="1" Grid.RowSpan="3" Grid.Row="1"
-                                                    Background="{DynamicResource DatePicker.Inner.Inner.Background}" BorderBrush="{DynamicResource DatePicker.Inner.Inner.Border}"/>
-                                            <Border x:Name="BackgroundGradient" BorderBrush="{DynamicResource DatePicker.Inner.Background.Gradient.Border}" 
-                                                    BorderThickness="1" CornerRadius=".5" Grid.ColumnSpan="4" Margin="0,-1,0,0" Opacity="1" Grid.RowSpan="3" Grid.Row="1">
-                                                <Border.Background>
-                                                    <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop1.Color}" Offset="0"/>
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop2.Color}" Offset="0.375"/>
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop3.Color}" Offset="0.625"/>
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop4.Color}" Offset="1"/>
-                                                    </LinearGradientBrush>
-                                                </Border.Background>
-                                            </Border>
-                                            <Rectangle Grid.ColumnSpan="4" Grid.RowSpan="1" StrokeThickness="1">
-                                                <Rectangle.Fill>
-                                                    <LinearGradientBrush EndPoint="0.3,-1.1" StartPoint="0.46,1.6">
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Background.GradientStop1.Color}"/>
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Background.GradientStop2.Color}" Offset="1"/>
-                                                    </LinearGradientBrush>
-                                                </Rectangle.Fill>
-                                                <Rectangle.Stroke>
-                                                    <LinearGradientBrush EndPoint="0.48,-1" StartPoint="0.48,1.25">
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}"/>
-                                                        <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" Offset="1"/>
-                                                    </LinearGradientBrush>
-                                                </Rectangle.Stroke>
-                                            </Rectangle>
-                                            <Path Grid.Column="0" Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Foreground}" 
-                                                  HorizontalAlignment="Center" Margin="4,3,4,3" 
-                                                  RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Grid.Row="1" Stretch="Fill" VerticalAlignment="Center"
-                                                  Data="M11.426758,8.4305077 L11.749023,8.4305077 L11.749023,16.331387 L10.674805,16.331387 L10.674805,10.299648 L9.0742188,11.298672 L9.0742188,10.294277 C9.4788408,10.090176 9.9094238,9.8090878 10.365967,9.4510155 C10.82251,9.0929432 11.176106,8.7527733 11.426758,8.4305077 z M14.65086,8.4305077 L18.566387,8.4305077 L18.566387,9.3435936 L15.671368,9.3435936 L15.671368,11.255703 C15.936341,11.058764 16.27293,10.960293 16.681133,10.960293 C17.411602,10.960293 17.969301,11.178717 18.354229,11.615566 C18.739157,12.052416 18.931622,12.673672 18.931622,13.479336 C18.931622,15.452317 18.052553,16.438808 16.294415,16.438808 C15.560365,16.438808 14.951641,16.234707 14.468243,15.826504 L14.881817,14.929531 C15.368796,15.326992 15.837872,15.525723 16.289043,15.525723 C17.298809,15.525723 17.803692,14.895514 17.803692,13.635098 C17.803692,12.460618 17.305971,11.873379 16.310528,11.873379 C15.83071,11.873379 15.399232,12.079271 15.016094,12.491055 L14.65086,12.238613 Z"/>
-                                            <Ellipse Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Circle.Background}" 
-                                                     HorizontalAlignment="Center" Height="3" StrokeThickness="0" 
-                                                     VerticalAlignment="Center" Width="3"/>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" Storyboard.TargetName="PART_DisabledVisual" To="1" Storyboard.TargetProperty="Opacity"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid x:Name="PART_Root" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                <Grid.Resources>
+                                    <ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup x:Name="CommonStates">
+                                                    <VisualStateGroup.Transitions>
+                                                        <VisualTransition GeneratedDuration="0"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="Pressed"/>
+                                                    </VisualStateGroup.Transitions>
+                                                    <VisualState x:Name="Normal"/>
+                                                    <VisualState x:Name="MouseOver">
+                                                        <Storyboard>
+                                                            <ColorAnimation Duration="0" Storyboard.TargetName="Background" To="#FF448DCA" 
+                                                                            Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"/>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop4.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop3.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.MouseOver.GradientStop2.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="Pressed">
+                                                        <Storyboard>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="Background" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Background.Pressed.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <DoubleAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="Highlight" 
+                                                                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                                                                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                                                            </DoubleAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop2.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[2].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop3.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop4.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                            <ColorAnimationUsingKeyFrames BeginTime="0" Duration="00:00:00.001" Storyboard.TargetName="BackgroundGradient" 
+                                                                                          Storyboard.TargetProperty="(Border.Background).(GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                                                                <SplineColorKeyFrame KeyTime="0" Value="{DynamicResource DatePicker.Border.Pressed.GradientStop1.Color}"/>
+                                                            </ColorAnimationUsingKeyFrames>
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="Disabled"/>
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <Grid Background="{DynamicResource DatePicker.Inner.Background}" FlowDirection="LeftToRight" HorizontalAlignment="Center" Height="18" Margin="0" 
+                                                  VerticalAlignment="Center" Width="19">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="23*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border x:Name="Highlight" BorderBrush="{DynamicResource DatePicker.Inner.Highlight}" BorderThickness="1" 
+                                                        CornerRadius="0,0,1,1" Grid.ColumnSpan="4" Margin="-1" Opacity="0" Grid.RowSpan="4" Grid.Row="0"/>
+                                                <Border x:Name="Background" BorderThickness="1" CornerRadius=".5" Grid.ColumnSpan="4" Margin="0,-1,0,0" 
+                                                        Opacity="1" Grid.RowSpan="3" Grid.Row="1"
+                                                        Background="{DynamicResource DatePicker.Inner.Inner.Background}" BorderBrush="{DynamicResource DatePicker.Inner.Inner.Border}"/>
+                                                <Border x:Name="BackgroundGradient" BorderBrush="{DynamicResource DatePicker.Inner.Background.Gradient.Border}" 
+                                                        BorderThickness="1" CornerRadius=".5" Grid.ColumnSpan="4" Margin="0,-1,0,0" Opacity="1" Grid.RowSpan="3" Grid.Row="1">
+                                                    <Border.Background>
+                                                        <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop1.Color}" Offset="0"/>
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop2.Color}" Offset="0.375"/>
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop3.Color}" Offset="0.625"/>
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Background.GradientStop4.Color}" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Border.Background>
+                                                </Border>
+                                                <Rectangle Grid.ColumnSpan="4" Grid.RowSpan="1" StrokeThickness="1">
+                                                    <Rectangle.Fill>
+                                                        <LinearGradientBrush EndPoint="0.3,-1.1" StartPoint="0.46,1.6">
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Background.GradientStop1.Color}"/>
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Background.GradientStop2.Color}" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Rectangle.Fill>
+                                                    <Rectangle.Stroke>
+                                                        <LinearGradientBrush EndPoint="0.48,-1" StartPoint="0.48,1.25">
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}"/>
+                                                            <GradientStop Color="{DynamicResource DatePicker.Inner.Rectangle.Border.GradientStop1.Color}" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </Rectangle.Stroke>
+                                                </Rectangle>
+                                                <Path Grid.Column="0" Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Foreground}" 
+                                                      HorizontalAlignment="Center" Margin="4,3,4,3" 
+                                                      RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Grid.Row="1" Stretch="Fill" VerticalAlignment="Center"
+                                                      Data="M11.426758,8.4305077 L11.749023,8.4305077 L11.749023,16.331387 L10.674805,16.331387 L10.674805,10.299648 L9.0742188,11.298672 L9.0742188,10.294277 C9.4788408,10.090176 9.9094238,9.8090878 10.365967,9.4510155 C10.82251,9.0929432 11.176106,8.7527733 11.426758,8.4305077 z M14.65086,8.4305077 L18.566387,8.4305077 L18.566387,9.3435936 L15.671368,9.3435936 L15.671368,11.255703 C15.936341,11.058764 16.27293,10.960293 16.681133,10.960293 C17.411602,10.960293 17.969301,11.178717 18.354229,11.615566 C18.739157,12.052416 18.931622,12.673672 18.931622,13.479336 C18.931622,15.452317 18.052553,16.438808 16.294415,16.438808 C15.560365,16.438808 14.951641,16.234707 14.468243,15.826504 L14.881817,14.929531 C15.368796,15.326992 15.837872,15.525723 16.289043,15.525723 C17.298809,15.525723 17.803692,14.895514 17.803692,13.635098 C17.803692,12.460618 17.305971,11.873379 16.310528,11.873379 C15.83071,11.873379 15.399232,12.079271 15.016094,12.491055 L14.65086,12.238613 Z"/>
+                                                <Ellipse Grid.ColumnSpan="4" Fill="{DynamicResource DatePicker.Calendar.Circle.Background}" 
+                                                         HorizontalAlignment="Center" Height="3" StrokeThickness="0" 
+                                                         VerticalAlignment="Center" Width="3"/>
+                                            </Grid>
                                         </Grid>
-                                    </Grid>
-                                </ControlTemplate>
-                            </Grid.Resources>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <Button x:Name="PART_Button" Grid.Column="1" Foreground="{TemplateBinding Foreground}" Focusable="False" 
-                                    HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0" Template="{DynamicResource DropDownButtonTemplate}" 
-                                    VerticalAlignment="Top" Width="20"/>
-                            <DatePickerTextBox x:Name="PART_TextBox" Grid.Column="0" Focusable="{TemplateBinding Focusable}" 
-                                               HorizontalContentAlignment="Stretch" Grid.Row="0" VerticalContentAlignment="Stretch"
-                                               Style="{DynamicResource LightThemeDatePickerTextBoxStyle}"/>
-                            <Grid x:Name="PART_DisabledVisual" Grid.Column="0" Grid.ColumnSpan="2" IsHitTestVisible="False" Opacity="0" Grid.Row="0">
-                                <Rectangle Fill="{DynamicResource DatePicker.Disabled.Background}" />
+                                    </ControlTemplate>
+                                </Grid.Resources>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="PART_Button" Grid.Column="1" Foreground="{TemplateBinding Foreground}" Focusable="False" 
+                                        HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0" Template="{DynamicResource DropDownButtonTemplate}" 
+                                        VerticalAlignment="Top" Width="20"/>
+                                <DatePickerTextBox x:Name="PART_TextBox" Grid.Column="0" Focusable="{TemplateBinding Focusable}" 
+                                                   HorizontalContentAlignment="Stretch" Grid.Row="0" VerticalContentAlignment="Stretch"
+                                                   Style="{DynamicResource DarkThemeHighlightDatePickerTextBoxStyle}"/>
+                                <Grid x:Name="PART_DisabledVisual" Grid.Column="0" Grid.ColumnSpan="2" IsHitTestVisible="False" Opacity="0" Grid.Row="0">
+                                    <Rectangle Fill="{DynamicResource DatePicker.Disabled.Background}" />
+                                </Grid>
+                                <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False"/>
                             </Grid>
-                            <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False"/>
-                        </Grid>
-                    </Border>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -3287,7 +3420,7 @@
          |                                                    Expanders                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeExpanderStyle" TargetType="{x:Type Expander}">
+    <Style x:Key="DarkThemeHighlightExpanderStyle" TargetType="{x:Type Expander}">
         <Setter Property="Foreground" Value="{DynamicResource Expander.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource Expander.Background}"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -3364,7 +3497,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeGridSplitterStyle" TargetType="{x:Type GridSplitter}">
+    <Style x:Key="DarkThemeHighlightGridSplitterStyle" TargetType="{x:Type GridSplitter}">
         <Setter Property="Background" Value="{DynamicResource GridSplitter.Background}"/>
         <Setter Property="PreviewStyle" Value="{DynamicResource GridSplitterPreviewStyle}"/>
         <Setter Property="Template">
@@ -3390,7 +3523,7 @@
          |                                                   GroupBoxes                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGroupBoxStyle" TargetType="{x:Type GroupBox}">
+    <Style x:Key="DarkThemeHighlightGroupBoxStyle" TargetType="{x:Type GroupBox}">
         <Setter Property="Background" Value="{DynamicResource GroupBox.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource GroupBox.Border}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -3436,13 +3569,13 @@
 
 
 
-
+    
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
          |                                                                                                                             |
          |                                                   Hyperlink                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeHyperlinkStyle" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
+    <Style x:Key="DarkThemeHighlightHyperlinkStyle" BasedOn="{StaticResource {x:Type Hyperlink}}" TargetType="{x:Type Hyperlink}">
         <Setter Property="Foreground" Value="{DynamicResource Hyperlink.Foreground}" />
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="true">
@@ -3468,7 +3601,7 @@
          |                                                     Labels                                                                  |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeLabelStyle" TargetType="{x:Type Label}">
+    <Style x:Key="DarkThemeHighlightLabelStyle" TargetType="{x:Type Label}">
         <Setter Property="Foreground" Value="{DynamicResource Label.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource Label.Background}"/>
         <Setter Property="Padding" Value="5"/>
@@ -3508,7 +3641,7 @@
          |                                                   ListBoxes                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListBoxStyle" TargetType="{x:Type ListBox}">
+    <Style x:Key="DarkThemeHighlightListBoxStyle" TargetType="{x:Type ListBox}">
         <Setter Property="Background" Value="{DynamicResource ListBox.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ListBox.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -3560,7 +3693,7 @@
          |                                                 ListBoxItems                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
+    <Style x:Key="DarkThemeHighlightListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -3634,7 +3767,7 @@
          |                                             GridViewColumnHeaders                                                           |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
+    <Style x:Key="DarkThemeHighlightGridViewColumnHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
         <Setter Property="Foreground" Value="{DynamicResource GridViewColumnHeader.Foreground}"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -3714,7 +3847,7 @@
          |                                                   ListViews                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListViewStyle" TargetType="{x:Type ListView}">
+    <Style x:Key="DarkThemeHighlightListViewStyle" TargetType="{x:Type ListView}">
         <Setter Property="Background" Value="{DynamicResource ListView.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ListView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -3729,14 +3862,24 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListView}">
-                    <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                            BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                        <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource LightThemeScrollViewGridView}" 
-                                      CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
-                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                        </ScrollViewer>
-                    </Border>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border x:Name="Bd" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ScrollViewer Focusable="false" Padding="{TemplateBinding Padding}" Style="{DynamicResource DarkThemeHighlightScrollViewGridView}" 
+                                          CanContentScroll="{TemplateBinding ScrollViewer.CanContentScroll}">
+                                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            </ScrollViewer>
+                        </Border>
+                    </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="Bd" Value="{StaticResource ListView.Disabled.Background}"/>
                             <Setter Property="BorderBrush" TargetName="Bd" Value="{StaticResource ListView.Disabled.Border}"/>
@@ -3768,7 +3911,7 @@
          |                                                 ListViewItems                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeListViewItemStyle" TargetType="{x:Type ListViewItem}">
+    <Style x:Key="DarkThemeHighlightListViewItemStyle" TargetType="{x:Type ListViewItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -3853,7 +3996,7 @@
          |                                                 ProgressBars                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeProgressBarStyle" TargetType="{x:Type ProgressBar}">
+    <Style x:Key="DarkThemeHighlightProgressBarStyle" TargetType="{x:Type ProgressBar}">
         <Setter Property="Foreground" Value="{DynamicResource ProgressBar.Progress}"/>
         <Setter Property="Background" Value="{DynamicResource ProgressBar.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ProgressBar.Border}"/>
@@ -3933,12 +4076,13 @@
          |                                                 RadioButtons                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeRadioButtonStyle" TargetType="{x:Type RadioButton}">
+    <Style x:Key="DarkThemeHighlightRadioButtonStyle" TargetType="{x:Type RadioButton}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Background" Value="{DynamicResource RadioButton.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource RadioButton.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource RadioButton.Foreground}"/>
         <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="0,0,0,0"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RadioButton}">
@@ -3947,20 +4091,28 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="1" Visibility="Collapsed" CornerRadius="100">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
                         <Border x:Name="radioButtonBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="100" 
-                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,1,2,1" 
-                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                    BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="100" 
+                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="3,2,3,2" 
+                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                             <Grid x:Name="markGrid" Margin="2">
                                 <Ellipse x:Name="optionMark" Fill="{DynamicResource RadioButton.Glyph}" MinWidth="6" MinHeight="6" Opacity="0"/>
                             </Grid>
                         </Border>
                         <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" 
-                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" 
-                                          RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" 
+                                              RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
                         <Trigger Property="HasContent" Value="true">
                             <Setter Property="FocusVisualStyle" Value="{DynamicResource OptionMarkFocusVisual}"/>
                             <Setter Property="Padding" Value="4,-1,0,0"/>
@@ -4007,7 +4159,7 @@
          |                                                  RichTextBox                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
+    <Style x:Key="DarkThemeHighlightRichTextBoxStyle" TargetType="{x:Type RichTextBox}">
         <Style.Resources>
             <Style x:Key="{x:Type FlowDocument}" TargetType="{x:Type FlowDocument}">
                 <Setter Property="OverridesDefaultStyle" Value="true"/>
@@ -4122,7 +4274,7 @@
          |                                                  ScrollBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeScrollBarStyle" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="DarkThemeHighlightScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="false"/>
         <Setter Property="Background" Value="{DynamicResource ScrollBar.Background}"/>
@@ -4343,7 +4495,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeScrollViewGridView" BasedOn="{StaticResource {x:Static GridView.GridViewScrollViewerStyleKey}}" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="DarkThemeHighlightScrollViewGridView" BasedOn="{StaticResource {x:Static GridView.GridViewScrollViewerStyleKey}}" TargetType="{x:Type ScrollViewer}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ScrollViewer">
@@ -4389,7 +4541,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="LightThemeScrollViewerStyle" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="DarkThemeHighlightScrollViewerStyle" TargetType="{x:Type ScrollViewer}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ScrollViewer}">
@@ -4402,6 +4554,11 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
                         <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" Grid.Row="0" Grid.Column="0"
                                                 Margin="{TemplateBinding Padding}" CanContentScroll="{TemplateBinding CanContentScroll}"
                                                 CanHorizontallyScroll="False" CanVerticallyScroll="False"
@@ -4415,6 +4572,11 @@
                                    Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
                                    Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"/>
                     </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
@@ -4434,7 +4596,7 @@
          |                                                  Separators                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeSeparatorStyle" TargetType="{x:Type Separator}">
+    <Style x:Key="DarkThemeHighlightSeparatorStyle" TargetType="{x:Type Separator}">
         <Setter Property="Background" Value="{DynamicResource Separator.Background}"/>
         <Setter Property="Margin" Value="0,2,0,2"/>
         <Setter Property="Focusable" Value="false"/>
@@ -4578,7 +4740,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="LightThemeSliderStyle" TargetType="{x:Type Slider}">
+    <Style x:Key="DarkThemeHighlightSliderStyle" TargetType="{x:Type Slider}">
         <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false"/>
         <Setter Property="Background" Value="{DynamicResource Slider.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource Slider.Border}"/>
@@ -4605,7 +4767,7 @@
          |                                                  StatusBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeStatusBarStyle" TargetType="{x:Type StatusBar}">
+    <Style x:Key="DarkThemeHighlightStatusBarStyle" TargetType="{x:Type StatusBar}">
         <Setter Property="Background" Value="{DynamicResource StatusBar.Background}"/>
         <Setter Property="Foreground" Value="{DynamicResource StatusBar.Foreground}"/>
         <Setter Property="FontFamily" Value="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}"/>
@@ -4639,7 +4801,7 @@
          |                                                StatusBarItems                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeStatusBarItemStyle" TargetType="{x:Type StatusBarItem}">
+    <Style x:Key="DarkThemeHighlightStatusBarItemStyle" TargetType="{x:Type StatusBarItem}">
         <Setter Property="Background" Value="{DynamicResource StatusBarItem.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource StatusBarItem.Border}" />
         <Setter Property="Foreground" Value="{DynamicResource StatusBarItem.Foreground}" />
@@ -4680,7 +4842,7 @@
          |                                                  TabControls                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTabControlStyle" TargetType="{x:Type TabControl}">
+    <Style x:Key="DarkThemeHighlightTabControlStyle" TargetType="{x:Type TabControl}">
         <Setter Property="Padding" Value="2"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -4700,8 +4862,9 @@
                             <RowDefinition x:Name="RowDefinition0" Height="Auto"/>
                             <RowDefinition x:Name="RowDefinition1" Height="*"/>
                         </Grid.RowDefinitions>
-                        <TabPanel x:Name="headerPanel" Background="{DynamicResource TabControl.TabPanel.Background}" Grid.Column="0" IsItemsHost="true" Margin="2,2,2,0" 
+                        <TabPanel x:Name="headerPanel" Background="{DynamicResource TabControl.TabPanel.Background}" Grid.Column="0" IsItemsHost="true" Margin="2,2,2,2" 
                                   Grid.Row="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" TextElement.Foreground="{DynamicResource TabControl.Foreground}"/>
+                        <Border x:Name="highlightBorder" Grid.Column="0" Grid.Row="0" Background="{DynamicResource TabItem.Accent}" VerticalAlignment="Bottom" Height="2"/>
                         <Border x:Name="contentPanel" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained" 
                                 Grid.Row="1" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local">
@@ -4715,7 +4878,9 @@
                             <Setter Property="Grid.Row" TargetName="contentPanel" Value="0"/>
                             <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition1" Value="Auto"/>
-                            <Setter Property="Margin" TargetName="headerPanel" Value="2,0,2,2"/>
+                            <Setter Property="Margin" TargetName="headerPanel" Value="2,2,2,2"/>
+                            <Setter Property="Grid.Row" TargetName="highlightBorder" Value="1"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Top"/>
                         </Trigger>
                         <Trigger Property="TabStripPlacement" Value="Left">
                             <Setter Property="Grid.Row" TargetName="headerPanel" Value="0"/>
@@ -4726,7 +4891,11 @@
                             <Setter Property="Width" TargetName="ColumnDefinition1" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
-                            <Setter Property="Margin" TargetName="headerPanel" Value="2,2,0,2"/>
+                            <Setter Property="Margin" TargetName="headerPanel" Value="2,2,2,2"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Stretch"/>
+                            <Setter Property="Height" TargetName="highlightBorder" Value="Auto"/>
+                            <Setter Property="HorizontalAlignment" TargetName="highlightBorder" Value="Right"/>
+                            <Setter Property="Width" TargetName="highlightBorder" Value="2"/>
                         </Trigger>
                         <Trigger Property="TabStripPlacement" Value="Right">
                             <Setter Property="Grid.Row" TargetName="headerPanel" Value="0"/>
@@ -4737,7 +4906,12 @@
                             <Setter Property="Width" TargetName="ColumnDefinition1" Value="Auto"/>
                             <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
-                            <Setter Property="Margin" TargetName="headerPanel" Value="0,2,2,2"/>
+                            <Setter Property="Margin" TargetName="headerPanel" Value="2,2,2,2"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Stretch"/>
+                            <Setter Property="Height" TargetName="highlightBorder" Value="Auto"/>
+                            <Setter Property="HorizontalAlignment" TargetName="highlightBorder" Value="Left"/>
+                            <Setter Property="Width" TargetName="highlightBorder" Value="2"/>
+                            <Setter Property="Grid.Column" TargetName="highlightBorder" Value="1"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource TabControl.Disabled.Foreground}"/>
@@ -4762,7 +4936,7 @@
          |                                                    TabItems                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTabItemStyle" TargetType="{x:Type TabItem}">
+    <Style x:Key="DarkThemeHighlightTabItemStyle" TargetType="{x:Type TabItem}">
         <Setter Property="FocusVisualStyle" Value="{DynamicResource FocusVisual}"/>
         <Setter Property="Foreground" Value="{DynamicResource TabControl.Foreground}"/>
         <Setter Property="Background" Value="{DynamicResource TabItem.Background}"/>
@@ -4778,9 +4952,11 @@
                         <Border x:Name="mainBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="1,1,1,0" Margin="0">
                             <Border x:Name="innerBorder" Background="{StaticResource TabItem.Selected.Background}" 
-                                    BorderBrush="{StaticResource TabItem.Selected.Border}" BorderThickness="1,1,1,0" Margin="-1" Opacity="0"/>
+                                    BorderBrush="{StaticResource TabItem.Selected.Border}" BorderThickness="1,1,1,0" Margin="-1,-1,-1,-3" Opacity="0">
+                                <Border x:Name="highlightBorder" Background="{DynamicResource TabItem.Accent}" VerticalAlignment="Top" Height="2"/>
+                            </Border>
                         </Border>
-                        <ContentPresenter x:Name="contentPresenter" ContentSource="Header" Focusable="False" 
+                        <ContentPresenter x:Name="contentPresenter" ContentSource="Header" Focusable="False"
                                           HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" 
                                           Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
                                           VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -4886,8 +5062,13 @@
                             <Setter Property="Panel.ZIndex" Value="1"/>
                             <Setter Property="Margin" Value="-2,-2,0,-2"/>
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                            <Setter Property="Margin" TargetName="innerBorder" Value="-1,-1,-3,-1"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,1,0,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,1,0,1"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Stretch"/>
+                            <Setter Property="Height" TargetName="highlightBorder" Value="Auto"/>
+                            <Setter Property="HorizontalAlignment" TargetName="highlightBorder" Value="Left"/>
+                            <Setter Property="Width" TargetName="highlightBorder" Value="2"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -4904,9 +5085,12 @@
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Panel.ZIndex" Value="1"/>
                             <Setter Property="Margin" Value="-2,0,-2,-2"/>
+                            <Setter Property="Padding" Value="6,0,6,6"/>
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                            <Setter Property="Margin" TargetName="innerBorder" Value="-1,-3,-1,-1"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="1,0,1,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="1,0,1,1"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Bottom"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -4924,8 +5108,13 @@
                             <Setter Property="Panel.ZIndex" Value="1"/>
                             <Setter Property="Margin" Value="0,-2,-2,-2"/>
                             <Setter Property="Opacity" TargetName="innerBorder" Value="1"/>
+                            <Setter Property="Margin" TargetName="innerBorder" Value="-3,-1,-1,-1"/>
                             <Setter Property="BorderThickness" TargetName="innerBorder" Value="0,1,1,1"/>
                             <Setter Property="BorderThickness" TargetName="mainBorder" Value="0,1,1,1"/>
+                            <Setter Property="VerticalAlignment" TargetName="highlightBorder" Value="Stretch"/>
+                            <Setter Property="Height" TargetName="highlightBorder" Value="Auto"/>
+                            <Setter Property="HorizontalAlignment" TargetName="highlightBorder" Value="Right"/>
+                            <Setter Property="Width" TargetName="highlightBorder" Value="2"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -4970,12 +5159,13 @@
          |                                                    ToolBars                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolBarStyle" TargetType="{x:Type ToolBar}">
+    <Style x:Key="DarkThemeHighlightToolBarStyle" TargetType="{x:Type ToolBar}">
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
         <Setter Property="Background" Value="{DynamicResource ToolBarHorizontalBackground}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToolBar}">
-                    <Grid x:Name="Grid" Margin="3,1,1,1" SnapsToDevicePixels="true">
+                    <Grid x:Name="Grid" Margin="3,1,1,1" SnapsToDevicePixels="true">                       
                         <Grid x:Name="OverflowGrid" HorizontalAlignment="Right">
                             <ToggleButton x:Name="OverflowButton" ClickMode="Press" FocusVisualStyle="{x:Null}" 
                                           IsChecked="{Binding IsOverflowOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
@@ -5056,7 +5246,7 @@
          |                                                  ToolBarTrays                                                               |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolBarTrayStyle" TargetType="{x:Type ToolBarTray}">
+    <Style x:Key="DarkThemeHighlightToolBarTrayStyle" TargetType="{x:Type ToolBarTray}">
         <Setter Property="Background" Value="{StaticResource ToolBarTrayBackground}"/>
     </Style>
 
@@ -5075,7 +5265,7 @@
          |                                                    ToolTips                                                                 |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeToolTipStyle" TargetType="{x:Type ToolTip}">
+    <Style x:Key="DarkThemeHighlightToolTipStyle" TargetType="{x:Type ToolTip}">
         <Setter Property="Background" Value="{DynamicResource ToolTip.Background}" />
         <Setter Property="BorderBrush" Value="{DynamicResource ToolTip.Border}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -5138,7 +5328,7 @@
          |                                                    TreeViews                                                                |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTreeViewStyle" TargetType="{x:Type TreeView}">
+    <Style x:Key="DarkThemeHighlightTreeViewStyle" TargetType="{x:Type TreeView}">
         <Setter Property="Background" Value="{DynamicResource TreeView.Background}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource TreeView.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -5152,15 +5342,25 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TreeView}">
-                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                        <ScrollViewer x:Name="tv_scrollviewer" Background="{TemplateBinding Background}" CanContentScroll="false" Focusable="false" 
-                                      HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" Padding="{TemplateBinding Padding}" 
-                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
-                                      VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
-                            <ItemsPresenter/>
-                        </ScrollViewer>
-                    </Border>
+                    <Grid>
+                        <Border x:Name="highlightBorder" BorderBrush="{DynamicResource Accent}" BorderThickness="1" Margin="-3" Visibility="Collapsed">
+                            <Border.Effect>
+                                <BlurEffect Radius="5" KernelType="Gaussian"/>
+                            </Border.Effect>
+                        </Border>
+                        <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ScrollViewer x:Name="tv_scrollviewer" Background="{TemplateBinding Background}" CanContentScroll="false" Focusable="false" 
+                                          HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" Padding="{TemplateBinding Padding}" 
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}">
+                                <ItemsPresenter/>
+                            </ScrollViewer>
+                        </Border>
+                    </Grid>
                     <ControlTemplate.Triggers>
+                        <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                            <Setter Property="Visibility" Value="Visible" TargetName="highlightBorder"/>
+                        </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="Bd" Value="{DynamicResource TreeView.Disabled.Foreground}"/>
                         </Trigger>
@@ -5198,7 +5398,7 @@
          |                                                  TreeViewItems                                                              |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style x:Key="LightThemeTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
+    <Style x:Key="DarkThemeHighlightTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
         <Setter Property="Background" Value="{DynamicResource TreeViewItem.Background}"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -5281,42 +5481,42 @@
          |                                                Appy Styles to Controls                                                      |
          |                                                                                                                             |
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
-    <Style BasedOn="{StaticResource LightThemeButtonStyle}" TargetType="Button" />
-    <Style BasedOn="{StaticResource LightThemeCalendarStyle}" TargetType="Calendar" />
-    <Style BasedOn="{StaticResource LightThemeCheckBoxStyle}" TargetType="CheckBox" />
-    <Style BasedOn="{StaticResource LightThemeComboBoxStyle}" TargetType="ComboBox" />
-    <Style BasedOn="{StaticResource LightThemeComboBoxItemStyle}" TargetType="ComboBoxItem" />
-    <Style BasedOn="{StaticResource LightThemeContextMenuStyle}" TargetType="ContextMenu" />
-    <Style BasedOn="{StaticResource LightThemeContentControlStyle}" TargetType="ContentControl" />
-    <Style BasedOn="{StaticResource LightThemeDatePickerStyle}" TargetType="DatePicker" />
-    <Style BasedOn="{StaticResource LightThemeExpanderStyle}" TargetType="Expander" />
-    <Style BasedOn="{StaticResource LightThemeGridSplitterStyle}" TargetType="GridSplitter" />
-    <Style BasedOn="{StaticResource LightThemeGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
-    <Style BasedOn="{StaticResource LightThemeGroupBoxStyle}" TargetType="GroupBox" />
-    <Style BasedOn="{StaticResource LightThemeHyperlinkStyle}" TargetType="Hyperlink" />
-    <Style BasedOn="{StaticResource LightThemeLabelStyle}" TargetType="Label" />
-    <Style BasedOn="{StaticResource LightThemeListBoxStyle}" TargetType="ListBox" />
-    <Style BasedOn="{StaticResource LightThemeListBoxItemStyle}" TargetType="ListBoxItem" />
-    <Style BasedOn="{StaticResource LightThemeListViewStyle}" TargetType="ListView" />
-    <Style BasedOn="{StaticResource LightThemeListViewItemStyle}" TargetType="ListViewItem" />
-    <Style BasedOn="{StaticResource LightThemeMenuStyle}" TargetType="Menu" />
-    <Style BasedOn="{StaticResource LightThemeMenuItemStyle}" TargetType="MenuItem" />
-    <Style BasedOn="{StaticResource LightThemePasswordBoxStyle}" TargetType="PasswordBox" />
-    <Style BasedOn="{StaticResource LightThemeProgressBarStyle}" TargetType="ProgressBar" />
-    <Style BasedOn="{StaticResource LightThemeRadioButtonStyle}" TargetType="RadioButton" />
-    <Style BasedOn="{StaticResource LightThemeRichTextBoxStyle}" TargetType="RichTextBox" />
-    <Style BasedOn="{StaticResource LightThemeScrollBarStyle}" TargetType="ScrollBar" />
-    <Style BasedOn="{StaticResource LightThemeScrollViewerStyle}" TargetType="ScrollViewer" />
-    <Style BasedOn="{StaticResource LightThemeSeparatorStyle}" TargetType="Separator" />
-    <Style BasedOn="{StaticResource LightThemeSliderStyle}" TargetType="Slider" />
-    <Style BasedOn="{StaticResource LightThemeStatusBarStyle}" TargetType="StatusBar" />
-    <Style BasedOn="{StaticResource LightThemeStatusBarItemStyle}" TargetType="StatusBarItem" />
-    <Style BasedOn="{StaticResource LightThemeTabControlStyle}" TargetType="TabControl" />
-    <Style BasedOn="{StaticResource LightThemeTabItemStyle}" TargetType="TabItem" />
-    <Style BasedOn="{StaticResource LightThemeTextBoxStyle}" TargetType="TextBox" />
-    <Style BasedOn="{StaticResource LightThemeToolBarStyle}" TargetType="ToolBar" />
-    <Style BasedOn="{StaticResource LightThemeToolBarTrayStyle}" TargetType="ToolBarTray" />
-    <Style BasedOn="{StaticResource LightThemeToolTipStyle}" TargetType="ToolTip" />
-    <Style BasedOn="{StaticResource LightThemeTreeViewStyle}" TargetType="TreeView" />
-    <Style BasedOn="{StaticResource LightThemeTreeViewItemStyle}" TargetType="TreeViewItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightButtonStyle}" TargetType="Button" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightCalendarStyle}" TargetType="Calendar" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightCheckBoxStyle}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightComboBoxStyle}" TargetType="ComboBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightComboBoxItemStyle}" TargetType="ComboBoxItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightContextMenuStyle}" TargetType="ContextMenu" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightContentControlStyle}" TargetType="ContentControl" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightDatePickerStyle}" TargetType="DatePicker" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightExpanderStyle}" TargetType="Expander" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightGridSplitterStyle}" TargetType="GridSplitter" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightGroupBoxStyle}" TargetType="GroupBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightHyperlinkStyle}" TargetType="Hyperlink" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightLabelStyle}" TargetType="Label" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightListBoxStyle}" TargetType="ListBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightListBoxItemStyle}" TargetType="ListBoxItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightListViewStyle}" TargetType="ListView" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightListViewItemStyle}" TargetType="ListViewItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightMenuStyle}" TargetType="Menu" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightMenuItemStyle}" TargetType="MenuItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightPasswordBoxStyle}" TargetType="PasswordBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightProgressBarStyle}" TargetType="ProgressBar" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightRadioButtonStyle}" TargetType="RadioButton" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightRichTextBoxStyle}" TargetType="RichTextBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightScrollBarStyle}" TargetType="ScrollBar" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightScrollViewerStyle}" TargetType="ScrollViewer" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightSeparatorStyle}" TargetType="Separator" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightSliderStyle}" TargetType="Slider" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightStatusBarStyle}" TargetType="StatusBar" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightStatusBarItemStyle}" TargetType="StatusBarItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightTabControlStyle}" TargetType="TabControl" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightTabItemStyle}" TargetType="TabItem" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightTextBoxStyle}" TargetType="TextBox" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightToolBarStyle}" TargetType="ToolBar" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightToolBarTrayStyle}" TargetType="ToolBarTray" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightToolTipStyle}" TargetType="ToolTip" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightTreeViewStyle}" TargetType="TreeView" />
+    <Style BasedOn="{StaticResource DarkThemeHighlightTreeViewItemStyle}" TargetType="TreeViewItem" />
 </ResourceDictionary>

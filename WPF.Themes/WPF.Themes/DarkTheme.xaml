@@ -2703,6 +2703,10 @@
                                 <VisualState x:Name="Focused">
                                     <Storyboard>
                                         <DoubleAnimation Duration="0" Storyboard.TargetName="FocusVisual" To="1" Storyboard.TargetProperty="Opacity"/>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="ContentElement" To="{DynamicResource TextBox.Focus.Border.Color}" 
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"/>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="watermark_decorator" To="{DynamicResource TextBox.Focus.Border.Color}" 
+                                                        Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)"/>
                                     </Storyboard>
                                 </VisualState>
                             </VisualStateGroup>
@@ -4772,14 +4776,14 @@
                 <ControlTemplate TargetType="{x:Type TabItem}">
                     <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
                         <Border x:Name="mainBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" 
-                                    BorderThickness="1,1,1,0" Margin="0">
+                                BorderThickness="1,1,1,0" Margin="0">
                             <Border x:Name="innerBorder" Background="{StaticResource TabItem.Selected.Background}" 
-                                        BorderBrush="{StaticResource TabItem.Selected.Border}" BorderThickness="1,1,1,0" Margin="-1" Opacity="0"/>
+                                    BorderBrush="{StaticResource TabItem.Selected.Border}" BorderThickness="1,1,1,0" Margin="-1" Opacity="0"/>
                         </Border>
                         <ContentPresenter x:Name="contentPresenter" ContentSource="Header" Focusable="False" 
-                                              HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" 
-                                              Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
-                                              VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                                          HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" 
+                                          Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                          VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <MultiDataTrigger>

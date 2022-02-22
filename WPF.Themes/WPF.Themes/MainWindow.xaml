@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF.Themes"
         mc:Ignorable="d"
         Title="Testing" Height="768" Width="1024" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="#FF1F1F1F">
         <Grid Margin="5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -29,7 +29,7 @@
                     </MenuItem>
                 </MenuItem>
             </Menu>
-            <TabControl Grid.Row="1" Margin="0,5,0,0" IsEnabled="True">
+            <TabControl Grid.Row="1" Margin="0,5,0,0" IsEnabled="True" TabStripPlacement="Top">
                 <TabItem Header="Controls">
                     <Grid>
                         <Border HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" CornerRadius="5" Padding="5"
@@ -88,8 +88,7 @@
                             </ListView.View>
                             <ListViewItem Content="LBI" />
                             <ListViewItem Content="ListBoxItem" />
-                        </ListView>
-                        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="30,259,0,0" />
+                        </ListView>                        
                         <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,303,0,0" IsEnabled="False" />
                         <RadioButton Content="Radio Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,331,0,0" IsChecked="True" />
                         <RichTextBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="309" Margin="639,169,0,0" Height="108">
@@ -184,8 +183,27 @@
                                 </ToolBarPanel>
                             </ToolBar>
                             <ToolBar>
-                                <ToolBarPanel>
+                                <ToolBarPanel Orientation="Horizontal">
+                                    <CheckBox Content="Testing" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                                    <ComboBox Width="140" IsEditable="True" IsEnabled="True" Margin="0,0,5,0">
+                                        <ComboBoxItem Content="One" />
+                                        <ComboBoxItem Content="Two" />
+                                        <ComboBoxItem Content="Three" />
+                                        <ComboBox.ContextMenu>
+                                            <ContextMenu>
+                                                <MenuItem Header="One" />
+                                                <MenuItem Header="Two" />
+                                                <MenuItem Header="Three" IsEnabled="False" />
+                                            </ContextMenu>
+                                        </ComboBox.ContextMenu>
+                                    </ComboBox>
+                                    <RadioButton Content="RB Testing" VerticalAlignment="Center" Margin="0,0,5,0"/>
                                     <Button Content="ToolBar Button 2" />
+                                </ToolBarPanel>                                
+                            </ToolBar>
+                            <ToolBar>
+                                <ToolBarPanel>
+                                    <CheckBox Content="Testing 2" VerticalAlignment="Center" Margin="0,0,5,0"/>
                                 </ToolBarPanel>
                                 <Separator />
                                 <ToolBarPanel>
@@ -195,6 +213,13 @@
                                         </MenuItem>
                                     </Menu>
                                 </ToolBarPanel>
+                            </ToolBar>
+                            <ToolBar>
+                                <!-- no ToolBarPanel -->
+                                <Button Content="Button" />
+                                <CheckBox Content="CheckBox" />
+                                <RadioButton Content="RadioButton"/>
+                                <!-- this produces different styles than if the controls are in a ToolBarPanel -->
                             </ToolBar>
                         </ToolBarTray>
                         <TreeView HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,484,0,0" Height="120" Width="300">
@@ -225,7 +250,8 @@
                                 <ToolTip Content="TreeView ToolTip" />
                             </TreeView.ToolTip>
                         </TreeView>
-                        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="164,259,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>                        
+                        <PasswordBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="30,259,0,0"/>
+                        <TextBox HorizontalAlignment="Left" Margin="164,259,0,0" VerticalAlignment="Top" Width="100"/>                        
                         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="164,310,0,0" VerticalAlignment="Top" Width="100" Value="25"/>
                         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="164,338,0,0" VerticalAlignment="Top" Width="100" IsIndeterminate="True"/>
                     </Grid>
