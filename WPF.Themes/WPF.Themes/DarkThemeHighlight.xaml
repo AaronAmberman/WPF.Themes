@@ -49,6 +49,8 @@
                secondary focus scope also is done for Windows, Menus and ContextMenus.
     
                https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.focusmanager.isfocusscope?view=windowsdesktop-6.0
+    
+               Suggestion is to not use ToolBars.
     -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
