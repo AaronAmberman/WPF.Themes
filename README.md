@@ -35,7 +35,7 @@ Unaffected types...
  
 I am sure there may be a few more but you get the idea.
 
-**Each theme's templates are not the same**. The LightTheme was mostly auto generated templates that were not modified much but has been changed to more match the DarkTheme templates (whcih were heavily modified). Some colors are slightly different.  DarkTheme (and others in the future) will not have the same template structures as some of the auto generated templates act strangely and can be hard to modify. Making an overridden style for Borders and TextBlocks affects many other control templates so be careful when apply global styling to these types.
+**Each theme's templates are not the same**. The LightTheme was mostly auto generated templates that were not modified much but has been changed to more match the DarkTheme templates (which were heavily modified). Some colors are slightly different.  DarkTheme (and others in the future) will not have the same template structures as some of the auto generated templates act strangely and can be hard to modify. Making an overridden style for Borders and TextBlocks affects many other control templates so be careful when apply global styling to these types.
 
 File organization...
 ![Example1](https://user-images.githubusercontent.com/23512394/153728514-e8503a63-710c-4d7a-918c-edd0a01decf0.png)
