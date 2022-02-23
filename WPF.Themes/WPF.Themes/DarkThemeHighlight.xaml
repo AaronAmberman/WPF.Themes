@@ -44,6 +44,11 @@
                https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-style-controls-on-a-toolbar?view=netframeworkdesktop-4.8
                Notice how they don't use ToolBarPanels directly...maybe this is the key...or just don't use ToolBars. Or you can set 
                Focusable="False" on controls in ToolBars and that should fix it as well but ay cause other problems for you.
+    
+               The reason this occurs is because Microsoft uses FocusScope to create temporary secondary focus on every ToolBar. This 
+               secondary focus scope also is done for Windows, Menus and ContextMenus.
+    
+               https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.focusmanager.isfocusscope?view=windowsdesktop-6.0
     -->
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
